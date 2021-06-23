@@ -1,0 +1,132 @@
+---
+title: "Using the BHL API"
+description: |
+  A notebook to access the Biodiversity Heritage Library API available through the rOpenSci package `rbhl`.
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+date: 06-23-2021
+collections:
+  posts:
+    disqus: using-the-bhl-api
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+draft: false
+preview: /images/BHL_ANSPtable.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+v.0 2021-06-16, Amanda L. Whitmire, thalassa@stanford.edu, ORCID: https://orcid.org/0000-0003-2429-8879
+
+Purpose: I want to explore the corpus of the Proceedings of the Academy of Natural Sciences of Philadelphia (1841 - 1922), available at the Biodiversity Heritage Library (BHL) at https://www.biodiversitylibrary.org/bibliography/6885. I am interested in how this corpus may be leveraged for historical species occurrence data. Step one is accessing the plain text for each volume. Species names have already been identified in the text via the [Global Names Parser](http://www.globalnames.org/), but which of these could be an occurrence record (\"I saw this thing, at this place, at this time.\")? Let's find out!
+
+Note: I already received an API token from BHL and have it in my .Renviron file.
+
+---
+## Getting the metadata out of BHL
+Going to use the `rbhl` package to interface with the BHL API. See https://docs.ropensci.org/rbhl/ 
+
+If you don't have the package installed, un-comment the start of this line to install the package
+
+```{r echo=TRUE}
+# install.packages("rbhl") 
+```
+
+Load the Libraries we need. Good ol' Tidyverse!!
+
+```{r echo=TRUE}
+library(rbhl)
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+```
+
+Let's test out a `rbhl` function by doing and author search.
+
+```{r echo=TRUE}
+bhl_authorsearch(name='Doubleday, Nellie')
+```
+It works!
+
+Okay, now search the BHL catalog for 'Proceedings of the Academy of Natural Sciences of Philadelphia.' Note: of course I've been to BHL and I know the URL for this collection. But for the sake of learning how to do this programmatically, we proceed thusly...
+
+```{r echo=TRUE, layout="l-body-outset"}
+#creates a tibble named `anspsearch`
+anspsearch <- bhl_publicationsearch('Proceedings of the Academy of Natural Sciences of Philadelphia')
+
+#display the tibble (uses `rmarkdown` package for rendering)
+paged_table(anspsearch)
+```
+
+What we want is in the first row. The TitleID is '6885', so let's see where we can go from there.
+
+Get a list of items from the result of the title search, and put them in a List called `anspitems`
+
+```{r echo=TRUE}
+anspitems <- bhl_gettitlemetadata(6885, items = TRUE, as='list')$Result[[1]]$Items 
+```
+
+Look at the first item in the list:
+
+```{r echo=TRUE}
+anspitems[[1]]
+```
+
+Okay, so we can see now that the item-level data is in nested lists. That is, `anspitems` is a list where each item within `anspitems` is itself a list with metadata regarding each volume of the Proceedings. Let's pull that metadata out into a tibble.
+
+```{r echo=TRUE, layout="l-body-outset"}
+len <- length(anspitems) # how many items for the loop
+dat <- as_tibble(anspitems[[1]],) # create a tibble for the metadata to go into
+for (i in 2:len){
+  newrow <- as_tibble(anspitems[[i]]) #create the new row of data
+  dat <- dat %>% bind_rows(newrow) # not sure why I couldn't use 'add_row' function, but this works I guess
+}
+rm(newrow, i) # clean up your workspace
+kable(head(dat)) # look at your data
+```
+OH CRIPES - there are duplicate volumes. DANG. We're going to have to de-duplicate the tibble based on ... maybe the `Volume` column? ::shrugs:: This will not be a specific de-dup - like, I don't know how to pick which of the two volumes to keep, so I guess we'll keep whatever the function decides for us. If I had to guess, it'll keep the first instance of each volume.
+
+```{r echo=TRUE, layout="l-body-outset"}
+unique_vols = dat[!duplicated(dat$Volume),]
+kable(head(unique_vols))
+```
+
+BOOM!! We have a list of eachvolume of the Proceedings with the year and the URL for each. This is the first step - DONE. Looking at this table, yes, the first instance of each volume is kept. 
+
+---
+## Downloading each volume of the Proceedings
+Now let's get into the business of trying to access the OCR text of the proceedings. Since I have a list of URLs, we could probably also do this in Python, but this 'rbhl' R-package makes it easy to query and pull the text we need. After I build out our corpus, we can shift over to Python ...
+
+```{r echo=TRUE, layout="l-body-outset"}
+# USAGE 
+# bhl_getitemmetadata(
+#   itemid = NULL,
+#   pages = TRUE,
+#   ocr = FALSE,
+#   parts = FALSE,
+#   as = "table",
+#   key = NULL,
+#   ...
+# )
+
+# volmeta <- bhl_getitemmetadata(as_tibble(unique_vols$ItemID), TRUE, ocr = TRUE)
+volmeta <- as_tibble(bhl_getitemmetadata(unique_vols$ItemID[1], TRUE, ocr = TRUE))
+colnames(volmeta) # OCR info is in a table tucked into the column #21 called "Pages"
+ocr <- as_tibble(volmeta[[21]][[1]]["OcrText"])
+print(ocr[10,]) # just look at the 10th page of text
+```
+
+What we have now is a tibble where each row is a page of OCR text from the volume of the proceedings that we've pulled from the API. Let's concatenate the rows into a single block of text, effectively rendering a complete volume of the Proceedings into one block.
+
+```{r echo=TRUE}
+vol <- paste0(ocr) # concatenates the rows all together
+write(vol, file = "test.txt") #write it out as a text file
+```
+
+---
