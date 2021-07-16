@@ -44,15 +44,26 @@ For inquiring minds who want to see the pre-1950 data. The top of the scale (too
 </aside>
 
 ## How? 
-I don't have it all figured out yet, but expect that this will involve _many_ steps of data processing and cleaning, training a natural language processing model on this corpus (which is a *weird* corpus), exploratory data analysis and visualization, and more. If we can get it to work (and this is a big IF), we will be able to automate identifying realtionships like the one shown below.^[from: Nguyen N, Gabud R, Ananiadou S (2019) COPIOUS: A gold standard corpus of named entities towards extracting species occurrence from biodiversity literature. Biodiversity Data Journal 7: e29626. https://doi.org/10.3897/BDJ.7.e29626] Thisexample includes habitat, but we are focused on the relations between date + place + species.
+I don't have it all figured out yet, but expect that this will involve _many_ steps of data processing and cleaning, training a natural language processing model on this corpus (which is a *weird* corpus), exploratory data analysis and visualization, and more. If we can get it to work (and this is a big IF), we will be able to automate identifying realtionships like the one shown below.^[from: Nguyen N, Gabud R, Ananiadou S (2019) COPIOUS: A gold standard corpus of named entities towards extracting species occurrence from biodiversity literature. Biodiversity Data Journal 7: e29626. https://doi.org/10.3897/BDJ.7.e29626] This example includes habitat, but we are focused on the relations between date + place + species.
 
 <img src="images/copious_spoc_2019_217808.png" alt="COPIOUS figure" width="600"/>
 <aside>
 _Examples of species occurrences automatically extracted by PASMED. A dashed line indicates an incorrect relation._
 </aside>
 
+To accomplish this, we are hoping to use the Python package [`spaCy`](https://spacy.io/). SpaCy is self-described as, "industrial-strength natural language processing in Python." This powerful package does many things, but the two things it does that we really need are: named entity recognition (it finds words/phrases in the text, and we can give it a list of things to look for) and entity relations (we can train it to know when things are related, like a species and a place). 
 
-	 	
+My first step in working toward this very lofty goal, was just to explore around in spaCy a bit. I did that, and you can see what I did in this [Jupyter Notebook](https://github.com/amandawhitmire/blog/blob/main/code/spacy-testing.ipynb). The major successes for this first exercise were to run the default spaCy NLP model on a volume of ANSP, to understand how to visualize some of the results:
 
+![spaCy annotations from sample text](images/spacy-render.png)
 
+<aside>
+This shows some of spaCy's default entity types: CARDINAL (Numerals that do not fall under another type), PERSON, GPE (geopolitical), ORG (organizations), etc. Notice it misses the species mentioned, e.g., 'Ariolimax niger'.
+</aside>
+and, finally, to create a custom entity set with a few species names, add it to the existing NLP pipeline, and see if it works. It did! 
 
+![NER results in spaCy showing the species name highlighted.](images/spacy-success.png)
+
+All in all, this was a very exciting and productive week!
+
+/a
