@@ -6,7 +6,7 @@ author:
   - name: Amanda Whitmire
     url: https://amandawhitmire.github.io/
     affiliation: Stanford Libraries & Hopkins Marine Station
-date: 07-12-2021
+date: 07-15-2021
 collections:
   posts:
     disqus: getting-started-with-spacy
@@ -54,14 +54,21 @@ _Examples of species occurrences automatically extracted by PASMED. A dashed lin
 
 To accomplish this, we are hoping to use the Python package [`spaCy`](https://spacy.io/). SpaCy is self-described as, "industrial-strength natural language processing in Python." This powerful package does many things, but the two things it does that we really need are: named entity recognition (it finds words/phrases in the text, and we can give it a list of things to look for) and entity relations (we can train it to know when things are related, like a species and a place). 
 
-My first step in working toward this very lofty goal, was just to explore around in spaCy a bit. I did that, and you can see what I did in this [Jupyter Notebook](https://github.com/amandawhitmire/blog/blob/main/code/spacy-testing.ipynb). The major successes for this first exercise were to run the default spaCy NLP model on a volume of ANSP, to understand how to visualize some of the results:
+My first step in working toward this very lofty goal, was just to explore around in spaCy a bit. I did that, and you can see what I did in this [Jupyter Notebook](https://github.com/amandawhitmire/blog/blob/main/code/spacy-testing.ipynb). The major successes for this first exercise were to:
+
+1. run the default spaCy NLP model on a volume of ANSP, 
+2. to understand how to visualize some of the results:
 
 ![spaCy annotations from sample text](https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-render.png)
 
 <aside>
+. 
+
 This shows some of spaCy's default entity types: CARDINAL (Numerals that do not fall under another type), PERSON, GPE (geopolitical), ORG (organizations), etc. Notice it misses the species mentioned, e.g., 'Ariolimax niger'.
 </aside>
-and, finally, to create a custom entity set with a few species names, add it to the existing NLP pipeline, and see if it works. It did! 
+3. and, finally, to create a custom entity set with a few species names, add it to the existing NLP pipeline, and see if it works. 
+
+It did! 
 
 ![NER results in spaCy showing the species name highlighted.](https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-success.png)
 

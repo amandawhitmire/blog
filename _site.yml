@@ -1,4 +1,4 @@
-name: "blog"
+name: "amandas-leading-blog"
 title: "Amanda's LEADING Blog"
 description: |
   My Blog
@@ -6,6 +6,13 @@ output_dir: "docs"
 base_url: https://amandawhitmire.github.io/blog/
 repository_url: https://github.com/amandawhitmire/blog
 favicon: images/favicon-32x32.png
+collections:
+  posts:
+    categories: false
+    categories_metadata: false
+    authors_metadata: false
+    disqus: amandas-leading-blog
+    share: [twitter, facebook]
 twitter:
   site: "@AWhitTwit"
 navbar:

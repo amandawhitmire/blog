@@ -1509,14 +1509,22 @@ This corpus is available at the <a href="https://www.biodiversitylibrary.org/bib
 <em>Examples of species occurrences automatically extracted by PASMED. A dashed line indicates an incorrect relation.</em>
 </aside>
 <p>To accomplish this, we are hoping to use the Python package <a href="https://spacy.io/"><code>spaCy</code></a>. SpaCy is self-described as, “industrial-strength natural language processing in Python.” This powerful package does many things, but the two things it does that we really need are: named entity recognition (it finds words/phrases in the text, and we can give it a list of things to look for) and entity relations (we can train it to know when things are related, like a species and a place).</p>
-<p>My first step in working toward this very lofty goal, was just to explore around in spaCy a bit. I did that, and you can see what I did in this <a href="https://github.com/amandawhitmire/blog/blob/main/code/spacy-testing.ipynb">Jupyter Notebook</a>. The major successes for this first exercise were to run the default spaCy NLP model on a volume of ANSP, to understand how to visualize some of the results:</p>
+<p>My first step in working toward this very lofty goal, was just to explore around in spaCy a bit. I did that, and you can see what I did in this <a href="https://github.com/amandawhitmire/blog/blob/main/code/spacy-testing.ipynb">Jupyter Notebook</a>. The major successes for this first exercise were to:</p>
+<ol type="1">
+<li>run the default spaCy NLP model on a volume of ANSP,</li>
+<li>to understand how to visualize some of the results:</li>
+</ol>
 <figure>
 <img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-render.png" alt="spaCy annotations from sample text" /><figcaption aria-hidden="true">spaCy annotations from sample text</figcaption>
 </figure>
 <aside>
+<p>.</p>
 This shows some of spaCy’s default entity types: CARDINAL (Numerals that do not fall under another type), PERSON, GPE (geopolitical), ORG (organizations), etc. Notice it misses the species mentioned, e.g., ‘Ariolimax niger’.
 </aside>
-<p>and, finally, to create a custom entity set with a few species names, add it to the existing NLP pipeline, and see if it works. It did!</p>
+<ol start="3" type="1">
+<li>and, finally, to create a custom entity set with a few species names, add it to the existing NLP pipeline, and see if it works.</li>
+</ol>
+<p>It did!</p>
 <figure>
 <img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-success.png" alt="NER results in spaCy showing the species name highlighted." /><figcaption aria-hidden="true">NER results in spaCy showing the species name highlighted.</figcaption>
 </figure>
