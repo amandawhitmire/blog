@@ -98,7 +98,7 @@ unique_vols = dat[!duplicated(dat$Volume),]
 kable(head(unique_vols))
 ```
 
-BOOM!! We have a list of eachvolume of the Proceedings with the year and the URL for each. This is the first step - DONE. Looking at this table, yes, the first instance of each volume is kept. 
+BOOM!! We have a list of each volume of the Proceedings with the year and the URL for each. This is the first step - DONE. Looking at this table, yes, the first instance of each volume is kept. 
 
 ---
 ## Downloading each volume of the Proceedings

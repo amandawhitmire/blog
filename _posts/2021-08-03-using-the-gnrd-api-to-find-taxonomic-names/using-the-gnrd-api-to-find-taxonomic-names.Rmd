@@ -1,0 +1,154 @@
+---
+title: "Using the GNRD API to find taxonomic names"
+description: |
+  A Global Names Architecture adventure supported by R package Taxize
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: "`r Sys.Date()`"
+collections:
+  posts:
+    disqus: using-the-bhl-api
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# A notebook wherein I learn how to use the GNRD API to find taxonomic names in text
+## Background
+Our use case is text-mining the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) to identify species names. This is a first-step toward then identifying species occurrences (species observation + date + location). We know that Global Names can find taxonomic names in ANSP because every page of items in the Biodiversity Heritage Library has taxonomic names listed that were identified using Global Names. See, for example, [this page](https://www.biodiversitylibrary.org/page/1694302#page/211/mode/1up), at the bottom left. 
+
+What ius GNRD? It is described via [Global Names Architecture](https://globalnames.org/apps/) as: "Global Names Recognition and Discovery: a name discovery service that accepts Microsoft Office documents, PDFs, images, and other files, performs OCR as required, then uses TaxonFinder and NetiNeti name discovery algorithms. It has several configuration options including passing found names to Global Names Resolver."
+
+This tool is important because rather than try to assemble a list of all possible taxonomic names so that we can search for them in a text (via named entity recognition or some other method), we want to be able to use community-accepted tools and taxonomies. So, the exercise here is to learn how to use the GNRD API, get it working on our corpus (ANSP), and get comfortable working with the inputs (text) and outputs (taxa).
+
+## Workspace setup
+
+```{r eval=FALSE, echo=TRUE}
+install.packages("taxize") 
+```
+
+Load the Libraries we need.
+
+```{r echo=TRUE}
+library(rbhl)
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+library(distill)
+library(taxize)
+```
+
+## Testing the `scrapenames` function
+
+From `Taxize` [documentation](https://rdrr.io/cran/taxize/man/scrapenames.html) we see how the `scrapenames` function works. The input can be a URL *OR* a file *OR* text, with various options for what you're looking for (eg., unique names only (no repeats), or all names found). Here is how it looks:
+
+```{r, eval=FALSE, echo=TRUE}
+scrapenames(
+  url = NULL,
+  file = NULL,
+  text = NULL,
+  engine = NULL,
+  unique = NULL,
+  verbatim = NULL,
+  detect_language = NULL,
+  all_data_sources = NULL,
+  data_source_ids = NULL,
+  return_content = FALSE,
+  other options not described...
+)
+```
+
+And here it is in use on a Wikipedia page:
+
+```{r echo=TRUE}
+taxa <- scrapenames(
+  url = 'https://en.wikipedia.org/wiki/Animalia', # a web page with taxa mentioned
+  engine = 0, # uses both name finding engines (IDK what the differences are, tbh)
+  unique = TRUE, # just show the unique names as a start
+  verbatim = FALSE, # default
+  detect_language = TRUE, # default
+  with_verification = TRUE, # can't seem to get this to work
+  all_data_sources = TRUE,
+  return_content = FALSE
+)
+```
+
+This returns a list of length 2, with a list of metadata (search query settings) and results (data). Let's look! Here is what the metadata looks like:
+
+```{r, echo=TRUE}
+taxa[["meta"]]
+```
+
+And here is a list of the taxonomic names that GNRD found in the Wikipedia page.  
+
+```{r, echo=TRUE}
+# max_len <- max(lengths(taxa[["data"]]))
+# df <- do.call(cbind.data.frame, c(lapply(taxa[["data"]], function(x) 
+#               c(x, rep('', max_len - length(x)))), stringsAsFactors = FALSE))
+# knitr::kable(df)
+
+taxa[["data"]][["scientificname"]]
+```
+
+## How can we use this API for BHL text content?
+
+I did a test of using `scrapenames` directly on a page at BHL (and this page has only text on it!), but it failed. 
+
+```{r, eval=FALSE, echo=TRUE}
+taxa <- scrapenames('https://www.biodiversitylibrary.org/pagetext/1694302')
+```
+#FAIL! 
+
+The error says, "Error: Invalid SSL Certificate (Cloudflare) (HTTP 526)" - BOO!
+
+This wasn't all that unexpected, and it means that we'll have to combine the querying functionality of the `rbhl` package with the scraping of the `scrapenames` function in `taxize`. Recall in my post ["Using the BHL API"](https://amandawhitmire.github.io/blog/posts/2021-06-23-using-the-bhl-api/) that we can pull text directly from BHL using the functions in the `rbhl` package. Let's try to pull the OCR text from the same page we tried to query above. 
+
+```{r echo=TRUE, message=TRUE, warning=TRUE, paged.print=TRUE}
+# Get a list of items from the result of the title search, and put them in a List called `anspitems`
+
+anspitems <- bhl_gettitlemetadata(6885, items = TRUE, as='list')$Result[[1]]$Items
+```
+
+Item-level data is in nested lists. That is, `anspitems` is a list where each item within `anspitems` is itself a list with metadata regarding each volume of the Proceedings. Let's pull that metadata out into a tibble.
+
+```{r echo=TRUE}
+len <- length(anspitems) # how many items for the loop
+dat <- as_tibble(anspitems[[1]],) # create a tibble for the metadata to go into
+for (i in 2:len){
+  newrow <- as_tibble(anspitems[[i]]) # create the new row of data
+  dat <- dat %>% bind_rows(newrow)
+}
+
+rm(newrow, i) # clean up your work space
+unique_vols = dat[!duplicated(dat$Volume),] #remove duplicate items in ANSP metadata
+
+# Need info from page 189 volume 7. let's find it! 
+volmeta <- as_tibble(bhl_getitemmetadata(unique_vols$ItemID[7], TRUE, ocr = TRUE)) # Volume 7
+colnames(volmeta) # OCR info is in a table called "Pages"
+ocr <- as_tibble(volmeta["Pages"][[1]][[1]][["OcrText"]])
+ocr[211,] # just look at the 189th page of text
+```
+
+Feed the text from the page we are interested in (211 = page 189 of Vol. 7) into `scrapenames`, put the data into a tibble, show the tibble.
+
+```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
+snames <- scrapenames(text=ocr[211,])
+df.snames <- as_tibble(snames[["data"]])
+paged_table(df.snames)
+```
+
+# WINNER!!
+
+The "verbatim" column is the OCR text we fed into the scraper, and "scientificname" is the matched scientific name (GNRD is able to do "fuzzy" matching to account for misspellings and such). 
+## Next steps
+
+We need to verify this list of taxa against ... something. I couldn't get the "with_verification" option to work in the API context (it works on the [web version](http://gnrd.globalnames.org/)). The `Taxize` package has options for this, so I'll get to that tomorrow. 
