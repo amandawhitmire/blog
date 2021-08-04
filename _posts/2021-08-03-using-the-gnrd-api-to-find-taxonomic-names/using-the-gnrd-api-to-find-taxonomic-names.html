@@ -110,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","collections","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Using the GNRD API to find taxonomic names"]},{"type":"character","attributes":{},"value":["A Global Names Architecture adventure supported by R package Taxize\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Amanda Whitmire"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/"]},{"type":"character","attributes":{},"value":["Stanford Libraries & Hopkins Marine Station"]}]}]},{"type":"character","attributes":{},"value":["2021-08-03"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["using-the-bhl-api"]},{"type":"character","attributes":{},"value":["twitter","facebook"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","collections","output","draft","preview"]}},"value":[{"type":"character","attributes":{},"value":["Using the GNRD API to find taxonomic names"]},{"type":"character","attributes":{},"value":["A Global Names Architecture adventure supported by R package Taxize\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Amanda Whitmire"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/"]},{"type":"character","attributes":{},"value":["Stanford Libraries & Hopkins Marine Station"]}]}]},{"type":"character","attributes":{},"value":["2021-08-03"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["using-the-bhl-api"]},{"type":"character","attributes":{},"value":["twitter","facebook"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/amandawhitmire/blog/main/images/scientificnamesScraped.png"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1543,7 +1543,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 <pre><code>$token_url
-[1] &quot;http://gnrd.globalnames.org/name_finder.json?token=5a86jqub74&quot;
+[1] &quot;http://gnrd.globalnames.org/name_finder.json?token=6kdd2lulr5&quot;
 
 $input_url
 [1] &quot;https://en.wikipedia.org/wiki/Animalia&quot;
@@ -1588,13 +1588,13 @@ $language_used
 
 $execution_time
 $execution_time$text_preparation_duration
-[1] 2.723682
+[1] 2.49209
 
 $execution_time$find_names_duration
-[1] 0.06093383
+[1] 0.05939174
 
 $execution_time$total_duration
-[1] 2.789197
+[1] 2.555638
 
 
 $total
@@ -1817,7 +1817,10 @@ $total
   </script>
 </div>
 </div>
-<h2 id="winner">WINNER!!</h2>
+<h1 id="winner">WINNER!!</h1>
+<p>The “verbatim” column is the OCR text we fed into the scraper, and “scientificname” is the matched scientific name (GNRD is able to do “fuzzy” matching to account for misspellings and such).</p>
+<h2 id="next-steps">Next steps</h2>
+<p>We need to verify this list of taxa against … something. I couldn’t get the “with_verification” option to work in the API context (it works on the <a href="http://gnrd.globalnames.org/">web version</a>). The <code>Taxize</code> package has options for this, so I’ll get to that tomorrow.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
