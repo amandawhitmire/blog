@@ -1,0 +1,37 @@
+---
+title: "2021 LEADING Fellowship"
+description: |
+  Project: From natural history literature to linked open data biodiversity knowledge graph.
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: "`r Sys.Date()`"
+collections:
+  posts:
+    disqus: leading-fellowship
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In the spring of 2021, I was notified that I have been awarded a fellowship through the LEADING program^[The [*LIS Education and Data Science Integrated Network Group (LEADING)*](https://cci.drexel.edu/mrc/leading/), is a Laura Bush 21st Century Librarian (LB21) National Digital Infrastructures and Initiatives project, supported by the [Institute of Museum and Library Services](https://www.imls.gov/) (IMLS). The LEADING project scales-up the highly successful [LEADS-4-NDP](https://cci.drexel.edu/mrc/research/leads/) initiative and will prepare a diverse, nation-wide cohort of 50 LIS doctoral students and early to mid-career librarians for data science endeavors.], an [IMLS](https://imls.gov/)-funded initiative to bring data science skills into academic libraries. This page is a bridge to a blog, where I will document and share the work I'll be doing for my fellowship project, loosely titled, "From natural history literature to linked open data biodiversity knowledge graph."
+
+My fellowship project is housed under the [Academy of Natural Sciences of Drexel University](https://ansp.org/), and will be using the [Proceedings of the Academy of Natural Sciences of Philadelphia](https://www.biodiversitylibrary.org/bibliography/6885) as a corpus for text-mining. This project seeks to augment existing biodiversity specimen collection data by linking related descriptions found in the rich tradition of natural history literature. 
+
+I'll be sharing the process and outputs of my fellowship, which runs July - December 2021, via [this here blog](https://amandawhitmire.github.io/blog/).
+
+```{r}
+library(knitr)
+include_graphics("docs/images/r_rollercoaster_horst.png")
+```
+<aside>
+This artwork by @allison_horst shows what I expect to be my journey through re-familiarizing myself with R and learning Python over the next few months ...
+</aside>
