@@ -110,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","collections","output","draft","preview"]}},"value":[{"type":"character","attributes":{},"value":["Using the GNRD API to find taxonomic names"]},{"type":"character","attributes":{},"value":["A Global Names Architecture adventure supported by R package Taxize\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Amanda Whitmire"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/"]},{"type":"character","attributes":{},"value":["Stanford Libraries & Hopkins Marine Station"]}]}]},{"type":"character","attributes":{},"value":["2021-08-03"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["using-the-bhl-api"]},{"type":"character","attributes":{},"value":["twitter","facebook"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/amandawhitmire/blog/main/images/scientificnamesScraped.png"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","collections","output","draft","preview"]}},"value":[{"type":"character","attributes":{},"value":["Using the GNRD API to find taxonomic names"]},{"type":"character","attributes":{},"value":["A Global Names Architecture adventure supported by R package Taxize\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Amanda Whitmire"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/"]},{"type":"character","attributes":{},"value":["Stanford Libraries & Hopkins Marine Station"]}]}]},{"type":"character","attributes":{},"value":["08-03-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["using-the-gnrd-api"]},{"type":"character","attributes":{},"value":["twitter","facebook"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/amandawhitmire/blog/main/images/scientificnamesScraped.jpg"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1475,14 +1475,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-byline">
   Amanda Whitmire <a href="https://amandawhitmire.github.io/" class="uri">https://amandawhitmire.github.io/</a> (Stanford Libraries &amp; Hopkins Marine Station)
   
-<br/>2021-08-03
+<br/>08-03-2021
 </div>
 
 <div class="d-article">
 <h1 id="a-notebook-wherein-i-learn-how-to-use-the-gnrd-api-to-find-taxonomic-names-in-text">A notebook wherein I learn how to use the GNRD API to find taxonomic names in text</h1>
 <h2 id="background">Background</h2>
 <p>Our use case is text-mining the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) to identify species names. This is a first-step toward then identifying species occurrences (species observation + date + location). We know that Global Names can find taxonomic names in ANSP because every page of items in the Biodiversity Heritage Library has taxonomic names listed that were identified using Global Names. See, for example, <a href="https://www.biodiversitylibrary.org/page/1694302#page/211/mode/1up">this page</a>, at the bottom left.</p>
-<p>What ius GNRD? It is described via <a href="https://globalnames.org/apps/">Global Names Architecture</a> as: “Global Names Recognition and Discovery: a name discovery service that accepts Microsoft Office documents, PDFs, images, and other files, performs OCR as required, then uses TaxonFinder and NetiNeti name discovery algorithms. It has several configuration options including passing found names to Global Names Resolver.”</p>
+<p>What is GNRD? It is described via <a href="https://globalnames.org/apps/">Global Names Architecture</a> as: “Global Names Recognition and Discovery: a name discovery service that accepts Microsoft Office documents, PDFs, images, and other files, performs OCR as required, then uses TaxonFinder and NetiNeti name discovery algorithms. It has several configuration options including passing found names to Global Names Resolver.”</p>
 <p>This tool is important because rather than try to assemble a list of all possible taxonomic names so that we can search for them in a text (via named entity recognition or some other method), we want to be able to use community-accepted tools and taxonomies. So, the exercise here is to learn how to use the GNRD API, get it working on our corpus (ANSP), and get comfortable working with the inputs (text) and outputs (taxa).</p>
 <h2 id="workspace-setup">Workspace setup</h2>
 <div class="layout-chunk" data-layout="l-body">
@@ -1543,7 +1543,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 <pre><code>$token_url
-[1] &quot;http://gnrd.globalnames.org/name_finder.json?token=6kdd2lulr5&quot;
+[1] &quot;http://gnrd.globalnames.org/name_finder.json?token=4462rbpqtp&quot;
 
 $input_url
 [1] &quot;https://en.wikipedia.org/wiki/Animalia&quot;
@@ -1588,13 +1588,13 @@ $language_used
 
 $execution_time
 $execution_time$text_preparation_duration
-[1] 2.49209
+[1] 2.432797
 
 $execution_time$find_names_duration
-[1] 0.05939174
+[1] 0.05268478
 
 $execution_time$total_duration
-[1] 2.555638
+[1] 2.488872
 
 
 $total
