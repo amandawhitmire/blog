@@ -85,50 +85,50 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Seaside Librarian: Using the GNRD API to find taxonomic names</title>
+<title>Seaside Librarian: Exploring Global Names Finder</title>
 
-<meta property="description" itemprop="description" content="A Global Names Architecture adventure supported by R package Taxize"/>
+<meta property="description" itemprop="description" content="In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio"/>
 
-<link rel="canonical" href="https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/"/>
+<link rel="canonical" href="https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/"/>
 <link rel="icon" type="image/png" href="../../images/favicon-32x32.png"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-08-03"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-08-03"/>
+<meta property="article:published" itemprop="datePublished" content="2021-08-05"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-08-05"/>
 <meta name="article:author" content="Amanda Whitmire"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Seaside Librarian: Using the GNRD API to find taxonomic names"/>
+<meta property="og:title" content="Seaside Librarian: Exploring Global Names Finder"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="A Global Names Architecture adventure supported by R package Taxize"/>
-<meta property="og:url" content="https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/"/>
+<meta property="og:description" content="In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio"/>
+<meta property="og:url" content="https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Seaside Librarian"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Seaside Librarian: Using the GNRD API to find taxonomic names"/>
-<meta property="twitter:description" content="A Global Names Architecture adventure supported by R package Taxize"/>
-<meta property="twitter:url" content="https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/"/>
+<meta property="twitter:title" content="Seaside Librarian: Exploring Global Names Finder"/>
+<meta property="twitter:description" content="In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio"/>
+<meta property="twitter:url" content="https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/"/>
 <meta property="twitter:site" content="@AWhitTwit"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Seaside Librarian: Using the GNRD API to find taxonomic names"/>
-<meta name="citation_fulltext_html_url" content="https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/"/>
-<meta name="citation_online_date" content="2021/08/03"/>
-<meta name="citation_publication_date" content="2021/08/03"/>
+<meta name="citation_title" content="Seaside Librarian: Exploring Global Names Finder"/>
+<meta name="citation_fulltext_html_url" content="https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/"/>
+<meta name="citation_online_date" content="2021/08/05"/>
+<meta name="citation_publication_date" content="2021/08/05"/>
 <meta name="citation_author" content="Amanda Whitmire"/>
 <meta name="citation_author_institution" content="Stanford Libraries &amp; Hopkins Marine Station"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","collections","output","draft","preview","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Using the GNRD API to find taxonomic names"]},{"type":"character","attributes":{},"value":["A Global Names Architecture adventure supported by R package Taxize"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Amanda Whitmire"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/"]},{"type":"character","attributes":{},"value":["Stanford Libraries & Hopkins Marine Station"]}]}]},{"type":"character","attributes":{},"value":["08-03-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["using-the-gnrd-api"]},{"type":"character","attributes":{},"value":["twitter","facebook"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/amandawhitmire/blog/main/images/scientificnamesScraped.jpg"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","collections","output","draft","preview","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Exploring Global Names Finder"]},{"type":"character","attributes":{},"value":["In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Amanda Whitmire"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/"]},{"type":"character","attributes":{},"value":["Stanford Libraries & Hopkins Marine Station"]}]}]},{"type":"character","attributes":{},"value":["08-05-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["exploring-gnfinder"]},{"type":"character","attributes":{},"value":["twitter","facebook"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/"]},{"type":"character","attributes":{},"value":["https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["84867.json","using-the-gnrd-api-to-find-taxonomic-names_files/anchor-4.2.2/anchor.min.js","using-the-gnrd-api-to-find-taxonomic-names_files/bowser-1.9.3/bowser.min.js","using-the-gnrd-api-to-find-taxonomic-names_files/distill-2.2.21/template.v2.js","using-the-gnrd-api-to-find-taxonomic-names_files/header-attrs-2.9/header-attrs.js","using-the-gnrd-api-to-find-taxonomic-names_files/jquery-1.11.3/jquery.min.js","using-the-gnrd-api-to-find-taxonomic-names_files/pagedtable-1.1/css/pagedtable.css","using-the-gnrd-api-to-find-taxonomic-names_files/pagedtable-1.1/js/pagedtable.js","using-the-gnrd-api-to-find-taxonomic-names_files/popper-2.6.0/popper.min.js","using-the-gnrd-api-to-find-taxonomic-names_files/tippy-6.2.7/tippy-bundle.umd.min.js","using-the-gnrd-api-to-find-taxonomic-names_files/tippy-6.2.7/tippy-light-border.css","using-the-gnrd-api-to-find-taxonomic-names_files/tippy-6.2.7/tippy.css","using-the-gnrd-api-to-find-taxonomic-names_files/tippy-6.2.7/tippy.umd.min.js","using-the-gnrd-api-to-find-taxonomic-names_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["exploring-gnfinder_files/anchor-4.2.2/anchor.min.js","exploring-gnfinder_files/bowser-1.9.3/bowser.min.js","exploring-gnfinder_files/distill-2.2.21/template.v2.js","exploring-gnfinder_files/header-attrs-2.9/header-attrs.js","exploring-gnfinder_files/jquery-1.11.3/jquery.min.js","exploring-gnfinder_files/pagedtable-1.1/css/pagedtable.css","exploring-gnfinder_files/pagedtable-1.1/js/pagedtable.js","exploring-gnfinder_files/popper-2.6.0/popper.min.js","exploring-gnfinder_files/tippy-6.2.7/tippy-bundle.umd.min.js","exploring-gnfinder_files/tippy-6.2.7/tippy-light-border.css","exploring-gnfinder_files/tippy-6.2.7/tippy.css","exploring-gnfinder_files/tippy-6.2.7/tippy.umd.min.js","exploring-gnfinder_files/webcomponents-2.0.0/webcomponents.js","v37sxx01.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2075,7 +2075,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Using the GNRD API to find taxonomic names","description":"A Global Names Architecture adventure supported by R package Taxize","authors":[{"author":"Amanda Whitmire","authorURL":"https://amandawhitmire.github.io/","affiliation":"Stanford Libraries & Hopkins Marine Station","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-08-03T00:00:00.000+00:00","citationText":"Whitmire, 2021"}
+{"title":"Exploring Global Names Finder","description":"In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio","authors":[{"author":"Amanda Whitmire","authorURL":"https://amandawhitmire.github.io/","affiliation":"Stanford Libraries & Hopkins Marine Station","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-08-05T00:00:00.000+00:00","citationText":"Whitmire, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2101,376 +2101,88 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Using the GNRD API to find taxonomic names</h1>
+<h1>Exploring Global Names Finder</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A Global Names Architecture adventure supported by R package Taxize</p></p>
+<p><p>In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio</p></p>
 </div>
 
 <div class="d-byline">
   Amanda Whitmire <a href="https://amandawhitmire.github.io/" class="uri">https://amandawhitmire.github.io/</a> (Stanford Libraries &amp; Hopkins Marine Station)
   
-<br/>08-03-2021
+<br/>08-05-2021
 </div>
 
 <div class="d-article">
-<h1 id="a-notebook-wherein-i-learn-how-to-use-the-gnrd-api-to-find-taxonomic-names-in-text">A notebook wherein I learn how to use the GNRD API to find taxonomic names in text</h1>
 <h2 id="background">Background</h2>
-<p>Our use case is text-mining the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) to identify species names. This is a first-step toward then identifying species occurrences (species observation + date + location). We know that Global Names can find taxonomic names in ANSP because every page of items in the Biodiversity Heritage Library has taxonomic names listed that were identified using Global Names. See, for example, <a href="https://www.biodiversitylibrary.org/page/1694302#page/211/mode/1up">this page</a>, at the bottom left.</p>
-<p>What is GNRD? It is described via <a href="https://globalnames.org/apps/">Global Names Architecture</a> as: “Global Names Recognition and Discovery: a name discovery service that accepts Microsoft Office documents, PDFs, images, and other files, performs OCR as required, then uses TaxonFinder and NetiNeti name discovery algorithms. It has several configuration options including passing found names to Global Names Resolver.”</p>
-<p>This tool is important because rather than try to assemble a list of all possible taxonomic names so that we can search for them in a text (via named entity recognition or some other method), we want to be able to use community-accepted tools and taxonomies. So, the exercise here is to learn how to use the GNRD API, get it working on our corpus (ANSP), and get comfortable working with the inputs (text) and outputs (taxa).</p>
+<p>In my <a href="https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/">last post</a>, I explored using Global Names Recognition and Discovery (GNRD), a web-app and API that will find taxonomic names in text that you provide. I used an R-package, <code>Taxize</code>, to implement the API call, but I wasn’t able to switch on a verification step that I wanted to use (my own shortcoming, to be sure), and that’s where I stopped for the day. In doing some research into the other tools available through <a href="https://globalnames.org/apps/">Global Names Architecture</a>, I came upon a recommendation to use Global Names Finder (GNfinder) instead of GNRD. As this recommendation came from the developer of said packages, I decided to give GNfinder a try.</p>
 <h2 id="workspace-setup">Workspace setup</h2>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"taxize"</span><span class='op'>)</span> 
-</code></pre>
-</div>
-</div>
 <p>Load the Libraries we need.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://docs.ropensci.org/rbhl'>rbhl</a></span><span class='op'>)</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/rmarkdown'>rmarkdown</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://yihui.org/knitr/'>knitr</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/distill'>distill</a></span><span class='op'>)</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://docs.ropensci.org/taxize/'>taxize</a></span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>
-<h2 id="testing-the-scrapenames-function">Testing the <code>scrapenames</code> function</h2>
-<p>From <code>Taxize</code> <a href="https://rdrr.io/cran/taxize/man/scrapenames.html">documentation</a> we see how the <code>scrapenames</code> function works. The input can be a URL <em>OR</em> a file <em>OR</em> text, with various options for what you’re looking for (eg., unique names only (no repeats), or all names found). Here is how it looks:</p>
+<h2 id="install-and-configure-gnfinder">Install and configure GNfinder</h2>
+<p>To run GNfinder<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, you need to install it as a command line application. see the instructions <a href="https://github.com/gnames/gnfinder">here</a>. I am a Mac user, so I used the Homebrew option.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scrapenames</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">file =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">engine =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">unique =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbatim =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">detect_language =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">all_data_sources =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">data_source_ids =</span> <span class="cn">NULL</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">return_content =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  other options not described...</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg" /><!-- --></p>
 </div>
-<p>And here it is in use on a Wikipedia page:</p>
+<p>The setup instructions also encourage you to edit the <code>gnfinder.yml</code> file if you want to operate under non-default settings (saving you from having to specify every time). I took advantage of this to specify that I would like verified results from the taxonomic name search, which resolves found taxonomic names against all available data sources (e.g., Catalog of Life, Wikispecies, WoRMS, etc.) and returns the best match. YES PLEASE. Also, just for kicks, I turned on the option to return the five words before and after the taxonomic name.</p>
+<h2 id="running-gnfinder">Running GNfinder</h2>
+<p>GNfinder will run in three ways: as a command line app, as a library, or as a docker container. I have no idea what running it “as a library” means (<em>mea culpa!</em>), and I haven’t yet explored docker containers, so … to the command line! RStudio very conveniently offers bash chunks in R-markdown files, so we can do this without even leaving this script.</p>
+<p>For this exercise, I’ve moved some text files into my blog’s data directory.</p>
+<p>You can’t see the open/close parts of the bash chunk, but if you could they would look like:</p>
+<p>```{bash, echo-TRUE}<br />
+the code from the chunk below</p>
+<p>```<br />
+</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>taxa</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/taxize/reference/scrapenames.html'>scrapenames</a></span><span class='op'>(</span>
-  url <span class='op'>=</span> <span class='st'>'https://en.wikipedia.org/wiki/Animalia'</span>, <span class='co'># a web page with taxa mentioned</span>
-  engine <span class='op'>=</span> <span class='fl'>0</span>, <span class='co'># uses both name finding engines (IDK what the differences are, tbh)</span>
-  unique <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='co'># just show the unique names as a start</span>
-  verbatim <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='co'># default</span>
-  detect_language <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='co'># default</span>
-  with_verification <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='co'># can't seem to get this to work</span>
-  all_data_sources <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  return_content <span class='op'>=</span> <span class='cn'>FALSE</span>
-<span class='op'>)</span>
-</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">## A test of GNfinder running in a bash chunk in Rmd</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">gnfinder</span> /Users/thalassa/Rcode/blog/data/v37sxx01.txt -U -v -w 5 <span class="op">&gt;</span> /Users/thalassa/Rcode/blog/data/v37sxx01.csv</span></code></pre></div>
 </div>
-</div>
-<p>This returns a list of length 2, with a list of metadata (search query settings) and results (data). Let’s look! Here is what the metadata looks like:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>taxa</span><span class='op'>[[</span><span class='st'>"meta"</span><span class='op'>]</span><span class='op'>]</span>
-</code></pre>
-</div>
-<pre><code>$token_url
-[1] &quot;http://gnrd.globalnames.org/name_finder.json?token=65gr6gcpd7&quot;
-
-$input_url
-[1] &quot;https://en.wikipedia.org/wiki/Animalia&quot;
-
-$file
-NULL
-
-$status
-[1] 200
-
-$engine
-[1] &quot;gnfinder&quot;
-
-$unique
-[1] TRUE
-
-$verbatim
-[1] FALSE
-
-$parameters
-$parameters$return_content
-[1] FALSE
-
-$parameters$with_verification
-[1] FALSE
-
-$parameters$preferred_data_sources
-list()
-
-$parameters$detect_language
-[1] FALSE
-
-$parameters$engine
-[1] 0
-
-$parameters$no_bayes
-[1] FALSE
-
-
-$language_used
-[1] &quot;eng&quot;
-
-$execution_time
-$execution_time$text_preparation_duration
-[1] 2.482378
-
-$execution_time$find_names_duration
-[1] 0.05572677
-
-$execution_time$total_duration
-[1] 2.541807
-
-
-$total
-[1] 272</code></pre>
-</div>
-<p>And here is a list of the taxonomic names that GNRD found in the Wikipedia page.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># max_len &lt;- max(lengths(taxa[["data"]]))</span>
-<span class='co'># df &lt;- do.call(cbind.data.frame, c(lapply(taxa[["data"]], function(x) </span>
-<span class='co'>#               c(x, rep('', max_len - length(x)))), stringsAsFactors = FALSE))</span>
-<span class='co'># knitr::kable(df)</span>
-
-<span class='va'>taxa</span><span class='op'>[[</span><span class='st'>"data"</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[[</span><span class='st'>"scientificname"</span><span class='op'>]</span><span class='op'>]</span>
-</code></pre>
-</div>
-<pre><code>  [1] &quot;Animalia&quot;                     &quot;Eukaryota&quot;                   
-  [3] &quot;Unikonta&quot;                     &quot;Opisthokonta&quot;                
-  [5] &quot;Holozoa&quot;                      &quot;Metazoa&quot;                     
-  [7] &quot;Bilateria&quot;                    &quot;Protozoa&quot;                    
-  [9] &quot;Ecdysozoa&quot;                    &quot;Spiralia&quot;                    
- [11] &quot;Latin animalis&quot;               &quot;Ctenophora&quot;                  
- [13] &quot;Ficedula superciliaris&quot;       &quot;Tiktaalik&quot;                   
- [15] &quot;Balaenoptera musculus&quot;        &quot;Loxodonta africana&quot;          
- [17] &quot;Argentinosaurus&quot;              &quot;Myxozoa&quot;                     
- [19] &quot;Myxobolus&quot;                    &quot;Bryozoa&quot;                     
- [21] &quot;Chordates&quot;                    &quot;Nematodes&quot;                   
- [23] &quot;Platyhelminthes&quot;              &quot;Dickinsonia costata&quot;         
- [25] &quot;Dickinsonia&quot;                  &quot;Anomalocaris canadensis&quot;     
- [27] &quot;Anomalocaris&quot;                 &quot;Gromia sphaerica&quot;            
- [29] &quot;Choanoflagellata&quot;             &quot;Choanozoa&quot;                   
- [31] &quot;Porifera&quot;                     &quot;Placozoa&quot;                    
- [33] &quot;Eumetazoa&quot;                    &quot;Xenacoelomorpha&quot;             
- [35] &quot;Nephrozoa&quot;                    &quot;Deuterostomia&quot;               
- [37] &quot;Chordata&quot;                     &quot;Ambulacraria&quot;                
- [39] &quot;Protostomia&quot;                  &quot;Scalidophora&quot;                
- [41] &quot;Panarthropoda&quot;                &quot;Nematoida&quot;                   
- [43] &quot;Gnathifera&quot;                   &quot;Rotifera&quot;                    
- [45] &quot;Chaetognatha&quot;                 &quot;Lophotrochozoa&quot;              
- [47] &quot;Mollusca&quot;                     &quot;Annelida&quot;                    
- [49] &quot;Echinodermata&quot;                &quot;Hemichordata&quot;                
- [51] &quot;Arthropoda&quot;                   &quot;Onychophora&quot;                 
- [53] &quot;Tardigrada&quot;                   &quot;Nematoda&quot;                    
- [55] &quot;Nematomorpha&quot;                 &quot;Kinorhyncha&quot;                 
- [57] &quot;Priapulida&quot;                   &quot;Loricifera&quot;                  
- [59] &quot;Vermes&quot;                       &quot;Insecta&quot;                     
- [61] &quot;Amphibia&quot;                     &quot;Mammalia&quot;                    
- [63] &quot;Protista&quot;                     &quot;Drosophila melanogaster&quot;     
- [65] &quot;Cecidomyiidae&quot;                &quot;Angela&quot;                      
- [67] &quot;Mossman&quot;                      &quot;Marisa&quot;                      
- [69] &quot;Rita&quot;                         &quot;Alison&quot;                      
- [71] &quot;Myxosporea&quot;                   &quot;Bivalvulida&quot;                 
- [73] &quot;Melissa&quot;                      &quot;Sina&quot;                        
- [75] &quot;Georgina&quot;                     &quot;Crustacea&quot;                   
- [77] &quot;Malacostraca&quot;                 &quot;Trichomycteridae&quot;            
- [79] &quot;Vandelliinae&quot;                 &quot;Stegophilinae&quot;               
- [81] &quot;Tricladida&quot;                   &quot;Terricola&quot;                   
- [83] &quot;Ediacara&quot;                     &quot;Verena&quot;                      
- [85] &quot;Tamara&quot;                       &quot;Luca&quot;                        
- [87] &quot;Bilaterian-specific genes&quot;    &quot;Agatha&quot;                      
- [89] &quot;Safra&quot;                        &quot;Xenoturbella&quot;                
- [91] &quot;Xenoturbella bocki&quot;           &quot;Sabrina&quot;                     
- [93] &quot;Gnathostomulida&quot;              &quot;Cycliophora&quot;                 
- [95] &quot;Dendrobatidae&quot;                &quot;Archaea&quot;                     
- [97] &quot;Hacrobia&quot;                     &quot;Alveolata&quot;                   
- [99] &quot;Rhizaria&quot;                     &quot;Excavata&quot;                    
-[101] &quot;Amoebozoa&quot;                    &quot;Micrognathozoa&quot;              
-[103] &quot;Limnognathia&quot;                 &quot;Syndermata&quot;                  
-[105] &quot;Acanthocephala&quot;               &quot;Mesozoa&quot;                     
-[107] &quot;Orthonectida&quot;                 &quot;Dicyemida&quot;                   
-[109] &quot;Rhombozoa&quot;                    &quot;Monoblastozoa&quot;               
-[111] &quot;Lophophorata&quot;                 &quot;Entoprocta&quot;                  
-[113] &quot;Kamptozoa&quot;                    &quot;Ectoprocta&quot;                  
-[115] &quot;Brachiozoa&quot;                   &quot;Brachiopoda&quot;                 
-[117] &quot;Phoronida&quot;                    &quot;Chromadorea&quot;                 
-[119] &quot;Enoplea&quot;                      &quot;Secernentea&quot;                 
-[121] &quot;Turbellaria&quot;                  &quot;Trematoda&quot;                   
-[123] &quot;Monogenea&quot;                    &quot;Cestoda&quot;                     
-[125] &quot;Phylactolaemata&quot;              &quot;Stenolaemata&quot;                
-[127] &quot;Gymnolaemata&quot;                 &quot;Clitellata&quot;                  
-[129] &quot;Sipuncula&quot;                    &quot;Archaeplastida&quot;              
-[131] &quot;Glaucophyta&quot;                  &quot;Rhodophyta&quot;                  
-[133] &quot;Picozoa&quot;                      &quot;Plantae&quot;                     
-[135] &quot;Chlorophyta&quot;                  &quot;Streptophyta&quot;                
-[137] &quot;Chlorokybophyceae&quot;            &quot;Mesostigmatophyceae&quot;         
-[139] &quot;Spirotaenia&quot;                  &quot;Cryptista&quot;                   
-[141] &quot;Endohelea&quot;                    &quot;Katablepharidophyta&quot;         
-[143] &quot;Cryptophyta&quot;                  &quot;Haptista&quot;                    
-[145] &quot;Centroheliozoa&quot;               &quot;Haptophyta&quot;                  
-[147] &quot;Halvaria&quot;                     &quot;Colponemidia&quot;                
-[149] &quot;Chromerida&quot;                   &quot;Colpodellida&quot;                
-[151] &quot;Sporozoa&quot;                     &quot;Perkinsozoa&quot;                 
-[153] &quot;Dinophyta&quot;                    &quot;Stramenopiles&quot;               
-[155] &quot;Developea&quot;                    &quot;Hyphochytrea&quot;                
-[157] &quot;Ochrophyta&quot;                   &quot;Opalinata&quot;                   
-[159] &quot;Sagenista&quot;                    &quot;Filosa&quot;                      
-[161] &quot;Retaria&quot;                      &quot;Endomyxa&quot;                    
-[163] &quot;Telonemia&quot;                    &quot;Discoba&quot;                     
-[165] &quot;Eolouka&quot;                      &quot;Jakobea&quot;                     
-[167] &quot;Tsukubea&quot;                     &quot;Discicristata&quot;               
-[169] &quot;Euglenozoa&quot;                   &quot;Percolozoa&quot;                  
-[171] &quot;Loukozoa&quot;                     &quot;Malawimonadea&quot;               
-[173] &quot;Metamonada&quot;                   &quot;Anaeromonada&quot;                
-[175] &quot;Trichozoa&quot;                    &quot;Conosa&quot;                      
-[177] &quot;Archamoebae&quot;                  &quot;Lobosa&quot;                      
-[179] &quot;Cutosea&quot;                      &quot;Discosea&quot;                    
-[181] &quot;Tubulinea&quot;                    &quot;Apusomonadida&quot;               
-[183] &quot;Breviatea&quot;                    &quot;Holomycota&quot;                  
-[185] &quot;Cristidiscoidea&quot;              &quot;Ichthyosporea&quot;               
-[187] &quot;Syssomonas&quot;                   &quot;Corallochytrea&quot;              
-[189] &quot;Filasterea&quot;                   &quot;Collodictyonidae&quot;            
-[191] &quot;Mantamonadidae&quot;               &quot;Rigifilida&quot;                  
-[193] &quot;Hemimastigophora&quot;             &quot;Spironemidae&quot;                
-[195] &quot;Incertae sedis&quot;               &quot;Eukaryota flora&quot;             
-[197] &quot;Prokaryotes archaea bacteria&quot; &quot;Acidobacteria&quot;               
-[199] &quot;Actinobacteria&quot;               &quot;Aquificae&quot;                   
-[201] &quot;Bacteroidetes&quot;                &quot;Chlamydiae&quot;                  
-[203] &quot;Chlorobi&quot;                     &quot;Chloroflexi&quot;                 
-[205] &quot;Chrysiogenetes&quot;               &quot;Cyanobacteria&quot;               
-[207] &quot;Deferribacteres&quot;              &quot;Dictyoglomi&quot;                 
-[209] &quot;Fibrobacteres&quot;                &quot;Firmicutes&quot;                  
-[211] &quot;Fusobacteria&quot;                 &quot;Gemmatimonadetes&quot;            
-[213] &quot;Nitrospirae&quot;                  &quot;Planctomycetes&quot;              
-[215] &quot;Proteobacteria&quot;               &quot;Spirochaetes&quot;                
-[217] &quot;Thermodesulfobacteria&quot;        &quot;Thermomicrobia&quot;              
-[219] &quot;Thermotogae&quot;                  &quot;Verrucomicrobia&quot;             
-[221] &quot;Crenarchaeota&quot;                &quot;Euryarchaeota&quot;               
-[223] &quot;Korarchaeota&quot;                 &quot;Nanoarchaeota&quot;               
-[225] &quot;Chromista&quot;                    &quot;Heterokontophyta&quot;            
-[227] &quot;Ciliophora&quot;                   &quot;Apicomplexa&quot;                 
-[229] &quot;Dinoflagellata&quot;               &quot;Foraminifera&quot;                
-[231] &quot;Cercozoa&quot;                     &quot;Chytridiomycota&quot;             
-[233] &quot;Blastocladiomycota&quot;           &quot;Neocallimastigomycota&quot;       
-[235] &quot;Glomeromycota&quot;                &quot;Zygomycota&quot;                  
-[237] &quot;Ascomycota&quot;                   &quot;Basidiomycota&quot;               
-[239] &quot;Charophyta&quot;                   &quot;Marchantiophyta&quot;             
-[241] &quot;Anthocerotophyta&quot;             &quot;Lycopodiophyta&quot;              
-[243] &quot;Pteridophyta&quot;                 &quot;Cycadophyta&quot;                 
-[245] &quot;Ginkgophyta&quot;                  &quot;Pinophyta&quot;                   
-[247] &quot;Gnetophyta&quot;                   &quot;Nanobacterium&quot;               
-[249] &quot;Riboviria&quot;                    &quot;Unassigned&quot;                  
-[251] &quot;Alphasatellitidae&quot;            &quot;Ampullaviridae&quot;              
-[253] &quot;Anelloviridae&quot;                &quot;Avsunviroidae&quot;               
-[255] &quot;Bicaudaviridae&quot;               &quot;Clavaviridae&quot;                
-[257] &quot;Fuselloviridae&quot;               &quot;Globuloviridae&quot;              
-[259] &quot;Guttaviridae&quot;                 &quot;Ovaliviridae&quot;                
-[261] &quot;Plasmaviridae&quot;                &quot;Polydnaviridae&quot;              
-[263] &quot;Portogloboviridae&quot;            &quot;Pospiviroidae&quot;               
-[265] &quot;Spiraviridae&quot;                 &quot;Tolecusatellitidae&quot;          
-[267] &quot;Hela&quot;                         &quot;Europaea&quot;                    
-[269] &quot;Basa&quot;                         &quot;Franca&quot;                      
-[271] &quot;Runa&quot;                         &quot;Sunda&quot;                       </code></pre>
-</div>
-<h2 id="how-can-we-use-this-api-for-bhl-text-content">How can we use this API for BHL text content?</h2>
-<p>I did a test of using <code>scrapenames</code> directly on a page at BHL (and this page has only text on it!), but it failed.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>taxa</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/taxize/reference/scrapenames.html'>scrapenames</a></span><span class='op'>(</span><span class='st'>'https://www.biodiversitylibrary.org/pagetext/1694302'</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>#FAIL!</p>
-<p>The error says, “Error: Invalid SSL Certificate (Cloudflare) (HTTP 526)” - BOO!</p>
-<p>This wasn’t all that unexpected, and it means that we’ll have to combine the querying functionality of the <code>rbhl</code> package with the scraping of the <code>scrapenames</code> function in <code>taxize</code>. Recall in my post <a href="https://amandawhitmire.github.io/blog/posts/2021-06-23-using-the-bhl-api/">“Using the BHL API”</a> that we can pull text directly from BHL using the functions in the <code>rbhl</code> package. Let’s try to pull the OCR text from the same page we tried to query above.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Get a list of items from the result of the title search, and put them in a List called `anspitems`</span>
-
-<span class='va'>anspitems</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/rbhl/reference/bhl_gettitlemetadata.html'>bhl_gettitlemetadata</a></span><span class='op'>(</span><span class='fl'>6885</span>, items <span class='op'>=</span> <span class='cn'>TRUE</span>, as<span class='op'>=</span><span class='st'>'list'</span><span class='op'>)</span><span class='op'>$</span><span class='va'>Result</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>Items</span>
-</code></pre>
-</div>
-</div>
-<p>Item-level data is in nested lists. That is, <code>anspitems</code> is a list where each item within <code>anspitems</code> is itself a list with metadata regarding each volume of the Proceedings. Let’s pull that metadata out into a tibble.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>len</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>anspitems</span><span class='op'>)</span> <span class='co'># how many items for the loop</span>
-<span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>anspitems</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span>,<span class='op'>)</span> <span class='co'># create a tibble for the metadata to go into</span>
-<span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>2</span><span class='op'>:</span><span class='va'>len</span><span class='op'>)</span><span class='op'>{</span>
-  <span class='va'>newrow</span> <span class='op'>&lt;-</span> <span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>anspitems</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span> <span class='co'># create the new row of data</span>
-  <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat</span> <span class='op'>%&gt;%</span> <span class='fu'>bind_rows</span><span class='op'>(</span><span class='va'>newrow</span><span class='op'>)</span>
-<span class='op'>}</span>
-
-<span class='fu'><a href='https://rdrr.io/r/base/rm.html'>rm</a></span><span class='op'>(</span><span class='va'>newrow</span>, <span class='va'>i</span><span class='op'>)</span> <span class='co'># clean up your work space</span>
-<span class='va'>unique_vols</span> <span class='op'>=</span> <span class='va'>dat</span><span class='op'>[</span><span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/duplicated.html'>duplicated</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>Volume</span><span class='op'>)</span>,<span class='op'>]</span> <span class='co'>#remove duplicate items in ANSP metadata</span>
-
-<span class='co'># Need info from page 189 volume 7. let's find it! </span>
-<span class='va'>volmeta</span> <span class='op'>&lt;-</span> <span class='fu'>as_tibble</span><span class='op'>(</span><span class='fu'><a href='https://docs.ropensci.org/rbhl/reference/bhl_getitemmetadata.html'>bhl_getitemmetadata</a></span><span class='op'>(</span><span class='va'>unique_vols</span><span class='op'>$</span><span class='va'>ItemID</span><span class='op'>[</span><span class='fl'>7</span><span class='op'>]</span>, <span class='cn'>TRUE</span>, ocr <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='co'># Volume 7</span>
-<span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>volmeta</span><span class='op'>)</span> <span class='co'># OCR info is in a table called "Pages"</span>
-</code></pre>
-</div>
-<pre><code> [1] &quot;ItemID&quot;             &quot;TitleID&quot;            &quot;ThumbnailPageID&quot;   
- [4] &quot;Source&quot;             &quot;SourceIdentifier&quot;   &quot;IsVirtual&quot;         
- [7] &quot;Volume&quot;             &quot;Year&quot;               &quot;EndYear&quot;           
-[10] &quot;HoldingInstitution&quot; &quot;RightsHolder&quot;       &quot;Sponsor&quot;           
-[13] &quot;Language&quot;           &quot;CopyrightStatus&quot;    &quot;ItemUrl&quot;           
-[16] &quot;TitleUrl&quot;           &quot;ItemThumbUrl&quot;       &quot;ItemTextUrl&quot;       
-[19] &quot;ItemPDFUrl&quot;         &quot;ItemImagesUrl&quot;      &quot;CreationDate&quot;      
-[22] &quot;Pages&quot;             </code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>ocr</span> <span class='op'>&lt;-</span> <span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>volmeta</span><span class='op'>[</span><span class='st'>"Pages"</span><span class='op'>]</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[[</span><span class='st'>"OcrText"</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span>
-<span class='va'>ocr</span><span class='op'>[</span><span class='fl'>211</span>,<span class='op'>]</span> <span class='co'># just look at the 189th page of text</span>
-</code></pre>
-</div>
-<pre><code># A tibble: 1 x 1
-  value                                                               
-  &lt;chr&gt;                                                               
-1 &quot;1854.] 189 \n\n\n\nCATALOGUE OF AMERICAN TESTUDINATA. \n\n\n\nChel…</code></pre>
-</div>
-<p>Feed the text from the page we are interested in (211 = page 189 of Vol. 7) into <code>scrapenames</code>, put the data into a tibble, show the tibble.</p>
+<p>Import the output from GNFinder as a tibble &amp; look at it:</p>
 <div class="layout-chunk" data-layout="l-body-outset">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>snames</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/taxize/reference/scrapenames.html'>scrapenames</a></span><span class='op'>(</span>text<span class='op'>=</span><span class='va'>ocr</span><span class='op'>[</span><span class='fl'>211</span>,<span class='op'>]</span><span class='op'>)</span>
-<span class='va'>df.snames</span> <span class='op'>&lt;-</span> <span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>snames</span><span class='op'>[[</span><span class='st'>"data"</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span>
-<span class='fu'><a href='https://pkgs.rstudio.com/rmarkdown/reference/paged_table.html'>paged_table</a></span><span class='op'>(</span><span class='va'>df.snames</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'>as_tibble</span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/v37sxx01.csv"</span><span class='op'>)</span><span class='op'>)</span>
+<span class='fu'><a href='https://pkgs.rstudio.com/rmarkdown/reference/paged_table.html'>paged_table</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
 </code></pre>
 </div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["verbatim"],"name":[1],"type":["chr"],"align":["left"]},{"label":["scientificname"],"name":[2],"type":["chr"],"align":["left"]},{"label":["offsetstart"],"name":[3],"type":["int"],"align":["right"]},{"label":["offsetend"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"TESTUDINATA.","2":"Testudinata","3":"37","4":"49"},{"1":"Chelonura serpentina.","2":"Chelonura serpentina","3":"54","4":"75"},{"1":"Emy saurus","2":"Emy saurus","3":"76","4":"86"},{"1":"Trionyx ferox","2":"Trionyx ferox","3":"145","4":"158"},{"1":"T. \\n\\n georgicus","2":"T. georgicus","3":"212","4":"227"},{"1":"T. spiniferus","2":"T. spiniferus","3":"246","4":"259"},{"1":"Aspenodectes ferox","2":"Aspenodectes ferox","3":"312","4":"330"},{"1":"Gymnopus spiniferus","2":"Gymnopus spiniferus","3":"345","4":"364"},{"1":"T. muticus","2":"T. muticus","3":"414","4":"424"},{"1":"Kinosternum pennsylvanicum.","2":"Kinosternum pennsylvanicum","3":"452","4":"479"},{"1":"Terrapene","2":"Terrapene","3":"480","4":"489"},{"1":"Cistuda","2":"Cistuda","3":"552","4":"559"},{"1":"K. sonoriense","2":"K. sonoriense","3":"597","4":"610"},{"1":"Terrapene odorata","2":"Terrapene odorata","3":"634","4":"651"},{"1":"Cistudo \\n\\n odorata","2":"Cistudo odorata","3":"683","4":"701"},{"1":"Emys odorata","2":"Emys odorata","3":"713","4":"725"},{"1":"Staurotypus odoratus","2":"Staurotypus odoratus","3":"852","4":"872"},{"1":"Cistudo clausa.","2":"Cistudo clausa","3":"920","4":"935"},{"1":"Cistudo","2":"Cistudo","3":"936","4":"943"},{"1":"Emys clausa","2":"Emys clausa","3":"1011","4":"1022"},{"1":"Emys virgulata","2":"Emys virgulata","3":"1045","4":"1059"},{"1":"Terrapene","2":"Terrapene","3":"1115","4":"1124"},{"1":"Carolina maculata","2":"Carolina maculata","3":"1125","4":"1142"},{"1":"Onychotria mexicana","2":"Onychotria mexicana","3":"1201","4":"1220"},{"1":"Ltjtremys meleagris","2":"Ltjtremys meleagris","3":"1267","4":"1286"},{"1":"Cistudo","2":"Cistudo","3":"1378","4":"1385"},{"1":"Emys","2":"Emys","3":"1423","4":"1427"},{"1":"E. biguttata","2":"E. biguttata","3":"1493","4":"1505"},{"1":"E. serrata","2":"E. serrata","3":"1529","4":"1539"},{"1":"E. scripta","2":"E. scripta","3":"1562","4":"1572"},{"1":"E. rugosa","2":"E. rugosa","3":"1702","4":"1711"},{"1":"E. irrigata","2":"E. irrigata","3":"1793","4":"1804"},{"1":"E. serrata","2":"E. serrata","3":"1824","4":"1834"},{"1":"E. reticulata","2":"E. reticulata","3":"1940","4":"1953"},{"1":"E. mobiliensis","2":"E. mobiliensis","3":"2026","4":"2040"},{"1":"E. concinna","2":"E. concinna","3":"2068","4":"2079"},{"1":"E. oregonensis","2":"E. oregonensis","3":"2103","4":"2117"},{"1":"E. hieroglyphica","2":"E. hieroglyphica","3":"2143","4":"2159"},{"1":"E. scabra","2":"E. scabra","3":"2376","4":"2385"},{"1":"E. speciosa","2":"E. speciosa","3":"2408","4":"2419"},{"1":"E. geographica","2":"E. geographica","3":"2443","4":"2457"},{"1":"E. pseudogeographica","2":"E. pseudogeographica","3":"2467","4":"2487"},{"1":"E. terrapene","2":"E. terrapene","3":"2533","4":"2545"},{"1":"E. centrata","2":"E. centrata","3":"2553","4":"2564"},{"1":"E. picta.","2":"E. picta","3":"2592","4":"2601"},{"1":"T. cinerea","2":"T. cinerea","3":"2602","4":"2612"},{"1":"E. guttata.","2":"E. guttata","3":"2663","4":"2674"},{"1":"E. punctata","2":"E. punctata","3":"2675","4":"2686"},{"1":"Amphibia","2":"Amphibia","3":"2764","4":"2772"},{"1":"Emys rivulata,","2":"Emys rivulata","3":"2984","4":"2998"},{"1":"E. scripta,","2":"E. scripta","3":"2999","4":"3010"},{"1":"E. macrocephala,","2":"E. macrocephala","3":"3026","4":"3042"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Index"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Verbatim"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["Start"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["End"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["OddsLog10"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["Cardinality"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["AnnotNomenType"],"name":[8],"type":["chr"],"align":["left"]},{"label":["WordsBefore"],"name":[9],"type":["chr"],"align":["left"]},{"label":["WordsAfter"],"name":[10],"type":["chr"],"align":["left"]},{"label":["VerifMatchType"],"name":[11],"type":["chr"],"align":["left"]},{"label":["VerifEditDistance"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["VerifMatchedName"],"name":[13],"type":["chr"],"align":["left"]},{"label":["VerifMatchedCanonical"],"name":[14],"type":["chr"],"align":["left"]},{"label":["VerifTaxonId"],"name":[15],"type":["chr"],"align":["left"]},{"label":["VerifDataSourceId"],"name":[16],"type":["dbl"],"align":["right"]},{"label":["VerifDataSourceTitle"],"name":[17],"type":["chr"],"align":["left"]},{"label":["VerifError"],"name":[18],"type":["lgl"],"align":["right"]}],"data":[{"1":"0","2":"Semotilus","3":"Semotilus","4":"230","5":"239","6":"5.92","7":"1","8":"NO_ANNOT","9":"the, Species, of, the, Genus","10":"�, Blatchley, Willis, S., On","11":"Exact","12":"0","13":"Semotilus","14":"Semotilus","15":"7FHQ","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"1","2":"Pimephales","3":"Pimephales","4":"356","5":"366","6":"3.50","7":"1","8":"NO_ANNOT","9":"the, Species, of, the, Genus","10":"�, On, the, Genus, Aphredoderus","11":"Exact","12":"0","13":"Pimephales","14":"Pimephales","15":"6QKS","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"2","2":"Aphredoderus","3":"Aphredoderus","4":"385","5":"397","6":"5.96","7":"1","8":"NO_ANNOT","9":"Pimephales, �, On, the, Genus","10":"�, Eastlake, F., Warrington, Entomologia","11":"Exact","12":"0","13":"Aphredoderus","14":"Aphredoderus","15":"YH8","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"3","2":"Lepidoptera","3":"Lepidoptera","4":"473","5":"484","6":"3.82","7":"1","8":"NO_ANNOT","9":"Hongkongensis, �, Report, on, the","10":"of, Hongkong, �, Eigenman, Carl","11":"Exact","12":"0","13":"Lepidoptera","14":"Lepidoptera","15":"LP","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"4","2":"Cyano- ␤␤corax","3":"Cyanocorax","4":"838","5":"852","6":"5.30","7":"1","8":"NO_ANNOT","9":"New, Species, of, the, Genus","10":"�, A, Review, of, the","11":"Exact","12":"0","13":"Cyanocorax F. Boie, 1826","14":"Cyanocorax","15":"3XNP","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"5","2":"Phrynosoma","3":"Phrynosoma","4":"880","5":"890","6":"5.28","7":"1","8":"NO_ANNOT","9":"A, Review, of, the, Genus","10":"�, Hall, Edward, A., and","11":"Exact","12":"0","13":"Phrynosoma Cope, 1878","14":"Phrynosoma","15":"87JPS","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"6","2":"Partula,","3":"Partula","4":"1056","5":"1064","6":"4.59","7":"1","8":"NO_ANNOT","9":"Descriptions, of, new, Species, of","10":"and, a, Synonymic, Catalogue, of","11":"Exact","12":"0","13":"Partula A. Férussac, 1821","14":"Partula","15":"7PBZ7","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"7","2":"Esox","3":"Esox","4":"1394","5":"1398","6":"2.08","7":"1","8":"NO_ANNOT","9":"the, Species, of, the, Genus","10":"�, A, Review, of, the","11":"Exact","12":"0","13":"Esox","14":"Esox","15":"62RD5","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"8","2":"Notes","3":"Notes","4":"1588","5":"1593","6":"2.52","7":"1","8":"NO_ANNOT","9":"Animal, Evolution, Rand, Theo, I","10":"on, the, Lafayette, Serpentine, Belt","11":"Exact","12":"0","13":"Notes","14":"Notes","15":"3950760","16":"168","17":"ION","18":"NA"},{"1":"9","2":"Americanus,","3":"Americanus","4":"1701","5":"1712","6":"5.93","7":"1","8":"NO_ANNOT","9":"Page, Scott, W., l, Cervalcefi","10":"i, fossil, Moose, or, Elk","11":"Exact","12":"0","13":"Americanus","14":"Americanus","15":"30472096-2","16":"167","17":"IPNI","18":"NA"},{"1":"10","2":"Notes","3":"Notes","4":"1952","5":"1957","6":"2.52","7":"1","8":"NO_ANNOT","9":"the, older, American, Rocks, �","10":"on, Mesozoic, Cockroaches, �, Btejneger","11":"Exact","12":"0","13":"Notes","14":"Notes","15":"3950760","16":"168","17":"ION","18":"NA"},{"1":"11","2":"Lanius robustus","3":"Lanius robustus","4":"2020","5":"2035","6":"11.83","7":"2","8":"NO_ANNOT","9":"�, Btejneger, Leonhard, Uemarks, on","10":"Baird, based, on, an, examination","11":"Exact","12":"0","13":"Lanius robustus","14":"Lanius robustus","15":"333329","16":"183","17":"Sherborn Index Animalium","18":"NA"},{"1":"12","2":"Colias","3":"Colias","4":"2135","5":"2141","6":"4.79","7":"1","8":"NO_ANNOT","9":"Eermann, Description, of, a, new","10":"from, the, Rocky, Mountains, and","11":"Exact","12":"0","13":"Colias","14":"Colias","15":"3S9M","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"13","2":"Samia","3":"Samia","4":"2208","5":"2213","6":"3.93","7":"1","8":"NO_ANNOT","9":"an, Example, of, I�olymelianism, in","10":"Cecropia, �, Description, of, new","11":"Exact","12":"0","13":"Samia","14":"Samia","15":"7C3J","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"14","2":"Cecropia","3":"Cecropia","4":"2216","5":"2224","6":"5.13","7":"1","8":"NO_ANNOT","9":"Example, of, I�olymelianism, in, Samia","10":"�, Description, of, new, Species","11":"Exact","12":"0","13":"Cecropia Loefl.","14":"Cecropia","15":"3JWC","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"15","2":"Lepidoptera","3":"Lepidoptera","4":"2260","5":"2271","6":"3.82","7":"1","8":"NO_ANNOT","9":"Description, of, new, Species, of","10":"�, -ninth, Charles, and, Prank","11":"Exact","12":"0","13":"Lepidoptera","14":"Lepidoptera","15":"LP","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"16","2":"Palaeo- ␤crinoidea.","3":"Palaeocrinoidea","4":"2331","5":"2350","6":"4.68","7":"1","8":"NO_ANNOT","9":"Prank, Springer, Revision, of, the","10":"Pari, Iii., Discussion, of, the","11":"Exact","12":"0","13":"Palaeocrinoidea Wachsmuth","14":"Palaeocrinoidea","15":"4320024","16":"168","17":"ION","18":"NA"},{"1":"17","2":"Semotilus,\"","3":"Semotilus","4":"2767","5":"2778","6":"5.92","7":"1","8":"NO_ANNOT","9":"the, Species, of, the, Genus","10":"by, Ernest, P., Bicknell, and","11":"Exact","12":"0","13":"Semotilus","14":"Semotilus","15":"7FHQ","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"18","2":"Junco ␤hyemalis,","3":"Junco hyemalis","4":"3224","5":"3240","6":"8.49","7":"2","8":"NO_ANNOT","9":"carcass, of, a, Snow, Bird","10":"in, which, he, reported, a","11":"Exact","12":"0","13":"Junco hyemalis (Linnaeus, 1758)","14":"Junco hyemalis","15":"6NFHF","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"19","2":"Filaria obtusa","3":"Filaria obtusa","4":"3832","5":"3846","6":"8.85","7":"2","8":"NO_ANNOT","9":"worms, appear, to, be, the","10":"Rudolphi, wdiich, infests, the, Hirundo","11":"Exact","12":"0","13":"Filaria obtusa","14":"Filaria obtusa","15":"280487","16":"183","17":"Sherborn Index Animalium","18":"NA"},{"1":"20","2":"Hirundo rvstica,","3":"Hirundo rvstica","4":"3877","5":"3893","6":"5.31","7":"2","8":"NO_ANNOT","9":"obtusa, Rudolphi, wdiich, infests, the","10":"and, other, species, of, European","11":"Fuzzy","12":"1","13":"Hirundo rustica Linnaeus, 1758","14":"Hirundo rustica","15":"3M4S7","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"21","2":"F. obtusa,","3":"F. obtusa","4":"4071","5":"4081","6":"5.46","7":"2","8":"NO_ANNOT","9":"agree, with, the, descriptions, of","10":"as, given, by, Diesing, and","11":"NoMatch","12":"NA","13":"NA","14":"NA","15":"NA","16":"NA","17":"NA","18":"NA"},{"1":"22","2":"Helminthes,","3":"Helminthes","4":"4170","5":"4181","6":"3.05","7":"1","8":"NO_ANNOT","9":"given, by, the, latter, Hist","10":"pi, iii, except, that, it","11":"Exact","12":"0","13":"Helminthes Guerro & Rojas 1969","14":"Helminthes","15":"4364259","16":"168","17":"ION","18":"NA"},{"1":"23","2":"Filaria ␤obtusa,","3":"Filaria obtusa","4":"4725","5":"4741","6":"8.85","7":"2","8":"NO_ANNOT","9":"specimens, apparently, also, pertaining, to","10":"Dr., Warren, obtained, from, the","11":"Exact","12":"0","13":"Filaria obtusa","14":"Filaria obtusa","15":"280487","16":"183","17":"Sherborn Index Animalium","18":"NA"},{"1":"24","2":"Sturnella magna.","3":"Sturnella magna","4":"4836","5":"4852","6":"10.75","7":"2","8":"NO_ANNOT","9":"wall, of, a, Meadow, Lark","10":"Two, are, females, �, and","11":"Exact","12":"0","13":"Sturnella magna (Linnaeus, 1758)","14":"Sturnella magna","15":"537YX","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"25","2":"Filaria physalura","3":"Filaria physalura","4":"5112","5":"5129","6":"9.43","7":"2","8":"NO_ANNOT","9":"species, appears, to, be, the","10":"of, Bremser, described, from, specimens","11":"Exact","12":"0","13":"Filaria physalura","14":"Filaria physalura","15":"3721190","16":"168","17":"ION","18":"NA"},{"1":"26","2":"Gallinaqo","3":"Gallinaqo","4":"5995","5":"6004","6":"3.58","7":"1","8":"NO_ANNOT","9":"cavity, of, a, Gray, Snipe","10":"Wilsoni, Dr., Warren, obtained, five","11":"NoMatch","12":"NA","13":"NA","14":"NA","15":"NA","16":"NA","17":"NA","18":"NA"},{"1":"27","2":"Antrostomus vociferus,","3":"Antrostomus vociferus","4":"6142","5":"6164","6":"12.58","7":"2","8":"NO_ANNOT","9":"Mono�tomum, mutabile, Prom, a, Whippoorwill","10":"Dr., Warren, obtained, four, worms","11":"Exact","12":"0","13":"Antrostomus vociferus (A. Wilson, 1812)","14":"Antrostomus vociferus","15":"F4NC","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"28","2":"Ascaris subulata.","3":"Ascaris subulata","4":"6266","5":"6283","6":"12.38","7":"2","8":"NO_ANNOT","9":"mm, which, appear, to, be","10":"From, the, Pileated, Woodpecker, Hylotomus","11":"Exact","12":"0","13":"Ascaris subulata","14":"Ascaris subulata","15":"54540","16":"183","17":"Sherborn Index Animalium","18":"NA"},{"1":"29","2":"Hylotomus pileatus,","3":"Hylotomus pileatus","4":"6319","5":"6338","6":"12.88","7":"2","8":"NO_ANNOT","9":"subulata, From, the, Pileated, Woodpecker","10":"Dr., Warren, obtained, ten, worms","11":"Exact","12":"0","13":"Hylotomus pileatus","14":"Hylotomus pileatus","15":"gn_221519","16":"186","17":"MCZbase","18":"NA"},{"1":"30","2":"Spiroptera ␤quadriloba","3":"Spiroptera quadriloba","4":"6404","5":"6426","6":"11.38","7":"2","8":"NO_ANNOT","9":"appear, to, pertain, to, the","10":"Rudolphi, the, female, of, which","11":"Exact","12":"0","13":"Spiroptera quadriloba","14":"Spiroptera quadriloba","15":"325569","16":"183","17":"Sherborn Index Animalium","18":"NA"},{"1":"31","2":"Picus viridis.","3":"Picus viridis","4":"6529","5":"6543","6":"11.69","7":"2","8":"NO_ANNOT","9":"found, in, the, Green, Woodpecker","10":"The, specimens, are, reported, as","11":"Exact","12":"0","13":"Picus viridis Linnaeus, 1758","14":"Picus viridis","15":"4HR3F","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"32","2":"Umbra limi","3":"Umbra limi","4":"7736","5":"7746","6":"6.40","7":"2","8":"NO_ANNOT","9":"is, the, coloration, The, true","10":"is, dull, olive-green, in, color","11":"Exact","12":"0","13":"Umbra limi (Kirtland, 1840)","14":"Umbra limi","15":"7DGKQ","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"33","2":"Umbra limi pygmaea),","3":"Umbra limi pygmaea","4":"8021","5":"8041","6":"10.50","7":"3","8":"NO_ANNOT","9":"as, a, geographical, subspecies, �","10":"is, much, darker, in, color","11":"Exact","12":"0","13":"Umbra limi pygmaea (DeKay, 1842)","14":"Umbra limi pygmaea","15":"162152","16":"3","17":"ITIS","18":"NA"},{"1":"34","2":"Umbra limi.","3":"Umbra limi","4":"8401","5":"8412","6":"6.40","7":"2","8":"NO_ANNOT","9":"the, two, forms, �, �","10":"Hydrargyra, limi, Kirtland, Bost, Journ","11":"Exact","12":"0","13":"Umbra limi (Kirtland, 1840)","14":"Umbra limi","15":"7DGKQ","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"35","2":"Hydrargyra limi","3":"Hydrargyra limi","4":"8415","5":"8430","6":"8.71","7":"2","8":"NO_ANNOT","9":"forms, �, �, Umbra, limi","10":"Kirtland, Bost, Journ, Nat., Hist","11":"Fuzzy","12":"1","13":"Hydrargira limi Kirtland, 1840","14":"Hydrargira limi","15":"3N4JB","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"36","2":"Melanura limi","3":"Melanura limi","4":"8501","5":"8514","6":"8.92","7":"2","8":"NO_ANNOT","9":"iii, �, �, Northern, Ohio","10":"Agassiz, Amer, Journ, Sci., Arts","11":"Exact","12":"0","13":"Melanura limi","14":"Melanura limi","15":"gn_33482","16":"186","17":"MCZbase","18":"NA"},{"1":"37","2":"Melanura limi).","3":"Melanura limi","4":"9289","5":"9304","6":"8.92","7":"2","8":"NO_ANNOT","9":"ii, �, H, Food, of","10":"Umbra, limi, Giinther, Cat., Fish","11":"Exact","12":"0","13":"Melanura limi","14":"Melanura limi","15":"gn_33482","16":"186","17":"MCZbase","18":"NA"},{"1":"38","2":"Umbra limi","3":"Umbra limi","4":"9307","5":"9317","6":"6.40","7":"2","8":"NO_ANNOT","9":"H, Food, of, Melanura, limi","10":"Giinther, Cat., Fish, Brit, Mus","11":"Exact","12":"0","13":"Umbra limi (Kirtland, 1840)","14":"Umbra limi","15":"7DGKQ","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"39","2":"Laporte","3":"Laporte","4":"9423","5":"9430","6":"3.87","7":"1","8":"NO_ANNOT","9":"Sci., Philad, �, �, Lakes","10":"Co, Ind, St., Joseph�s, R","11":"NoMatch","12":"NA","13":"NA","14":"NA","15":"NA","16":"NA","17":"NA","18":"NA"},{"1":"40","2":"Hydrargyra fusca","3":"Hydrargyra fusca","4":"9604","5":"9620","6":"10.17","7":"2","8":"NO_ANNOT","9":"Fish, N., A, �, �","10":"Thompson, Nat., Hist, Vt, �","11":"Exact","12":"0","13":"Hydrargyra fusca Thompson 1842","14":"Hydrargyra fusca","15":"141070413","16":"151","17":"Catalog of Fishes","18":"NA"},{"1":"41","2":"Hydrargyra atricauda","3":"Hydrargyra atricauda","4":"9680","5":"9700","6":"11.06","7":"2","8":"NO_ANNOT","9":"Vt, �, �, Lake, Champlain","10":"De, Kay, New, York, Fauna","11":"Exact","12":"0","13":"Hydrargyra atricauda DeKay 1842","14":"Hydrargyra atricauda","15":"141070412","16":"151","17":"Catalog of Fishes","18":"NA"},{"1":"42","2":"Umbra limi","3":"Umbra limi","4":"9764","5":"9774","6":"6.40","7":"2","8":"NO_ANNOT","9":"Fishes, �, �, Lake, Champlain","10":"pygmaea-leuciscus, pygmceas, De, Kay, N.","11":"Exact","12":"0","13":"Umbra limi (Kirtland, 1840)","14":"Umbra limi","15":"7DGKQ","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"43","2":"Melanura pygmcea","3":"Melanura pygmcea","4":"9878","5":"9894","6":"11.63","7":"2","8":"NO_ANNOT","9":"Tappan, Rockland, Co, N., Y","10":"Baird, Ninth, Smithson, Rept, �","11":"Fuzzy","12":"1","13":"Melanura pygmaea","14":"Melanura pygmaea","15":"gn_125902","16":"186","17":"MCZbase","18":"NA"},{"1":"44","2":"Umbra pygmcea","3":"Umbra pygmcea","4":"10151","5":"10164","6":"5.01","7":"2","8":"NO_ANNOT","9":"�, James, R, Neuse, R","10":"Bean, Mss, Jordan, Bull, U.","11":"Fuzzy","12":"1","13":"Umbra pygmaea (DeKay, 1842)","14":"Umbra pygmaea","15":"7DGKY","16":"1","17":"Catalogue of Life","18":"NA"},{"1":"45","2":"Fundulus fuscus","3":"Fundulus fuscus","4":"10372","5":"10387","6":"12.27","7":"2","8":"NO_ANNOT","9":"�, �, Kingston, N., C","10":"Ayres, Bost, Journ, Nat., Hist","11":"Exact","12":"0","13":"Fundulus fuscus Ayres 1843","14":"Fundulus fuscus","15":"141063646","16":"151","17":"Catalog of Fishes","18":"NA"},{"1":"46","2":"Melanura annulata","3":"Melanura annulata","4":"10465","5":"10482","6":"13.05","7":"2","8":"NO_ANNOT","9":"�, Brook, Haven, Long, Island","10":"Agassiz, Amer, Journ, Sci., Arts","11":"Exact","12":"0","13":"Melanura annulata Agassiz, 1853","14":"Melanura annulata","15":"162151","16":"3","17":"ITIS","18":"NA"},{"1":"47","2":"Exoglossum annulatum","3":"Exoglossum annulatum","4":"10533","5":"10553","6":"12.93","7":"2","8":"NO_ANNOT","9":"Sci., Arts, �, �, not","10":"Rafinesque","11":"Exact","12":"0","13":"Exoglossum annulatum Rafinesque, 1818","14":"Exoglossum annulatum","15":"6HN7B","16":"1","17":"Catalogue of Life","18":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
-<h1 id="winner">WINNER!!</h1>
-<p>The “verbatim” column is the OCR text we fed into the scraper, and “scientificname” is the matched scientific name (GNRD is able to do “fuzzy” matching to account for misspellings and such).</p>
-<h2 id="next-steps">Next steps</h2>
-<p>We need to verify this list of taxa against … something. I couldn’t get the “with_verification” option to work in the API context (it works on the <a href="http://gnrd.globalnames.org/">web version</a>). The <code>Taxize</code> package has options for this, so I’ll get to that tomorrow.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h2 id="thoughts">Thoughts</h2>
+<p>So, this is *great*! We get better results than with [my implementation of] GNRD, and we get more features (words before and after, verification, etc.). Happy with this. I have limited experience working in the terminal, so it might be a leap for me to deal with file handling. It feels wonky to have to create a new text file in bash to then read back in via <code>read_csv</code>, but perhaps having CSV files to look at isn’t a terrible thing. I will need to spend some time learning how to automate file-naming in the terminal so I can run this in batches. What I would <em>really</em> prefer is to be able to run GNFinder against text in a tibble, or even a list. Maybe this is possible and I just haven’t figured it out yet. Let me know if you have ideas!</p>
+<p>/a</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Mozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gnames/Gnfinder: V0.14.2. Zenodo, 2021. <a href="https://doi.org/10.5281/zenodo.5111562" class="uri">https://doi.org/10.5281/zenodo.5111562</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
     <span class="disqus-comments">
       <i class="fas fa-comments"></i>
       &nbsp;
-      <span class="disqus-comment-count" data-disqus-identifier="posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/">Comment on this article</span>
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2021-08-05-exploring-gnfinder/">Comment on this article</span>
     </span>
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://twitter.com/share?text=Using%20the%20GNRD%20API%20to%20find%20taxonomic%20names&amp;url=https%3A%2F%2Famandawhitmire.github.io%2Fblog%2Fposts%2F2021-08-03-using-the-gnrd-api-to-find-taxonomic-names%2F">
+      <a href="https://twitter.com/share?text=Exploring%20Global%20Names%20Finder&amp;url=https%3A%2F%2Famandawhitmire.github.io%2Fblog%2Fposts%2F2021-08-05-exploring-gnfinder%2F">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Famandawhitmire.github.io%2Fblog%2Fposts%2F2021-08-03-using-the-gnrd-api-to-find-taxonomic-names%2F">
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Famandawhitmire.github.io%2Fblog%2Fposts%2F2021-08-05-exploring-gnfinder%2F">
         <i class="fab fa-facebook"></i>
       </a>
     </span>
@@ -2479,8 +2191,8 @@ $total
   <div id="disqus_thread" class="hidden"></div>
   <script type="text/javascript" cookie-consent="functionality">
 var disqus_config = function () {
-  this.page.url = 'https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/';
-  this.page.identifier = 'posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/';
+  this.page.url = 'https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/';
+  this.page.identifier = 'posts/2021-08-05-exploring-gnfinder/';
 };
 (function() {
   var d = document, s = d.createElement('script');
@@ -2505,12 +2217,12 @@ var disqus_config = function () {
   <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/amandawhitmire/blog/issues/new">create an issue</a> on the source repository.</p>
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Whitmire (2021, Aug. 3). Seaside Librarian: Using the GNRD API to find taxonomic names. Retrieved from https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/</pre>
+  <pre class="citation-appendix short">Whitmire (2021, Aug. 5). Seaside Librarian: Exploring Global Names Finder. Retrieved from https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/</pre>
   <p>BibTeX citation</p>
-  <pre class="citation-appendix long">@misc{whitmire2021using,
+  <pre class="citation-appendix long">@misc{whitmire2021exploring,
   author = {Whitmire, Amanda},
-  title = {Seaside Librarian: Using the GNRD API to find taxonomic names},
-  url = {https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/},
+  title = {Seaside Librarian: Exploring Global Names Finder},
+  url = {https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/},
   year = {2021}
 }</pre>
 </div>
