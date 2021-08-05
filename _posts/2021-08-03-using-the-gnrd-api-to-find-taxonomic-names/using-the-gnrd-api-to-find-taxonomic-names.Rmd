@@ -45,6 +45,10 @@ library(tidyverse)
 library(rmarkdown)
 library(knitr)
 library(distill)
+```
+
+
+```{r echo=TRUE}
 library(taxize)
 ```
 
@@ -154,3 +158,6 @@ The "verbatim" column is the OCR text we fed into the scraper, and "scientificna
 ## Next steps
 
 We need to verify this list of taxa against ... something. I couldn't get the "with_verification" option to work in the API context (it works on the [web version](http://gnrd.globalnames.org/)). The `Taxize` package has options for this, so I'll get to that tomorrow. 
+
+
+

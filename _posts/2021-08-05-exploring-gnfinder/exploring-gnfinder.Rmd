@@ -1,0 +1,56 @@
+---
+title: "Exploring Global Names Finder"
+description: |
+  In which we replace an API-based taxonomic tool with a command-line application we can run in RStudio
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: 08-05-2021
+collections:
+  posts:
+    disqus: exploring-gnfinder
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+    
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background
+
+In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-03-using-the-gnrd-api-to-find-taxonomic-names/), I explored using Global Names Recognition and Discovery (GNRD), a web-app and API that will find taxonomic names in text that you provide. I used an R-package, `Taxize`, to implement the API call, but I wasn't able to switch on a verification step that I wanted to ue (my own shortcoming, to be sure), and that's where I stopped for the day. In doing some research into the other tools available through [Global Names Architecture](https://globalnames.org/apps/), I came upon a recommendation to use Global Names Finder (GNfinder) instead. As this recommendation came from the developer of said packages, I decided to give GNfinder a try. 
+
+## Workspace setup
+
+To run GNfinder^[Mozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gnames/Gnfinder: V0.14.2. Zenodo, 2021. https://doi.org/10.5281/zenodo.5111562.
+], you need to install it as a command line application. see the instructions [here](https://github.com/gnames/gnfinder). I am a Mac user, so I used the Homebrew option.
+
+Load the Libraries we need.
+
+```{r echo=TRUE}
+library(rbhl)
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+library(distill)
+```
+
+
+```{bash eval=FALSE, include=FALSE}
+## A TEST
+# Run gnfinder on V.26 (1874) of the Proceedings of the Academy of Natural Sciences of Philadelphia
+gnfinder /Users/thalassa/Rcode/blog/84867.txt -U -v > /Users/thalassa/Rcode/blog/84867.csv
+```
+
+Import the output from GNFinder as a tibble & look at it
+
+```{r eval=FALSE, include=FALSE, paged.print=TRUE}
+dat <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/84867.csv"))
+paged_table(dat)
+```
