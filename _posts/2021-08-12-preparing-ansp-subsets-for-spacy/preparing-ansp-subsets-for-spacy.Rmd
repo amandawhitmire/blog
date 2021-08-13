@@ -1,0 +1,52 @@
+---
+title: "Preparing ANSP subsets for spaCy"
+description: |
+  Let's prepare a dozen ANSP "catalogues" for analysis in spaCy
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: 08-05-2021
+collections:
+  posts:
+    disqus: preparing-catalogues
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+    
+draft: false
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/xxx.jpg
+---
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background
+
+In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I instroduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that have been picked because they are likely to have a lot of taxonomic names in them. After I ID the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy (which we will run in a Jupyetr Notebook b/c I stil can't make it work in R), we'll run named entity recognition on the species names, and also look for locations and habitats. Will be cool to see what pops out!
+
+## Workspace setup
+
+Load the Libraries we need.
+
+```{r libraries, echo=TRUE}
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+library(distill)
+```
+
+## Install and configure GNfinder
+
+Recall that you need to have GNfinder installed on your machine to run it.
+
+To run GNfinder^[Mozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gnames/Gnfinder: V0.14.2. Zenodo, 2021. https://doi.org/10.5281/zenodo.5111562.
+], see the instructions [here](https://github.com/gnames/gnfinder). I am a Mac user, and I used the Homebrew option.
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg")
+```
+
