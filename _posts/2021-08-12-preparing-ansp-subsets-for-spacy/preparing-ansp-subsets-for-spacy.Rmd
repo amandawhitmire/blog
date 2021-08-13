@@ -37,6 +37,8 @@ library(tidyverse)
 library(rmarkdown)
 library(knitr)
 library(distill)
+library(rvest)
+library(dplyr)
 ```
 
 ## Install and configure GNfinder
@@ -48,5 +50,67 @@ To run GNfinder^[Mozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gna
 
 ```{r}
 include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg")
+```
+
+## Scrape text from ANSP Volumes
+
+Load the CSV file with our URLs in it. These were preselected with the help of Steve Dilliplane at Drexel University. Each URL leacs to an html site with the OCR'd contents of a section of an ANSP volume. You'll see the titles of the sections in the table we import from a CSV. 
+
+```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
+sections <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/data/sections.csv"))
+paged_table(sections)
+```
+
+Let's do one URL by hand before we launch into the whole set. First we grab the text from the URL. This is about the easiest web scraping there is - almost no `HTML` structure!
+
+```{r echo=TRUE}
+url1 <- sections[[1]][1] # grab the first row, first column
+sec1 <- read_html(url1) # read the html of the URL
+
+text <- sec1 %>% # pipe the text in the 'p' sections to a character array
+html_nodes("p") %>%
+html_text()
+
+# What does it look like?
+substr(text, start=1, stop=300)
+```
+
+Save the output into a text file that we can run in GNfinder.
+
+```{r echo=TRUE}
+write_lines(text, file = '/Users/thalassa/Rcode/blog/data/sec1.txt')
+```
+
+## Running GNfinder
+
+This runs in a `bash` terminal.
+
+```{bash, echo=TRUE}
+# Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia
+gnfinder /Users/thalassa/Rcode/blog/data/sec1.txt --verify > /Users/thalassa/Rcode/blog/data/sec1out.txt
+```
+Import the output from GNFinder as a tibble & look at it:
+
+```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
+dat <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/data/sec1out.txt"))
+paged_table(dat)
+```
+
+## Create entity ruler for spaCy based on GNfinder results. 
+
+spaCy entity tulers look like:
+
+{"label": "HABITAT", "pattern": "temperate oceans"}
+{"label": "HABITAT", "pattern": "temperate reefs"}
+{"label": "HABITAT", "pattern": "temperate seas"}
+...
+
+```{r echo=TRUE}
+prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
+cat(prefix) # it's doing what we want.
+
+sec1ents <- 
+dim(dat)[1]
+
 ```
 
