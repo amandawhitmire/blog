@@ -23,13 +23,34 @@ preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leadi
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Workspace setup
+
+Load the Libraries we need.
+
+```{r libraries, echo=TRUE}
+library(rmarkdown)
+library(knitr)
+library(distill)
+```
+
 ## Taking a look at the big picture
 
-Today I took a step back from programming to suss out what I _think_ my text analysis workflow might look like. This will change, of course, as the methods of my analysis change, but it's been very helpful to go through the process of lining up what I'm actually _doing_.
+Today I took a step back from programming to suss out what I _think_ my text analysis work flow might look like. This will change, of course, as the methods of my analysis change, but it's been very helpful to go through the process of lining up what I'm actually _doing_.
 
-I started out by making a detailed outline of the process in Google Sheets. This is a prcess that I picked up from Nicole Coleman, who I am collaborating with on another Collections as Data [project](https://sul-dlss-labs.github.io/spoc/intro.html) to look for species occurrences in Hopkins Marine Station student papers. She came up witht the general layout and columns, and I really like it. 
+I started out by making a [detailed outline](https://docs.google.com/spreadsheets/d/1hK18L0VZuvcwatd0jhAtb-khHUu9Ki3fCrNIrwodZpU/edit?usp=sharing) of the process in Google Sheets. This is a process that I picked up from Nicole Coleman, who I am collaborating with on another Collections as Data [project](https://sul-dlss-labs.github.io/spoc/intro.html) to look for species occurrences in a time-series of student papers from Hopkins Marine Station. She came up with the general layout and columns, and I really like it. 
 
 ```{r layout="l-body-outset"}
 include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-spreadsheet.jpg")
 ```
 
+I find it very helpful to be able to capture details like what tools we are using, and what the inputs and outputs of each step are. It's _**almost**_ at the level of being a methods section for a readme file (but I wouldn't go that far).
+
+I also wanted to make a more visual diagram, so I played around with that, too. My colleagues recommended Google Drawings for basic workflow diagrams, and OmniGraffle for more complicated ones. I tried both! 
+
+```{r layout="l-body-outset"}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-google.jpg")
+```
+
+```{r layout="l-body-outset"}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-diagram.jpg")
+```

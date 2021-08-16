@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["using-workflows-in-project-planning_files/anchor-4.2.2/anchor.min.js","using-workflows-in-project-planning_files/bowser-1.9.3/bowser.min.js","using-workflows-in-project-planning_files/distill-2.2.21/template.v2.js","using-workflows-in-project-planning_files/header-attrs-2.9/header-attrs.js","using-workflows-in-project-planning_files/jquery-1.11.3/jquery.min.js","using-workflows-in-project-planning_files/popper-2.6.0/popper.min.js","using-workflows-in-project-planning_files/tippy-6.2.7/tippy-bundle.umd.min.js","using-workflows-in-project-planning_files/tippy-6.2.7/tippy-light-border.css","using-workflows-in-project-planning_files/tippy-6.2.7/tippy.css","using-workflows-in-project-planning_files/tippy-6.2.7/tippy.umd.min.js","using-workflows-in-project-planning_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1477,8 +1477,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<h2 id="workspace-setup">Workspace setup</h2>
+<p>Load the Libraries we need.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/rmarkdown'>rmarkdown</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://yihui.org/knitr/'>knitr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/distill'>distill</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <h2 id="taking-a-look-at-the-big-picture">Taking a look at the big picture</h2>
-<p>Today I took a step back from programming to suss out what I <em>think</em> my text analysis workflow might look like. This will change, of course, as the methods of my analysis change, but it’s been very helpful to go through the process of lining up what I’m actually <em>doing</em>.</p>
+<p>Today I took a step back from programming to suss out what I <em>think</em> my text analysis work flow might look like. This will change, of course, as the methods of my analysis change, but it’s been very helpful to go through the process of lining up what I’m actually <em>doing</em>.</p>
+<p>I started out by making a <a href="https://docs.google.com/spreadsheets/d/1hK18L0VZuvcwatd0jhAtb-khHUu9Ki3fCrNIrwodZpU/edit?usp=sharing">detailed outline</a> of the process in Google Sheets. This is a process that I picked up from Nicole Coleman, who I am collaborating with on another Collections as Data <a href="https://sul-dlss-labs.github.io/spoc/intro.html">project</a> to look for species occurrences in a time-series of student papers from Hopkins Marine Station. She came up with the general layout and columns, and I really like it.</p>
+<div class="layout-chunk" data-layout="l-body-outset">
+<p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-spreadsheet.jpg" /><!-- --></p>
+</div>
+<p>I find it very helpful to be able to capture details like what tools we are using, and what the inputs and outputs of each step are. It’s <em><strong>almost</strong></em></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
