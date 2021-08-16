@@ -1,0 +1,35 @@
+---
+title: "Using workflows in project planning"
+description: |
+  Describing project workflows for collaboration and communication
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: 08-05-2021
+collections:
+  posts:
+    disqus: exploring-gnfinder
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+    
+draft: false
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-diagram.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Taking a look at the big picture
+
+Today I took a step back from programming to suss out what I _think_ my text analysis workflow might look like. This will change, of course, as the methods of my analysis change, but it's been very helpful to go through the process of lining up what I'm actually _doing_.
+
+I started out by making a detailed outline of the process in Google Sheets. This is a prcess that I picked up from Nicole Coleman, who I am collaborating with on another Collections as Data [project](https://sul-dlss-labs.github.io/spoc/intro.html) to look for species occurrences in Hopkins Marine Station student papers. She came up witht the general layout and columns, and I really like it. 
+
+```{r layout="l-body-outset"}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-spreadsheet.jpg")
+```
+

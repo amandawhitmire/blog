@@ -16,7 +16,7 @@ output:
     self_contained: false
     
 draft: false
-preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/xxx.jpg
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-results.jpg
 ---
 ---
 
@@ -101,7 +101,9 @@ paged_table(dat)
 spaCy entity tulers look like:
 
 {"label": "HABITAT", "pattern": "temperate oceans"}
+
 {"label": "HABITAT", "pattern": "temperate reefs"}
+
 {"label": "HABITAT", "pattern": "temperate seas"}
 ...
 
@@ -109,8 +111,14 @@ spaCy entity tulers look like:
 prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
 cat(prefix) # it's doing what we want.
 
-sec1ents <- 
-dim(dat)[1]
-
+sec1ents <- str_c(prefix,dat[[2]],"\"}")
+cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in the right format 
 ```
 
+## Write new entity set out to a text file for use with spaCy.
+
+```{r echo=TRUE}
+write_lines(sec1ents, file = '/Users/thalassa/Rcode/blog/data/sec1ents.jsonl')
+```
+
+So, ... that's the end of the pipeline for a single file. I'll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyetr Notebook from a previous excursion into Python and spaCy. Stay tuned!
