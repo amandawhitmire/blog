@@ -58,7 +58,7 @@ Load the CSV file with our URLs in it. These were preselected with the help of S
 
 ```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
 sections <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/data/sections.csv"))
-paged_table(sections)
+# paged_table(sections)
 ```
 
 Let's do one URL by hand before we launch into the whole set. First we grab the text from the URL. This is about the easiest web scraping there is - almost no `HTML` structure!
@@ -78,7 +78,9 @@ substr(text, start=1, stop=300)
 Save the output into a text file that we can run in GNfinder.
 
 ```{r echo=TRUE}
-write_lines(text, file = '/Users/thalassa/Rcode/blog/data/sec1.txt')
+infilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][1],".txt")
+outfilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][1],"_gnresults.txt")
+write_lines(text, infilename)
 ```
 
 ## Running GNfinder
@@ -86,13 +88,13 @@ write_lines(text, file = '/Users/thalassa/Rcode/blog/data/sec1.txt')
 This runs in a `bash` terminal.
 
 ```{bash, echo=TRUE}
-# Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia
-gnfinder /Users/thalassa/Rcode/blog/data/sec1.txt --verify > /Users/thalassa/Rcode/blog/data/sec1out.txt
+gnfinder /Users/thalassa/Rcode/blog/data/07sec30.txt --verify > /Users/thalassa/Rcode/blog/data/07sec30_gnresults.txt
 ```
+
 Import the output from GNFinder as a tibble & look at it:
 
 ```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
-dat <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/data/sec1out.txt"))
+dat <- as_tibble(read_csv(outfilename))
 paged_table(dat)
 ```
 
@@ -110,9 +112,8 @@ spaCy entity tulers look like:
 ```{r echo=TRUE}
 prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
 cat(prefix) # it's doing what we want.
-
-sec1ents <- str_c(prefix,dat[[2]],"\"}")
-cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in the right format 
+sec1ents <- str_c(prefix,dat[[2]],"\"}") # put it together 
+# cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in the right format 
 ```
 
 ## Write new entity set out to a text file for use with spaCy.
@@ -121,4 +122,49 @@ cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in 
 write_lines(sec1ents, file = '/Users/thalassa/Rcode/blog/data/sec1ents.jsonl')
 ```
 
-So, ... that's the end of the pipeline for a single file. I'll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyetr Notebook from a previous excursion into Python and spaCy. Stay tuned!
+So, ... that's the end of the pipeline for a single file. I'll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyter Notebook from a previous excursion into Python and spaCy. Stay tuned!
+
+## Update, 21 August: scraping more files
+
+Now let's get this sucker running in batch mode on several files.
+
+```{r echo=TRUE} 
+# Loop through URLs and scrape text
+for (i in 1:dim(sections)) {
+  url <- sections[[1]][i] # grab the first row, first column
+  sec <- read_html(url) # read the html of the URL
+  text <- sec %>% # pipe the text in the 'p' sections to a character array
+  html_nodes("p") %>%
+  html_text()
+  infilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][i],".txt")
+  write_lines(text, infilename) # save scraped text in a file
+}
+```
+
+## Run GNfinder in a loop
+
+We scraped the text (yay!), and now we want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don't know how to do this elegantly, so I'm just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know. This feels a bit klugey to me.
+
+```
+## Running GNfinder
+
+Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia. Reminder: this runs in a `bash` chunk.
+
+```{bash, echo=TRUE}
+for f in /Users/thalassa/Rcode/blog/data/*.txt
+do 
+  echo "Processing $f file..."
+  gnfinder "$f" --verify > "${f%.txt}_gnf.txt"
+done
+```
+
+Now we need to read back in the results from GNfinder and use the taxonomic names it found to create and entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
+
+```{r echo=TRUE}
+filenames = dir(pattern="/Users/thalassa/Rcode/blog/data/gnfinder-results/*.txt")
+for( i in 1:length(filenames) ) 
+  {dat <- as_tibble(read_csv(outfilename))
+entout <- str_c(prefix,dat[[2]],"\"}") # put it together 
+
+```
+
