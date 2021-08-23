@@ -32,7 +32,7 @@ In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-explori
 
 Load the Libraries we need.
 
-```{r libraries, echo=TRUE}
+```{r libraries, echo=TRUE, message=FALSE}
 library(tidyverse)
 library(rmarkdown)
 library(knitr)
@@ -124,7 +124,7 @@ write_lines(sec1ents, file = '/Users/thalassa/Rcode/blog/data/sec1ents.jsonl')
 
 So, ... that's the end of the pipeline for a single file. I'll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyter Notebook from a previous excursion into Python and spaCy. Stay tuned!
 
-## Update, 21 August: scraping more files
+## Update, 23 August: scraping more files
 
 Now let's get this sucker running in batch mode on several files.
 
@@ -139,6 +139,8 @@ for (i in 1:dim(sections)) {
   infilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][i],".txt")
   write_lines(text, infilename) # save scraped text in a file
 }
+
+rm(url, sec, text, infilename)
 ```
 
 ## Run GNfinder in a loop
@@ -158,13 +160,32 @@ do
 done
 ```
 
-Now we need to read back in the results from GNfinder and use the taxonomic names it found to create and entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
+## Create entity lists for use in spaCy NER pipeline
+
+Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
 
 ```{r echo=TRUE}
-filenames = dir(pattern="/Users/thalassa/Rcode/blog/data/gnfinder-results/*.txt")
-for( i in 1:length(filenames) ) 
-  {dat <- as_tibble(read_csv(outfilename))
-entout <- str_c(prefix,dat[[2]],"\"}") # put it together 
-
+setwd("/Users/thalassa/Rcode/blog/data/gnfinder-results/")
+ldf <- list() # creates a list
+listcsv <- dir(pattern = "*.txt") # creates the list of all the csv files in the directory
+outlist <- gsub(".txt", ".jsonl",listcsv ) #change the fole extension for the entity files
+for (k in 1:length(listcsv)){
+  dat <- as_tibble(read_csv(listcsv[[k]]))
+  entout <- str_c(prefix,dat[[2]],"\"}") # put it together
+  myfile <- str_c("/Users/thalassa/Rcode/blog/data/taxa-",outlist[[k]])
+  write_lines(entout, myfile)
+}
+  
+rm(ldf, listcsv, outlist, dat, k, entout, myfile) # clean up!
 ```
 
+## Conclusion
+
+Now we have the scraped text of 13 subsections of the ANSP corpus, we identified all of the txaxnomic names in each subsection using GNfinder, and we saved those taxa to text files (jsonl) that are formatted for use as spaCy entity sets in the NER pipeline. Now it's time to return to a Jupyter Notebook to run these through! Stay tuned for that ... 
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-taxa-entities.jpg")
+```
+<aside>
+Here is what part of an entity file looks like.
+</aside>
