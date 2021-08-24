@@ -18,7 +18,6 @@ output:
 draft: false
 preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-results.jpg
 ---
----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -63,7 +62,7 @@ sections <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/data/sections.csv"))
 
 Let's do one URL by hand before we launch into the whole set. First we grab the text from the URL. This is about the easiest web scraping there is - almost no `HTML` structure!
 
-```{r echo=TRUE}
+```{r echo=TRUE, eval=FALSE}
 url1 <- sections[[1]][1] # grab the first row, first column
 sec1 <- read_html(url1) # read the html of the URL
 
@@ -77,7 +76,7 @@ substr(text, start=1, stop=300)
 
 Save the output into a text file that we can run in GNfinder.
 
-```{r echo=TRUE}
+```{r, echo=TRUE, eval=FALSE}
 infilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][1],".txt")
 outfilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][1],"_gnresults.txt")
 write_lines(text, infilename)
@@ -87,13 +86,13 @@ write_lines(text, infilename)
 
 This runs in a `bash` terminal.
 
-```{bash, echo=TRUE}
+```{bash, echo=TRUE, eval=FALSE}
 gnfinder /Users/thalassa/Rcode/blog/data/07sec30.txt --verify > /Users/thalassa/Rcode/blog/data/07sec30_gnresults.txt
 ```
 
 Import the output from GNFinder as a tibble & look at it:
 
-```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
+```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset", eval=FALSE}
 dat <- as_tibble(read_csv(outfilename))
 paged_table(dat)
 ```
@@ -109,7 +108,7 @@ spaCy entity tulers look like:
 {"label": "HABITAT", "pattern": "temperate seas"}
 ...
 
-```{r echo=TRUE}
+```{r echo=TRUE, eval=FALSE}
 prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
 cat(prefix) # it's doing what we want.
 sec1ents <- str_c(prefix,dat[[2]],"\"}") # put it together 
@@ -118,15 +117,17 @@ sec1ents <- str_c(prefix,dat[[2]],"\"}") # put it together
 
 ## Write new entity set out to a text file for use with spaCy.
 
-```{r echo=TRUE}
+```{r echo=TRUE, eval=FALSE}
 write_lines(sec1ents, file = '/Users/thalassa/Rcode/blog/data/sec1ents.jsonl')
+
+rm(sec1ents, dat, text, url1, sec1)
 ```
 
 So, ... that's the end of the pipeline for a single file. I'll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyter Notebook from a previous excursion into Python and spaCy. Stay tuned!
 
 ## Update, 23 August: scraping more files
 
-Now let's get this sucker running in batch mode on several files.
+I turned off the previous code chunks, so that the batch processing can run on a clean slate. Now let's get this sucker running in batch mode on several files. The setup is that we need a text file in the working directory with a list of URLs to scrape. We did this earlier in the script when we loaded in `sections.csv` as the variable `sections`. 
 
 ```{r echo=TRUE} 
 # Loop through URLs and scrape text

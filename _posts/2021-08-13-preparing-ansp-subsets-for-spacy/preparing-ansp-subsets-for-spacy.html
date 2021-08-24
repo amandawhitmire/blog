@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["preparing-ansp-subsets-for-spacy_files/anchor-4.2.2/anchor.min.js","preparing-ansp-subsets-for-spacy_files/bowser-1.9.3/bowser.min.js","preparing-ansp-subsets-for-spacy_files/distill-2.2.21/template.v2.js","preparing-ansp-subsets-for-spacy_files/header-attrs-2.9/header-attrs.js","preparing-ansp-subsets-for-spacy_files/jquery-1.11.3/jquery.min.js","preparing-ansp-subsets-for-spacy_files/pagedtable-1.1/css/pagedtable.css","preparing-ansp-subsets-for-spacy_files/pagedtable-1.1/js/pagedtable.js","preparing-ansp-subsets-for-spacy_files/popper-2.6.0/popper.min.js","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy-bundle.umd.min.js","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy-light-border.css","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy.css","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy.umd.min.js","preparing-ansp-subsets-for-spacy_files/webcomponents-2.0.0/webcomponents.js","sec1.csv"]}
+  {"type":"character","attributes":{},"value":["infiles.txt","outfile","outfilename","outfiles.txt","preparing-ansp-subsets-for-spacy_files/anchor-4.2.2/anchor.min.js","preparing-ansp-subsets-for-spacy_files/bowser-1.9.3/bowser.min.js","preparing-ansp-subsets-for-spacy_files/distill-2.2.21/template.v2.js","preparing-ansp-subsets-for-spacy_files/header-attrs-2.9/header-attrs.js","preparing-ansp-subsets-for-spacy_files/jquery-1.11.3/jquery.min.js","preparing-ansp-subsets-for-spacy_files/pagedtable-1.1/css/pagedtable.css","preparing-ansp-subsets-for-spacy_files/pagedtable-1.1/js/pagedtable.js","preparing-ansp-subsets-for-spacy_files/popper-2.6.0/popper.min.js","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy-bundle.umd.min.js","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy-light-border.css","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy.css","preparing-ansp-subsets-for-spacy_files/tippy-6.2.7/tippy.umd.min.js","preparing-ansp-subsets-for-spacy_files/webcomponents-2.0.0/webcomponents.js","sec1.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1479,7 +1479,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<hr />
 <h2 id="background">Background</h2>
 <p>In my <a href="https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/">last post</a>, I instroduced myself to the <a href="https://globalnames.org/apps/">Global Names Architecture</a> tool Global Names Finder (GNfinder). In this post, I’m going to use GNfinder again, applying it on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that have been picked because they are likely to have a lot of taxonomic names in them. After I ID the genus and species names, we’ll save the list from each ANSP section as an entity set for use in <a href="https://spacy.io/">spaCy</a>, a natural language processing tool. Within spaCy (which we will run in a Jupyetr Notebook b/c I stil can’t make it work in R), we’ll run named entity recognition on the species names, and also look for locations and habitats. Will be cool to see what pops out!</p>
 <h2 id="workspace-setup">Workspace setup</h2>
@@ -1506,13 +1505,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body-outset">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>sections</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/sections.csv"</span><span class='op'>)</span><span class='op'>)</span>
-<span class='fu'><a href='https://pkgs.rstudio.com/rmarkdown/reference/paged_table.html'>paged_table</a></span><span class='op'>(</span><span class='va'>sections</span><span class='op'>)</span>
+<span class='co'># paged_table(sections)</span>
 </code></pre>
-</div>
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["URL"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Title"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/07/sxx30","2":"CATALOGUE OF AMERICAN TESTUDINATA"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/23/sxx04","2":"CATALOGUE OF CRUSTACEA FROM THE ISTHMUS OF PANAMA"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/25/sxx02","2":"CATALOGUE OF THE RECENT SPECIES OF THE CLASS BRACHIOPODA"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/37/sxx09","2":"A CATALOGUE OF THE FISHES OF BEAN BLOSSOM CREEK MONROE COUNTY INDIANA"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/40/sxx02","2":"A BIBLIOGRAPHIC AND SYNONYMIC CATALOGUE OF THE GENUS AURICULELLA PFEIFFER"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/40/sxx03","2":"A BIBLIOGRAPHIC AND SYNONYMIC CATALOGUE OF THE GENUS ACHATINELLA"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/41/sxx17","2":"CATALOGUE OF THE ASTEROIDEA AND OPHIUROIDEA IN THE"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/42/sxx03","2":"CATALOGUE OF THE OWLS IN THE COLLECTION OF THE BY WITHER STONE"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/45/sxx09","2":"CATALOGUE OF THE CRUSTACEANS IN THE MUSEUM OF THE ACADEMY DR. BEN J"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/48/sxx11","2":"CATALOGUE OF THE SPECIES OF CERION WITH DESCRIPTIONS OF NEW FORMS"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/57/sxx36","2":"CATALOGUE OF THE LAND AND FRESH-WATER MOLLTJSCA OF TAIWAN (FORMOSA) WITH DESCRIPTIONS OF NEW SPECIES"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/64/sxx10","2":"A CATALOGUE OF JAPANESE CEPHALOPODA"},{"1":"https://fauna.ansp.org/LEADING/2021/Corpus/ANSP/workspace/68/sxx04","2":"NOTES ON THE ANATOMY OF OREOHELIX WITH A CATALOGUE OF THE SPECIES"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
 </div>
 </div>
 <p>Let’s do one URL by hand before we launch into the whole set. First we grab the text from the URL. This is about the easiest web scraping there is - almost no <code>HTML</code> structure!</p>
@@ -1534,20 +1528,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Save the output into a text file that we can run in GNfinder.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>text</span>, file <span class='op'>=</span> <span class='st'>'/Users/thalassa/Rcode/blog/data/sec1.txt'</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>infilename</span> <span class='op'>=</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/"</span>,<span class='va'>sections</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>,<span class='st'>".txt"</span><span class='op'>)</span>
+<span class='va'>outfilename</span> <span class='op'>=</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/"</span>,<span class='va'>sections</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>,<span class='st'>"_gnresults.txt"</span><span class='op'>)</span>
+<span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>text</span>, <span class='va'>infilename</span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>
 <h2 id="running-gnfinder">Running GNfinder</h2>
 <p>This runs in a <code>bash</code> terminal.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">gnfinder</span> /Users/thalassa/Rcode/blog/data/sec1.txt --verify <span class="op">&gt;</span> /Users/thalassa/Rcode/blog/data/sec1out.txt</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gnfinder</span> /Users/thalassa/Rcode/blog/data/07sec30.txt --verify <span class="op">&gt;</span> /Users/thalassa/Rcode/blog/data/07sec30_gnresults.txt</span></code></pre></div>
 </div>
 <p>Import the output from GNFinder as a tibble &amp; look at it:</p>
 <div class="layout-chunk" data-layout="l-body-outset">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/sec1out.txt"</span><span class='op'>)</span><span class='op'>)</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='va'>outfilename</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://pkgs.rstudio.com/rmarkdown/reference/paged_table.html'>paged_table</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
 </code></pre>
 </div>
@@ -1570,11 +1565,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <pre><code>{&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;</code></pre>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>sec1ents</span> <span class='op'>&lt;-</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='va'>prefix</span>,<span class='va'>dat</span><span class='op'>[[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>]</span>,<span class='st'>"\"}"</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span><span class='op'>(</span><span class='va'>sec1ents</span><span class='op'>)</span> <span class='co'># look at it - should be one entity (taxonomic name) per line, in the right format </span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>sec1ents</span> <span class='op'>&lt;-</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='va'>prefix</span>,<span class='va'>dat</span><span class='op'>[[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>]</span>,<span class='st'>"\"}"</span><span class='op'>)</span> <span class='co'># put it together </span>
+<span class='co'># cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in the right format </span>
 </code></pre>
 </div>
-<pre><code>{&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;TESTUDINATA.&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Chelonuea serpentina.&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Emysaurus&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Tkionyx ferox&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;A.ipe7iodectes ferox&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;KiNOSTERNUM&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Cistuda&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;K. soNORiENSE&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Terrapene odorata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Cistttdo odorata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Emys odorata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Steniotherus odoratus&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Staurotypzis odoratus&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;CisTUDO&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;CLAUSA.&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Cistudo&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Emys clausa&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Emys virgidata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Terrapene&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Carolina viaculata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Onychotria mexicana&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;LuTREMYS&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;MELEAGRis&#39;&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Cistudo&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Emys&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Chersine&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. serrata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. scripta&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. rugosa&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. irrigata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. serrata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. reticulata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. mobiliensis&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. coNCiNNA&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. oregonensis&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. hieroglyphica&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. omata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. iNscuLPTA&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. speciosa&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. pseudogeographica&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. terrapene&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. centrata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. picTA.&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;T. cinerea&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;GUTTATA.&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. punctata&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Amphibia&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Emys rivulata,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. scripta,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;E. macrocephala,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Kinosternum&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Kiiiii.iti&#39;rnum cruentatum&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Insects,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Triakis&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;T. scyllium,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;SriNAX (AcANTHiAs) sucKLEYi,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;(AcANTHiAs)&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Raja binoculata,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;PERCICHTHYS,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Percichthys chilensis,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Perca trucha,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Percichthys melanops,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;PERCILIA,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Percilia gillissi,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;ATHERINOPSIS,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;BASILICHTHYS,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Basilichthys microlepidotus,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Atherina microlepidota,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Alherina laticlavia,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;A. argentinensis,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;HETEROGNATHUS,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Atherina humbuldtiana,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;NEMATOGENYS,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Nematogenys inermis,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Trichomyctertis inermis,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;TRICHOMYCTERUS,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Alosa jviTSiCA,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Engraulis pulchellus,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;CHARACINI.&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;CHEIRODON,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Cheirodon pisciculus,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Fins unicolor,&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Bdellostoma&quot;} {&quot;label&quot;: &quot;TAXA&quot;, &quot;pattern&quot;: &quot;Megalonyx&quot;}</code></pre>
 </div>
 <h2 id="write-new-entity-set-out-to-a-text-file-for-use-with-spacy.">Write new entity set out to a text file for use with spaCy.</h2>
 <div class="layout-chunk" data-layout="l-body">
@@ -1583,8 +1577,83 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 </div>
-<p>So, … that’s the end of the pipeline for a single file. I’ll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyetr Notebook from a previous excursion into Python and spaCy. Stay tuned!</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>So, … that’s the end of the pipeline for a single file. I’ll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyter Notebook from a previous excursion into Python and spaCy. Stay tuned!</p>
+<h2 id="update-23-august-scraping-more-files">Update, 23 August: scraping more files</h2>
+<p>Now let’s get this sucker running in batch mode on several files.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Loop through URLs and scrape text</span>
+<span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>sections</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='va'>url</span> <span class='op'>&lt;-</span> <span class='va'>sections</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='co'># grab the first row, first column</span>
+  <span class='va'>sec</span> <span class='op'>&lt;-</span> <span class='fu'><a href='http://xml2.r-lib.org/reference/read_xml.html'>read_html</a></span><span class='op'>(</span><span class='va'>url</span><span class='op'>)</span> <span class='co'># read the html of the URL</span>
+  <span class='va'>text</span> <span class='op'>&lt;-</span> <span class='va'>sec</span> <span class='op'>%&gt;%</span> <span class='co'># pipe the text in the 'p' sections to a character array</span>
+  <span class='fu'><a href='https://rvest.tidyverse.org/reference/rename.html'>html_nodes</a></span><span class='op'>(</span><span class='st'>"p"</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rvest.tidyverse.org/reference/html_text.html'>html_text</a></span><span class='op'>(</span><span class='op'>)</span>
+  <span class='va'>infilename</span> <span class='op'>=</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/"</span>,<span class='va'>sections</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span>,<span class='st'>".txt"</span><span class='op'>)</span>
+  <span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>text</span>, <span class='va'>infilename</span><span class='op'>)</span> <span class='co'># save scraped text in a file</span>
+<span class='op'>}</span>
+
+<span class='fu'><a href='https://rdrr.io/r/base/rm.html'>rm</a></span><span class='op'>(</span><span class='va'>url</span>, <span class='va'>sec</span>, <span class='va'>text</span>, <span class='va'>infilename</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h2 id="run-gnfinder-in-a-loop">Run GNfinder in a loop</h2>
+<p>We scraped the text (yay!), and now we want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don’t know how to do this elegantly, so I’m just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know. This feels a bit klugey to me.</p>
+<pre><code>## Running GNfinder
+
+Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia. Reminder: this runs in a `bash` chunk.
+
+&lt;div class=&quot;layout-chunk&quot; data-layout=&quot;l-body&quot;&gt;
+
+```bash
+for f in /Users/thalassa/Rcode/blog/data/*.txt
+do 
+  echo &quot;Processing $f file...&quot;
+  gnfinder &quot;$f&quot; --verify &gt; &quot;${f%.txt}_gnf.txt&quot;
+done</code></pre>
+<pre><code>Processing /Users/thalassa/Rcode/blog/data/07sec30.txt file...
+Processing /Users/thalassa/Rcode/blog/data/07sec30_gnresults.txt file...
+Processing /Users/thalassa/Rcode/blog/data/23sec04.txt file...
+Processing /Users/thalassa/Rcode/blog/data/25sec02.txt file...
+Processing /Users/thalassa/Rcode/blog/data/37sec09.txt file...
+Processing /Users/thalassa/Rcode/blog/data/40sec02.txt file...
+Processing /Users/thalassa/Rcode/blog/data/40sec03.txt file...
+Processing /Users/thalassa/Rcode/blog/data/41sec17.txt file...
+Processing /Users/thalassa/Rcode/blog/data/42sec03.txt file...
+Processing /Users/thalassa/Rcode/blog/data/45sec09.txt file...
+Processing /Users/thalassa/Rcode/blog/data/48sec11.txt file...
+Processing /Users/thalassa/Rcode/blog/data/57sec36.txt file...
+Processing /Users/thalassa/Rcode/blog/data/64sec10.txt file...
+Processing /Users/thalassa/Rcode/blog/data/68sec04.txt file...</code></pre>
+</div>
+<h2 id="create-entity-lists-for-use-in-spacy-ner-pipeline">Create entity lists for use in spaCy NER pipeline</h2>
+<p>Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the ‘prefix’ to the pattern that we need in the entity file.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/getwd.html'>setwd</a></span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/gnfinder-results/"</span><span class='op'>)</span>
+<span class='va'>ldf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span> <span class='co'># creates a list</span>
+<span class='va'>listcsv</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.files.html'>dir</a></span><span class='op'>(</span>pattern <span class='op'>=</span> <span class='st'>"*.txt"</span><span class='op'>)</span> <span class='co'># creates the list of all the csv files in the directory</span>
+<span class='va'>outlist</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>".txt"</span>, <span class='st'>".jsonl"</span>,<span class='va'>listcsv</span> <span class='op'>)</span> <span class='co'>#change the fole extension for the entity files</span>
+<span class='kw'>for</span> <span class='op'>(</span><span class='va'>k</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>listcsv</span><span class='op'>)</span><span class='op'>)</span><span class='op'>{</span>
+  <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='va'>listcsv</span><span class='op'>[[</span><span class='va'>k</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span>
+  <span class='va'>entout</span> <span class='op'>&lt;-</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='va'>prefix</span>,<span class='va'>dat</span><span class='op'>[[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>]</span>,<span class='st'>"\"}"</span><span class='op'>)</span> <span class='co'># put it together</span>
+  <span class='va'>myfile</span> <span class='op'>&lt;-</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/taxa-"</span>,<span class='va'>outlist</span><span class='op'>[[</span><span class='va'>k</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span>
+  <span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>entout</span>, <span class='va'>myfile</span><span class='op'>)</span>
+<span class='op'>}</span>
+  
+<span class='fu'><a href='https://rdrr.io/r/base/rm.html'>rm</a></span><span class='op'>(</span><span class='va'>ldf</span>, <span class='va'>listcsv</span>, <span class='va'>outlist</span>, <span class='va'>dat</span>, <span class='va'>k</span>, <span class='va'>entout</span>, <span class='va'>myfile</span><span class='op'>)</span> <span class='co'># clean up!</span>
+</code></pre>
+</div>
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<p>Now we have the scraped text of 13 subsections of the ANSP corpus, we identified all of the txaxnomic names in each subsection using GNfinder, and we saved those taxa to text files (jsonl) that are formatted for use as spaCy entity sets in the NER pipeline. Now it’s time to return to a Jupyter Notebook to run these through! Stay tuned for that …</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-taxa-entities.jpg" /><!-- --></p>
+</div>
+<aside>
+Here is what part of an entity file looks like.
+</aside>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
