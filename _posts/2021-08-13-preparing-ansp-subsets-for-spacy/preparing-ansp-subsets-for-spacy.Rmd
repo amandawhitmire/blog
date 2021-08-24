@@ -129,7 +129,7 @@ So, ... that's the end of the pipeline for a single file. I'll come back and mod
 
 I turned off the previous code chunks, so that the batch processing can run on a clean slate. Now let's get this sucker running in batch mode on several files. The setup is that we need a text file in the working directory with a list of URLs to scrape. We did this earlier in the script when we loaded in `sections.csv` as the variable `sections`. 
 
-```{r echo=TRUE} 
+```{r echo=TRUE, eval=FALSE} 
 # Loop through URLs and scrape text
 for (i in 1:dim(sections)) {
   url <- sections[[1]][i] # grab the first row, first column
@@ -144,32 +144,31 @@ for (i in 1:dim(sections)) {
 rm(url, sec, text, infilename)
 ```
 
-## Run GNfinder in a loop
+## Find taxonomic names in batch mode
 
 We scraped the text (yay!), and now we want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don't know how to do this elegantly, so I'm just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know. This feels a bit klugey to me.
 
-```
 ## Running GNfinder
 
 Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia. Reminder: this runs in a `bash` chunk.
 
-```{bash, echo=TRUE}
+```{bash, echo=TRUE, eval=FALSE}
 for f in /Users/thalassa/Rcode/blog/data/*.txt
 do 
   echo "Processing $f file..."
   gnfinder "$f" --verify > "${f%.txt}_gnf.txt"
 done
+
 ```
 
 ## Create entity lists for use in spaCy NER pipeline
 
 Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
 
-```{r echo=TRUE}
-setwd("/Users/thalassa/Rcode/blog/data/gnfinder-results/")
+```{r echo=TRUE, eval=FALSE}
 ldf <- list() # creates a list
-listcsv <- dir(pattern = "*.txt") # creates the list of all the csv files in the directory
-outlist <- gsub(".txt", ".jsonl",listcsv ) #change the fole extension for the entity files
+listcsv <- dir(pattern = "*gnf.txt") # creates the list of all the csv files in the directory
+outlist <- gsub(".txt", ".jsonl", listcsv ) #change the file extension for the entity files
 for (k in 1:length(listcsv)){
   dat <- as_tibble(read_csv(listcsv[[k]]))
   entout <- str_c(prefix,dat[[2]],"\"}") # put it together
@@ -182,11 +181,31 @@ rm(ldf, listcsv, outlist, dat, k, entout, myfile) # clean up!
 
 ## Conclusion
 
-Now we have the scraped text of 13 subsections of the ANSP corpus, we identified all of the txaxnomic names in each subsection using GNfinder, and we saved those taxa to text files (jsonl) that are formatted for use as spaCy entity sets in the NER pipeline. Now it's time to return to a Jupyter Notebook to run these through! Stay tuned for that ... 
+Now we have the scraped text of 13 subsections of the ANSP corpus, we identified all of the txaxnomic names in each subsection using GNfinder, and we saved those taxa to text files (jsonl) that are formatted for use as spaCy entity sets in the NER pipeline. Now it's time to return to a Jupyter Notebook to run these through! Stay tuned for that ....
+
+Here are some screen shots that show you what the process resulted in.
+
+Here are the files we created.
 
 ```{r}
-include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-taxa-entities.jpg")
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/scraping-files.jpg")
 ```
-<aside>
-Here is what part of an entity file looks like.
-</aside>
+
+Here is what the ANSP OCR text looks like.
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/scraping-text.jpg")
+```
+
+This is what the ouput of GNfinder looks like.
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-text.jpg")
+``` 
+
+This is what the entity file for spaCy looks like.
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-labels.jpg")
+```
+
