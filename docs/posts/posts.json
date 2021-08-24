@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/2021-08-18-deploying-spacy-in-r/",
-    "title": "deploying-spacy-in-r",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Amanda Whitmire",
-        "url": "https://amandawhitmire.github.io/"
-      }
-    ],
-    "date": "2021-08-18",
-    "categories": [],
-    "contents": "\n1. Set up to use reticulate\nThe first thing you need to do is configure Python on your machine. Reticulate will connect with a local Python instance of your choosing, so consider setting up an environment that is specific to your project. I set up a Python environment that I’d like to use in the terminal via the follwoing create and activate steps:\nI named this environment ‘leading2’ because I totally hosed my first environment.\nIt happens!\nconda create --name leading2 conda activate leading2\nYou can install the Python packages that you need to use via the terminal, or you can use Anaconda (or whatever install method you like! People have feelings about this!)1. In my case, I installed spaCy and pandas, and I’m going to go with that until I get an error message that I forgot something. :woman_shrugging\nTo specify which Python environment I’d like reticulate to use, I put the following line in my .Rprofile file:\nSys.setenv(RETICULATE_PYTHON = \"/Users/thalassa/opt/anaconda3/envs/leading2/bin/python\")\n** Note, there is an R package “wrapper” for using spaCy in R (spacyr), but it’s not clear to me that it is still under active development. This is important because the recent release of spaCy 3.0 introduced some significant improvements that I want to be able to take advantage of (newer models, etc). I also need to use a custom entity set for NER, and there is an open issue on this in the spacyr GitHub project. I’ll keep an eye on it, but I’m going to power on without the wrapper package (for now).\n\n\nlibrary(reticulate)\n\n\n\n\n\n\n\nThese instructions are fairly straightforward.↩︎\n",
-    "preview": "https://raw.githubusercontent.com/amandawhitmire/blog/main/images/xyz.jpg",
-    "last_modified": "2021-08-18T10:03:55-07:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2021-08-16-using-workflows-in-project-planning/",
     "title": "Using workflows in project planning",
     "description": "Describing project workflows for collaboration and communication",
