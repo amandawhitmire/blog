@@ -69,40 +69,46 @@ done
 
 ```
 
-## Create entity ruler for spaCy based on GNfinder results. 
-
-spaCy entity rulers look like:
-
-{"label": "HABITAT", "pattern": "temperate oceans"}
-
-{"label": "HABITAT", "pattern": "temperate reefs"}
-
-{"label": "HABITAT", "pattern": "temperate seas"}
-...
-
-```{r echo=TRUE, eval=TRUE}
-prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
-cat(prefix) # it's doing what we want.
-```
-
 ## Create entity lists for use in spaCy NER pipeline
 
-Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
+Now we need to read back in the results from GNfinder and pull out the verbatim taxonomic names it found to create lists for each volume. We'll merge and de-duplicate these in following steps.
 
 ```{r echo=TRUE, eval=FALSE}
-setwd("/Users/thalassa/Google\ Drive/My\ Drive/LEADING/corpus/") #set working directory
-ldf <- list() # creates a list
 # creates the list of all the csv files in the directory
-listcsv <- dir(path = "/Users/thalassa/Google\ Drive/My\ Drive/LEADING/corpus/", pattern = "*gnf.txt") 
-outlist <- gsub(".txt", ".jsonl", listcsv ) #change the file extension for the entity files
+listcsv <- list.files("/Users/thalassa/Google Drive/My Drive/LEADING/corpus/gnfinder",
+                       pattern = "*gnf.txt", full.names = T, recursive = TRUE)
+outlist <- gsub("gnf.txt", "taxa.txt", listcsv) #change the file name for the entity files
 for (k in 1:length(listcsv)){
   dat <- as_tibble(read_csv(listcsv[[k]]))
-  entout <- str_c(prefix,dat[[2]],"\"}") # put it together
-  myfile <- str_c("taxa-",outlist[[k]])
-  write_lines(entout, myfile)
+  myfile <- outlist[[k]]
+  write_lines(dat[[2]], myfile)
 }
 
-rm(ldf, listcsv, outlist, dat, k, entout, myfile) # clean up!
+rm(listcsv, outlist, dat, k, myfile) # clean up!
 ``` 
 
-That's it - there is now a `jsonl` file with taxonomic names for every volume of the ANSP corpus.
+That's it - there is now a `txt` file with taxonomic names for every volume of the ANSP corpus. For the purposes of pulling identified taxonomic names into a generalized spaCy pipeline across any given section of the corpus, we'll want one YUGE jsonl file with all of the results we just created. We need to merge, clean up gremlins and de-duplicate. Let's do it!
+
+```{r echo=TRUE, eval=FALSE}
+
+#list all the files in the folder
+listfile <- as_tibble(list.files("/Users/thalassa/Rcode/blog/data/taxa-verbatim-txt",
+                       pattern = ".txt", full.names = T, recursive = FALSE))
+
+data <- as_tibble(read_lines(listfile[[1]][1]))
+for (k in 2:length(listfile)){
+  dat <- as_tibble(read_lines(listfile[[1]][k]))
+  data <- bind_rows(data, dat)
+}
+
+write_csv(data, "/Users/thalassa/Rcode/blog/data/ansp-taxa.txt")
+
+rm(ldf, listfile, dat, k) # clean up!
+``` 
+
+I took this resulting list of verbatim taxonomic names from GNfinder and opened the file in BBEdit to do some minor clean-up. Like, could I have regex'd this in R? Yeah, painfully. But, BBEdit is really great! And fast! Here is an example of what the raw text looks like:
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-raw.jpg")
+```
+
