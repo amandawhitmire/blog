@@ -25,7 +25,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Background
 
-In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I instroduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that have been picked because they are likely to have a lot of taxonomic names in them. After I ID the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy (which we will run in a Jupyetr Notebook b/c I stil can't make it work in R), we'll run named entity recognition on the species names, and also look for locations and habitats. Will be cool to see what pops out!
+In a [prvious post](https://amandawhitmire.github.io/blog/posts/2021-08-13-preparing-ansp-subsets-for-spacy/), I used GNfinder on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that had been picked because they are likely to have a lot of taxonomic names in them. After I ID'd the genus and species names with GNfinder, I saved the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy (which we will run in a Jupyter Notebook b/c I still can't make it work in R), I'll run named entity recognition on the species names, and also look for locations and habitats. 
+
+In *this* exercise, I'll run EVERY VOLUME of the ANSP corpus through GNfinder, and save the results in ONE GIANT entity list for spaCy. WEEE-HAW!! Let's get wild.
 
 ## Workspace setup
 
@@ -51,55 +53,10 @@ To run GNfinder^[Mozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gna
 include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg")
 ```
 
-## Scrape text from ANSP Volumes
-
-Load the CSV file with our URLs in it. These were preselected with the help of Steve Dilliplane at Drexel University. Each URL leacs to an html site with the OCR'd contents of a section of an ANSP volume. You'll see the titles of the sections in the table we import from a CSV. 
-
-```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset"}
-sections <- as_tibble(read_csv("/Users/thalassa/Rcode/blog/data/sections.csv"))
-# paged_table(sections)
-```
-
-Let's do one URL by hand before we launch into the whole set. First we grab the text from the URL. This is about the easiest web scraping there is - almost no `HTML` structure!
-
-```{r echo=TRUE, eval=FALSE}
-url1 <- sections[[1]][1] # grab the first row, first column
-sec1 <- read_html(url1) # read the html of the URL
-
-text <- sec1 %>% # pipe the text in the 'p' sections to a character array
-html_nodes("p") %>%
-html_text()
-
-# What does it look like?
-substr(text, start=1, stop=300)
-```
-
-Save the output into a text file that we can run in GNfinder.
-
-```{r, echo=TRUE, eval=FALSE}
-infilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][1],".txt")
-outfilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][1],"_gnresults.txt")
-write_lines(text, infilename)
-```
-
-## Running GNfinder
-
-This runs in a `bash` terminal.
-
-```{bash, echo=TRUE, eval=FALSE}
-gnfinder /Users/thalassa/Rcode/blog/data/07sec30.txt --verify > /Users/thalassa/Rcode/blog/data/07sec30_gnresults.txt
-```
-
-Import the output from GNFinder as a tibble & look at it:
-
-```{r echo=TRUE, paged.print=TRUE, layout="l-body-outset", eval=FALSE}
-dat <- as_tibble(read_csv(outfilename))
-paged_table(dat)
-```
 
 ## Create entity ruler for spaCy based on GNfinder results. 
 
-spaCy entity tulers look like:
+spaCy entity rulers look like:
 
 {"label": "HABITAT", "pattern": "temperate oceans"}
 
@@ -110,39 +67,11 @@ spaCy entity tulers look like:
 
 ```{r echo=TRUE, eval=FALSE}
 prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
-cat(prefix) # it's doing what we want.
+# cat(prefix) # it's doing what we want.
 sec1ents <- str_c(prefix,dat[[2]],"\"}") # put it together 
 # cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in the right format 
 ```
 
-## Write new entity set out to a text file for use with spaCy.
-
-```{r echo=TRUE, eval=FALSE}
-write_lines(sec1ents, file = '/Users/thalassa/Rcode/blog/data/sec1ents.jsonl')
-
-rm(sec1ents, dat, text, url1, sec1)
-```
-
-So, ... that's the end of the pipeline for a single file. I'll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyter Notebook from a previous excursion into Python and spaCy. Stay tuned!
-
-## Update, 23 August: scraping more files
-
-I turned off the previous code chunks, so that the batch processing can run on a clean slate. Now let's get this sucker running in batch mode on several files. The setup is that we need a text file in the working directory with a list of URLs to scrape. We did this earlier in the script when we loaded in `sections.csv` as the variable `sections`. 
-
-```{r echo=TRUE, eval=FALSE} 
-# Loop through URLs and scrape text
-for (i in 1:dim(sections)) {
-  url <- sections[[1]][i] # grab the first row, first column
-  sec <- read_html(url) # read the html of the URL
-  text <- sec %>% # pipe the text in the 'p' sections to a character array
-  html_nodes("p") %>%
-  html_text()
-  infilename = str_c("/Users/thalassa/Rcode/blog/data/",sections[[3]][i],".txt")
-  write_lines(text, infilename) # save scraped text in a file
-}
-
-rm(url, sec, text, infilename)
-```
 
 ## Find taxonomic names in batch mode
 

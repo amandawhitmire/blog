@@ -1,0 +1,108 @@
+---
+title: "Finding all of the taxonomic names in the Proceedings of the Academy of Natural Sciences of Philadelphia"
+description: |
+  Because why the heck not?
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: 09-16-2021
+collections:
+  posts:
+    disqus: scrape-taxa-ansp
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+    
+draft: true
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-results.jpg
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background
+
+In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I introduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that have been picked because they are likely to have a lot of taxonomic names in them. After I ID the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy (which we will run in a Jupyetr Notebook b/c I stil can't make it work in R), we'll run named entity recognition on the species names, and also look for locations and habitats. Will be cool to see what pops out!
+
+## Workspace setup
+
+Load the Libraries we need.
+
+```{r libraries, echo=TRUE, message=FALSE}
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+library(distill)
+library(rvest)
+library(dplyr)
+```
+
+## Install and configure GNfinder
+
+Recall that you need to have GNfinder installed on your machine to run it.
+
+To run GNfinder^[Mozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gnames/Gnfinder: V0.14.2. Zenodo, 2021. https://doi.org/10.5281/zenodo.5111562.
+], see the instructions [here](https://github.com/gnames/gnfinder). I am a Mac user, and I used the Homebrew option.
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg")
+```
+
+## Find taxonomic names in batch mode
+
+Real talk - we could do this by scraping text from BHL (see [previous post](https://amandawhitmire.github.io/blog/posts/2021-06-23-using-the-bhl-api/)), but I have all of the volumes as text files sotred locally on my machine (DownThemAll - look it up), so I'm going to run this particular task locally (except it's in Google Drive, but whatever). We want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don't know how to do this elegantly, so I'm just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know.
+
+## Running GNfinder
+
+Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia. Reminder: this runs in a `bash` chunk.
+
+```{bash, echo=TRUE, eval=FALSE}
+for f in /Users/thalassa/Google\ Drive/My\ Drive/LEADING/corpus/*.txt
+do 
+  echo "Processing $f file..."
+  gnfinder "$f" --verify > "${f%.txt}_gnf.txt"
+done
+
+```
+
+## Create entity ruler for spaCy based on GNfinder results. 
+
+spaCy entity rulers look like:
+
+{"label": "HABITAT", "pattern": "temperate oceans"}
+
+{"label": "HABITAT", "pattern": "temperate reefs"}
+
+{"label": "HABITAT", "pattern": "temperate seas"}
+...
+
+```{r echo=TRUE, eval=TRUE}
+prefix <- str_c("{","\"label\": ","\"TAXA\","," \"pattern\": \"") # this looks ugly, but if we view it ...
+cat(prefix) # it's doing what we want.
+```
+
+## Create entity lists for use in spaCy NER pipeline
+
+Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
+
+```{r echo=TRUE, eval=FALSE}
+setwd("/Users/thalassa/Google\ Drive/My\ Drive/LEADING/corpus/") #set working directory
+ldf <- list() # creates a list
+# creates the list of all the csv files in the directory
+listcsv <- dir(path = "/Users/thalassa/Google\ Drive/My\ Drive/LEADING/corpus/", pattern = "*gnf.txt") 
+outlist <- gsub(".txt", ".jsonl", listcsv ) #change the file extension for the entity files
+for (k in 1:length(listcsv)){
+  dat <- as_tibble(read_csv(listcsv[[k]]))
+  entout <- str_c(prefix,dat[[2]],"\"}") # put it together
+  myfile <- str_c("taxa-",outlist[[k]])
+  write_lines(entout, myfile)
+}
+
+rm(ldf, listcsv, outlist, dat, k, entout, myfile) # clean up!
+``` 
+
+That's it - there is now a `jsonl` file with taxonomic names for every volume of the ANSP corpus.

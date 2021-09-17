@@ -2113,7 +2113,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <h2 id="background">Background</h2>
-<p>In my <a href="https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/">last post</a>, I instroduced myself to the <a href="https://globalnames.org/apps/">Global Names Architecture</a> tool Global Names Finder (GNfinder). In this post, I’m going to use GNfinder again, applying it on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that have been picked because they are likely to have a lot of taxonomic names in them. After I ID the genus and species names, we’ll save the list from each ANSP section as an entity set for use in <a href="https://spacy.io/">spaCy</a>, a natural language processing tool. Within spaCy (which we will run in a Jupyetr Notebook b/c I stil can’t make it work in R), we’ll run named entity recognition on the species names, and also look for locations and habitats. Will be cool to see what pops out!</p>
+<p>In a <a href="https://amandawhitmire.github.io/blog/posts/2021-08-13-preparing-ansp-subsets-for-spacy/">prvious post</a>, I used GNfinder on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that had been picked because they are likely to have a lot of taxonomic names in them. After I ID’d the genus and species names with GNfinder, I saved the list from each ANSP section as an entity set for use in <a href="https://spacy.io/">spaCy</a>, a natural language processing tool. Within spaCy (which we will run in a Jupyter Notebook b/c I still can’t make it work in R), I’ll run named entity recognition on the species names, and also look for locations and habitats.</p>
+<p>In <em>this</em> exercise, I’ll run EVERY VOLUME of the ANSP corpus through GNfinder, and save the results in ONE GIANT entity list for spaCy. WEEE-HAW!! Let’s get wild.</p>
 <h2 id="workspace-setup">Workspace setup</h2>
 <p>Load the Libraries we need.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2133,105 +2134,30 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-install.jpg" /><!-- --></p>
 </div>
-<h2 id="scrape-text-from-ansp-volumes">Scrape text from ANSP Volumes</h2>
-<p>Load the CSV file with our URLs in it. These were preselected with the help of Steve Dilliplane at Drexel University. Each URL leacs to an html site with the OCR’d contents of a section of an ANSP volume. You’ll see the titles of the sections in the table we import from a CSV.</p>
-<div class="layout-chunk" data-layout="l-body-outset">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>sections</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/sections.csv"</span><span class='op'>)</span><span class='op'>)</span>
-<span class='co'># paged_table(sections)</span>
-</code></pre>
-</div>
-</div>
-<p>Let’s do one URL by hand before we launch into the whole set. First we grab the text from the URL. This is about the easiest web scraping there is - almost no <code>HTML</code> structure!</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>url1</span> <span class='op'>&lt;-</span> <span class='va'>sections</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='co'># grab the first row, first column</span>
-<span class='va'>sec1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='http://xml2.r-lib.org/reference/read_xml.html'>read_html</a></span><span class='op'>(</span><span class='va'>url1</span><span class='op'>)</span> <span class='co'># read the html of the URL</span>
-
-<span class='va'>text</span> <span class='op'>&lt;-</span> <span class='va'>sec1</span> <span class='op'>%&gt;%</span> <span class='co'># pipe the text in the 'p' sections to a character array</span>
-<span class='fu'><a href='https://rvest.tidyverse.org/reference/rename.html'>html_nodes</a></span><span class='op'>(</span><span class='st'>"p"</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
-<span class='fu'><a href='https://rvest.tidyverse.org/reference/html_text.html'>html_text</a></span><span class='op'>(</span><span class='op'>)</span>
-
-<span class='co'># What does it look like?</span>
-<span class='fu'><a href='https://rdrr.io/r/base/substr.html'>substr</a></span><span class='op'>(</span><span class='va'>text</span>, start<span class='op'>=</span><span class='fl'>1</span>, stop<span class='op'>=</span><span class='fl'>300</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>Save the output into a text file that we can run in GNfinder.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>infilename</span> <span class='op'>=</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/"</span>,<span class='va'>sections</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>,<span class='st'>".txt"</span><span class='op'>)</span>
-<span class='va'>outfilename</span> <span class='op'>=</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/"</span>,<span class='va'>sections</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>,<span class='st'>"_gnresults.txt"</span><span class='op'>)</span>
-<span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>text</span>, <span class='va'>infilename</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h2 id="running-gnfinder">Running GNfinder</h2>
-<p>This runs in a <code>bash</code> terminal.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gnfinder</span> /Users/thalassa/Rcode/blog/data/07sec30.txt --verify <span class="op">&gt;</span> /Users/thalassa/Rcode/blog/data/07sec30_gnresults.txt</span></code></pre></div>
-</div>
-<p>Import the output from GNFinder as a tibble &amp; look at it:</p>
-<div class="layout-chunk" data-layout="l-body-outset">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='fu'>read_csv</span><span class='op'>(</span><span class='va'>outfilename</span><span class='op'>)</span><span class='op'>)</span>
-<span class='fu'><a href='https://pkgs.rstudio.com/rmarkdown/reference/paged_table.html'>paged_table</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
 <h2 id="create-entity-ruler-for-spacy-based-on-gnfinder-results.">Create entity ruler for spaCy based on GNfinder results.</h2>
-<p>spaCy entity tulers look like:</p>
+<p>spaCy entity rulers look like:</p>
 <p>{“label”: “HABITAT”, “pattern”: “temperate oceans”}</p>
 <p>{“label”: “HABITAT”, “pattern”: “temperate reefs”}</p>
 <p>{“label”: “HABITAT”, “pattern”: “temperate seas”} …</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>prefix</span> <span class='op'>&lt;-</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"{"</span>,<span class='st'>"\"label\": "</span>,<span class='st'>"\"TAXA\","</span>,<span class='st'>" \"pattern\": \""</span><span class='op'>)</span> <span class='co'># this looks ugly, but if we view it ...</span>
-<span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span><span class='op'>(</span><span class='va'>prefix</span><span class='op'>)</span> <span class='co'># it's doing what we want.</span>
+<span class='co'># cat(prefix) # it's doing what we want.</span>
 <span class='va'>sec1ents</span> <span class='op'>&lt;-</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='va'>prefix</span>,<span class='va'>dat</span><span class='op'>[[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>]</span>,<span class='st'>"\"}"</span><span class='op'>)</span> <span class='co'># put it together </span>
 <span class='co'># cat(sec1ents) # look at it - should be one entity (taxonomic name) per line, in the right format </span>
 </code></pre>
 </div>
 </div>
-<h2 id="write-new-entity-set-out-to-a-text-file-for-use-with-spacy.">Write new entity set out to a text file for use with spaCy.</h2>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>sec1ents</span>, file <span class='op'>=</span> <span class='st'>'/Users/thalassa/Rcode/blog/data/sec1ents.jsonl'</span><span class='op'>)</span>
-
-<span class='fu'><a href='https://rdrr.io/r/base/rm.html'>rm</a></span><span class='op'>(</span><span class='va'>sec1ents</span>, <span class='va'>dat</span>, <span class='va'>text</span>, <span class='va'>url1</span>, <span class='va'>sec1</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>So, … that’s the end of the pipeline for a single file. I’ll come back and modify this to run in a loop after I test out spaCy and confirm that the entity set I just created works. Next step, of course, is to resurface my Jupyter Notebook from a previous excursion into Python and spaCy. Stay tuned!</p>
-<h2 id="update-23-august-scraping-more-files">Update, 23 August: scraping more files</h2>
-<p>I turned off the previous code chunks, so that the batch processing can run on a clean slate. Now let’s get this sucker running in batch mode on several files. The setup is that we need a text file in the working directory with a list of URLs to scrape. We did this earlier in the script when we loaded in <code>sections.csv</code> as the variable <code>sections</code>.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Loop through URLs and scrape text</span>
-<span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>sections</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
-  <span class='va'>url</span> <span class='op'>&lt;-</span> <span class='va'>sections</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='co'># grab the first row, first column</span>
-  <span class='va'>sec</span> <span class='op'>&lt;-</span> <span class='fu'><a href='http://xml2.r-lib.org/reference/read_xml.html'>read_html</a></span><span class='op'>(</span><span class='va'>url</span><span class='op'>)</span> <span class='co'># read the html of the URL</span>
-  <span class='va'>text</span> <span class='op'>&lt;-</span> <span class='va'>sec</span> <span class='op'>%&gt;%</span> <span class='co'># pipe the text in the 'p' sections to a character array</span>
-  <span class='fu'><a href='https://rvest.tidyverse.org/reference/rename.html'>html_nodes</a></span><span class='op'>(</span><span class='st'>"p"</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://rvest.tidyverse.org/reference/html_text.html'>html_text</a></span><span class='op'>(</span><span class='op'>)</span>
-  <span class='va'>infilename</span> <span class='op'>=</span> <span class='fu'>str_c</span><span class='op'>(</span><span class='st'>"/Users/thalassa/Rcode/blog/data/"</span>,<span class='va'>sections</span><span class='op'>[[</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span>,<span class='st'>".txt"</span><span class='op'>)</span>
-  <span class='fu'>write_lines</span><span class='op'>(</span><span class='va'>text</span>, <span class='va'>infilename</span><span class='op'>)</span> <span class='co'># save scraped text in a file</span>
-<span class='op'>}</span>
-
-<span class='fu'><a href='https://rdrr.io/r/base/rm.html'>rm</a></span><span class='op'>(</span><span class='va'>url</span>, <span class='va'>sec</span>, <span class='va'>text</span>, <span class='va'>infilename</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
 <h2 id="find-taxonomic-names-in-batch-mode">Find taxonomic names in batch mode</h2>
 <p>We scraped the text (yay!), and now we want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don’t know how to do this elegantly, so I’m just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know. This feels a bit klugey to me.</p>
-<h2 id="running-gnfinder-1">Running GNfinder</h2>
+<h2 id="running-gnfinder">Running GNfinder</h2>
 <p>Run gnfinder on a section of the Proceedings of the Academy of Natural Sciences of Philadelphia. Reminder: this runs in a <code>bash</code> chunk.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> <span class="ex">f</span> in /Users/thalassa/Rcode/blog/data/*.txt</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">do</span> </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">&quot;Processing </span><span class="va">$f</span><span class="st"> file...&quot;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">gnfinder</span> <span class="st">&quot;</span><span class="va">$f</span><span class="st">&quot;</span> --verify <span class="op">&gt;</span> <span class="st">&quot;</span><span class="va">${f%</span>.txt<span class="va">}</span><span class="st">_gnf.txt&quot;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">done</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> <span class="ex">f</span> in /Users/thalassa/Rcode/blog/data/*.txt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">do</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">&quot;Processing </span><span class="va">$f</span><span class="st"> file...&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">gnfinder</span> <span class="st">&quot;</span><span class="va">$f</span><span class="st">&quot;</span> --verify <span class="op">&gt;</span> <span class="st">&quot;</span><span class="va">${f%</span>.txt<span class="va">}</span><span class="st">_gnf.txt&quot;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">done</span></span></code></pre></div>
 </div>
 <h2 id="create-entity-lists-for-use-in-spacy-ner-pipeline">Create entity lists for use in spaCy NER pipeline</h2>
 <p>Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the ‘prefix’ to the pattern that we need in the entity file.</p>
@@ -2270,7 +2196,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-labels.jpg" /><!-- --></p>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
