@@ -15,8 +15,8 @@ output:
   distill::distill_article:
     self_contained: false
     
-draft: true
-preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gnfinder-results.jpg
+draft: false
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-raw.jpg
 ---
 
 
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Background
 
-In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I introduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on 134 volumes of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP). After I ID the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy, we'll run named entity recognition on the species names, and also look for locations and habitats. Onward!
+In a [previous post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I introduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on 134 volumes of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP). After I identify the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy, we'll run named entity recognition on the species names, and also look for locations and habitats. Onward!
 
 ## Workspace setup
 
@@ -54,7 +54,7 @@ include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/ima
 
 ## Find taxonomic names in batch mode
 
-Real talk - we could do this by scraping text from BHL (see [previous post](https://amandawhitmire.github.io/blog/posts/2021-06-23-using-the-bhl-api/)), but I have all of the volumes as text files sotred locally on my machine (DownThemAll - look it up), so I'm going to run this particular task locally (except it's in Google Drive, but whatever). We want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don't know how to do this elegantly, so I'm just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know.
+Real talk - we could do this by scraping text from BHL (see [previous post](https://amandawhitmire.github.io/blog/posts/2021-06-23-using-the-bhl-api/)), but I have all of the volumes as text files stored locally on my machine (DownThemAll Firefox browser extension - highly recommend), so I'm going to run this particular task locally (except it's in Google Drive, but whatever). We want to feed that text, one file at a time, through the GNfinder tool. GNfinder will run in a Bash code chunk. I don't know how to do this elegantly, so I'm just going to put all of the files I want to run into a folder and point GNfinder at it. If you have a more targeted way to make this work, say by using a list of filenames provided in a text file, please let me know.
 
 ## Running GNfinder
 
@@ -66,7 +66,6 @@ do
   echo "Processing $f file..."
   gnfinder "$f" --verify > "${f%.txt}_gnf.txt"
 done
-
 ```
 
 ## Create entity lists for use in spaCy NER pipeline
@@ -112,3 +111,15 @@ I took this resulting list of verbatim taxonomic names from GNfinder and opened 
 include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-raw.jpg")
 ```
 
+Notice all of the distracting punctuation. We don't need any of that. I used simple grep commands to find punctuaiton at the beginning and ending of lines and did a "replace all" with "".
+
+`^[[:punct:]]` finds punctuation at the start of the line.
+`[[:punct:]]$` finds punctuation at the end of a line.
+
+After that very minor cleaning, I ran `Text > Process Duplicate Lines...` because there is no reason to search for the same taxonomic name twice. Now we have:
+
+```{r}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-cleaned.jpg")
+```
+
+You'll notice that there are still some odd characters _inside_ of taxonomic names. Tempting to clean those up. VERY tempting. But, if we do that, we'll actually miss finding taxonomic names as they appear in the text. We want our entities to reflect the corpus, not our hopes and dreams of what a cleaned corpus might look like. So, we leave it at that! Now I head back over into Jupyter Notebooks to get the NLP pipeline and a Streamlit app up and running ...
