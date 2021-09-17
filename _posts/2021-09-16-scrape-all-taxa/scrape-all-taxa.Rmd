@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Background
 
-In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I introduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on a dozen or so sections of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP) volumes that have been picked because they are likely to have a lot of taxonomic names in them. After I ID the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy (which we will run in a Jupyetr Notebook b/c I stil can't make it work in R), we'll run named entity recognition on the species names, and also look for locations and habitats. Will be cool to see what pops out!
+In my [last post](https://amandawhitmire.github.io/blog/posts/2021-08-05-exploring-gnfinder/), I introduced myself to the [Global Names Architecture](https://globalnames.org/apps/) tool Global Names Finder (GNfinder). In this post, I'm going to use GNfinder again, applying it on 134 volumes of the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP). After I ID the genus and species names, we'll save the list from each ANSP section as an entity set for use in [spaCy](https://spacy.io/), a natural language processing tool. Within spaCy, we'll run named entity recognition on the species names, and also look for locations and habitats. Onward!
 
 ## Workspace setup
 
