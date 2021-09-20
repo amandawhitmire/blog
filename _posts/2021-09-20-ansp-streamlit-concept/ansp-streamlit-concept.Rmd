@@ -16,7 +16,7 @@ output:
     self_contained: false
     
 draft: false
-# preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-raw.jpg
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-streamlit-concept.jpeg
 ---
 
 ```{r setup, include=FALSE}
@@ -40,3 +40,13 @@ It's Monday morning and I've got my coffee - time to get going for the week! Thi
 ```{r, layout="l-body-outset"}
 include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-streamlit-concept.jpeg")
 ```
+
+The general layout of the demo app is _very close_ to what we want, which is FANTASTIC luck. You can see that we will have options to load texts (upload, copy/paste, or use provided set), the app will perform the `spaCy` natural language processing (NLP) pipeline, and visualize certain components. The named entity recognition (NER) results are shown as highlighted words. The [default entities](https://spacy.io/api/annotation#named-entities) include things like people, geopolitical entities (countries, cities, states), dates, times, and so on. I'll be adding two custom entity types in our app: taxonomic names that I've already identified in the corpus (see [last post](https://amandawhitmire.github.io/blog/posts/2021-09-16-scrape-all-taxa/)), and a set of habitats identified^[from: Nguyen N, Gabud R, Ananiadou S (2019) COPIOUS: A gold standard corpus of named entities towards extracting species occurrence from biodiversity literature. Biodiversity Data Journal 7: e29626. https://doi.org/10.3897/BDJ.7.e29626] in texts from the [Biodiversty Heritage Library](https://www.biodiversitylibrary.org/). 
+
+Below the NER results, we can show the tokens^["Tokenization is the task of splitting a text into meaningful segments, called tokens." [spaCy](https://spacy.io/usage/linguistic-features#tokenization)] from the NLP process. This is helpful and interesting because the current goal of my project is to identify species occurrences ("I saw this thing, at this place, on this day.") in the corpus. To accomplish this, we have to get far beyond just finding genus and species names in the text - we need to train `spaCy` to find sentences that are good candidates for having taxa + location + date info. This is way harder! Understanding how `spaCy` "sees" the Proceedings will help us understand how the model is functioning. 
+
+```{r, layout="l-body-outset"}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/spacy-streamlit-token-table.jpg")
+```
+
+So, that's what I'll be up to this week ... 
