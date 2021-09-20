@@ -1,7 +1,7 @@
 ---
-title: "ansp-streamlit-concept"
+title: "Goal: build a Streamlit app to show how spaCy works on ANSP texts"
 description: |
-  A short description of the post.
+  Can I get it done this week? 
 author:
   - name: Amanda Whitmire
     url: https://amandawhitmire.github.io/
@@ -19,13 +19,24 @@ draft: false
 # preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-raw.jpg
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+## Workspace setup
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+Load the Libraries we need.
 
+```{r libraries, echo=TRUE, message=FALSE}
+library(rmarkdown)
+library(knitr)
+library(distill)
+```
 
+## Introduction
+
+It's Monday morning and I've got my coffee - time to get going for the week! This will be a quick post to share my project for the week - getting a [Streamlit](https://streamlit.io/) app up and running. More specifically, I'd like to spin up `spaCy` in an app with pre-loaded volumes (or articles?) from the Proceedings of the Academy of Natural Sciences of Philadelphia (ANSP). There is a [demo version](https://share.streamlit.io/ines/spacy-streamlit-demo/app.py) of this kind of Streamlit app that I can (and will) fork. I've already been wading around in the back-end of Streamlit, and it's safe to say that while forking and adapting the demo app sounds simple, it's at the edges of my Python comfort level (which is very basic). This is likely to be a slow process laden with muttered cuss words, but it will still be great fun. Here's the plan:
+ 
+```{r, layout="l-body-outset"}
+include_graphics("https://raw.githubusercontent.com/amandawhitmire/blog/main/images/ansp-taxa-streamlit-concept.jpeg")
+```
