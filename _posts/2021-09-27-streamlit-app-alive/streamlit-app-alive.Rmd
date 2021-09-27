@@ -1,0 +1,34 @@
+---
+title: "The Streamlit app is alive (sort of!)"
+description: |
+  A quick tour of a very beta application.
+author:
+  - name: Amanda Whitmire
+    url: https://amandawhitmire.github.io/
+    affiliation: Stanford Libraries & Hopkins Marine Station
+date: 09-27-2021
+collections:
+  posts:
+    disqus: scrape-taxa-ansp
+    share: [twitter, facebook]
+output:
+  distill::distill_article:
+    self_contained: false
+    
+draft: false
+preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/streamlit-zygote.jpg
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Update! 
+
+While the Streamlit app is not yet launched to run on the web, I have it up and running on a local host. Since you can't visit the site yourself, I recorded a quick tour (on a Friday afternoon, forgive my slow brain).
+
+Click image below to see a 2-minute video that introduces a beta version of a Streamlit App that uses spaCy and applies custom NER entities for taxonomic names and habitats. 
+
+[![A quick look at the beta version of a Streamlit App that uses spaCy and applies custom NER entities for taxonomic names and habitats.](http://img.youtube.com/vi/wDoLmADXh00/0.jpg)](https://www.youtube.com/watch?v=wDoLmADXh00 "ANSP Streamlit demo")
+
