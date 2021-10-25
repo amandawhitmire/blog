@@ -1477,6 +1477,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/rmarkdown'>rmarkdown</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://yihui.org/knitr/'>knitr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/distill'>distill</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h2 id="update-2">Update 2!</h2>
+<p>The Streamlit app is <a href="https://share.streamlit.io/amandawhitmire/streamlit-ansp/app.py">ALIVE</a> on the Internet! It’s … not so stable, but you can play with it.</p>
+<div class="layout-chunk" data-layout="l-body-outset">
+<p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/streamlit_app.jpg" /><!-- --></p>
+</div>
+<p>You can upload a text file or paste in text, and you can download your results.</p>
+<div class="layout-chunk" data-layout="l-body-outset">
+<p><img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/download_button.jpg" /><!-- --></p>
+</div>
+<p>Keep in mind that the set of habitat entities are from <a href="https://doi.org/10.3897/BDJ.7.e29626">Nguyen et al. 2019</a> &amp; the taxonomic names were mined from the ANSP corpus using <span class="citation" data-cites="GlobalNames">@GlobalNames</span> GNfinder. If you upload non-ANSP text, some taxonomic names will get missed. Also try to avoid uploading big files - Streamlit gets cranky about that. Have fun!</p>
 <h2 id="update">Update!</h2>
 <p>While the Streamlit app is not yet launched to run on the web, I have it up and running on a local host. Since you can’t visit the site yourself, I recorded a quick tour (on a Friday afternoon, forgive my slow brain).</p>
 <p>Click image below to see a 2-minute video that introduces a beta version of a Streamlit App that uses spaCy and applies custom NER entities for taxonomic names and habitats.</p>

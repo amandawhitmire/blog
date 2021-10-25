@@ -24,6 +24,12 @@ preview: https://raw.githubusercontent.com/amandawhitmire/blog/main/images/strea
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+```{r libraries, echo=TRUE, message=FALSE}
+library(rmarkdown)
+library(knitr)
+library(distill)
+```
+
 ## Update 2!
 
 The Streamlit app is [ALIVE](https://share.streamlit.io/amandawhitmire/streamlit-ansp/app.py) on the Internet! It's ... not so stable, but you can play with it. 

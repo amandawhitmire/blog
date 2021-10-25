@@ -11,10 +11,10 @@
     ],
     "date": "2021-09-27",
     "categories": [],
-    "contents": "\nUpdate!\nWhile the Streamlit app is not yet launched to run on the web, I have it up and running on a local host. Since you can’t visit the site yourself, I recorded a quick tour (on a Friday afternoon, forgive my slow brain).\nClick image below to see a 2-minute video that introduces a beta version of a Streamlit App that uses spaCy and applies custom NER entities for taxonomic names and habitats.\n\n\n\n\n",
+    "contents": "\n\n\nlibrary(rmarkdown)\nlibrary(knitr)\nlibrary(distill)\n\n\n\nUpdate 2!\nThe Streamlit app is ALIVE on the Internet! It’s … not so stable, but you can play with it.\n\n\n\nYou can upload a text file or paste in text, and you can download your results.\n\n\n\nKeep in mind that the set of habitat entities are from Nguyen et al. 2019 & the taxonomic names were mined from the ANSP corpus using @GlobalNames GNfinder. If you upload non-ANSP text, some taxonomic names will get missed. Also try to avoid uploading big files - Streamlit gets cranky about that. Have fun!\nUpdate!\nWhile the Streamlit app is not yet launched to run on the web, I have it up and running on a local host. Since you can’t visit the site yourself, I recorded a quick tour (on a Friday afternoon, forgive my slow brain).\nClick image below to see a 2-minute video that introduces a beta version of a Streamlit App that uses spaCy and applies custom NER entities for taxonomic names and habitats.\n\n\n\n\n",
     "preview": "https://raw.githubusercontent.com/amandawhitmire/blog/main/images/streamlit-zygote.jpg",
-    "last_modified": "2021-09-27T09:45:34-07:00",
-    "input_file": {}
+    "last_modified": "2021-10-24T14:29:14-07:00",
+    "input_file": "streamlit-app-alive.knit.md"
   },
   {
     "path": "posts/2021-09-20-ansp-streamlit-concept/",
