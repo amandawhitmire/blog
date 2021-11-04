@@ -95,7 +95,8 @@ listfile <- as_tibble(list.files("/Users/thalassa/Rcode/blog/data/taxa-verbatim-
                        pattern = ".txt", full.names = T, recursive = FALSE))
 
 data <- as_tibble(read_lines(listfile[[1]][1]))
-for (k in 2:length(listfile)){
+
+for (k in 2:length(listfile[[1]])){
   dat <- as_tibble(read_lines(listfile[[1]][k]))
   data <- bind_rows(data, dat)
 }
