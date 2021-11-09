@@ -1,0 +1,16 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+ON	on	ADP	IN	ROOT	ON		True	False	True
+A	a	DET	DT	det	COLLECTION		True	False	True
+COLLECTION	collection	NOUN	NN	pobj	ON		True	False	False
+OF	of	ADP	IN	prep	COLLECTION		True	False	True
+CRUSTACEA	CRUSTACEA	PROPN	NNP	pobj	OF	PERSON	True	False	False
+FROM	from	ADP	IN	prep	CRUSTACEA		True	False	True
+VIRGINIA	VIRGINIA	PROPN	NNP	pobj	FROM	GPE	True	False	False
+,	,	PUNCT	,	punct	VIRGINIA		False	True	False
+NORTH	NORTH	PROPN	NNP	compound	CAROLINA	GPE	True	False	False
+CAROLINA	CAROLINA	PROPN	NNP	appos	VIRGINIA	GPE	True	False	False
+,	,	PUNCT	,	punct	VIRGINIA		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

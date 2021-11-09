@@ -1,0 +1,14 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+MOLLUSCA	MOLLUSCA	PROPN	NNP	ROOT	MOLLUSCA	PERSON	True	False	False
+FROM	from	ADP	IN	prep	MOLLUSCA		True	False	True
+THE	the	DET	DT	det	MIOCENE		True	False	True
+UPPER	UPPER	PROPN	NNP	compound	MIOCENE		True	False	False
+MIOCENE	MIOCENE	PROPN	NNP	pobj	FROM		True	False	False
+OF	of	ADP	IN	prep	MIOCENE		True	False	True
+SOUTH	SOUTH	PROPN	NNP	compound	CAROLINA	LOC	True	False	False
+CAROLINA	CAROLINA	PROPN	NNP	pobj	OF	LOC	True	False	False
+WITH	with	ADP	IN	prep	MOLLUSCA		True	False	True
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

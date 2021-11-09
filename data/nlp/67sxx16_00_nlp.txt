@@ -1,0 +1,23 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+AND	and	CCONJ	CC	cc	PILSBRY		True	False	True
+FERRISS	FERRISS	PROPN	NNP	conj	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	appos	PILSBRY	GPE	True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+THE	the	DET	DT	det	STATES		True	False	True
+SOUTHWESTERN	SOUTHWESTERN	PROPN	NNP	compound	STATES		True	False	False
+STATES	STATES	PROPN	NNPS	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	dep	"
+"		True	False	False
+XII	xii	NOUN	NN	nummod	PLATE		True	False	False
+.	.	NOUN	NN	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False

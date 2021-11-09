@@ -1,0 +1,1597 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+INVOLUTION	involution	NOUN	NN	compound	FORM		True	False	False
+FORM	form	NOUN	NN	ROOT	FORM		True	False	False
+OF	of	ADP	IN	prep	FORM		True	False	True
+THE	the	DET	DT	det	BACILLUS		True	False	True
+TUBERCLE	tubercle	NOUN	NN	compound	BACILLUS		True	False	False
+BACILLUS	bacillus	NOUN	NN	pobj	OF		True	False	False
+AND	and	CCONJ	CC	cc	FORM		True	False	True
+THE	the	DET	DT	det	EFFECT		True	False	True
+EFFECT	effect	NOUN	NN	conj	FORM		True	False	False
+OF	of	ADP	IN	prep	EFFECT		True	False	True
+SUBCUTANEOUS	subcutaneous	ADJ	JJ	amod	INJECTIONS		True	False	False
+INJECTIONS	injection	NOUN	NNS	pobj	OF		True	False	False
+OF	of	ADP	IN	prep	INJECTIONS		True	False	True
+ORGANIC	organic	ADJ	JJ	amod	SUBSTANCES		True	False	False
+SUBSTANCES	substance	NOUN	NNS	pobj	OF		True	False	False
+ON	on	ADP	IN	prep	EFFECT		True	False	True
+INFLAMMATIONS	inflammation	NOUN	NNS	pobj	ON		True	False	False
+.	.	PUNCT	.	punct	EFFECT		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	announced		False	False	False
+By	by	ADP	IN	prep	announced		True	False	True
+Samuel	Samuel	PROPN	NNP	compound	Dixon	PERSON	True	False	False
+G.	G.	PROPN	NNP	compound	Dixon	PERSON	False	False	False
+Dixon	Dixon	PROPN	NNP	pobj	By	PERSON	True	False	False
+,	,	PUNCT	,	punct	announced		False	True	False
+M.	M.	PROPN	NNP	compound	D.		False	False	False
+D.	D.	PROPN	NNP	compound	Prof.		False	False	False
+Prof.	Prof.	PROPN	NNP	compound	Koch		False	False	False
+Robert	Robert	PROPN	NNP	compound	Koch	PERSON	True	False	False
+Koch	Koch	PROPN	NNP	nsubj	announced	PERSON	True	False	False
+announced	announce	VERB	VBD	ROOT	announced		True	False	False
+in	in	ADP	IN	prep	announced		True	False	True
+1882	1882	NUM	CD	pobj	in	DATE	False	False	False
+the	the	DET	DT	det	discovery		True	False	True
+discovery	discovery	NOUN	NN	dobj	announced		True	False	False
+of	of	ADP	IN	prep	discovery		True	False	True
+the	the	DET	DT	det	cause		True	False	True
+cause	cause	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	cause		True	False	True
+Tuberculosis	tuberculosis	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	announced		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	claimed		False	False	False
+He	he	PRON	PRP	nsubj	claimed		True	False	True
+claimed	claim	VERB	VBD	ROOT	claimed		True	False	False
+that	that	SCONJ	IN	mark	produced		True	False	True
+consumption	consumption	NOUN	NN	nsubjpass	produced		True	False	False
+was	be	AUX	VBD	auxpass	produced		True	False	True
+produced	produce	VERB	VBN	ccomp	claimed		True	False	False
+by	by	ADP	IN	agent	produced		True	False	True
+a	a	DET	DT	det	bacillus		True	False	True
+peculiar	peculiar	ADJ	JJ	amod	bacillus		True	False	False
+bacillus	bacillus	NOUN	NN	pobj	by		True	False	False
+of	of	ADP	IN	prep	bacillus		True	False	True
+a	a	DET	DT	det	shape		True	False	True
+special	special	ADJ	JJ	amod	shape		True	False	False
+shape	shape	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	claimed		False	True	False
+"
+"	"
+"	SPACE	_SP	dobj	described		False	False	False
+This	this	DET	DT	dobj	described		True	False	True
+he	he	PRON	PRP	nsubj	described		True	False	True
+described	describe	VERB	VBD	ROOT	described		True	False	False
+as	as	ADP	IN	prep	described		True	False	True
+a	a	DET	DT	det	micro		True	False	True
+rodshaped	rodshaped	ADJ	JJ	amod	micro		True	False	False
+micro	micro	NOUN	NN	pobj	as		True	False	False
+-	-	NOUN	NN	pobj	as		False	True	False
+organism	organism	NOUN	NN	pobj	as		True	False	False
+with	with	ADP	IN	prep	organism		True	False	True
+rounded	rounded	ADJ	JJ	amod	ends		True	False	False
+ends	end	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	ends		False	True	False
+either	either	CCONJ	CC	preconj	straight		True	False	True
+straight	straight	ADJ	JJ	amod	ends		True	False	False
+or	or	CCONJ	CC	cc	straight		True	False	True
+curved	curved	ADJ	JJ	conj	straight		True	False	False
+,	,	PUNCT	,	punct	ends		False	True	False
+and	and	CCONJ	CC	cc	ends		True	False	True
+frequently	frequently	ADV	RB	advmod	beaded		True	False	False
+beaded	bead	VERB	VBN	conj	ends		True	False	False
+.	.	PUNCT	.	punct	described		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	accepted		False	False	False
+This	this	DET	DT	det	form		True	False	True
+simple	simple	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	nsubjpass	accepted		True	False	False
+was	be	AUX	VBD	auxpass	accepted		True	False	True
+accepted	accept	VERB	VBN	ROOT	accepted		True	False	False
+as	as	ADP	IN	prep	accepted		True	False	True
+a	a	DET	DT	det	character		True	False	True
+constant	constant	ADJ	JJ	amod	character		True	False	False
+character	character	NOUN	NN	pobj	as		True	False	False
+until	until	ADP	IN	prep	accepted		True	False	True
+the	the	DET	DT	det	summer	DATE	True	False	True
+summer	summer	NOUN	NN	pobj	until	DATE	True	False	False
+of	of	ADP	IN	prep	summer	DATE	True	False	True
+1889	1889	NUM	CD	pobj	of	DATE	False	False	False
+,	,	PUNCT	,	punct	summer		False	True	False
+when	when	ADV	WRB	advmod	observed		True	False	True
+I	I	PRON	PRP	nsubj	observed		True	False	True
+first	first	ADV	RB	advmod	observed	ORDINAL	True	False	True
+observed	observe	VERB	VBD	relcl	summer		True	False	False
+,	,	PUNCT	,	punct	observed		False	True	False
+in	in	ADP	IN	prep	observed		True	False	True
+an	an	DET	DT	det	culture		True	False	True
+artificial	artificial	ADJ	JJ	amod	culture		True	False	False
+culture	culture	NOUN	NN	pobj	in		True	False	False
+on	on	ADP	IN	prep	culture		True	False	True
+an	an	DET	DT	det	nidus		True	False	True
+Agar	Agar	PROPN	NNP	compound	Agar	PRODUCT	True	False	False
+Agar	Agar	PROPN	NNP	compound	nidus	PRODUCT	True	False	False
+glycerin	glycerin	NOUN	NN	compound	nidus		True	False	False
+nidus	nidus	NOUN	NN	pobj	on		True	False	False
+,	,	PUNCT	,	punct	observed		False	True	False
+a	a	DET	DT	det	inclination		True	False	True
+slight	slight	ADJ	JJ	amod	inclination		True	False	False
+inclination	inclination	NOUN	NN	dobj	observed		True	False	False
+to	to	PART	TO	aux	bud		True	False	True
+bud	bud	VERB	VB	acl	inclination		True	False	False
+in	in	ADP	IN	prep	bud		True	False	True
+one	one	NUM	CD	nummod	places	CARDINAL	True	False	True
+or	or	CCONJ	CC	cc	one		True	False	True
+more	more	ADJ	JJR	conj	one		True	False	True
+places	place	NOUN	NNS	pobj	in		True	False	False
+along	along	ADP	IN	prep	places		True	False	True
+the	the	DET	DT	det	rod		True	False	True
+rod	rod	NOUN	NN	pobj	along		True	False	False
+,	,	PUNCT	,	punct	observed		False	True	False
+without	without	ADP	IN	prep	observed		True	False	True
+the	the	DET	DT	det	production		True	False	True
+production	production	NOUN	NN	pobj	without		True	False	False
+of	of	ADP	IN	prep	production		True	False	True
+any	any	DET	DT	det	angle		True	False	True
+particular	particular	ADJ	JJ	amod	angle		True	False	False
+angle	angle	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	observed		False	True	False
+some	some	DET	DT	det	relations		True	False	True
+relations	relation	NOUN	NNS	dobj	observed		True	False	False
+forming	form	VERB	VBG	acl	relations		True	False	False
+an	an	DET	DT	det	acute		True	False	True
+acute	acute	ADJ	JJ	dobj	forming		True	False	False
+while	while	SCONJ	IN	mark	formed		True	False	True
+others	other	NOUN	NNS	nsubj	formed		True	False	True
+formed	form	VERB	VBD	advcl	forming		True	False	False
+a	a	DET	DT	det	right		True	False	True
+right	right	NOUN	NN	dobj	formed		True	False	False
+or	or	CCONJ	CC	cc	right		True	False	True
+possibly	possibly	ADV	RB	advmod	angle		True	False	False
+an	an	DET	DT	det	angle		True	False	True
+obtuse	obtuse	ADJ	JJ	amod	angle		True	False	False
+angle	angle	NOUN	NN	conj	right		True	False	False
+.	.	PUNCT	.	punct	accepted		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	recognized		False	False	False
+A	a	DET	DT	det	bud		True	False	True
+single	single	ADJ	JJ	amod	bud		True	False	False
+bud	bud	NOUN	NN	nsubjpass	recognized		True	False	False
+could	could	AUX	MD	aux	recognized		True	False	True
+only	only	ADV	RB	advmod	recognized		True	False	True
+be	be	AUX	VB	auxpass	recognized		True	False	True
+recognized	recognize	VERB	VBN	ROOT	recognized		True	False	False
+with	with	ADP	IN	prep	recognized		True	False	True
+a	a	DET	DT	det	objective		True	False	True
+high	high	ADJ	JJ	amod	power		True	False	False
+power	power	NOUN	NN	compound	objective		True	False	False
+objective	objective	NOUN	NN	pobj	with		True	False	False
+focused	focus	VERB	VBN	acl	objective		True	False	False
+and	and	CCONJ	CC	cc	focused		True	False	True
+illuminated	illuminate	VERB	VBN	conj	focused		True	False	False
+with	with	ADP	IN	prep	illuminated		True	False	True
+particular	particular	ADJ	JJ	amod	nicety		True	False	False
+nicety	nicety	NOUN	NN	pobj	with		True	False	False
+.	.	PUNCT	.	punct	recognized		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	repeated		False	False	False
+The	the	DET	DT	det	indications		True	False	True
+indications	indication	NOUN	NNS	nsubjpass	repeated		True	False	False
+,	,	PUNCT	,	punct	repeated		False	True	False
+however	however	ADV	RB	advmod	repeated		True	False	True
+,	,	PUNCT	,	punct	repeated		False	True	False
+were	be	AUX	VBD	auxpass	repeated		True	False	True
+so	so	ADV	RB	advmod	often		True	False	True
+often	often	ADV	RB	advmod	repeated		True	False	True
+repeated	repeat	VERB	VBN	ROOT	repeated		True	False	False
+in	in	ADP	IN	prep	repeated		True	False	True
+each	each	DET	DT	det	field		True	False	True
+field	field	NOUN	NN	pobj	in		True	False	False
+as	as	ADP	IN	mark	moved		True	False	True
+the	the	DET	DT	det	slide		True	False	True
+slide	slide	NOUN	NN	nsubjpass	moved		True	False	False
+was	be	AUX	VBD	auxpass	moved		True	False	True
+moved	move	VERB	VBN	advcl	repeated		True	False	False
+upon	upon	SCONJ	IN	prep	moved		True	False	True
+the	the	DET	DT	det	stage		True	False	True
+stage	stage	NOUN	NN	pobj	upon		True	False	False
+of	of	ADP	IN	prep	stage		True	False	True
+the	the	DET	DT	det	microscope		True	False	True
+microscope	microscope	NOUN	NN	pobj	of		True	False	False
+that	that	SCONJ	IN	mark	convinced		True	False	True
+I	I	PRON	PRP	nsubjpass	convinced		True	False	True
+was	be	AUX	VBD	auxpass	convinced		True	False	True
+sufficiently	sufficiently	ADV	RB	advmod	convinced		True	False	False
+convinced	convince	VERB	VBN	dep	repeated		True	False	False
+of	of	ADP	IN	prep	convinced		True	False	True
+the	the	DET	DT	det	presence		True	False	True
+presence	presence	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	presence		True	False	True
+branches	branch	NOUN	NNS	pobj	of		True	False	False
+to	to	PART	TO	aux	review		True	False	True
+review	review	VERB	VB	xcomp	convinced		True	False	False
+the	the	DET	DT	det	history		True	False	True
+life	life	NOUN	NN	compound	history		True	False	False
+-	-	PUNCT	HYPH	punct	history		False	True	False
+history	history	NOUN	NN	dobj	review		True	False	False
+of	of	ADP	IN	prep	history		True	False	True
+the	the	DET	DT	det	tube		True	False	True
+tube	tube	NOUN	NN	pobj	of		True	False	False
+in	in	ADP	IN	prep	found		True	False	True
+which	which	DET	WDT	pobj	in		True	False	True
+they	they	PRON	PRP	nsubjpass	found		True	False	True
+were	be	AUX	VBD	auxpass	found		True	False	True
+found	find	VERB	VBN	relcl	tube		True	False	False
+and	and	CCONJ	CC	cc	review		True	False	True
+to	to	PART	TO	aux	speculate		True	False	True
+speculate	speculate	VERB	VB	conj	review		True	False	False
+upon	upon	SCONJ	IN	prep	speculate		True	False	True
+the	the	DET	DT	det	factors		True	False	True
+factors	factor	NOUN	NNS	pobj	upon		True	False	False
+likely	likely	ADJ	JJ	amod	factors		True	False	False
+to	to	PART	TO	aux	brought		True	False	True
+have	have	AUX	VB	aux	brought		True	False	True
+brought	bring	VERB	VBN	xcomp	likely		True	False	False
+about	about	ADP	RP	prt	brought		True	False	True
+the	the	DET	DT	det	volution		True	False	True
+evident	evident	ADJ	JJ	amod	volution		True	False	False
+volution	volution	NOUN	NN	dobj	brought		True	False	False
+.	.	PUNCT	.	punct	repeated		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	was		False	False	False
+The	the	DET	DT	det	result		True	False	True
+result	result	NOUN	NN	nsubj	was		True	False	False
+was	be	AUX	VBD	ROOT	was		True	False	True
+the	the	DET	DT	det	production		True	False	True
+production	production	NOUN	NN	attr	was		True	False	False
+of	of	ADP	IN	prep	production		True	False	True
+germs	germ	NOUN	NNS	pobj	of		True	False	False
+with	with	ADP	IN	prep	germs		True	False	True
+decided	decided	ADJ	JJ	amod	branches		True	False	False
+branches	branch	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	branches		False	True	False
+some	some	DET	DT	nsubj	were		True	False	True
+of	of	ADP	IN	prep	some		True	False	True
+which	which	DET	WDT	pobj	of		True	False	True
+were	be	VERB	VBD	relcl	germs		True	False	True
+quite	quite	ADV	RB	advmod	long		True	False	True
+as	as	ADV	RB	advmod	long		True	False	True
+long	long	ADJ	JJ	acomp	were		True	False	False
+as	as	ADP	IN	prep	long		True	False	True
+the	the	DET	DT	det	rods		True	False	True
+parent	parent	NOUN	NN	compound	rods		True	False	False
+rods	rod	NOUN	NNS	pobj	as		True	False	False
+or	or	CCONJ	CC	cc	rods		True	False	True
+stems	stem	NOUN	NNS	conj	rods		True	False	False
+.	.	PUNCT	.	punct	was		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	published		False	False	False
+This	this	DET	DT	det	result		True	False	True
+result	result	NOUN	NN	nsubjpass	published		True	False	False
+was	be	AUX	VBD	auxpass	published		True	False	True
+published	publish	VERB	VBN	ROOT	published		True	False	False
+in	in	ADP	IN	prep	published		True	False	True
+the	the	DET	DT	det	Neivs	ORG	True	False	True
+Medical	Medical	PROPN	NNP	compound	Neivs	ORG	True	False	False
+Neivs	Neivs	PROPN	NNP	pobj	in	ORG	True	False	False
+of	of	ADP	IN	prep	Neivs		True	False	True
+October	October	PROPN	NNP	compound	19th	DATE	True	False	False
+19th	19th	NUM	CD	pobj	of	DATE	False	False	False
+,	,	PUNCT	,	punct	19th	DATE	False	True	False
+1889	1889	NUM	CD	npadvmod	19th	DATE	False	False	False
+.	.	PUNCT	.	punct	published		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	observed		False	False	False
+In	in	ADP	IN	prep	observed		True	False	True
+1891	1891	NUM	CD	pobj	In	DATE	False	False	False
+,	,	PUNCT	,	punct	observed		False	True	False
+Prof.	Prof.	PROPN	NNP	compound	Smith		False	False	False
+Allen	Allen	PROPN	NNP	compound	Smith	PERSON	True	False	False
+J.	J.	PROPN	NNP	compound	Smith	PERSON	False	False	False
+Smith	Smith	PROPN	NNP	nsubj	observed	PERSON	True	False	False
+observed	observe	VERB	VBD	ROOT	observed		True	False	False
+branched	branched	ADJ	JJ	amod	forms		True	False	False
+forms	form	NOUN	NNS	dobj	observed		True	False	False
+of	of	ADP	IN	prep	forms		True	False	True
+tubercle	tubercle	NOUN	NN	compound	bacilli		True	False	False
+bacilli	bacilli	NOUN	NN	pobj	of		True	False	False
+in	in	ADP	IN	prep	forms		True	False	True
+human	human	ADJ	JJ	amod	sputum		True	False	False
+sputum	sputum	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	observed		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	described		False	False	False
+Since	since	SCONJ	IN	prep	described		True	False	True
+then	then	ADV	RB	pcomp	Since		True	False	True
+Prof.	Prof.	PROPN	NNP	compound	Klein		False	False	False
+Klein	Klein	PROPN	NNP	nsubj	described	PERSON	True	False	False
+,	,	PUNCT	,	punct	Klein		False	True	False
+Herren	Herren	PROPN	NNP	compound	Fischel	PERSON	True	False	False
+Fischel	Fischel	PROPN	NNP	conj	Klein	PERSON	True	False	False
+,	,	PUNCT	,	punct	Fischel		False	True	False
+Mafucci	Mafucci	PROPN	NNP	nmod	al	PERSON	True	False	False
+et	et	X	FW	compound	al		True	False	False
+al	al	X	FW	conj	Fischel		True	False	False
+.	.	PUNCT	,	punct	Klein		False	True	False
+,	,	PUNCT	,	punct	Klein		False	True	False
+have	have	AUX	VBP	aux	described		True	False	True
+described	describe	VERB	VBN	ROOT	described		True	False	False
+the	the	DET	DT	det	branching		True	False	True
+branching	branching	NOUN	NN	dobj	described		True	False	False
+of	of	ADP	IN	prep	branching		True	False	True
+this	this	DET	DT	det	germ		True	False	True
+germ	germ	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	described		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	observed		False	False	False
+In	in	ADP	IN	prep	observed		True	False	True
+the	the	DET	DT	det	summer	DATE	True	False	True
+summer	summer	NOUN	NN	pobj	In	DATE	True	False	False
+of	of	ADP	IN	prep	summer	DATE	True	False	True
+1892	1892	NUM	CD	pobj	of	DATE	False	False	False
+I	I	PRON	PRP	nsubj	observed		True	False	True
+observed	observe	VERB	VBD	ROOT	observed		True	False	False
+the	the	DET	DT	det	bacillus		True	False	True
+bacillus	bacillus	NOUN	NN	dobj	observed		True	False	False
+in	in	ADP	IN	prep	bacillus		True	False	True
+this	this	DET	DT	det	cycle		True	False	True
+cycle	cycle	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	cycle		True	False	True
+life	life	NOUN	NN	pobj	of		True	False	False
+in	in	ADP	IN	prep	bacillus		True	False	True
+the	the	DET	DT	det	liver		True	False	True
+liver	liver	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	liver		True	False	True
+the	the	DET	DT	det	Jay		True	False	True
+Green	Green	PROPN	NNP	compound	Jay		True	False	False
+Jay	Jay	PROPN	NNP	pobj	of		True	False	False
+of	of	ADP	IN	prep	Jay		True	False	True
+Mexico	Mexico	PROPN	NNP	pobj	of	GPE	True	False	False
+,	,	PUNCT	,	punct	Jay		False	True	False
+Xanthoura	xanthoura	NOUN	NN	compound	luxosa		True	False	False
+luxosa	luxosa	NOUN	NN	appos	liver		True	False	False
+.	.	PUNCT	.	punct	observed		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	compel		False	False	False
+This	this	DET	DT	det	discovery		True	False	True
+discovery	discovery	NOUN	NN	nsubj	compel		True	False	False
+,	,	PUNCT	,	punct	discovery		False	True	False
+coupled	couple	VERB	VBN	acl	discovery		True	False	False
+with	with	ADP	IN	prep	coupled		True	False	True
+my	my	PRON	PRP$	poss	observations		True	False	True
+observations	observation	NOUN	NNS	pobj	with		True	False	False
+of	of	ADP	IN	prep	observations		True	False	True
+1889	1889	NUM	CD	pobj	of	DATE	False	False	False
+,	,	PUNCT	,	punct	coupled		False	True	False
+and	and	CCONJ	CC	cc	coupled		True	False	True
+corroborated	corroborate	VERB	VBN	conj	coupled		True	False	False
+by	by	ADP	IN	agent	corroborated		True	False	True
+the	the	DET	DT	det	statements		True	False	True
+statements	statement	NOUN	NNS	pobj	by		True	False	False
+of	of	ADP	IN	prep	statements		True	False	True
+other	other	ADJ	JJ	amod	scientists		True	False	True
+scientists	scientist	NOUN	NNS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	discovery		False	True	False
+must	must	AUX	MD	aux	compel		True	False	True
+now	now	ADV	RB	advmod	compel		True	False	True
+compel	compel	VERB	VB	ROOT	compel		True	False	False
+the	the	DET	DT	det	world		True	False	True
+bacteriological	bacteriological	ADJ	JJ	amod	world		True	False	False
+world	world	NOUN	NN	dobj	compel		True	False	False
+to	to	PART	TO	aux	recognize		True	False	True
+recognize	recognize	VERB	VB	xcomp	compel		True	False	False
+a	a	DET	DT	det	form		True	False	True
+more	more	ADV	RBR	advmod	complex		True	False	True
+complex	complex	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	dobj	recognize		True	False	False
+of	of	ADP	IN	prep	form		True	False	True
+the	the	DET	DT	det	bacillus		True	False	True
+tubercle	tubercle	NOUN	NN	compound	bacillus		True	False	False
+bacillus	bacillus	NOUN	NN	pobj	of		True	False	False
+than	than	SCONJ	IN	prep	form		True	False	True
+that	that	DET	DT	pobj	than		True	False	True
+observed	observe	VERB	VBN	acl	that		True	False	False
+by	by	ADP	IN	agent	observed		True	False	True
+the	the	DET	DT	det	bacteriologist		True	False	True
+great	great	ADJ	JJ	amod	bacteriologist		True	False	False
+German	german	ADJ	JJ	amod	bacteriologist	NORP	True	False	False
+bacteriologist	bacteriologist	NOUN	NN	pobj	by		True	False	False
+in	in	ADP	IN	prep	observed		True	False	True
+1882	1882	NUM	CD	pobj	in	DATE	False	False	False
+.	.	PUNCT	.	punct	compel		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	been		False	False	False
+Since	since	SCONJ	IN	prep	been		True	False	True
+the	the	DET	DT	det	discovery		True	False	True
+discovery	discovery	NOUN	NN	pobj	Since		True	False	False
+of	of	ADP	IN	prep	discovery		True	False	True
+the	the	DET	DT	det	form		True	False	True
+branched	branched	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	form		True	False	True
+the	the	DET	DT	det	germs		True	False	True
+tubercle	tubercle	NOUN	NN	compound	germs		True	False	False
+germs	germ	NOUN	NNS	pobj	of		True	False	False
+in	in	ADP	IN	prep	discovery		True	False	True
+1889	1889	NUM	CD	pobj	in	DATE	False	False	False
+,	,	PUNCT	,	punct	been		False	True	False
+I	I	PRON	PRP	nsubj	been		True	False	True
+have	have	AUX	VBP	aux	been		True	False	True
+been	be	VERB	VBN	ROOT	been		True	False	True
+able	able	ADJ	JJ	acomp	been		True	False	False
+to	to	PART	TO	aux	reproduce		True	False	True
+continuously	continuously	ADV	RB	advmod	reproduce		True	False	False
+reproduce	reproduce	VERB	VB	xcomp	able		True	False	False
+them	they	PRON	PRP	dobj	reproduce		True	False	True
+on	on	ADP	IN	prep	reproduce		True	False	True
+artificial	artificial	ADJ	JJ	amod	mediums		True	False	False
+mediums	medium	NOUN	NNS	pobj	on		True	False	False
+.	.	PUNCT	.	punct	been		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	become		False	False	False
+While	while	SCONJ	IN	mark	seem		True	False	True
+the	the	DET	DT	det	germs		True	False	True
+young	young	ADJ	JJ	amod	germs		True	False	False
+germs	germ	NOUN	NNS	nsubj	seem		True	False	False
+seem	seem	VERB	VBP	advcl	become		True	False	True
+to	to	PART	TO	aux	be		True	False	True
+be	be	VERB	VB	xcomp	seem		True	False	True
+quite	quite	ADV	RB	advmod	simple		True	False	True
+simple	simple	ADJ	JJ	acomp	be		True	False	False
+in	in	ADP	IN	prep	simple		True	False	True
+form	form	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	be		False	True	False
+appearing	appear	VERB	VBG	advcl	be		True	False	False
+in	in	ADP	IN	prep	appearing		True	False	True
+straight	straight	ADJ	JJ	amod	rods		True	False	False
+rods	rod	NOUN	NNS	pobj	in		True	False	False
+and	and	CCONJ	CC	cc	rods		True	False	True
+rods	rod	NOUN	NNS	conj	rods		True	False	False
+bent	bend	VERB	VBN	acl	rods		True	False	False
+upon	upon	SCONJ	IN	prep	bent		True	False	True
+themselves	themselves	PRON	PRP	pobj	upon		True	False	True
+,	,	PUNCT	,	punct	become		False	True	False
+those	those	DET	DT	nsubj	"
+"		True	False	True
+which	which	DET	WDT	nsubj	arrived		True	False	True
+have	have	AUX	VBP	aux	arrived		True	False	True
+arrived	arrive	VERB	VBN	relcl	those		True	False	False
+at	at	ADP	IN	prep	arrived		True	False	True
+the	the	DET	DT	det	age	DATE	True	False	True
+age	age	NOUN	NN	pobj	at	DATE	True	False	False
+of	of	ADP	IN	prep	age	DATE	True	False	True
+four	four	NUM	CD	nummod	weeks	DATE	True	False	True
+weeks	week	NOUN	NNS	pobj	of	DATE	True	False	False
+,	,	PUNCT	,	punct	arrived		False	True	False
+particularly	particularly	ADV	RB	advmod	in		True	False	False
+in	in	ADP	IN	prep	arrived		True	False	True
+the	the	DET	DT	det	presence		True	False	True
+presence	presence	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	presence		True	False	True
+an	an	DET	DT	det	excess		True	False	True
+excess	excess	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	excess		True	False	True
+glycerin	glycerin	NOUN	NN	pobj	of		True	False	False
+and	and	CCONJ	CC	cc	in		True	False	True
+in	in	ADP	IN	conj	in		True	False	True
+a	a	DET	DT	det	temperature		True	False	True
+temperature	temperature	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	temperature		True	False	True
+40	40	NUM	CD	nummod	C.	QUANTITY	False	False	False
+°	°	PROPN	NNP	compound	C.	QUANTITY	False	False	False
+C.	C.	PROPN	NNP	pobj	of	QUANTITY	False	False	False
+,	,	PUNCT	,	punct	arrived		False	True	False
+.	.	PUNCT	.	punct	those		False	True	False
+"
+"	"
+"	SPACE	_SP	dep	become		False	False	False
+become	become	VERB	VB	ROOT	become		True	False	True
+branched	branched	ADJ	JJ	acomp	become		True	False	False
+.	.	PUNCT	.	punct	become		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	produce		False	False	False
+The	the	DET	DT	det	bacilli		True	False	True
+young	young	ADJ	JJ	amod	bacilli		True	False	False
+bacilli	bacillus	NOUN	NNS	nsubj	produce		True	False	False
+,	,	PUNCT	,	punct	produce		False	True	False
+when	when	ADV	WRB	advmod	introduced		True	False	True
+introduced	introduce	VERB	VBN	advcl	produce		True	False	False
+into	into	ADP	IN	prep	introduced		True	False	True
+the	the	DET	DT	det	tissues		True	False	True
+animal	animal	NOUN	NN	compound	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	into		True	False	False
+,	,	PUNCT	,	punct	produce		False	True	False
+produce	produce	VERB	VBP	ROOT	produce		True	False	False
+tuberculosis	tuberculosis	NOUN	NN	dobj	produce		True	False	False
+,	,	PUNCT	,	punct	produce		False	True	False
+while	while	SCONJ	IN	mark	lose		True	False	True
+the	the	DET	DT	det	cultures		True	False	True
+older	old	ADJ	JJR	amod	cultures		True	False	False
+cultures	culture	NOUN	NNS	nsubj	lose		True	False	False
+gradually	gradually	ADV	RB	advmod	lose		True	False	False
+lose	lose	VERB	VBP	advcl	produce		True	False	False
+their	their	PRON	PRP$	poss	virulence		True	False	True
+virulence	virulence	NOUN	NN	dobj	lose		True	False	False
+,	,	PUNCT	,	punct	lose		False	True	False
+in	in	ADP	IN	prep	lose		True	False	True
+all	all	DET	DT	det	probability		True	False	True
+probability	probability	NOUN	NN	pobj	in		True	False	False
+owing	owe	VERB	VBG	prep	lose		True	False	False
+to	to	ADP	IN	prep	owing		True	False	True
+their	their	PRON	PRP$	poss	inability		True	False	True
+inability	inability	NOUN	NN	pobj	to		True	False	False
+to	to	PART	TO	aux	reproduce		True	False	True
+reproduce	reproduce	VERB	VB	acl	inability		True	False	False
+themselves	themselves	PRON	PRP	dobj	reproduce		True	False	True
+.	.	PUNCT	.	punct	produce		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	indicates		False	False	False
+This	this	DET	DT	det	fact		True	False	True
+fact	fact	NOUN	NN	nsubj	indicates		True	False	False
+indicates	indicate	VERB	VBZ	ROOT	indicates		True	False	False
+that	that	SCONJ	IN	mark	represents		True	False	True
+the	the	DET	DT	det	form		True	False	True
+branched	branched	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	nsubj	represents		True	False	False
+represents	represent	VERB	VBZ	ccomp	indicates		True	False	False
+an	an	DET	DT	det	cycle		True	False	True
+involution	involution	NOUN	NN	compound	cycle		True	False	False
+life	life	NOUN	NN	compound	cycle		True	False	False
+-	-	PUNCT	HYPH	punct	cycle		False	True	False
+cycle	cycle	NOUN	NN	dobj	represents		True	False	False
+of	of	ADP	IN	prep	cycle		True	False	True
+the	the	DET	DT	det	germ		True	False	True
+germ	germ	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	indicates		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	effect		False	False	False
+Notwithstanding	notwithstanding	ADP	IN	prep	effect		True	False	False
+the	the	DET	DT	det	fact		True	False	True
+fact	fact	NOUN	NN	pobj	Notwithstanding		True	False	False
+,	,	PUNCT	,	punct	fact		False	True	False
+however	however	ADV	RB	advmod	fact		True	False	True
+,	,	PUNCT	,	punct	fact		False	True	False
+that	that	SCONJ	IN	mark	produce		True	False	True
+the	the	DET	DT	det	bacilli		True	False	True
+devitalized	devitalized	ADJ	JJ	amod	bacilli		True	False	False
+,	,	PUNCT	,	punct	devitalized		False	True	False
+dying	die	VERB	VBG	conj	devitalized		True	False	False
+or	or	CCONJ	CC	cc	dying		True	False	True
+dead	dead	ADJ	JJ	conj	dying		True	False	False
+bacilli	bacillus	NOUN	NNS	nsubj	produce		True	False	False
+can	can	AUX	RB	aux	produce		True	False	True
+not	not	PART	RB	neg	produce		True	False	True
+produce	produce	VERB	VB	acl	fact		True	False	False
+consumption	consumption	NOUN	NN	dobj	produce		True	False	False
+,	,	PUNCT	,	punct	effect		False	True	False
+they	they	PRON	PRP	nsubj	effect		True	False	True
+,	,	PUNCT	,	punct	effect		False	True	False
+with	with	ADP	IN	prep	effect		True	False	True
+their	their	PRON	PRP$	poss	products		True	False	True
+products	product	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	effect		False	True	False
+effect	effect	VERB	VBP	ROOT	effect		True	False	False
+a	a	DET	DT	det	increase		True	False	True
+decided	decided	ADJ	JJ	amod	increase		True	False	False
+increase	increase	NOUN	NN	dobj	effect		True	False	False
+in	in	ADP	IN	prep	increase		True	False	True
+tubercular	tubercular	ADJ	JJ	amod	inflammation		True	False	False
+inflammation	inflammation	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	inflammation		False	True	False
+which	which	DET	WDT	det	process		True	False	True
+inflammatory	inflammatory	ADJ	JJ	amod	process		True	False	False
+process	process	NOUN	NN	nsubj	results		True	False	False
+even	even	ADV	RB	advmod	results		True	False	True
+results	result	VERB	VBZ	relcl	inflammation		True	False	False
+in	in	ADP	IN	prep	results		True	False	True
+necrosis	necrosis	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	necrosis		True	False	True
+the	the	DET	DT	det	tissues		True	False	True
+tissues	tissue	NOUN	NNS	pobj	of		True	False	False
+.	.	PUNCT	.	punct	effect		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	led		False	False	False
+These	these	DET	DT	det	phenomena		True	False	True
+phenomena	phenomenon	NOUN	NNS	nsubj	led		True	False	False
+led	lead	VERB	VBD	ROOT	led		True	False	False
+to	to	ADP	IN	prep	led		True	False	True
+investigations	investigation	NOUN	NNS	pobj	to		True	False	False
+proving	prove	VERB	VBG	acl	investigations		True	False	False
+the	the	DET	DT	det	correctness		True	False	True
+correctness	correctness	NOUN	NN	dobj	proving		True	False	False
+of	of	ADP	IN	prep	correctness		True	False	True
+the	the	DET	DT	det	hypothesis		True	False	True
+hypothesis	hypothesis	NOUN	NN	pobj	of		True	False	False
+first	first	ADV	RB	advmod	published		True	False	True
+published	publish	VERB	VBN	acl	hypothesis		True	False	False
+in	in	ADP	IN	prep	published		True	False	True
+my	my	PRON	PRP$	poss	Monograph		True	False	True
+Monograph	monograph	NOUN	NN	pobj	in		True	False	False
+on	on	ADP	IN	prep	Monograph		True	False	True
+Immunity	Immunity	PROPN	NNP	pobj	on		True	False	False
+(	(	PUNCT	-LRB-	punct	Monograph		False	True	False
+Medical	Medical	PROPN	NNP	compound	News		True	False	False
+News	News	PROPN	NNP	appos	Monograph		True	False	False
+of	of	ADP	IN	prep	News		True	False	True
+Oct.	Oct.	PROPN	NNP	pobj	of	DATE	False	False	False
+19	19	NUM	CD	nummod	Oct.	DATE	False	False	False
+,	,	PUNCT	,	punct	Oct.	DATE	False	True	False
+1889	1889	NUM	CD	nummod	Oct.	DATE	False	False	False
+)	)	PUNCT	-RRB-	punct	Monograph		False	True	False
+to	to	ADP	IN	prep	published		True	False	True
+wit	wit	NOUN	NN	pobj	to		True	False	False
+:	:	PUNCT	:	punct	is		False	True	False
+""""	""""	PUNCT	``	punct	is		False	True	False
+It	it	PRON	PRP	nsubj	is		True	False	True
+is	be	VERB	VBZ	acl	investigations		True	False	True
+possible	possible	ADJ	JJ	acomp	is		True	False	False
+that	that	SCONJ	IN	mark	obtained		True	False	True
+,	,	PUNCT	,	punct	obtained		False	True	False
+by	by	ADP	IN	prep	obtained		True	False	True
+a	a	DET	DT	det	filtering		True	False	True
+thorough	thorough	ADJ	JJ	amod	filtering		True	False	False
+filtering	filtering	NOUN	NN	pobj	by		True	False	False
+out	out	ADP	RP	prt	filtering		True	False	True
+of	of	ADP	IN	prep	filtering		True	False	True
+bacilli	bacilli	NOUN	NN	pobj	of		True	False	False
+from	from	ADP	IN	prep	filtering		True	False	True
+tuberculous	tuberculous	ADJ	JJ	amod	material		True	False	False
+material	material	NOUN	NN	pobj	from		True	False	False
+,	,	PUNCT	,	punct	obtained		False	True	False
+a	a	DET	DT	det	filtrate		True	False	True
+filtrate	filtrate	NOUN	NN	nsubjpass	obtained		True	False	False
+might	might	AUX	MD	aux	obtained		True	False	True
+be	be	AUX	VB	auxpass	obtained		True	False	True
+obtained	obtain	VERB	VBN	ccomp	is		True	False	False
+and	and	CCONJ	CC	cc	obtained		True	False	True
+attenuated	attenuate	VERB	VBN	conj	obtained		True	False	False
+so	so	SCONJ	IN	mark	produced		True	False	True
+that	that	SCONJ	IN	mark	produced		True	False	True
+by	by	ADP	IN	prep	produced		True	False	True
+systematic	systematic	ADJ	JJ	amod	inoculations		True	False	False
+inoculations	inoculation	NOUN	NNS	pobj	by		True	False	False
+a	a	DET	DT	det	change		True	False	True
+change	change	NOUN	NN	nsubjpass	produced		True	False	False
+might	might	AUX	MD	aux	produced		True	False	True
+be	be	AUX	VB	auxpass	produced		True	False	True
+produced	produce	VERB	VBN	advcl	attenuated		True	False	False
+on	on	ADP	IN	prep	produced		True	False	True
+living	live	VERB	VBG	amod	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	on		True	False	False
+that	that	DET	WDT	nsubj	enable		True	False	True
+would	would	AUX	MD	aux	enable		True	False	True
+enable	enable	VERB	VB	relcl	produced		True	False	False
+them	they	PRON	PRP	dobj	enable		True	False	True
+to	to	PART	TO	aux	resist		True	False	True
+resist	resist	VERB	VB	xcomp	enable		True	False	False
+virulent	virulent	ADJ	JJ	amod	bacilli		True	False	False
+tubercle	tubercle	NOUN	NN	compound	bacilli		True	False	False
+bacilli	bacilli	NOUN	NN	dobj	resist		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	led		False	False	False
+In	in	ADP	IN	prep	proved		True	False	True
+this	this	DET	DT	det	line		True	False	True
+line	line	NOUN	NN	pobj	In		True	False	False
+of	of	ADP	IN	prep	line		True	False	True
+experimentation	experimentation	NOUN	NN	pobj	of		True	False	False
+I	I	PRON	PRP	nsubj	proved		True	False	True
+proved	prove	VERB	VBD	conj	led		True	False	False
+that	that	SCONJ	IN	mark	was		True	False	True
+the	the	DET	DT	det	presence		True	False	True
+presence	presence	NOUN	NN	nsubj	was		True	False	False
+of	of	ADP	IN	prep	presence		True	False	True
+the	the	DET	DT	det	germs		True	False	True
+germs	germ	NOUN	NNS	pobj	of		True	False	False
+was	be	VERB	VBD	advcl	proved		True	False	True
+not	not	PART	RB	neg	was		True	False	True
+necessary	necessary	ADJ	JJ	acomp	was		True	False	False
+to	to	PART	TO	aux	produce		True	False	True
+produce	produce	VERB	VB	advcl	was		True	False	False
+the	the	DET	DT	det	condition		True	False	True
+hyper	hyper	ADJ	JJ	amod	condition		True	False	False
+-	-	ADJ	JJ	amod	condition		False	True	False
+inflammatory	inflammatory	ADJ	JJ	amod	condition		True	False	False
+condition	condition	NOUN	NN	dobj	produce		True	False	False
+of	of	ADP	IN	prep	condition		True	False	True
+the	the	DET	DT	det	tissue		True	False	True
+tuberculous	tuberculous	ADJ	JJ	amod	tissue		True	False	False
+tissue	tissue	NOUN	NN	pobj	of		True	False	False
+but	but	CCONJ	CC	cc	was		True	False	True
+that	that	SCONJ	IN	mark	was		True	False	True
+it	it	PRON	PRP	nsubj	was		True	False	True
+was	be	VERB	VBD	conj	was		True	False	True
+a	a	DET	DT	det	product		True	False	True
+product	product	NOUN	NN	attr	was		True	False	False
+of	of	ADP	IN	prep	product		True	False	True
+the	the	DET	DT	det	bacillus		True	False	True
+bacillus	bacillus	NOUN	NN	pobj	of		True	False	False
+that	that	DET	WDT	nsubj	caused		True	False	True
+caused	cause	VERB	VBD	relcl	product		True	False	False
+the	the	DET	DT	det	reaction		True	False	True
+reaction	reaction	NOUN	NN	dobj	caused		True	False	False
+upon	upon	SCONJ	IN	prep	reaction		True	False	True
+the	the	DET	DT	det	tissues		True	False	True
+tuberculous	tuberculous	ADJ	JJ	amod	tissues		True	False	False
+animal	animal	NOUN	NN	compound	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	upon		True	False	False
+.	.	PUNCT	.	punct	proved		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	led		False	False	False
+|This	|this	DET	DT	punct	led		False	False	False
+,	,	PUNCT	,	punct	|This		False	True	False
+since	since	SCONJ	IN	mark	called		True	False	True
+called	call	VERB	VBN	advcl	|This		True	False	False
+Tuberculin	Tuberculin	PROPN	NNP	oprd	called		True	False	False
+and	and	CCONJ	CC	cc	called		True	False	True
+introduced	introduce	VERB	VBN	conj	called		True	False	False
+into	into	ADP	IN	prep	introduced		True	False	True
+the	the	DET	DT	det	economy		True	False	True
+human	human	ADJ	JJ	amod	economy		True	False	False
+economy	economy	NOUN	NN	pobj	into		True	False	False
+for	for	ADP	IN	prep	introduced		True	False	True
+the	the	DET	DT	det	purpose		True	False	True
+purpose	purpose	NOUN	NN	pobj	for		True	False	False
+of	of	ADP	IN	prep	purpose		True	False	True
+curing	cure	VERB	VBG	pcomp	of		True	False	False
+tuberculosis	tuberculosis	NOUN	NN	dobj	curing		True	False	False
+when	when	ADV	WRB	advmod	introduced		True	False	True
+introduced	introduce	VERB	VBN	advcl	introduced		True	False	False
+into	into	ADP	IN	prep	introduced		True	False	True
+animals	animal	NOUN	NNS	pobj	into		True	False	False
+suffering	suffer	VERB	VBG	acl	animals		True	False	False
+with	with	ADP	IN	prep	suffering		True	False	True
+artificially	artificially	ADV	RB	advmod	produced		True	False	False
+produced	produce	VERB	VBN	amod	tuberculosis		True	False	False
+tuberculosis	tuberculosis	NOUN	NN	pobj	with		True	False	False
+,	,	PUNCT	,	punct	destroyed		False	True	False
+often	often	ADV	RB	advmod	destroyed		True	False	True
+destroyed	destroy	VERB	VBD	conj	led		True	False	False
+the	the	DET	DT	det	condition		True	False	True
+condition	condition	NOUN	NN	dobj	destroyed		True	False	False
+called	call	VERB	VBN	acl	condition		True	False	False
+consumption	consumption	NOUN	NN	oprd	called		True	False	False
+and	and	CCONJ	CC	cc	destroyed		True	False	True
+in	in	ADP	IN	prep	appeared		True	False	True
+many	many	ADJ	JJ	amod	cases		True	False	True
+cases	case	NOUN	NNS	pobj	in		True	False	False
+appeared	appear	VERB	VBD	conj	destroyed		True	False	False
+to	to	PART	TO	aux	produce		True	False	True
+produce	produce	VERB	VB	xcomp	appeared		True	False	False
+immunity	immunity	NOUN	NN	dobj	produce		True	False	False
+to	to	ADP	IN	prep	immunity		True	False	True
+the	the	DET	DT	det	poison		True	False	True
+poison	poison	NOUN	NN	pobj	to		True	False	False
+of	of	ADP	IN	prep	poison		True	False	True
+tuberculosis	tuberculosis	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	''	punct	led		False	True	False
+""""	""""	PUNCT	''	punct	led		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	was		False	False	False
+The	the	DET	DT	det	process		True	False	True
+process	process	NOUN	NN	nsubj	was		True	False	False
+,	,	PUNCT	,	punct	was		False	True	False
+however	however	ADV	RB	advmod	was		True	False	True
+,	,	PUNCT	,	punct	was		False	True	False
+was	be	AUX	VBD	ROOT	was		True	False	True
+not	not	PART	RB	neg	was		True	False	True
+quite	quite	ADV	RB	advmod	so		True	False	True
+so	so	ADV	RB	advmod	successful		True	False	True
+successful	successful	ADJ	JJ	acomp	was		True	False	False
+in	in	ADP	IN	prep	was		True	False	True
+animals	animal	NOUN	NNS	pobj	in		True	False	False
+which	which	DET	WDT	nsubj	contracted		True	False	True
+had	have	AUX	VBD	aux	contracted		True	False	True
+contracted	contract	VERB	VBN	relcl	animals		True	False	False
+tuberculosis	tuberculosis	NOUN	NN	dobj	contracted		True	False	False
+through	through	ADP	IN	prep	contracted		True	False	True
+,	,	PUNCT	,	punct	through		False	True	False
+one	one	NUM	CD	pobj	through		True	False	True
+of	of	ADP	IN	prep	one		True	False	True
+the	the	DET	DT	det	channels		True	False	True
+natural	natural	ADJ	JJ	amod	channels		True	False	False
+channels	channel	NOUN	NNS	pobj	of		True	False	False
+.	.	PUNCT	.	punct	was		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+In	in	ADP	IN	prep	infected		True	False	True
+these	these	DET	DT	det	cases		True	False	True
+cases	case	NOUN	NNS	pobj	In		True	False	False
+,	,	PUNCT	,	punct	infected		False	True	False
+tissues	tissue	NOUN	NNS	nsubj	became		True	False	False
+surrounding	surround	VERB	VBG	acl	tissues		True	False	False
+that	that	DET	DT	dobj	surrounding		True	False	True
+which	which	DET	WDT	nsubjpass	recognized		True	False	True
+was	be	AUX	VBD	auxpass	recognized		True	False	True
+recognized	recognize	VERB	VBN	relcl	that		True	False	False
+as	as	ADP	IN	prep	recognized		True	False	True
+tuberculous	tuberculous	ADJ	JJ	amod	as		True	False	False
+afterward	afterward	ADV	RB	advmod	recognized		True	False	False
+became	became	AUX	VBD	auxpass	infected		True	False	True
+infected	infect	VERB	VBN	acomp	"
+"		True	False	False
+with	with	ADP	IN	prep	infected		True	False	True
+consumption	consumption	NOUN	NN	pobj	with		True	False	False
+.	.	PUNCT	.	punct	infected		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	have		False	False	False
+While	while	SCONJ	IN	mark	was		True	False	True
+this	this	DET	DT	nsubj	was		True	False	True
+was	be	VERB	VBD	advcl	have		True	False	True
+and	and	CCONJ	CC	cc	was		True	False	True
+still	still	ADV	RB	advmod	is		True	False	True
+is	be	AUX	VBZ	aux	discouraging		True	False	True
+discouraging	discouraging	ADJ	JJ	conj	was		True	False	False
+we	we	PRON	PRP	nsubj	have		True	False	True
+have	have	VERB	VBP	ROOT	have		True	False	True
+good	good	ADJ	JJ	amod	reason		True	False	False
+reason	reason	NOUN	NN	dobj	have		True	False	False
+to	to	PART	TO	aux	believe		True	False	True
+believe	believe	VERB	VB	relcl	reason		True	False	False
+that	that	SCONJ	IN	mark	established		True	False	True
+Tuberculin	Tuberculin	PROPN	NNP	nsubjpass	established		True	False	False
+will	will	AUX	MD	aux	established		True	False	True
+be	be	AUX	VB	auxpass	established		True	False	True
+permanently	permanently	ADV	RB	advmod	established		True	False	False
+established	establish	VERB	VBN	ccomp	believe		True	False	False
+as	as	ADP	IN	prep	established		True	False	True
+a	a	DET	DT	det	remedy		True	False	True
+remedy	remedy	NOUN	NN	pobj	as		True	False	False
+for	for	ADP	IN	prep	remedy		True	False	True
+this	this	DET	DT	det	condition		True	False	True
+pathological	pathological	ADJ	JJ	amod	condition		True	False	False
+condition	condition	NOUN	NN	pobj	for		True	False	False
+.	.	PUNCT	.	punct	have		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	led		False	False	False
+The	the	DET	DT	det	albumose		True	False	True
+toxic	toxic	ADJ	JJ	amod	albumose		True	False	False
+albumose	albumose	NOUN	NN	nsubj	led		True	False	False
+causing	cause	VERB	VBG	amod	inflammation		True	False	False
+inflammation	inflammation	NOUN	NN	appos	albumose		True	False	False
+of	of	ADP	IN	prep	inflammation		True	False	True
+tissues	tissue	NOUN	NNS	pobj	of		True	False	False
+markedly	markedly	ADV	RB	advmod	tuberculous		True	False	False
+tuberculous	tuberculous	ADJ	JJ	amod	tissues		True	False	False
+,	,	PUNCT	,	punct	albumose		False	True	False
+coupled	couple	VERB	VBN	acl	albumose		True	False	False
+with	with	ADP	IN	prep	coupled		True	False	True
+the	the	DET	DT	det	fact		True	False	True
+fact	fact	NOUN	NN	pobj	with		True	False	False
+that	that	SCONJ	IN	mark	found		True	False	True
+it	it	PRON	PRP	nsubjpass	found		True	False	True
+is	be	AUX	VBZ	auxpass	found		True	False	True
+found	find	VERB	VBN	acl	fact		True	False	False
+in	in	ADP	IN	prep	found		True	False	True
+such	such	ADJ	JJ	amod	tissues		True	False	True
+tissues	tissue	NOUN	NNS	pobj	in		True	False	False
+,	,	PUNCT	,	punct	albumose		False	True	False
+led	lead	VERB	VBD	ROOT	led		True	False	False
+me	I	PRON	PRP	dobj	led		True	False	True
+to	to	PART	TO	aux	inquire		True	False	True
+inquire	inquire	VERB	VB	xcomp	led		True	False	False
+whether	whether	SCONJ	IN	mark	produce		True	False	True
+or	or	CCONJ	CC	cc	produce		True	False	True
+not	not	PART	RB	neg	produce		True	False	True
+some	some	DET	DT	det	constituents		True	False	True
+other	other	ADJ	JJ	amod	constituents		True	False	True
+constituents	constituent	NOUN	NNS	nsubj	produce		True	False	False
+of	of	ADP	IN	prep	constituents		True	False	True
+animal	animal	NOUN	NN	compound	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	constituents		False	True	False
+pathological	pathological	ADJ	JJ	amod	constituents		True	False	False
+or	or	CCONJ	CC	cc	pathological		True	False	True
+normal	normal	ADJ	JJ	conj	pathological		True	False	False
+,	,	PUNCT	,	punct	constituents		False	True	False
+would	would	AUX	MD	aux	produce		True	False	True
+produce	produce	VERB	VB	ccomp	inquire		True	False	False
+reaction	reaction	NOUN	NN	dobj	produce		True	False	False
+if	if	SCONJ	IN	mark	introduced		True	False	True
+introduced	introduce	VERB	VBN	advcl	produce		True	False	False
+in	in	ADP	IN	prep	introduced		True	False	True
+excess	excess	NOUN	NN	pobj	in		True	False	False
+into	into	ADP	IN	prep	introduced		True	False	True
+the	the	DET	DT	det	circulation		True	False	True
+general	general	ADJ	JJ	amod	circulation		True	False	False
+circulation	circulation	NOUN	NN	pobj	into		True	False	False
+.	.	PUNCT	.	punct	led		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	begun		False	False	False
+This	this	DET	DT	det	line		True	False	True
+line	line	NOUN	NN	nsubjpass	begun		True	False	False
+of	of	ADP	IN	prep	line		True	False	True
+experimentation	experimentation	NOUN	NN	pobj	of		True	False	False
+was	be	AUX	VBD	auxpass	begun		True	False	True
+begun	begin	VERB	VBN	ROOT	begun		True	False	False
+by	by	ADP	IN	prep	begun		True	False	True
+first	first	ADV	RB	advmod	using	ORDINAL	True	False	True
+using	use	VERB	VBG	pcomp	by		True	False	True
+an	an	DET	DT	det	albumose		True	False	True
+albumose	albumose	NOUN	NN	dobj	using		True	False	False
+of	of	ADP	IN	prep	albumose		True	False	True
+the	the	DET	DT	det	goat		True	False	True
+goat	goat	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	goat		False	True	False
+a	a	DET	DT	det	animal		True	False	True
+comparatively	comparatively	ADV	RB	advmod	immune		True	False	False
+immune	immune	ADJ	JJ	amod	animal		True	False	False
+animal	animal	NOUN	NN	appos	goat		True	False	False
+.	.	PUNCT	.	punct	begun		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+This	this	DET	DT	det	material		True	False	True
+material	material	NOUN	NN	nsubj	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+however	however	ADV	RB	advmod	is		True	False	True
+,	,	PUNCT	,	punct	is		False	True	False
+if	if	SCONJ	IN	mark	active		True	False	True
+at	at	ADV	RB	advmod	all		True	False	True
+all	all	ADV	RB	advmod	active		True	False	True
+active	active	ADJ	JJ	advcl	is		True	False	False
+as	as	ADP	IN	prep	active		True	False	True
+a	a	DET	DT	det	agent		True	False	True
+remedial	remedial	ADJ	JJ	amod	agent		True	False	False
+agent	agent	NOUN	NN	pobj	as		True	False	False
+in	in	ADP	IN	prep	agent		True	False	True
+tuberculosis	tuberculosis	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+so	so	ADV	RB	advmod	slow		True	False	True
+slow	slow	ADJ	JJ	acomp	is		True	False	False
+in	in	ADP	IN	prep	slow		True	False	True
+its	its	PRON	PRP$	poss	effects		True	False	True
+effects	effect	NOUN	NNS	pobj	in		True	False	False
+that	that	SCONJ	IN	mark	failed		True	False	True
+I	I	PRON	PRP	nsubj	failed		True	False	True
+have	have	AUX	VBP	aux	failed		True	False	True
+heretofore	heretofore	ADV	RB	advmod	failed		True	False	False
+failed	fail	VERB	VBN	ccomp	slow		True	False	False
+to	to	PART	TO	aux	produce		True	False	True
+produce	produce	VERB	VB	xcomp	failed		True	False	False
+any	any	DET	DT	det	changes		True	False	True
+marked	marked	ADJ	JJ	amod	changes		True	False	False
+changes	change	NOUN	NNS	dobj	produce		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	experimented		False	False	False
+When	when	ADV	WRB	advmod	overloaded		True	False	True
+,	,	PUNCT	,	punct	overloaded		False	True	False
+however	however	ADV	RB	advmod	overloaded		True	False	True
+,	,	PUNCT	,	punct	overloaded		False	True	False
+in	in	ADP	IN	prep	overloaded		True	False	True
+the	the	DET	DT	det	course		True	False	True
+course	course	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	course		True	False	True
+my	my	PRON	PRP$	poss	investigations		True	False	True
+investigations	investigation	NOUN	NNS	pobj	of		True	False	False
+I	I	PRON	PRP	nsubj	overloaded		True	False	True
+overloaded	overload	VERB	VBD	advcl	experimented		True	False	False
+the	the	DET	DT	det	system		True	False	True
+animal	animal	NOUN	NN	compound	system		True	False	False
+system	system	NOUN	NN	dobj	overloaded		True	False	False
+with	with	ADP	IN	prep	overloaded		True	False	True
+some	some	DET	DT	pobj	with		True	False	True
+of	of	ADP	IN	prep	some		True	False	True
+its	its	PRON	PRP$	poss	products		True	False	True
+waste	waste	NOUN	NN	compound	products		True	False	False
+products	product	NOUN	NNS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	some		False	True	False
+Dr.	Dr.	PROPN	NNP	compound	Zuill		False	False	False
+William	William	PROPN	NNP	compound	Zuill	PERSON	True	False	False
+L.	L.	PROPN	NNP	compound	Zuill	PERSON	False	False	False
+Zuill	Zuill	PROPN	NNP	appos	some	PERSON	True	False	False
+,	,	PUNCT	,	punct	Zuill		False	True	False
+M.	M.	PROPN	NNP	compound	D.		False	False	False
+D.	D.	PROPN	NNP	appos	Zuill		False	False	False
+,	,	PUNCT	,	punct	D.		False	True	False
+D.	D.	PROPN	NNP	compound	S.		False	False	False
+V.	V.	PROPN	NNP	compound	S.		False	False	False
+S.	S.	PROPN	NNP	appos	Zuill		False	False	False
+,	,	PUNCT	,	punct	Zuill		False	True	False
+who	who	PRON	WP	nsubj	carried		True	False	True
+has	have	AUX	VBZ	aux	carried		True	False	True
+kindly	kindly	ADV	RB	advmod	carried		True	False	False
+carried	carry	VERB	VBN	relcl	Zuill		True	False	False
+on	on	ADP	RP	prt	carried		True	False	True
+the	the	DET	DT	det	work		True	False	True
+clinical	clinical	ADJ	JJ	amod	work		True	False	False
+work	work	NOUN	NN	dobj	carried		True	False	False
+on	on	ADP	IN	prep	work		True	False	True
+animals	animal	NOUN	NNS	pobj	on		True	False	False
+for	for	ADP	IN	prep	work		True	False	True
+our	our	PRON	PRP$	poss	Laboratory		True	False	True
+Bacteriological	Bacteriological	PROPN	NNP	compound	Laboratory	ORG	True	False	False
+Laboratory	Laboratory	PROPN	NNP	pobj	for	ORG	True	False	False
+,	,	PUNCT	,	punct	Zuill		False	True	False
+reported	report	VERB	VBN	acl	Zuill		True	False	False
+in	in	ADP	IN	prep	reported		True	False	True
+the	the	DET	DT	det	Times		True	False	True
+Times	Times	PROPN	NNP	pobj	in	ORG	True	False	False
+and	and	CCONJ	CC	cc	Times		True	False	True
+Register	Register	PROPN	NNP	conj	Times	ORG	True	False	False
+of	of	ADP	IN	prep	Times		True	False	True
+Sept.	Sept.	PROPN	NNP	compound	26th	DATE	False	False	False
+26th	26th	NUM	CD	pobj	of	DATE	False	False	False
+,	,	PUNCT	,	punct	26th	DATE	False	True	False
+1891	1891	NUM	CD	npadvmod	26th	DATE	False	False	False
+,	,	PUNCT	,	punct	Zuill		False	True	False
+a	a	DET	DT	det	reaction		True	False	True
+reaction	reaction	NOUN	NN	appos	Zuill		True	False	False
+by	by	ADP	IN	prep	reaction		True	False	True
+the	the	DET	DT	det	group		True	False	True
+Amide	Amide	PROPN	NNP	compound	group	ORG	True	False	False
+group	group	NOUN	NN	pobj	by		True	False	False
+on	on	ADP	IN	prep	reaction		True	False	True
+inflammatory	inflammatory	ADJ	JJ	amod	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	on		True	False	False
+,	,	PUNCT	,	punct	experimented		False	True	False
+the	the	DET	DT	det	animals		True	False	True
+animals	animal	NOUN	NNS	nsubj	experimented		True	False	False
+experimented	experiment	VERB	VBD	ROOT	experimented		True	False	False
+on	on	ADP	IN	prep	experimented		True	False	True
+being	be	VERB	VBG	pcomp	on		True	False	True
+tuberculous	tuberculous	ADJ	JJ	acomp	being		True	False	False
+.	.	PUNCT	.	punct	experimented		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	led		False	False	False
+As	as	ADP	IN	mark	included		True	False	True
+this	this	DET	DT	det	group		True	False	True
+group	group	NOUN	NN	nsubj	included		True	False	False
+included	include	VERB	VBD	advcl	led		True	False	False
+that	that	DET	DT	dobj	included		True	False	True
+which	which	DET	WDT	nsubj	produce		True	False	True
+we	we	PRON	PRP	nsubj	believe		True	False	True
+believe	believe	VERB	VBP	relcl	that		True	False	False
+to	to	PART	TO	aux	produce		True	False	True
+produce	produce	VERB	VB	ccomp	believe		True	False	False
+the	the	DET	DT	det	inflammation		True	False	True
+inflammation	inflammation	NOUN	NN	dobj	produce		True	False	False
+of	of	ADP	IN	prep	inflammation		True	False	True
+gout	gout	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	led		False	True	False
+I	I	PRON	PRP	nsubjpass	led		True	False	True
+was	be	AUX	VBD	auxpass	led		True	False	True
+led	lead	VERB	VBN	ROOT	led		True	False	False
+to	to	PART	TO	aux	review		True	False	True
+review	review	VERB	VB	xcomp	led		True	False	False
+my	my	PRON	PRP$	poss	experience		True	False	True
+experience	experience	NOUN	NN	dobj	review		True	False	False
+with	with	ADP	IN	prep	experience		True	False	True
+tuberculosis	tuberculosis	NOUN	NN	pobj	with		True	False	False
+in	in	ADP	IN	prep	experience		True	False	True
+relation	relation	NOUN	NN	pobj	in		True	False	False
+to	to	ADP	IN	prep	relation		True	False	True
+lithemia	lithemia	NOUN	NN	pobj	to		True	False	False
+.	.	PUNCT	.	punct	led		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	impressed		False	False	False
+Studying	study	VERB	VBG	advcl	impressed		True	False	False
+this	this	DET	DT	det	field		True	False	True
+field	field	NOUN	NN	dobj	Studying		True	False	False
+with	with	ADP	IN	prep	Studying		True	False	True
+the	the	DET	DT	det	habits		True	False	True
+lithemic	lithemic	ADJ	JJ	amod	habits		True	False	False
+and	and	CCONJ	CC	cc	lithemic		True	False	True
+tuberculous	tuberculous	ADJ	JJ	conj	lithemic		True	False	False
+habits	habit	NOUN	NNS	pobj	with		True	False	False
+in	in	ADP	IN	prep	habits		True	False	True
+view	view	NOUN	NN	pobj	in		True	False	False
+I	I	PRON	PRP	nsubjpass	impressed		True	False	True
+was	be	AUX	VBD	auxpass	impressed		True	False	True
+soon	soon	ADV	RB	advmod	impressed		True	False	False
+impressed	impress	VERB	VBN	ROOT	impressed		True	False	False
+with	with	ADP	IN	prep	impressed		True	False	True
+the	the	DET	DT	det	fact		True	False	True
+fact	fact	NOUN	NN	pobj	with		True	False	False
+that	that	SCONJ	IN	mark	claim		True	False	True
+when	when	ADV	WRB	advmod	were		True	False	True
+these	these	DET	DT	det	conditions		True	False	True
+diseased	diseased	ADJ	JJ	amod	conditions		True	False	False
+conditions	condition	NOUN	NNS	nsubj	were		True	False	False
+were	be	VERB	VBD	advcl	claim		True	False	True
+present	present	ADJ	JJ	acomp	were		True	False	False
+at	at	ADP	IN	prep	were		True	False	True
+the	the	DET	DT	det	time		True	False	True
+same	same	ADJ	JJ	amod	time		True	False	True
+time	time	NOUN	NN	pobj	at		True	False	False
+in	in	ADP	IN	prep	were		True	False	True
+any	any	DET	DT	det	individual		True	False	True
+individual	individual	NOUN	NN	pobj	in		True	False	False
+we	we	PRON	PRP	nsubj	claim		True	False	True
+could	could	AUX	MD	aux	claim		True	False	True
+claim	claim	VERB	VB	acl	fact		True	False	False
+it	it	PRON	PRP	nsubj	be		True	False	True
+to	to	PART	TO	aux	be		True	False	True
+be	be	VERB	VB	ccomp	claim		True	False	True
+an	an	DET	DT	det	exception		True	False	True
+exception	exception	NOUN	NN	attr	be		True	False	False
+to	to	ADP	IN	prep	exception		True	False	True
+the	the	DET	DT	det	rule		True	False	True
+rule	rule	NOUN	NN	pobj	to		True	False	False
+.	.	PUNCT	.	punct	impressed		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	selected		False	False	False
+To	to	PART	TO	aux	determine		True	False	True
+determine	determine	VERB	VB	advcl	selected		True	False	False
+the	the	DET	DT	det	action		True	False	True
+special	special	ADJ	JJ	amod	action		True	False	False
+action	action	NOUN	NN	dobj	determine		True	False	False
+of	of	ADP	IN	prep	action		True	False	True
+the	the	DET	DT	det	group		True	False	True
+Amide	Amide	PROPN	NNP	compound	group		True	False	False
+group	group	NOUN	NN	pobj	of		True	False	False
+upon	upon	SCONJ	IN	prep	action		True	False	True
+inflamed	inflame	VERB	VBN	amod	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	upon		True	False	False
+when	when	ADV	WRB	advmod	introduced		True	False	True
+introduced	introduce	VERB	VBN	advcl	determine		True	False	False
+into	into	ADP	IN	prep	introduced		True	False	True
+the	the	DET	DT	det	circulation		True	False	True
+circulation	circulation	NOUN	NN	pobj	into		True	False	False
+,	,	PUNCT	,	punct	selected		False	True	False
+a	a	DET	DT	det	case		True	False	True
+case	case	NOUN	NN	nsubjpass	selected		True	False	False
+of	of	ADP	IN	prep	case		True	False	True
+Lupus	Lupus	PROPN	NNP	compound	vulgaris	TAXA	True	False	False
+vulgaris	vulgaris	ADJ	JJ	pobj	of	TAXA	True	False	False
+was	be	AUX	VBD	auxpass	selected		True	False	True
+selected	select	VERB	VBN	ROOT	selected		True	False	False
+and	and	CCONJ	CC	cc	selected		True	False	True
+first	first	ADV	RB	advmod	treated	ORDINAL	True	False	True
+treated	treat	VERB	VBN	conj	selected		True	False	False
+by	by	ADP	IN	agent	treated		True	False	True
+the	the	DET	DT	det	introduction		True	False	True
+subcutaneous	subcutaneous	ADJ	JJ	amod	introduction		True	False	False
+introduction	introduction	NOUN	NN	pobj	by		True	False	False
+of	of	ADP	IN	prep	introduction		True	False	True
+.03240	.03240	NUM	CD	nummod	.	QUANTITY	False	False	False
+Gm	Gm	PROPN	NNP	compound	.	QUANTITY	True	False	False
+.	.	PROPN	NNP	prep	treated	QUANTITY	False	True	False
+"
+"	"
+"	SPACE	_SP	amod	Kreatinin	QUANTITY	False	False	False
+of	of	PROPN	NNP	compound	Kreatinin	QUANTITY	True	False	True
+Kreatinin	Kreatinin	PROPN	NNP	dobj	treated	QUANTITY	True	False	False
+,	,	PUNCT	,	punct	Kreatinin		False	True	False
+alternated	alternate	VERB	VBN	acl	Kreatinin		True	False	False
+twice	twice	ADV	RB	advmod	weekly		True	False	False
+weekly	weekly	ADV	RB	advmod	alternated		True	False	False
+with	with	ADP	IN	prep	alternated		True	False	True
+.130	.130	NUM	CD	compound	.	QUANTITY	False	False	False
+Gm	Gm	PROPN	NNP	compound	.	QUANTITY	True	False	False
+.	.	PROPN	NNP	pobj	with	QUANTITY	False	True	False
+"
+"	"
+"	SPACE	_SP	amod	Taurin	QUANTITY	False	False	False
+of	of	PROPN	NNP	compound	Taurin	QUANTITY	True	False	True
+Taurin	Taurin	PROPN	NNP	conj	selected	QUANTITY	True	False	False
+,	,	PUNCT	,	punct	Taurin		False	True	False
+Urea	Urea	PROPN	NNP	conj	Taurin		True	False	False
+and	and	CCONJ	CC	cc	Urea		True	False	True
+Uric	Uric	PROPN	NNP	compound	acid		True	False	False
+acid	acid	NOUN	NN	conj	Urea		True	False	False
+.	.	PUNCT	.	punct	selected		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	raised		False	False	False
+The	the	DET	DT	det	temperature		True	False	True
+average	average	ADJ	JJ	amod	temperature		True	False	False
+temperature	temperature	NOUN	NN	nsubjpass	raised		True	False	False
+during	during	ADP	IN	prep	temperature		True	False	True
+treatment	treatment	NOUN	NN	pobj	during		True	False	False
+was	be	AUX	VBD	auxpass	raised		True	False	True
+slightly	slightly	ADV	RB	advmod	raised		True	False	False
+raised	raise	VERB	VBN	ROOT	raised		True	False	False
+,	,	PUNCT	,	punct	raised		False	True	False
+though	though	SCONJ	IN	mark	to		True	False	True
+not	not	PART	RB	neg	to		True	False	True
+to	to	ADP	IN	prep	raised		True	False	True
+any	any	DET	DT	det	degree		True	False	True
+very	very	ADV	RB	advmod	marked		True	False	True
+marked	marked	ADJ	JJ	amod	degree		True	False	False
+degree	degree	NOUN	NN	pobj	to		True	False	False
+,	,	PUNCT	,	punct	raised		False	True	False
+under	under	ADP	IN	prep	raised		True	False	True
+the	the	DET	DT	det	influence		True	False	True
+influence	influence	NOUN	NN	pobj	under		True	False	False
+of	of	ADP	IN	prep	influence		True	False	True
+such	such	ADJ	JJ	amod	doses		True	False	True
+small	small	ADJ	JJ	amod	doses		True	False	False
+doses	dose	NOUN	NNS	pobj	of		True	False	False
+.	.	PUNCT	.	punct	raised		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	became		False	False	False
+The	the	DET	DT	det	patches		True	False	True
+more	more	ADV	RBR	advmod	recent		True	False	True
+recent	recent	ADJ	JJ	amod	patches		True	False	False
+patches	patch	NOUN	NNS	nsubj	became		True	False	False
+of	of	ADP	IN	prep	patches		True	False	True
+Lupus	Lupus	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	became		False	True	False
+however	however	ADV	RB	advmod	became		True	False	True
+,	,	PUNCT	,	punct	became		False	True	False
+became	become	VERB	VBD	ROOT	became		True	False	True
+markedly	markedly	ADV	RB	advmod	inflamed		True	False	False
+inflamed	inflamed	ADJ	JJ	acomp	became		True	False	False
+,	,	PUNCT	,	punct	became		False	True	False
+being	be	AUX	VBG	auxpass	accompanied		True	False	True
+accompanied	accompany	VERB	VBN	advcl	became		True	False	False
+with	with	ADP	IN	prep	accompanied		True	False	True
+a	a	DET	DT	det	sensation		True	False	True
+burning	burn	VERB	VBG	amod	sensation		True	False	False
+sensation	sensation	NOUN	NN	pobj	with		True	False	False
+.	.	PUNCT	.	punct	became		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	detected		False	False	False
+On	on	ADP	IN	prep	detected		True	False	True
+the	the	DET	DT	det	day	DATE	True	False	True
+third	third	ADJ	JJ	amod	day	DATE	True	False	True
+day	day	NOUN	NN	pobj	On	DATE	True	False	False
+after	after	ADP	IN	prep	day		True	False	True
+the	the	DET	DT	det	injection		True	False	True
+first	first	ADJ	JJ	amod	injection	ORDINAL	True	False	True
+injection	injection	NOUN	NN	pobj	after		True	False	False
+,	,	PUNCT	,	punct	detected		False	True	False
+a	a	DET	DT	det	granulation		True	False	True
+marked	marked	ADJ	JJ	amod	granulation		True	False	False
+granulation	granulation	NOUN	NN	nsubjpass	detected		True	False	False
+could	could	AUX	MD	aux	detected		True	False	True
+be	be	AUX	VB	auxpass	detected		True	False	True
+detected	detect	VERB	VBN	ROOT	detected		True	False	False
+around	around	ADP	IN	prep	detected		True	False	True
+the	the	DET	DT	det	edge		True	False	True
+outer	outer	ADJ	JJ	amod	edge		True	False	False
+edge	edge	NOUN	NN	pobj	around		True	False	False
+by	by	ADP	IN	agent	detected		True	False	True
+the	the	DET	DT	det	aid		True	False	True
+aid	aid	NOUN	NN	pobj	by		True	False	False
+of	of	ADP	IN	prep	aid		True	False	True
+a	a	DET	DT	det	glass		True	False	True
+strong	strong	ADJ	JJ	amod	glass		True	False	False
+amplifying	amplify	VERB	VBG	amod	glass		True	False	False
+pocket	pocket	NOUN	NN	compound	glass		True	False	False
+glass	glass	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	detected		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	continued		False	False	False
+This	this	DET	DT	det	granulation		True	False	True
+apparently	apparently	ADV	RB	advmod	healthy		True	False	False
+healthy	healthy	ADJ	JJ	amod	granulation		True	False	False
+granulation	granulation	NOUN	NN	nsubj	continued		True	False	False
+has	have	AUX	VBZ	aux	continued		True	False	True
+continued	continue	VERB	VBN	ROOT	continued		True	False	False
+for	for	ADP	IN	prep	continued		True	False	True
+ten	ten	NUM	CD	nummod	days	DATE	True	False	True
+days	day	NOUN	NNS	pobj	for	DATE	True	False	False
+,	,	PUNCT	,	punct	days		False	True	False
+in	in	ADP	IN	prep	has		True	False	True
+which	which	DET	WDT	det	time		True	False	True
+time	time	NOUN	NN	pcomp	in		True	False	False
+the	the	DET	DT	det	patch		True	False	True
+patch	patch	NOUN	NN	nsubj	has		True	False	False
+has	have	VERB	VBZ	relcl	days		True	False	True
+one	one	NUM	CD	nummod	half	CARDINAL	True	False	True
+half	half	NOUN	NN	nsubj	healed		True	False	False
+of	of	ADP	IN	prep	half		True	False	True
+its	its	PRON	PRP$	poss	area		True	False	True
+original	original	ADJ	JJ	amod	area		True	False	False
+area	area	NOUN	NN	pobj	of		True	False	False
+healed	heal	VERB	VBN	acl	days		True	False	False
+.	.	PUNCT	.	punct	continued		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+The	the	DET	DT	det	result		True	False	True
+result	result	NOUN	NN	nsubj	is		True	False	False
+shown	show	VERB	VBN	acl	result		True	False	False
+at	at	ADP	IN	prep	shown		True	False	True
+this	this	DET	DT	det	stage		True	False	True
+early	early	ADJ	JJ	amod	stage		True	False	False
+stage	stage	NOUN	NN	pobj	at		True	False	False
+of	of	ADP	IN	prep	stage		True	False	True
+the	the	DET	DT	det	experiment		True	False	True
+experiment	experiment	NOUN	NN	pobj	of		True	False	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+sufficiently	sufficiently	ADV	RB	advmod	encouraging		True	False	False
+encouraging	encouraging	ADJ	JJ	acomp	is		True	False	False
+to	to	PART	TO	aux	warrant		True	False	True
+warrant	warrant	VERB	VB	xcomp	encouraging		True	False	False
+not	not	PART	RB	preconj	continuation		True	False	True
+only	only	ADV	RB	advmod	not		True	False	True
+a	a	DET	DT	det	continuation		True	False	True
+continuation	continuation	NOUN	NN	dobj	warrant		True	False	False
+of	of	ADP	IN	prep	continuation		True	False	True
+the	the	DET	DT	det	treatment		True	False	True
+treatment	treatment	NOUN	NN	pobj	of		True	False	False
+in	in	ADP	IN	prep	continuation		True	False	True
+this	this	DET	DT	det	case		True	False	True
+case	case	NOUN	NN	pobj	in		True	False	False
+but	but	CCONJ	CC	cc	in		True	False	True
+in	in	ADP	IN	conj	in		True	False	True
+other	other	ADJ	JJ	amod	forms		True	False	True
+forms	form	NOUN	NNS	pobj	in		True	False	False
+of	of	ADP	IN	prep	forms		True	False	True
+Tuberculosis	Tuberculosis	PROPN	NNP	pobj	of		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	been		False	False	False
+The	the	DET	DT	det	subjects		True	False	True
+only	only	ADJ	JJ	amod	subjects		True	False	True
+other	other	ADJ	JJ	amod	subjects		True	False	True
+subjects	subject	NOUN	NNS	nsubj	been		True	False	False
+upon	upon	SCONJ	IN	prep	tried		True	False	True
+which	which	DET	WDT	pobj	upon		True	False	True
+these	these	DET	DT	det	injections		True	False	True
+injections	injection	NOUN	NNS	nsubjpass	tried		True	False	False
+have	have	AUX	VBP	aux	tried		True	False	True
+been	be	AUX	VBN	auxpass	tried		True	False	True
+tried	try	VERB	VBN	relcl	subjects		True	False	False
+have	have	AUX	VBP	aux	been		True	False	True
+been	be	VERB	VBN	ROOT	been		True	False	True
+cases	case	NOUN	NNS	attr	been		True	False	False
+of	of	ADP	IN	prep	cases		True	False	True
+pulmonary	pulmonary	ADJ	JJ	amod	tuberculosis		True	False	False
+tuberculosis	tuberculosis	NOUN	NN	pobj	of		True	False	False
+in	in	ADP	IN	prep	tuberculosis		True	False	True
+a	a	DET	DT	det	stage		True	False	True
+very	very	ADV	RB	advmod	advanced		True	False	True
+advanced	advanced	ADJ	JJ	amod	stage		True	False	False
+stage	stage	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	stage		False	True	False
+where	where	ADV	WRB	advmod	was		True	False	True
+there	there	PRON	EX	expl	was		True	False	True
+was	be	VERB	VBD	relcl	stage		True	False	True
+too	too	ADV	RB	advmod	much		True	False	True
+much	much	ADJ	JJ	amod	tissue		True	False	True
+lung	lung	NOUN	NN	compound	tissue		True	False	False
+-	-	PUNCT	HYPH	punct	tissue		False	True	False
+tissue	tissue	NOUN	NN	attr	was		True	False	False
+already	already	ADV	RB	advmod	destroyed		True	False	True
+destroyed	destroy	VERB	VBN	acl	tissue		True	False	False
+to	to	PART	TO	aux	warrant		True	False	True
+warrant	warrant	VERB	VB	acl	tissue		True	False	False
+the	the	DET	DT	det	expectation		True	False	True
+expectation	expectation	NOUN	NN	dobj	warrant		True	False	False
+of	of	ADP	IN	prep	expectation		True	False	True
+a	a	DET	DT	det	result		True	False	True
+favorable	favorable	ADJ	JJ	amod	result		True	False	False
+result	result	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	been		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	causes		False	False	False
+The	the	DET	DT	det	fact		True	False	True
+fact	fact	NOUN	NN	nsubj	causes		True	False	False
+that	that	SCONJ	IN	mark	have		True	False	True
+we	we	PRON	PRP	nsubj	have		True	False	True
+apparently	apparently	ADV	RB	advmod	have		True	False	False
+have	have	VERB	VBP	acl	fact		True	False	True
+an	an	DET	DT	det	action		True	False	True
+action	action	NOUN	NN	dobj	have		True	False	False
+on	on	ADP	IN	prep	action		True	False	True
+the	the	DET	DT	det	Lupus		True	False	True
+Lupus	Lupus	PROPN	NNP	pobj	on		True	False	False
+and	and	CCONJ	CC	cc	action		True	False	True
+no	no	DET	DT	det	result		True	False	True
+marked	marked	ADJ	JJ	amod	result		True	False	False
+result	result	NOUN	NN	conj	action		True	False	False
+with	with	ADP	IN	prep	result		True	False	True
+small	small	ADJ	JJ	amod	doses		True	False	False
+doses	dose	NOUN	NNS	pobj	with		True	False	False
+on	on	ADP	IN	prep	result		True	False	True
+advanced	advanced	ADJ	JJ	amod	cases		True	False	False
+cases	case	NOUN	NNS	pobj	on		True	False	False
+of	of	ADP	IN	prep	cases		True	False	True
+pulmonary	pulmonary	ADJ	JJ	amod	tuberculosis		True	False	False
+tuberculosis	tuberculosis	NOUN	NN	pobj	of		True	False	False
+causes	cause	VERB	VBZ	ROOT	causes		True	False	False
+me	I	PRON	PRP	nsubj	realize		True	False	True
+to	to	PART	TO	aux	realize		True	False	True
+realize	realize	VERB	VB	ccomp	causes		True	False	False
+that	that	SCONJ	IN	mark	confined		True	False	True
+the	the	DET	DT	det	line		True	False	True
+line	line	NOUN	NN	nsubjpass	confined		True	False	False
+of	of	ADP	IN	prep	line		True	False	True
+experimentation	experimentation	NOUN	NN	pobj	of		True	False	False
+must	must	AUX	MD	aux	confined		True	False	True
+not	not	PART	RB	neg	confined		True	False	True
+be	be	AUX	VB	auxpass	confined		True	False	True
+confined	confine	VERB	VBN	ccomp	realize		True	False	False
+to	to	ADP	IN	prep	confined		True	False	True
+tuberculous	tuberculous	ADJ	JJ	amod	inflammation		True	False	False
+inflammation	inflammation	NOUN	NN	pobj	to		True	False	False
+but	but	CCONJ	CC	cc	confined		True	False	True
+extended	extend	VERB	VBN	conj	confined		True	False	False
+to	to	ADP	IN	prep	extended		True	False	True
+the	the	DET	DT	det	action		True	False	True
+action	action	NOUN	NN	pobj	to		True	False	False
+of	of	ADP	IN	prep	action		True	False	True
+these	these	DET	DT	det	substances		True	False	True
+organic	organic	ADJ	JJ	amod	substances		True	False	False
+substances	substance	NOUN	NNS	pobj	of		True	False	False
+on	on	ADP	IN	prep	action		True	False	True
+the	the	DET	DT	det	group		True	False	True
+entire	entire	ADJ	JJ	amod	group		True	False	False
+group	group	NOUN	NN	pobj	on		True	False	False
+of	of	ADP	IN	prep	group		True	False	True
+inflammatory	inflammatory	ADJ	JJ	amod	growths		True	False	False
+growths	growth	NOUN	NNS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	action		False	True	False
+the	the	DET	DT	det	effect		True	False	True
+effect	effect	NOUN	NN	nsubjpass	produced		True	False	False
+being	be	AUX	VBG	auxpass	produced		True	False	True
+produced	produce	VERB	VBN	advcl	action		True	False	False
+,	,	PUNCT	,	punct	produced		False	True	False
+possibly	possibly	ADV	RB	advmod	produced		True	False	False
+,	,	PUNCT	,	punct	produced		False	True	False
+by	by	ADP	IN	prep	produced		True	False	True
+supplying	supply	VERB	VBG	pcomp	by		True	False	False
+that	that	DET	DT	dobj	supplying		True	False	True
+in	in	ADP	IN	dep	are		True	False	True
+which	which	DET	WDT	pobj	in		True	False	True
+the	the	DET	DT	det	tissues		True	False	True
+pathological	pathological	ADJ	JJ	amod	tissues		True	False	False
+tissues	tissue	NOUN	NNS	nsubj	are		True	False	False
+are	be	VERB	VBP	relcl	that		True	False	True
+deficient	deficient	ADJ	JJ	acomp	are		True	False	False
+.	.	PUNCT	.	punct	causes		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	opened		False	False	False
+This	this	DET	DT	det	line		True	False	True
+line	line	NOUN	NN	nsubj	opened		True	False	False
+of	of	ADP	IN	prep	line		True	False	True
+inquiry	inquiry	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	line		False	True	False
+which	which	DET	WDT	nsubj	had		True	False	True
+had	have	VERB	VBD	relcl	line		True	False	True
+its	its	PRON	PRP$	poss	origin		True	False	True
+origin	origin	NOUN	NN	dobj	had		True	False	False
+in	in	ADP	IN	prep	origin		True	False	True
+the	the	DET	DT	det	Laboratory	ORG	True	False	True
+Bacteriological	Bacteriological	PROPN	NNP	compound	Laboratory	ORG	True	False	False
+Laboratory	Laboratory	PROPN	NNP	pobj	in	ORG	True	False	False
+of	of	ADP	IN	prep	Laboratory	ORG	True	False	True
+the	the	DET	DT	det	Academy	ORG	True	False	True
+Academy	Academy	PROPN	NNP	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	line		False	True	False
+has	have	AUX	VBZ	aux	opened		True	False	True
+opened	open	VERB	VBN	ROOT	opened		True	False	False
+up	up	ADP	RP	prt	opened		True	False	True
+a	a	DET	DT	det	field		True	False	True
+new	new	ADJ	JJ	amod	field		True	False	False
+and	and	CCONJ	CC	cc	new		True	False	True
+wide	wide	ADJ	JJ	conj	new		True	False	False
+field	field	NOUN	NN	dobj	opened		True	False	False
+of	of	ADP	IN	prep	field		True	False	True
+important	important	ADJ	JJ	amod	investigation		True	False	False
+scientific	scientific	ADJ	JJ	amod	investigation		True	False	False
+medical	medical	ADJ	JJ	amod	investigation		True	False	False
+investigation	investigation	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	opened		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+The	the	DET	DT	det	object		True	False	True
+main	main	ADJ	JJ	amod	object		True	False	False
+object	object	NOUN	NN	nsubj	is		True	False	False
+of	of	ADP	IN	prep	object		True	False	True
+this	this	DET	DT	det	communication		True	False	True
+communication	communication	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+at	at	ADP	IN	prep	is		True	False	True
+this	this	DET	DT	det	time		True	False	True
+time	time	NOUN	NN	pobj	at		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+to	to	PART	TO	aux	confirm		True	False	True
+confirm	confirm	VERB	VB	xcomp	is		True	False	False
+the	the	DET	DT	det	discovery		True	False	True
+original	original	ADJ	JJ	amod	discovery		True	False	False
+discovery	discovery	NOUN	NN	dobj	confirm		True	False	False
+of	of	ADP	IN	prep	discovery		True	False	True
+the	the	DET	DT	det	form		True	False	True
+branched	branched	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	form		True	False	True
+the	the	DET	DT	det	bacillus		True	False	True
+tubercle	tubercle	NOUN	NN	compound	bacillus		True	False	False
+bacillus	bacillus	NOUN	NN	pobj	of		True	False	False
+by	by	ADP	IN	prep	confirm		True	False	True
+recording	record	VERB	VBG	pcomp	by		True	False	False
+the	the	DET	DT	det	observations		True	False	True
+observations	observation	NOUN	NNS	dobj	recording		True	False	False
+of	of	ADP	IN	prep	observations		True	False	True
+the	the	DET	DT	det	lifecycle		True	False	True
+same	same	ADJ	JJ	amod	lifecycle		True	False	True
+lifecycle	lifecycle	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	lifecycle		True	False	True
+that	that	DET	DT	det	micro		True	False	True
+micro	micro	NOUN	NN	pobj	of		True	False	False
+-	-	NOUN	NN	pobj	of		False	True	False
+organism	organism	NOUN	NN	pobj	of		True	False	False
+found	find	VERB	VBN	acl	organism		True	False	False
+in	in	ADP	IN	prep	found		True	False	True
+animal	animal	ADJ	JJ	amod	tissues		True	False	False
+tissues	tissue	NOUN	NNS	pobj	in		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	ventured		False	False	False
+I	I	PRON	PRP	nsubj	ventured		True	False	True
+have	have	AUX	VBP	aux	ventured		True	False	True
+,	,	PUNCT	,	punct	ventured		False	True	False
+however	however	ADV	RB	advmod	ventured		True	False	True
+,	,	PUNCT	,	punct	ventured		False	True	False
+ventured	venture	VERB	VBN	ROOT	ventured		True	False	False
+to	to	PART	TO	aux	advance		True	False	True
+advance	advance	VERB	VB	xcomp	ventured		True	False	False
+theories	theory	NOUN	NNS	dobj	advance		True	False	False
+and	and	CCONJ	CC	cc	theories		True	False	True
+results	result	NOUN	NNS	conj	theories		True	False	False
+regarding	regard	VERB	VBG	prep	theories		True	False	True
+the	the	DET	DT	det	action		True	False	True
+action	action	NOUN	NN	pobj	regarding		True	False	False
+of	of	ADP	IN	prep	action		True	False	True
+substances	substance	NOUN	NNS	pobj	of		True	False	False
+far	far	ADV	RB	advmod	removed		True	False	False
+removed	remove	VERB	VBN	amod	substances		True	False	False
+from	from	ADP	IN	prep	removed		True	False	True
+the	the	DET	DT	det	bacillus		True	False	True
+bacillus	bacillus	NOUN	NN	pobj	from		True	False	False
+,	,	PUNCT	,	punct	ventured		False	True	False
+because	because	SCONJ	IN	mark	suggested		True	False	True
+they	they	PRON	PRP	nsubjpass	suggested		True	False	True
+were	be	AUX	VBD	auxpass	suggested		True	False	True
+suggested	suggest	VERB	VBN	advcl	ventured		True	False	False
+during	during	ADP	IN	prep	suggested		True	False	True
+my	my	PRON	PRP$	poss	studies		True	False	True
+studies	study	NOUN	NNS	pobj	during		True	False	False
+of	of	ADP	IN	prep	studies		True	False	True
+the	the	DET	DT	det	form		True	False	True
+branched	branched	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	form		True	False	True
+that	that	DET	DT	det	organism		True	False	True
+organism	organism	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	ventured		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

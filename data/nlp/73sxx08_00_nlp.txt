@@ -1,0 +1,35 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOLLUSCA	ORG	True	False	False
+'S	's	PART	POS	case	GABB	ORG	False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOLLUSCA	ORG	True	False	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	appos	PILSBRY	ORG	True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO	GPE	True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF	GPE	True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	advcl	"
+"		True	False	False
+XLVII	XLVII	PROPN	NNP	acl	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABBS	GABBS	PROPN	NNP	compound	MOT.LUSCA	ORG	True	False	False
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOT.LUSCA	ORG	True	False	False
+MOT.LUSCA	MOT.LUSCA	PROPN	NNP	appos	PILSBRY	ORG	False	False	False
+OF	of	ADP	IN	prep	MOT.LUSCA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO	GPE	True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF	GPE	True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	appos	PILSBRY		False	False	False

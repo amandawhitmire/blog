@@ -1,0 +1,23 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+SYNONYMIC	synonymic	ADJ	JJ	amod	STUDY		True	False	False
+STUDY	study	NOUN	NN	nsubj	"
+"		True	False	False
+ON	on	ADP	IN	prep	STUDY		True	False	True
+THE	the	DET	DT	det	MOLLUSKS		True	False	True
+MOLLUSKS	mollusk	NOUN	NNS	pobj	ON		True	False	False
+OF	of	ADP	IN	prep	MOLLUSKS		True	False	True
+THE	the	DET	DT	det	DEPARTEMENT		True	False	True
+DEPARTEMENT	DEPARTEMENT	PROPN	NNP	pobj	OF		True	False	False
+DES	des	X	FW	prep	STUDY		True	False	False
+ALPES	ALPES	PROPN	NNP	compound	MARITIMES		True	False	False
+-	-	PUNCT	HYPH	punct	MARITIMES		False	True	False
+MARITIMES	MARITIMES	PROPN	NNPS	appos	STUDY		True	False	False
+MENTIONED	mention	VERB	VBN	acl	MARITIMES		True	False	False
+BY	by	ADP	IN	agent	MENTIONED		True	False	True
+ANTOINE	ANTOINE	PROPN	NNP	compound	RISSO		True	False	False
+RISSO	RISSO	PROPN	NNP	pobj	BY		True	False	False
+'	'	PART	POS	case	RISSO		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
