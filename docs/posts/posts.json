@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-11-09-clean-taxa/",
+    "title": "Cleaning up taxonomic names in subsets of the ANSP volumes",
+    "description": "Correcting errors in spelling and clarifying punctuation.",
+    "author": [
+      {
+        "name": "Amanda Whitmire",
+        "url": "https://amandawhitmire.github.io/"
+      }
+    ],
+    "date": "2021-11-09",
+    "categories": [],
+    "contents": "\nBackground\nHonestly I do not have the time for a whole spiel, but I’ve come to realize that the variety and volume of OCR errors in transcribing the taxonomic names in the ANSP corpus has negative consequences for the NLP workflow further down the line. In today’s adventure, we’ll find and correct as many taxonomic names as we can (and probably ignore the rest. Pragmatism wins the day!)\nWorkspace setup\nLoad the Libraries we need.\n\n\nlibrary(tidyverse)\nlibrary(rmarkdown)\nlibrary(knitr)\nlibrary(distill)\nlibrary(rvest)\nlibrary(dplyr)\n\n\n\nClean the text files because R can get caught up on symbols and things.\n\n\n# creates the list of all the txt files in the directory\nlisttxt <- list.files(\"/Users/thalassa/Rcode/blog/data/animals\",  # ANSP text files\n                       pattern = \"*.txt\", full.names = T, recursive = FALSE)\noutlist <- gsub(\".txt\", \"-clean.txt\", listtxt) # change the file name for the cleaned text files\n\nfor (k in 1:length(listtxt)){ # for each text file in the directory specified above\n  txt <- readLines(listtxt[[k]]) # Load the text file itself\n  txtcln <- gsub(\"[^[:alnum:][:space:]'.]\", \"\", txt) # keep only letters, numbers, spaces, apostrophes and periods\n  myfile <- outlist[[k]]\n  write_lines(txtcln, myfile)\n}\n\n\n\nWow that ran quickly!\nInstall and configure GNfinder\nRecall that you need to have GNfinder installed on your machine to run it.\nTo run GNfinder1, see the instructions here. I am a Mac user, and I used the Homebrew option.\n\n\n\nRunning GNfinder\nRun gnfinder on smaller parts of the Proceedings of the Academy of Natural Sciences of Philadelphia. Reminder: this runs in a bash chunk.\n\nfor f in /Users/thalassa/Rcode/blog/data/animals/*-clean.txt\ndo \n  echo \"Processing $f file...\"\n  gnfinder \"$f\" --verify > \"${f%.txt}-gnf.txt\"\ndone\n\nTake the list of GNfinder results and the corresponding list of text file with the ANSP content. Use the GNfinder corrected taxonomic name to replace the possibly misspelled or slightly wrong verbatim name from the text. Save the cleaned text files.\n\n\n# creates the list of all the txt files in the directory\nlistgnf <- list.files(\"/Users/thalassa/Rcode/blog/data/gnfinder-parts-clean\", #GNfinder output\n                       pattern = \"*gnf.txt\", full.names = T, recursive = FALSE)\nlisttxt <- list.files(\"/Users/thalassa/Rcode/blog/data/animals\",  # ANSP text files\n                       pattern = \"*clean.txt\", full.names = T, recursive = FALSE)\noutlist <- gsub(\"clean.txt\", \"-clean-taxa.txt\", listtxt) # change the file name for the cleaned text files\n\nfor (k in 1:length(listtxt)){ # for each text file in the directory specified above\n  dat <- as_tibble(read_csv(listgnf[[k]])) # Load the corresponding GNfinder info\n  txt <- readLines(listtxt[[k]]) # Load the text file itself\n  \n  for (j in 0:length(dat)){  # for each taxonomic name in the GNfinder results\n    txt <- gsub(dat[j,2],dat[j,3],txt) # substitute the corrected \"Name\" for the \"Verbatim\" text\n    myfile <- outlist[[k]]\n    write_lines(txt, myfile)\n  }\n}\n\nrm(listgnf, listtxt, outlist, dat, j, k, myfile) # clean up!\n\n\n\nThat’s it - there is now a txt file with taxonomic names for every volume of the ANSP corpus. For the purposes of pulling identified taxonomic names into a generalized spaCy pipeline across any given section of the corpus, we’ll want one YUGE jsonl file with all of the results we just created. We need to merge, clean up gremlins and de-duplicate. Let’s do it!\n\n\n#list all the files in the folder\nlistfile <- as_tibble(list.files(\"/Users/thalassa/Rcode/blog/data/taxa-verbatim-txt\",\n                       pattern = \".txt\", full.names = T, recursive = FALSE))\n\ndata <- as_tibble(read_lines(listfile[[1]][1]))\n\nfor (k in 2:length(listfile[[1]])){\n  dat <- as_tibble(read_lines(listfile[[1]][k]))\n  data <- bind_rows(data, dat)\n}\n\nwrite_csv(data, \"/Users/thalassa/Rcode/blog/data/ansp-taxa-clean.txt\")\n\nrm(ldf, listfile, dat, k) # clean up!\n\n\n\n\nMozzherin, Dmitry, Alexander Myltsev, and Harsh Zalavadiya. Gnames/Gnfinder: V0.14.2. Zenodo, 2021. https://doi.org/10.5281/zenodo.5111562.↩︎\n",
+    "preview": "https://raw.githubusercontent.com/amandawhitmire/blog/main/images/Tierleben.jpg",
+    "last_modified": "2021-12-06T14:59:26-08:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-09-27-streamlit-app-alive/",
     "title": "The Streamlit app is alive (sort of!)",
     "description": "A quick tour of a very beta application.",
@@ -14,7 +31,7 @@
     "contents": "\n\n\nlibrary(rmarkdown)\nlibrary(knitr)\nlibrary(distill)\n\n\n\nUpdate 2!\nThe Streamlit app is ALIVE on the Internet! It’s … not so stable, but you can play with it.\n\n\n\nYou can upload a text file or paste in text, and you can download your results.\n\n\n\nKeep in mind that the set of habitat entities are from Nguyen et al. 2019 & the taxonomic names were mined from the ANSP corpus using @GlobalNames GNfinder. If you upload non-ANSP text, some taxonomic names will get missed. Also try to avoid uploading big files - Streamlit gets cranky about that. Have fun!\nUpdate!\nWhile the Streamlit app is not yet launched to run on the web, I have it up and running on a local host. Since you can’t visit the site yourself, I recorded a quick tour (on a Friday afternoon, forgive my slow brain).\nClick image below to see a 2-minute video that introduces a beta version of a Streamlit App that uses spaCy and applies custom NER entities for taxonomic names and habitats.\n\n\n\n\n",
     "preview": "https://raw.githubusercontent.com/amandawhitmire/blog/main/images/streamlit-zygote.jpg",
     "last_modified": "2021-10-24T14:29:14-07:00",
-    "input_file": "streamlit-app-alive.knit.md"
+    "input_file": {}
   },
   {
     "path": "posts/2021-09-20-ansp-streamlit-concept/",

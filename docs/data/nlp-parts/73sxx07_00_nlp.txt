@@ -1,0 +1,158 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOLLUSCA		True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOLLUSCA		True	False	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	appos	PILSBRY		True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO		True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	ROOT	PLATE		True	False	False
+XLII	XLII	PROPN	NNP	appos	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	A		True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	A		True	False	False
+MOLLUSC	MOLLUSC	PROPN	NNP	compound	A		True	False	False
+A	A	PROPN	NNP	appos	PILSBRY		True	False	True
+OF	of	ADP	IN	prep	A		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO		True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	PLATE	PROPN	NNP	ROOT	PLATE		True	False	False
+XLIII	XLIII	PROPN	NNP	appos	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+q'h	q'h	X	XX	ROOT	q'h		False	False	False
+r\\}^^	r\\}^^	X	XX	dep	q'h		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+;	;	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	A		True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	A		True	False	False
+MOLLUSC	MOLLUSC	PROPN	NNP	compound	A		True	False	False
+A	A	PROPN	NNP	appos	PILSBRY		True	False	True
+OF	of	ADP	IN	prep	A		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO		True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	advcl	"
+"		True	False	False
+XLIV	XLIV	PROPN	NNP	appos	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+y.	y.	PUNCT	.	ROOT	y.		False	False	False
+,	,	PUNCT	,	ROOT	,		False	True	False
+^	^	PUNCT	NFP	prep	,		False	False	False
+^j	^j	X	XX	ROOT	^j		False	False	False
+/	/	PUNCT	.	ROOT	/		False	True	False
+.	.	PUNCT	.	ROOT	.		False	True	False
+?	?	PUNCT	.	ROOT	?		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+t	t	X	XX	ROOT	t		True	False	False
+'	'	PUNCT	:	punct	t		False	True	False
+J	J	PROPN	NNP	ROOT	J		True	False	False
+■	■	PUNCT	``	ROOT	■		False	False	False
+7	7	NUM	CD	npadvmod	■		False	False	False
+/	/	PUNCT	.	punct	7		False	True	False
+!	!	PUNCT	.	punct	7		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	7		False	False	False
+'	'	X	XX	appos	7		False	True	False
+■	■	PUNCT	``	punct	7		False	False	False
+'	'	PUNCT	:	punct	7		False	True	False
+'	'	PUNCT	:	punct	7		False	True	False
+<	<	PUNCT	.	punct	7		False	False	False
+?	?	PUNCT	.	punct	7		False	True	False
+-^=.-.-	-^=.-.-	PUNCT	.	punct	7		False	False	False
+.	.	PUNCT	.	appos	7		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+*	*	PUNCT	NFP	ROOT	*		False	True	False
+<	<	PUNCT	NFP	punct	*		False	False	False
+*	*	PUNCT	NFP	punct	*		False	True	False
+4#^	4#^	NUM	CD	conj	*		False	False	False
+1	1	NUM	CD	nummod	4#^		False	False	False
+=	=	NOUN	NN	punct	4#^		False	False	False
+^^%	^^%	NOUN	NN	npadvmod	4#^		False	False	False
+j*^	j*^	PUNCT	.	conj	4#^		False	False	False
+■	■	PUNCT	``	punct	*		False	False	False
+^'	^'	PUNCT	.	appos	*		False	False	False
+■	■	PUNCT	``	punct	*		False	False	False
+--	--	PUNCT	:	punct	*		False	True	False
+..	..	PUNCT	.	punct	*		False	True	False
+"y'""^PILSBRY"	"y'""^PILSBRY"	PROPN	NNP	ROOT	"y'""^PILSBRY"		False	False	False
+:	:	PUNCT	:	punct	"y'""^PILSBRY"		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOJ.LUSOA		True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOJ.LUSOA		True	False	False
+MOJ.LUSOA	MOJ.LUSOA	PROPN	NNP	ROOT	MOJ.LUSOA		False	False	False
+OF	of	ADP	IN	prep	MOJ.LUSOA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO		True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	MOJ.LUSOA		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	PLATE	PROPN	NNP	ROOT	PLATE		True	False	False
+XLV	XLV	PROPN	NNP	appos	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOLLUSOA		True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOLLUSOA		True	False	False
+MOLLUSOA	MOLLUSOA	PROPN	NNP	appos	PILSBRY		True	False	False
+OF	of	ADP	IN	prep	MOLLUSOA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO		True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	PLATE	PROPN	NNP	dep	XLVI		True	False	False
+XLVI	XLVI	PROPN	NNP	pobj	"
+"		True	False	False
+.	.	PUNCT	.	punct	XLVI		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

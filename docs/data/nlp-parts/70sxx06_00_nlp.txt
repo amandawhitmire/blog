@@ -1,0 +1,297 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+NEW	new	ADJ	JJ	amod	NAMES		True	False	False
+GENERIC	generic	ADJ	JJ	amod	NAMES		True	False	False
+NAMES	name	NOUN	NNS	ROOT	NAMES		True	False	False
+FOR	for	ADP	IN	prep	NAMES		True	False	True
+UPPER	upper	ADJ	JJ	amod	CRETACEOUS		True	False	False
+CRETACEOUS	cretaceous	ADJ	JJ	amod	GASTROPODA		True	False	False
+GASTROPODA	gastropoda	NOUN	NN	pobj	FOR		True	False	False
+.	.	PUNCT	.	punct	NAMES		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+BY	by	ADP	IN	ROOT	BY		True	False	True
+BRUCE	BRUCE	PROPN	NNP	compound	WADE	PERSON	True	False	False
+WADE	WADE	PROPN	NNP	pobj	BY	PERSON	True	False	False
+.	.	PUNCT	.	punct	BY		False	True	False
+"
+"	"
+"	SPACE	_SP	nsubj	is		False	False	False
+In	in	ADP	IN	prep	"
+"		True	False	True
+a	a	DET	DT	det	paper		True	False	True
+recent	recent	ADJ	JJ	amod	paper		True	False	False
+paper	paper	NOUN	NN	pobj	In		True	False	False
+entitled	entitle	VERB	VBN	acl	paper		True	False	False
+New	New	PROPN	NNP	amod	Gastropoda	WORK_OF_ART	True	False	False
+and	and	CCONJ	CC	cc	New	WORK_OF_ART	True	False	True
+Little	little	ADV	RB	advmod	Known	WORK_OF_ART	True	False	False
+Known	known	ADJ	JJ	conj	New	WORK_OF_ART	True	False	False
+Gastropoda	Gastropoda	PROPN	NNP	oprd	entitled	TAXA	True	False	False
+from	from	ADP	IN	prep	Gastropoda		True	False	True
+the	the	DET	DT	det	Cretaceous		True	False	True
+Upper	upper	ADJ	JJ	amod	Cretaceous		True	False	False
+Cretaceous	Cretaceous	PROPN	NNP	pobj	from		True	False	False
+of	of	ADP	IN	prep	Cretaceous		True	False	True
+Tennessee	Tennessee	PROPN	NNP	pobj	of	GPE	True	False	False
+,	,	PUNCT	,	punct	paper		False	True	False
+published	publish	VERB	VBN	acl	paper		True	False	False
+in	in	ADP	IN	prep	published		True	False	True
+the	the	DET	DT	det	Proceedings	ORG	True	False	True
+Proceedings	Proceedings	PROPN	NNPS	pobj	in	ORG	True	False	False
+of	of	ADP	IN	prep	Proceedings	ORG	True	False	True
+The	the	DET	DT	det	Academy	ORG	True	False	True
+Academy	Academy	PROPN	NNP	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy	ORG	True	False	True
+Natural	Natural	PROPN	NNP	compound	Sciences	ORG	True	False	False
+Sciences	Sciences	PROPN	NNPS	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy	ORG	True	False	True
+Philadelphia	Philadelphia	PROPN	NNP	pobj	of	ORG	True	False	False
+for	for	ADP	IN	prep	Proceedings		True	False	True
+September	September	PROPN	NNP	pobj	for	DATE	True	False	False
+,	,	PUNCT	,	punct	September	DATE	False	True	False
+1917	1917	NUM	CD	npadvmod	September	DATE	False	False	False
+,	,	PUNCT	,	punct	paper		False	True	False
+pp	pp	NOUN	NNS	appos	paper		True	False	False
+.	.	NOUN	NN	appos	paper		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	paper		False	False	False
+280	280	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+-	-	SYM	SYM	punct	3C4		False	True	False
+3C4	3c4	NUM	CD	prep	280		False	False	False
+,	,	PUNCT	,	punct	paper		False	True	False
+there	there	PRON	EX	expl	were		True	False	True
+were	be	VERB	VBD	acl	paper		True	False	True
+several	several	ADJ	JJ	amod	errors		True	False	True
+errors	error	NOUN	NNS	attr	were		True	False	False
+which	which	DET	WDT	nsubj	crept		True	False	True
+crept	creep	VERB	VBD	relcl	errors		True	False	False
+in	in	ADV	RB	advmod	crept		True	False	True
+because	because	SCONJ	IN	prep	crept		True	False	True
+of	of	ADP	IN	pcomp	because		True	False	True
+the	the	DET	DT	det	necessity		True	False	True
+necessity	necessity	NOUN	NN	pobj	because		True	False	False
+of	of	ADP	IN	prep	necessity		True	False	True
+preparing	prepare	VERB	VBG	pcomp	of		True	False	False
+the	the	DET	DT	det	paper		True	False	True
+paper	paper	NOUN	NN	dobj	preparing		True	False	False
+for	for	ADP	IN	prep	preparing		True	False	True
+publication	publication	NOUN	NN	pobj	for		True	False	False
+after	after	ADP	IN	mark	left		True	False	True
+the	the	DET	DT	det	writer		True	False	True
+writer	writer	NOUN	NN	nsubj	left		True	False	False
+left	leave	VERB	VBD	advcl	preparing		True	False	False
+Baltimore	Baltimore	PROPN	NNP	dobj	left	GPE	True	False	False
+and	and	CCONJ	CC	cc	left		True	False	True
+had	have	AUX	VBD	aux	entered		True	False	True
+entered	enter	VERB	VBN	conj	left		True	False	False
+the	the	DET	DT	det	service		True	False	True
+U.	U.	PROPN	NNP	compound	S.	ORG	False	False	False
+S.	S.	PROPN	NNP	compound	Artillery	ORG	False	False	False
+Artillery	Artillery	PROPN	NNP	compound	service	ORG	True	False	False
+service	service	NOUN	NN	dobj	entered		True	False	False
+.	.	PUNCT	.	punct	paper		False	True	False
+"
+"	"
+"	SPACE	_SP	ccomp	is		False	False	False
+It	it	PRON	PRP	nsubj	is		True	False	True
+is	be	AUX	VBZ	ROOT	is		True	False	True
+the	the	DET	DT	det	purpose		True	False	True
+purpose	purpose	NOUN	NN	attr	is		True	False	False
+of	of	ADP	IN	prep	purpose		True	False	True
+this	this	DET	DT	det	note		True	False	True
+brief	brief	ADJ	JJ	amod	note		True	False	False
+note	note	NOUN	NN	pobj	of		True	False	False
+to	to	PART	TO	aux	rectify		True	False	True
+rectify	rectify	VERB	VB	xcomp	is		True	False	False
+these	these	DET	DT	det	mistakes		True	False	True
+mistakes	mistake	NOUN	NNS	dobj	rectify		True	False	False
+and	and	CCONJ	CC	cc	mistakes		True	False	True
+omissions	omission	NOUN	NNS	conj	mistakes		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	inserted		False	False	False
+The	the	DET	DT	det	Fusidce		True	False	True
+family	family	NOUN	NN	compound	name		True	False	False
+name	name	NOUN	NN	compound	Fusidce		True	False	True
+Fusidce	Fusidce	PROPN	NNP	nsubjpass	inserted		True	False	False
+should	should	AUX	MD	aux	inserted		True	False	True
+have	have	AUX	VB	aux	inserted		True	False	True
+been	be	AUX	VBN	auxpass	inserted		True	False	True
+inserted	insert	VERB	VBN	ROOT	inserted		True	False	False
+over	over	ADP	IN	prep	inserted		True	False	True
+the	the	DET	DT	det	Falsifusus		True	False	True
+genus	genus	NOUN	NN	compound	Falsifusus		True	False	False
+Falsifusus	Falsifusus	PROPN	NNP	pobj	over	TAXA	True	False	False
+on	on	ADP	IN	prep	inserted		True	False	True
+page	page	NOUN	NN	pobj	on		True	False	False
+284	284	NUM	CD	nummod	page	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	inserted		False	True	False
+and	and	CCONJ	CC	cc	inserted		True	False	True
+similarly	similarly	ADV	RB	advmod	inserted		True	False	False
+the	the	DET	DT	det	name		True	False	True
+family	family	NOUN	NN	compound	name		True	False	False
+name	name	NOUN	NN	nsubjpass	inserted		True	False	True
+BusyGonidce	BusyGonidce	PROPN	NNP	appos	name		True	False	False
+should	should	AUX	MD	aux	inserted		True	False	True
+have	have	AUX	VB	aux	inserted		True	False	True
+been	be	AUX	VBN	auxpass	inserted		True	False	True
+inserted	insert	VERB	VBN	conj	inserted		True	False	False
+over	over	ADP	IN	prep	inserted		True	False	True
+the	the	DET	DT	det	BolteneUa		True	False	True
+genus	genus	NOUN	NN	compound	BolteneUa		True	False	False
+BolteneUa	BolteneUa	PROPN	NNP	pobj	over		True	False	False
+on	on	ADP	IN	prep	inserted		True	False	True
+page	page	NOUN	NN	pobj	on		True	False	False
+285	285	NUM	CD	nummod	page	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	inserted		False	True	False
+"
+"	"
+"	SPACE	_SP	dep	found		False	False	False
+The	the	DET	DT	det	term		True	False	True
+generic	generic	ADJ	JJ	amod	term		True	False	False
+term	term	NOUN	NN	nsubjpass	found		True	False	False
+Hyllus	Hyllus	PROPN	NNP	appos	term	TAXA	True	False	False
+(	(	PUNCT	-LRB-	punct	page		False	True	False
+page	page	NOUN	NN	appos	term		True	False	False
+281	281	NUM	CD	nummod	page	CARDINAL	False	False	False
+)	)	PUNCT	-RRB-	punct	page		False	True	False
+has	have	AUX	VBZ	aux	found		True	False	True
+been	be	AUX	VBN	auxpass	found		True	False	True
+found	find	VERB	VBN	ROOT	found		True	False	False
+to	to	PART	TO	aux	be		True	False	True
+be	be	VERB	VB	xcomp	found		True	False	True
+much	much	ADV	RB	advmod	preoccupied		True	False	True
+preoccupied	preoccupied	ADJ	JJ	acomp	be		True	False	False
+and	and	CCONJ	CC	cc	found		True	False	True
+the	the	DET	DT	det	name		True	False	True
+new	new	ADJ	JJ	amod	name		True	False	False
+name	name	NOUN	NN	nsubjpass	proposed		True	False	True
+Parafusus	Parafusus	PROPN	NNP	appos	name	TAXA	True	False	False
+is	be	AUX	VBZ	auxpass	proposed		True	False	True
+here	here	ADV	RB	advmod	proposed		True	False	True
+proposed	propose	VERB	VBN	conj	found		True	False	False
+to	to	PART	TO	aux	take		True	False	True
+take	take	VERB	VB	xcomp	proposed		True	False	True
+its	its	PRON	PRP$	poss	place		True	False	True
+place	place	NOUN	NN	dobj	take		True	False	False
+,	,	PUNCT	,	punct	proposed		False	True	False
+the	the	DET	DT	det	type		True	False	True
+type	type	NOUN	NN	nsubj	becoming		True	False	False
+thus	thus	ADV	RB	advmod	becoming		True	False	True
+becoming	become	VERB	VBG	advcl	proposed		True	False	True
+Parafusus	Parafusus	PROPN	NNP	compound	calUlateras	TAXA	True	False	False
+calUlateras	calUlateras	PROPN	NNP	attr	becoming		True	False	False
+and	and	CCONJ	CC	cc	calUlateras		True	False	True
+the	the	DET	DT	det	species		True	False	True
+second	second	ADJ	JJ	amod	species	ORDINAL	True	False	False
+species	species	NOUN	NN	conj	calUlateras		True	False	False
+,	,	PUNCT	,	punct	species		False	True	False
+Parafusus	Parafusus	PROPN	NNP	compound	coloratus	TAXA	True	False	False
+coloratus	coloratus	NOUN	NN	appos	species	TAXA	True	False	False
+.	.	PUNCT	.	punct	proposed		False	True	False
+"
+"	"
+"	SPACE	_SP	csubjpass	preoccupied		False	False	False
+Similarl}^	similarl}^	X	XX	dep	preoccupied		False	False	False
+the	the	DET	DT	det	Scohina		True	False	True
+term	term	NOUN	NN	compound	Scohina		True	False	False
+Scohina	Scohina	PROPN	NNP	nsubjpass	preoccupied		True	False	False
+(	(	PUNCT	-LRB-	punct	page		False	True	False
+page	page	NOUN	NN	appos	Scohina		True	False	False
+286	286	NUM	CD	nummod	page	CARDINAL	False	False	False
+)	)	PUNCT	-RRB-	punct	page		False	True	False
+is	be	AUX	VBZ	auxpass	preoccupied		True	False	True
+preoccupied	preoccupy	VERB	VBN	ROOT	preoccupied		True	False	False
+and	and	CCONJ	CC	cc	preoccupied		True	False	True
+for	for	ADP	IN	prep	proposed		True	False	True
+the	the	DET	DT	det	latter		True	False	True
+latter	latter	ADJ	JJ	pobj	for		True	False	True
+the	the	DET	DT	det	name		True	False	True
+name	name	NOUN	NN	nsubjpass	proposed		True	False	True
+Haplovoluta	Haplovoluta	PROPN	NNP	appos	name	TAXA	True	False	False
+is	be	AUX	VBZ	auxpass	proposed		True	False	True
+proposed	propose	VERB	VBN	conj	preoccupied		True	False	False
+,	,	PUNCT	,	punct	proposed		False	True	False
+the	the	DET	DT	det	species		True	False	True
+type	type	NOUN	NN	compound	species		True	False	False
+species	species	NOUN	NN	nsubj	becoming		True	False	False
+becoming	become	VERB	VBG	advcl	proposed		True	False	True
+Haplovoluta	Haplovoluta	PROPN	NNP	compound	bicarinata	TAXA	True	False	False
+bicarinata	bicarinata	NOUN	NN	attr	becoming	TAXA	True	False	False
+.	.	PUNCT	.	punct	proposed		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	regarded		False	False	False
+The	the	DET	DT	det	genus		True	False	True
+new	new	ADJ	JJ	amod	genus		True	False	False
+Buccinoid	buccinoid	NOUN	NN	compound	genus		True	False	False
+genus	genus	NOUN	NN	nsubjpass	regarded		True	False	False
+Seminola	Seminola	PROPN	NNP	appos	genus	TAXA	True	False	False
+is	be	AUX	VBZ	auxpass	regarded		True	False	True
+not	not	PART	RB	neg	regarded		True	False	True
+regarded	regard	VERB	VBN	ROOT	regarded		True	False	False
+as	as	ADP	IN	prep	regarded		True	False	True
+being	be	AUX	VBG	auxpass	preoccupied		True	False	True
+preoccupied	preoccupy	VERB	VBN	pcomp	as		True	False	False
+by	by	ADP	IN	agent	preoccupied		True	False	True
+the	the	DET	DT	det	genus		True	False	True
+Coleopteroid	coleopteroid	NOUN	NN	compound	genus		True	False	False
+genus	genus	NOUN	NN	pobj	by		True	False	False
+Seminolus	Seminolus	PROPN	NNP	appos	genus	TAXA	True	False	False
+of	of	ADP	IN	prep	Seminolus		True	False	True
+Mulsant	Mulsant	PROPN	NNP	pobj	of		True	False	False
+(	(	PUNCT	-LRB-	punct	preoccupied		False	True	False
+1869	1869	NUM	CD	npadvmod	preoccupied	DATE	False	False	False
+)	)	PUNCT	-RRB-	punct	preoccupied		False	True	False
+although	although	SCONJ	IN	mark	are		True	False	True
+the	the	DET	DT	det	two		True	False	True
+two	two	NUM	CD	nsubj	are	CARDINAL	True	False	True
+are	be	VERB	VBP	advcl	regarded		True	False	True
+dangerously	dangerously	ADV	RB	advmod	alike		True	False	False
+alike	alike	ADJ	JJ	acomp	are		True	False	False
+and	and	CCONJ	CC	cc	are		True	False	True
+a	a	DET	DT	det	term		True	False	True
+different	different	ADJ	JJ	amod	term		True	False	False
+term	term	NOUN	NN	nsubjpass	proposed		True	False	False
+would	would	AUX	MD	aux	proposed		True	False	True
+have	have	AUX	VB	aux	proposed		True	False	True
+been	be	AUX	VBN	auxpass	proposed		True	False	True
+proposed	propose	VERB	VBN	conj	are		True	False	False
+in	in	ADP	IN	prep	proposed		True	False	True
+the	the	DET	DT	det	instance		True	False	True
+first	first	ADJ	JJ	amod	instance	ORDINAL	True	False	True
+instance	instance	NOUN	NN	pobj	in		True	False	False
+if	if	SCONJ	IN	mark	been		True	False	True
+the	the	DET	DT	det	writer		True	False	True
+writer	writer	NOUN	NN	nsubj	been		True	False	False
+had	have	AUX	VBD	aux	been		True	False	True
+been	be	VERB	VBN	advcl	proposed		True	False	True
+aware	aware	ADJ	JJ	acomp	been		True	False	False
+of	of	ADP	IN	prep	aware		True	False	True
+Mulsant	Mulsant	PROPN	NNP	poss	genus		True	False	False
+'s	's	PART	POS	case	Mulsant		False	False	True
+genus	genus	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	regarded		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+April	April	PROPN	NNP	npadvmod	"
+"	DATE	True	False	False
+9	9	NUM	CD	nummod	April	DATE	False	False	False
+.	.	PUNCT	.	punct	April		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+MEETING	meeting	NOUN	NN	nsubj	"
+"		True	False	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

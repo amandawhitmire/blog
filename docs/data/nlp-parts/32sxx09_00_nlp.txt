@@ -1,0 +1,17 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+ON	on	ADP	IN	ROOT	ON		True	False	True
+SOME	some	DET	DT	det	MOLLUSCA		True	False	True
+NEW	new	ADJ	JJ	amod	MOLLUSCA		True	False	False
+LOWER	low	ADJ	JJR	amod	MOLLUSCA		True	False	False
+EOCENE	EOCENE	PROPN	NNP	compound	MOLLUSCA		True	False	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	pobj	ON		True	False	False
+FROM	from	ADP	IN	prep	MOLLUSCA		True	False	True
+CLARKE	CLARKE	PROPN	NNP	compound	CO	GPE	True	False	False
+CO	CO	PROPN	NNP	pobj	FROM	GPE	True	False	False
+.	.	PROPN	NNP	punct	CO	GPE	False	True	False
+ALABAMA	ALABAMA	PROPN	NNP	appos	CO	GPE	True	False	False
+,	,	PUNCT	,	punct	FROM		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

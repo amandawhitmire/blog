@@ -1,0 +1,18 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+MOLLUSCA	MOLLUSCA	PROPN	NNP	ROOT	MOLLUSCA	GPE	True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA	GPE	True	False	True
+THE	the	DET	DT	det	STATES	GPE	True	False	True
+SOUTHWESTERN	SOUTHWESTERN	PROPN	NNP	compound	STATES	GPE	True	False	False
+STATES	STATES	PROPN	NNPS	pobj	OF	GPE	True	False	False
+,	,	PUNCT	,	punct	MOLLUSCA		False	True	False
+VII	vii	NUM	CD	appos	MOLLUSCA	CARDINAL	True	False	False
+:	:	PUNCT	:	punct	MOLLUSCA		False	True	False
+THE	the	DET	DT	det	DRAGOON		True	False	True
+DRAGOON	DRAGOON	PROPN	NNP	appos	MOLLUSCA		True	False	False
+,	,	PUNCT	,	punct	DRAGOON		False	True	False
+MULE	MULE	PROPN	NNP	appos	DRAGOON	GPE	True	False	False
+,	,	PUNCT	,	punct	DRAGOON		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

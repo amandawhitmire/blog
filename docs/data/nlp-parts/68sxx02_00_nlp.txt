@@ -1,0 +1,15 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+STUDIES	study	NOUN	NNS	ROOT	STUDIES		True	False	False
+IN	in	ADP	IN	prep	STUDIES		True	False	True
+THE	the	DET	DT	det	DERMAPTERA		True	False	True
+DERMAPTERA	DERMAPTERA	PROPN	NNP	pobj	IN		True	False	False
+AND	and	CCONJ	CC	cc	DERMAPTERA		True	False	True
+ORTHOPTERA	ORTHOPTERA	PROPN	NNP	conj	DERMAPTERA		True	False	False
+OF	of	ADP	IN	prep	DERMAPTERA		True	False	True
+THE	the	DET	DT	det	COASTAL		True	False	True
+COASTAL	COASTAL	PROPN	NNP	compound	PLAIN		True	False	False
+PLAIN	PLAIN	PROPN	NNP	pobj	OF		True	False	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

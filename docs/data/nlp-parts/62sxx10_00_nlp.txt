@@ -1,0 +1,17 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+COOK	COOK	PROPN	NNP	ROOT	COOK		True	False	False
+:	:	PUNCT	:	punct	COOK		False	True	False
+SPERMATOGENESIS	spermatogenesi	NOUN	NNS	appos	COOK		True	False	False
+IN	in	ADP	IN	prep	SPERMATOGENESIS		True	False	True
+LEPIDOPTERA	LEPIDOPTERA	PROPN	NNP	pobj	IN		True	False	False
+.	.	PUNCT	.	punct	COOK		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	COOK		False	False	False
+PLATE	plate	NOUN	NN	compound	XXV		True	False	False
+XXV	xxv	NOUN	NN	pobj	"
+"		True	False	False
+.	.	NOUN	NN	appos	XXV		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	COOK		False	False	False

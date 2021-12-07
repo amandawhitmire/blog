@@ -1,0 +1,48 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+AND	and	CCONJ	CC	cc	PILSBRY		True	False	True
+FERRISS	FERRISS	PROPN	NNP	conj	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	appos	PILSBRY		True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+THE	the	DET	DT	det	STATES		True	False	True
+SOUTHWESTERN	SOUTHWESTERN	PROPN	NNP	compound	STATES		True	False	False
+STATES	STATES	PROPN	NNPS	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	dep	"
+"		True	False	False
+X.	x.	NOUN	NN	compound	lb		False	False	False
+la	la	NOUN	NN	compound	lb		True	False	False
+lb	lb	NOUN	NN	appos	PLATE		True	False	False
+(	(	PUNCT	-LRB-	punct	r^i		False	True	False
+3	3	NUM	CD	nummod	r^i	CARDINAL	False	False	False
+Ic	ic	NOUN	NN	compound	r^i		True	False	False
+r^i	r^i	NOUN	NN	appos	lb		False	False	False
+\	\	PUNCT	NFP	punct	r^i		False	True	False
+2a	2a	NUM	CD	nummod	I		False	False	False
+I	i	NOUN	NN	appos	r^i		True	False	True
+d	d	NOUN	NN	appos	I		True	False	False
+2b	2b	NUM	CD	nummod	d		False	False	False
+1e	1e	NUM	CD	nummod	d		False	False	False
+7	7	NUM	CD	nummod	1e	CARDINAL	False	False	False
+3a	3a	NUM	CD	nmod	1e		False	False	False
+5a	5a	NUM	CD	nummod	d		False	False	False
+3b	3b	NUM	CD	compound	5b		False	False	False
+5b	5b	NUM	CD	appos	d		False	False	False
+^	^	PUNCT	NFP	punct	7a		False	False	False
+6a	6a	NUM	CD	nummod	7a		False	False	False
+7a	7a	NUM	CD	appos	I		False	False	False
+^i	^i	NOUN	NN	appos	I		False	False	False
+;	;	PUNCT	:	punct	I		False	True	False
+4a	4a	NUM	CD	compound	7b		False	False	False
+4b	4b	NUM	CD	dep	7b		False	False	False
+6b	6b	NUM	CD	compound	7b		False	False	False
+7b	7b	NUM	CD	appos	I		False	False	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False

@@ -1,0 +1,325 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+A	a	DET	DT	det	SPECIES		True	False	True
+NEW	new	ADJ	JJ	amod	SPECIES		True	False	False
+SPECIES	specie	NOUN	NNS	ROOT	SPECIES		True	False	False
+OF	of	ADP	IN	prep	SPECIES		True	False	True
+COCCYZUS	COCCYZUS	PROPN	NNP	pobj	OF		True	False	False
+FROM	from	ADP	IN	prep	COCCYZUS		True	False	True
+ST	ST	PROPN	NNP	compound	ANDREWS	GPE	True	False	False
+.	.	PROPN	NNP	compound	ANDREWS	GPE	False	True	False
+ANDREWS	ANDREWS	PROPN	NNP	pobj	FROM	GPE	True	False	False
+.	.	PUNCT	.	punct	SPECIES		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+BY	by	ADP	IN	ROOT	BY		True	False	True
+WITHER	WITHER	PROPN	NNP	compound	STONE	PERSON	True	False	False
+STONE	STONE	PROPN	NNP	pobj	BY	PERSON	True	False	False
+.	.	PUNCT	.	punct	BY		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	seems		False	False	False
+The	the	DET	DT	det	collection		True	False	True
+first	first	ADJ	JJ	amod	collection	ORDINAL	True	False	True
+collection	collection	NOUN	NN	nsubj	seems		True	False	False
+of	of	ADP	IN	prep	collection		True	False	True
+birds	bird	NOUN	NNS	pobj	of		True	False	False
+from	from	ADP	IN	prep	birds		True	False	True
+the	the	DET	DT	det	island		True	False	True
+isolated	isolated	ADJ	JJ	amod	island		True	False	False
+island	island	NOUN	NN	pobj	from		True	False	False
+of	of	ADP	IN	prep	island		True	False	True
+St.	St.	PROPN	NNP	compound	Andrews	GPE	False	False	False
+Andrews	Andrews	PROPN	NNP	pobj	of	GPE	True	False	False
+in	in	ADP	IN	prep	island		True	False	True
+the	the	DET	DT	det	Sea	LOC	True	False	True
+Caribbean	Caribbean	PROPN	NNP	compound	Sea	LOC	True	False	False
+Sea	Sea	PROPN	NNP	pobj	in	LOC	True	False	False
+seems	seem	VERB	VBZ	ROOT	seems		True	False	True
+to	to	PART	TO	aux	made		True	False	True
+have	have	AUX	VB	aux	made		True	False	True
+been	be	AUX	VBN	auxpass	made		True	False	True
+made	make	VERB	VBN	xcomp	seems		True	False	True
+in	in	ADP	IN	prep	made		True	False	True
+the	the	DET	DT	det	winter	DATE	True	False	True
+winter	winter	NOUN	NN	pobj	in	DATE	True	False	False
+of	of	ADP	IN	prep	winter	DATE	True	False	True
+1886	1886	NUM	CD	pobj	of	DATE	False	False	False
+-	-	SYM	SYM	punct	7	DATE	False	True	False
+7	7	NUM	CD	prep	1886	DATE	False	False	False
+,	,	PUNCT	,	punct	made		False	True	False
+by	by	ADP	IN	agent	made		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Henderson		False	False	False
+Robert	Robert	PROPN	NNP	compound	Henderson	PERSON	True	False	False
+Henderson	Henderson	PROPN	NNP	pobj	by	PERSON	True	False	False
+,	,	PUNCT	,	punct	Henderson		False	True	False
+who	who	PRON	WP	nsubj	collecting		True	False	True
+was	be	AUX	VBD	aux	collecting		True	False	True
+collecting	collect	VERB	VBG	relcl	Henderson		True	False	False
+for	for	ADP	IN	prep	collecting		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Cory		False	False	False
+Charles	Charles	PROPN	NNP	compound	Cory	PERSON	True	False	False
+B.	B.	PROPN	NNP	compound	Cory	PERSON	False	False	False
+Cory	Cory	PROPN	NNP	pobj	for	PERSON	True	False	False
+.	.	PUNCT	.	punct	seems		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Nineteen	nineteen	NUM	CD	nummod	species	CARDINAL	True	False	False
+species	specie	NOUN	NNS	nsubjpass	obtained		True	False	False
+were	be	AUX	VBD	auxpass	obtained		True	False	True
+obtained	obtain	VERB	VBN	ROOT	obtained		True	False	False
+,	,	PUNCT	,	punct	obtained		False	True	False
+of	of	ADP	IN	prep	five		True	False	True
+which	which	DET	WDT	pobj	of		True	False	True
+five	five	NUM	CD	nsubjpass	described	CARDINAL	True	False	True
+were	be	AUX	VBD	auxpass	described		True	False	True
+described	describe	VERB	VBN	relcl	obtained		True	False	False
+as	as	ADP	IN	prep	described		True	False	True
+new	new	ADJ	JJ	amod	as		True	False	False
+by	by	ADP	IN	agent	described		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Cory.^		False	False	False
+Cory.^	Cory.^	PROPN	NNP	punct	obtained		False	False	False
+On	on	ADP	IN	prep	stopped		True	False	True
+May	May	PROPN	NNP	pobj	On	DATE	True	False	True
+1	1	NUM	CD	nummod	May	DATE	False	False	False
+,	,	PUNCT	,	punct	May	DATE	False	True	False
+1887	1887	NUM	CD	nummod	May	DATE	False	False	False
+,	,	PUNCT	,	punct	stopped		False	True	False
+Dr.	Dr.	PROPN	NNP	compound	Abbott		False	False	False
+William	William	PROPN	NNP	compound	Abbott	PERSON	True	False	False
+L.	L.	PROPN	NNP	compound	Abbott	PERSON	False	False	False
+Abbott	Abbott	PROPN	NNP	nsubj	stopped	PERSON	True	False	False
+stopped	stop	VERB	VBD	ROOT	stopped		True	False	False
+at	at	ADP	IN	prep	stopped		True	False	True
+the	the	DET	DT	det	island		True	False	True
+island	island	NOUN	NN	pobj	at		True	False	False
+and	and	CCONJ	CC	cc	stopped		True	False	True
+collected	collect	VERB	VBD	conj	stopped		True	False	False
+a	a	DET	DT	det	specimens		True	False	True
+few	few	ADJ	JJ	amod	specimens		True	False	True
+specimens	specimen	NOUN	NNS	dobj	collected		True	False	False
+representing	represent	VERB	VBG	acl	specimens		True	False	False
+six	six	NUM	CD	nummod	species	CARDINAL	True	False	True
+species	specie	NOUN	NNS	dobj	representing		True	False	False
+.	.	PUNCT	.	punct	stopped		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Two	two	NUM	CD	ROOT	Two	CARDINAL	True	False	True
+of	of	ADP	IN	prep	Two		True	False	True
+these	these	DET	DT	det	Avere		True	False	True
+Avere	Avere	PROPN	NNP	pobj	of		True	False	False
+not	not	PART	RB	neg	obtained		True	False	True
+obtained	obtain	VERB	VBN	acl	Avere		True	False	False
+by	by	ADP	IN	agent	obtained		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Henderson		False	False	False
+Henderson	Henderson	PROPN	NNP	pobj	by	PERSON	True	False	False
+,	,	PUNCT	,	punct	Avere		False	True	False
+namely	namely	ADV	RB	advmod	violicauda		True	False	True
+,	,	PUNCT	,	punct	violicauda		False	True	False
+Lampornis	Lampornis	PROPN	NNP	compound	violicauda	TAXA	True	False	False
+violicauda	violicauda	NOUN	NN	appos	Avere	TAXA	True	False	False
+and	and	CCONJ	CC	cc	violicauda		True	False	True
+a	a	DET	DT	det	Coccyzus		True	False	True
+Coccyzus	Coccyzus	PROPN	NNP	conj	violicauda		True	False	False
+allied	ally	VERB	VBN	amod	Coccyzus		True	False	False
+to	to	ADP	IN	prep	allied		True	False	True
+C.	C.	PROPN	NNP	pobj	to		False	False	False
+minor	minor	ADJ	JJ	amod	C.		True	False	False
+,	,	PUNCT	,	punct	allied		False	True	False
+but	but	CCONJ	CC	cc	allied		True	False	True
+apparently	apparently	ADV	RB	advmod	distinct		True	False	False
+distinct	distinct	ADJ	JJ	conj	allied		True	False	False
+,	,	PUNCT	,	punct	Coccyzus		False	True	False
+for	for	ADP	IN	prep	name		True	False	True
+which	which	DET	WDT	pobj	for		True	False	True
+I	I	PRON	PRP	nsubj	propose		True	False	True
+would	would	AUX	MD	aux	propose		True	False	True
+propose	propose	VERB	VB	relcl	Coccyzus		True	False	False
+the	the	DET	DT	det	name		True	False	True
+name	name	NOUN	NN	dobj	propose		True	False	True
+Coccyzus	Coccyzus	PROPN	NNP	compound	abbotti	TAXA	True	False	False
+abbotti	abbotti	NOUN	NN	appos	name	TAXA	True	False	False
+.	.	PUNCT	.	punct	Two		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	differs		False	False	False
+This	this	DET	DT	det	bird		True	False	True
+bird	bird	NOUN	NN	nsubj	differs		True	False	False
+differs	differ	VERB	VBZ	ROOT	differs		True	False	False
+from	from	ADP	IN	prep	differs		True	False	True
+C.	C.	PROPN	NNP	compound	minor		False	False	False
+minor	minor	ADJ	JJ	pobj	from		True	False	False
+especially	especially	ADV	RB	advmod	in		True	False	False
+in	in	ADP	IN	prep	differs		True	False	True
+its	its	PRON	PRP$	poss	bill		True	False	True
+much	much	ADV	RB	advmod	longer		True	False	True
+longer	long	ADJ	JJR	amod	bill		True	False	False
+bill	bill	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	differs		False	True	False
+and	and	CCONJ	CC	cc	differs		True	False	True
+this	this	DET	DT	det	character		True	False	True
+character	character	NOUN	NN	nsubj	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+curiously	curiously	ADV	RB	advmod	enough		True	False	False
+enough	enough	ADV	RB	advmod	is		True	False	True
+,	,	PUNCT	,	punct	is		False	True	False
+is	be	VERB	VBZ	conj	differs		True	False	True
+likewise	likewise	ADV	RB	advmod	conspicuous		True	False	False
+conspicuous	conspicuous	ADJ	JJ	acomp	is		True	False	False
+in	in	ADP	IN	prep	is		True	False	True
+Mimm	Mimm	PROPN	NNP	compound	magnirostris	TAXA	True	False	False
+magnirostris	magnirostris	PROPN	NNP	pobj	in	TAXA	True	False	False
+and	and	CCONJ	CC	cc	magnirostris		True	False	True
+Icterus	Icterus	PROPN	NNP	compound	laivrencei		True	False	False
+laivrencei	laivrencei	PROPN	NNP	conj	magnirostris		True	False	False
+,	,	PUNCT	,	punct	magnirostris		False	True	False
+U\o	u\o	X	XX	prep	magnirostris		False	False	False
+other	other	ADJ	JJ	amod	species		True	False	True
+peculiar	peculiar	ADJ	JJ	amod	species		True	False	False
+species	specie	NOUN	NNS	conj	magnirostris		True	False	False
+separated	separate	VERB	VBN	acl	species		True	False	False
+by	by	ADP	IN	agent	separated		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Cory		False	False	False
+Cory	Cory	PROPN	NNP	pobj	by	PERSON	True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Coccyzus	Coccyzus	PROPN	NNP	dep	"
+"	TAXA	True	False	False
+abbotti	abbotti	PROPN	NNP	nmod	sp	TAXA	True	False	False
+n.	n.	PROPN	NNP	compound	sp		False	False	False
+sp	sp	PROPN	NNP	dep	.		True	False	False
+.	.	PROPN	NNP	appos	Coccyzus		False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False
+Type	type	NOUN	NN	compound	No		True	False	False
+No	No	PROPN	NNP	nsubj	"
+"		True	False	True
+.	.	PROPN	NNP	appos	No		False	True	False
+"
+"	"
+"	SPACE	_SP	poss	Abbott		False	False	False
+25,177	25,177	NUM	CD	nummod	"
+"		False	False	False
+,	,	PUNCT	,	punct	25,177		False	True	False
+Acad	Acad	PROPN	NNP	appos	25,177	ORG	True	False	False
+.	.	PROPN	NNP	appos	25,177	ORG	False	True	False
+"
+"	"
+"	SPACE	_SP	prep	Abbott	ORG	False	False	False
+Nat	Nat	PROPN	NNP	compound	Abbott	ORG	True	False	False
+.	.	PUNCT	.	case	Nat	ORG	False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Nat	ORG	False	False	False
+Sci	Sci	PROPN	NNP	compound	Abbott	ORG	True	False	False
+.	.	PUNCT	.	case	Sci		False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Sci		False	False	False
+Phila	Phila	PROPN	NNP	npadvmod	"
+"	ORG	True	False	False
+.	.	PUNCT	,	punct	Abbott		False	True	False
+,	,	PUNCT	,	punct	.		False	True	False
+St.	St.	PROPN	NNP	compound	Andrews	GPE	False	False	False
+Andrews	Andrews	PROPN	NNP	npadvmod	,	GPE	True	False	False
+,	,	PUNCT	,	punct	.		False	True	False
+May	May	PROPN	NNP	appos	.	DATE	True	False	True
+1	1	NUM	CD	nummod	May	DATE	False	False	False
+,	,	PUNCT	,	punct	May	DATE	False	True	False
+1877	1877	NUM	CD	nummod	May	DATE	False	False	False
+,	,	PUNCT	,	punct	Abbott		False	True	False
+W.	W.	PROPN	NNP	compound	Abbott	PERSON	False	False	False
+L.	L.	PROPN	NNP	compound	Abbott	PERSON	False	False	False
+Abbott	Abbott	PROPN	NNP	oprd	"
+"	PERSON	True	False	False
+.	.	PUNCT	.	punct	Abbott		False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False
+Similar	similar	ADJ	JJ	amod	WING		True	False	False
+to	to	ADP	IN	prep	Similar		True	False	True
+C.	C.	PROPN	NNP	compound	minor		False	False	False
+minor	minor	ADJ	JJ	pobj	to		True	False	False
+,	,	PUNCT	,	punct	Similar		False	True	False
+but	but	CCONJ	CC	cc	Similar		True	False	True
+with	with	ADP	IN	conj	Similar		True	False	True
+much	much	ADV	RB	advmod	larger		True	False	True
+larger	large	ADJ	JJR	amod	bill		True	False	False
+and	and	CCONJ	CC	cc	larger		True	False	True
+longer	long	ADJ	JJR	conj	larger		True	False	False
+bill	bill	NOUN	NN	pobj	with		True	False	False
+,	,	PUNCT	,	punct	bill		False	True	False
+abdomen	abdomen	NOUN	NN	conj	bill		True	False	False
+and	and	CCONJ	CC	cc	abdomen		True	False	True
+flanks	flank	NOUN	NNS	conj	abdomen		True	False	False
+paler	pale	ADJ	JJR	amod	bill		True	False	False
+,	,	PUNCT	,	punct	gray		False	True	False
+sides	side	NOUN	NNS	nsubj	gray		True	False	False
+of	of	ADP	IN	prep	sides		True	False	True
+the	the	DET	DT	det	neck		True	False	True
+neck	neck	NOUN	NN	pobj	of		True	False	False
+less	less	ADV	RBR	advmod	gray		True	False	True
+gray	gray	ADJ	JJ	conj	Similar		True	False	False
+and	and	CCONJ	CC	cc	gray		True	False	True
+more	more	ADV	RBR	advmod	suffused		True	False	True
+suffused	suffused	ADJ	JJ	conj	gray		True	False	False
+with	with	ADP	IN	prep	suffused		True	False	True
+buff	buff	NOUN	NN	pobj	with		True	False	False
+.	.	PUNCT	.	punct	gray		False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Similar		False	False	False
+WING	WING	PROPN	NNP	nsubj	"
+"	ORG	True	False	False
+.	.	PUNCT	.	punct	WING		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	WING		False	False	False
+CULMEX	CULMEX	PROPN	NNP	appos	WING	ORG	True	False	False
+.	.	PUNCT	.	punct	CULMEX		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	WING		False	False	False
+C.	C.	PROPN	NNP	compound	minor		False	False	False
+minor	minor	PROPN	NNP	appos	WING		True	False	False
+,	,	PUNCT	,	punct	minor		False	True	False
+5.30	5.30	NUM	CD	nummod	ins	CARDINAL	False	False	False
+ins	in	NOUN	NNS	appos	minor		True	False	False
+.	.	PUNCT	.	appos	minor		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	ins		False	False	False
+1.08	1.08	NUM	CD	nummod	ins	CARDINAL	False	False	False
+ins	in	NOUN	NNS	appos	WING		True	False	False
+.	.	PUNCT	.	punct	WING		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	WING		False	False	False
+C.	C.	PROPN	NNP	compound	abbotti	TAXA	False	False	False
+abbotti	abbotti	PROPN	NNP	appos	WING	TAXA	True	False	False
+,	,	PUNCT	,	punct	abbotti		False	True	False
+5.20	5.20	NUM	CD	nummod	Auk	CARDINAL	False	False	False
+1.28	1.28	NUM	CD	nummod	Auk	CARDINAL	False	False	False
+1	1	NUM	CD	nummod	Auk	CARDINAL	False	False	False
+Auk	Auk	PROPN	NNP	appos	abbotti		True	False	False
+,	,	PUNCT	,	punct	Auk		False	True	False
+1887	1887	NUM	CD	appos	Auk	DATE	False	False	False
+,	,	PUNCT	,	punct	Auk		False	True	False
+p.	p.	NOUN	NN	appos	Auk		False	False	False
+177	177	NUM	CD	nummod	p.	CARDINAL	False	False	False
+.	.	NUM	CD	nummod	p.	CARDINAL	False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False

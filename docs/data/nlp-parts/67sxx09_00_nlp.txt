@@ -1,0 +1,52 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	appos	PILSBRY		True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+THE	the	DET	DT	det	STATES	LOC	True	False	True
+SOUTH	SOUTH	PROPN	NNP	compound	STATES	LOC	True	False	False
+W^ESTERN	W^ESTERN	PROPN	NNP	compound	STATES	LOC	False	False	False
+STATES	STATES	PROPN	NNPS	pobj	OF	LOC	True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PROr	PROr	PROPN	NNP	preconj	"
+"		True	False	False
+ACAD	ACAD	PROPN	NNP	appos	PROr	ORG	True	False	False
+.	.	PUNCT	.	punct	PROr		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+NAT	NAT	PROPN	NNP	npadvmod	"
+"	ORG	True	False	False
+.	.	PUNCT	.	punct	NAT		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+SCI	sci	AUX	NNP	aux	"
+"		True	False	False
+PHILA	PHILA	PROPN	NNP	appos	SCI		True	False	False
+.	.	PUNCT	.	punct	SCI		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+1915	1915	NUM	CD	npadvmod	"
+"		False	False	False
+.	.	PUNCT	.	punct	1915		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	dep	"
+"		True	False	False
+VII	vii	NUM	CD	nummod	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False

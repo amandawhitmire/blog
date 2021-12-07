@@ -74,13 +74,16 @@ Now we need to read back in the results from GNfinder and pull out the verbatim 
 
 ```{r echo=TRUE, eval=FALSE}
 # creates the list of all the csv files in the directory
-listcsv <- list.files("/Users/thalassa/Google Drive/My Drive/LEADING/corpus/gnfinder",
-                       pattern = "*gnf.txt", full.names = T, recursive = TRUE)
+# listcsv <- list.files("/Users/thalassa/Google Drive/My Drive/LEADING/corpus/gnfinder",
+#                       pattern = "*gnf.txt", full.names = T, recursive = TRUE)
+listcsv <- list.files("/Users/thalassa/Rcode/blog/data/gnfinder-parts-clean",
+                       pattern = "*gnf.txt", full.names = T, recursive = FALSE)
 outlist <- gsub("gnf.txt", "taxa.txt", listcsv) #change the file name for the entity files
 for (k in 1:length(listcsv)){
   dat <- as_tibble(read_csv(listcsv[[k]]))
   myfile <- outlist[[k]]
-  write_lines(dat[[2]], myfile)
+  # write_lines(dat[[2]], myfile) # Verbatim name
+  write_lines(dat[[3]], myfile) # Clean name
 }
 
 rm(listcsv, outlist, dat, k, myfile) # clean up!
@@ -91,7 +94,9 @@ That's it - there is now a `txt` file with taxonomic names for every volume of t
 ```{r echo=TRUE, eval=FALSE}
 
 #list all the files in the folder
-listfile <- as_tibble(list.files("/Users/thalassa/Rcode/blog/data/taxa-verbatim-txt",
+#listfile <- as_tibble(list.files("/Users/thalassa/Rcode/blog/data/taxa-verbatim-txt",
+#                       pattern = ".txt", full.names = T, recursive = FALSE))
+listfile <- as_tibble(list.files("/Users/thalassa/Rcode/blog/data/taxa-clean-txt",
                        pattern = ".txt", full.names = T, recursive = FALSE))
 
 data <- as_tibble(read_lines(listfile[[1]][1]))
@@ -101,7 +106,7 @@ for (k in 2:length(listfile[[1]])){
   data <- bind_rows(data, dat)
 }
 
-write_csv(data, "/Users/thalassa/Rcode/blog/data/ansp-taxa.txt")
+write_csv(data, "/Users/thalassa/Rcode/blog/data/ansp-taxa-clean.txt")
 
 rm(ldf, listfile, dat, k) # clean up!
 ``` 

@@ -1,0 +1,3489 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+INDEX	index	NOUN	NN	nsubj	DESCRIBED		True	False	False
+TO	to	ADP	IN	prep	INDEX		True	False	True
+GENERA	GENERA	PROPN	NNP	pobj	TO		True	False	False
+,	,	PUNCT	,	punct	TO		False	True	False
+SPECIES	specie	NOUN	NNS	appos	INDEX		True	False	False
+,	,	PUNCT	,	punct	SPECIES		False	True	False
+ETC	etc	X	FW	appos	SPECIES		True	False	False
+.	.	PUNCT	,	punct	SPECIES		False	True	False
+,	,	PUNCT	,	punct	SPECIES		False	True	False
+DESCRIBED	describe	VERB	VBN	ROOT	DESCRIBED		True	False	False
+AND	and	CCONJ	CC	cc	DESCRIBED		True	False	True
+Species	specie	NOUN	NNS	nsubjpass	indicated		True	False	False
+described	describe	VERB	VBN	acl	Species		True	False	False
+as	as	ADP	IN	prep	described		True	False	True
+new	new	ADJ	JJ	amod	as		True	False	False
+are	be	AUX	VBP	auxpass	indicated		True	False	True
+indicated	indicate	VERB	VBN	ROOT	indicated		True	False	False
+by	by	ADP	IN	agent	indicated		True	False	True
+heavy	heavy	ADJ	JJ	amod	faced		True	False	False
+-	-	PUNCT	HYPH	punct	faced		False	True	False
+faced	faced	ADJ	JJ	amod	synonyms		True	False	False
+,	,	PUNCT	,	punct	synonyms		False	True	False
+synonyms	synonym	NOUN	NNS	pobj	by		True	False	False
+by	by	ADP	IN	prep	synonyms		True	False	True
+italic	italic	ADJ	JJ	amod	numerals		True	False	False
+numerals	numeral	NOUN	NNS	pobj	by		True	False	False
+.	.	PUNCT	.	punct	indicated		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	indicated		False	False	False
+Ablennes	Ablennes	PROPN	NNP	compound	hians	TAXA	True	False	False
+hians	hians	X	FW	oprd	indicated	TAXA	True	False	False
+6	6	NUM	CD	nummod	crysoleucas		False	False	False
+Abramis	Abramis	PROPN	NNP	compound	crysoleucas	TAXA	True	False	False
+crysoleucas	crysoleucas	PROPN	NNP	appos	hians	TAXA	True	False	False
+293	293	NUM	CD	nummod	crysoleucas	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	crysoleucas		False	True	False
+299	299	NUM	CD	nummod	pornotis	CARDINAL	False	False	False
+Acantharchus	Acantharchus	PROPN	NNP	compound	pornotis	TAXA	True	False	False
+pornotis	pornotis	PROPN	NNP	appos	crysoleucas	TAXA	True	False	False
+295	295	NUM	CD	nummod	eburnea		False	False	False
+Acicula	Acicula	PROPN	NNP	nmod	eburnea		True	False	False
+165	165	NUM	CD	nummod	eburnea		False	False	False
+eburnea	eburnea	PROPN	NNP	appos	crysoleucas		True	False	False
+165	165	NUM	CD	nummod	eburnea		False	False	False
+Acipenser	Acipenser	PROPN	NNP	compound	sturio	TAXA	True	False	False
+sturio	sturio	PROPN	NNP	appos	crysoleucas	TAXA	True	False	False
+293	293	NUM	CD	nummod	sturio		False	False	False
+Actinia	Actinia	PROPN	NNP	compound	canadensis	TAXA	True	False	False
+canadensis	canadensis	NOUN	NN	appos	crysoleucas	TAXA	True	False	False
+174	174	NUM	CD	nummod	canadensis		False	False	False
+Af	Af	PROPN	NNP	compound	cassioides		True	False	False
+zelia	zelia	X	FW	compound	cassioides		True	False	False
+cassioides	cassioides	PROPN	NNP	appos	crysoleucas		True	False	False
+264	264	NUM	CD	nummod	cassioides	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	cassioides		False	True	False
+265	265	NUM	CD	nummod	pectinata	CARDINAL	False	False	False
+pectinata	pectinata	PROPN	NNP	appos	cassioides		True	False	False
+264	264	NUM	CD	nummod	pectinata	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	cassioides		False	True	False
+265	265	NUM	CD	nummod	peninsularis	CARDINAL	False	False	False
+p.	p.	NOUN	NN	compound	peninsularis		False	False	False
+peninsularis	peninsularis	X	FW	appos	cassioides		True	False	False
+264	264	NUM	CD	nummod	peninsularis	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	cassioides		False	True	False
+266	266	NUM	CD	nummod	cassioides	CARDINAL	False	False	False
+Agalinis	Agalinis	PROPN	NNP	compound	aphylla	TAXA	True	False	False
+aphylla	aphylla	PROPN	NNP	appos	hians	TAXA	True	False	False
+275	275	NUM	CD	nummod	aphylla	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+283	283	NUM	CD	nummod	cor3Tnbosa	CARDINAL	False	False	False
+cor3Tnbosa	cor3Tnbosa	PROPN	NNP	appos	aphylla		False	False	False
+278	278	NUM	CD	nummod	decemloba	CARDINAL	False	False	False
+decemloba	decemloba	PROPN	NNP	appos	aphylla		True	False	False
+276	276	NUM	CD	nummod	decemloba	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	decemloba		False	True	False
+284	284	NUM	CD	nummod	aphylla	CARDINAL	False	False	False
+delicatiila	delicatiila	X	FW	appos	aphylla		True	False	False
+279	279	NUM	CD	nummod	divaricata		False	False	False
+divaricata	divaricata	PROPN	NNP	appos	aphylla		True	False	False
+277	277	NUM	CD	appos	aphylla	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+286	286	NUM	CD	nummod	erecta	CARDINAL	False	False	False
+erecta	erecta	NOUN	NN	appos	aphylla		True	False	False
+:	:	PUNCT	:	punct	erecta		False	True	False
+276	276	NUM	CD	appos	erecta	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	erecta		False	True	False
+284	284	NUM	CD	nummod	fasciculata	CARDINAL	False	False	False
+fasciculata	fasciculata	X	FW	appos	erecta		True	False	False
+273	273	NUM	CD	nummod	fasciculata	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	erecta		False	True	False
+279	279	NUM	CD	nummod	filicaulis	CARDINAL	False	False	False
+filicaulis	filicaulis	PROPN	NNP	appos	erecta		True	False	False
+277	277	NUM	CD	nmod	erecta	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	erecta		False	True	False
+287	287	NUM	CD	nummod	filifolia	CARDINAL	False	False	False
+filifolia	filifolia	NOUN	NN	appos	erecta		True	False	False
+....	....	PUNCT	:	punct	aphylla		False	True	False
+274	274	NUM	CD	appos	aphylla	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+280	280	NUM	CD	nummod	gattingeri	CARDINAL	False	False	False
+gattingeri	gattingeri	PROPN	NNP	appos	aphylla		True	False	False
+276	276	NUM	CD	nummod	aphylla	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+285	285	NUM	CD	nummod	georgiana	CARDINAL	False	False	False
+georgiana	georgiana	PROPN	NNP	appos	aphylla		True	False	False
+274	274	NUM	CD	nummod	georgiana		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+280	280	NUM	CD	nummod	harperi	CARDINAL	False	False	False
+harperi	harperi	PROPN	NNP	appos	aphylla		True	False	False
+273	273	NUM	CD	nummod	harperi	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+279	279	NUM	CD	nummod	holmiana	CARDINAL	False	False	False
+holmiana	holmiana	PROPN	NNP	appos	aphylla		True	False	False
+275	275	NUM	CD	nummod	holmiana	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+281	281	NUM	CD	nummod	keyensis	CARDINAL	False	False	False
+keyensis	keyensis	PROPN	NNP	appos	aphylla		True	False	False
+275	275	NUM	CD	nummod	keyensis	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+282	282	NUM	CD	nummod	laxa	CARDINAL	False	False	False
+laxa	laxa	PROPN	NNP	appos	aphylla		True	False	False
+274	274	NUM	CD	nummod	laxa		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+281	281	NUM	CD	nummod	linifolia	CARDINAL	False	False	False
+linifolia	linifolia	NOUN	NN	appos	aphylla		True	False	False
+272	272	NUM	CD	nummod	linifolia		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+277	277	NUM	CD	nummod	microphvlla	CARDINAL	False	False	False
+microphvlla	microphvlla	NOUN	NN	appos	aphylla		True	False	False
+283	283	NUM	CD	nummod	obtusifoiia	CARDINAL	False	False	False
+obtusifoiia	obtusifoiia	PROPN	NNP	appos	aphylla		True	False	False
+284	284	NUM	CD	nummod	oligophylla	CARDINAL	False	False	False
+oligophylla	oligophylla	NOUN	NN	appos	aphylla		True	False	False
+275	275	NUM	CD	nummod	aphylla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+283	283	NUM	CD	nummod	palustris	CARDINAL	False	False	False
+palustris	palustris	PROPN	NNP	appos	aphylla		True	False	False
+272	272	NUM	CD	appos	aphylla	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+278	278	NUM	CD	nummod	perennis	CARDINAL	False	False	False
+perennis	perennis	NOUN	NN	appos	aphylla		True	False	False
+277	277	NUM	CD	nummod	pinetorum	CARDINAL	False	False	False
+pinetorum	pinetorum	NOUN	NN	appos	perennis		True	False	False
+273	273	NUM	CD	appos	aphylla	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+279	279	NUM	CD	nummod	pulchella	CARDINAL	False	False	False
+pulchella	pulchella	NOUN	NN	appos	aphylla		True	False	False
+274	274	NUM	CD	appos	aphylla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+280	280	NUM	CD	nummod	purpurea	CARDINAL	False	False	False
+purpurea	purpurea	NOUN	NN	appos	aphylla		True	False	False
+273	273	NUM	CD	nummod	purpurea	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+278	278	NUM	CD	nummod	setacea	CARDINAL	False	False	False
+setacea	setacea	NOUN	NN	appos	aphylla		True	False	False
+275	275	NUM	CD	nummod	setacea		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+282	282	NUM	CD	nummod	spiciflora	CARDINAL	False	False	False
+spiciflora	spiciflora	NOUN	NN	appos	aphylla		True	False	False
+273,277	273,277	NUM	CD	nummod	stenophylla	CARDINAL	False	False	False
+stenophylla	stenophylla	NOUN	NN	appos	spiciflora		True	False	False
+275	275	NUM	CD	nummod	aphylla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+281	281	NUM	CD	nummod	tenella	CARDINAL	False	False	False
+tenella	tenella	NOUN	NN	appos	aphylla		True	False	False
+276,284	276,284	NUM	CD	nummod	tenuifolia	CARDINAL	False	False	False
+tenuifolia	tenuifolia	NOUN	NN	appos	aphylla		True	False	False
+276	276	NUM	CD	appos	aphylla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+285	285	NUM	CD	nummod	leucanthera		False	False	False
+t.	t.	NOUN	NN	compound	leucanthera		False	False	False
+leucanthera	leucanthera	PROPN	NNP	appos	aphylla		True	False	False
+276	276	NUM	CD	appos	aphylla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+286	286	NUM	CD	nummod	macrophvlla		False	False	False
+t.	t.	NOUN	NN	compound	macrophvlla		False	False	False
+macrophvlla	macrophvlla	PROPN	NNP	appos	aphylla		True	False	False
+276	276	NUM	CD	nummod	macrophvlla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+286	286	NUM	CD	nummod	polyphylla		False	False	False
+t.	t.	NOUN	NN	compound	polyphylla		False	False	False
+polyphylla	polyphylla	PROPN	NNP	appos	aphylla		True	False	False
+277	277	NUM	CD	appos	aphylla		False	False	False
+,	,	PUNCT	,	punct	aphylla		False	True	False
+286	286	NUM	CD	nummod	virgata		False	False	False
+virgata	virgata	PROPN	NNP	appos	aphylla		True	False	False
+273	273	NUM	CD	nummod	aphylla		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+278	278	NUM	CD	nummod	porphyreus		False	False	False
+Ageneiosus	Ageneiosus	PROPN	NNP	compound	porphyreus	TAXA	True	False	False
+porphyreus	porphyreus	PROPN	NNP	appos	hians	TAXA	True	False	False
+129	129	NUM	CD	nummod	neogenensis		False	False	False
+Alectrion	Alectrion	PROPN	NNP	compound	neogenensis	TAXA	True	False	False
+neogenensis	neogenensis	PROPN	NNP	appos	porphyreus	TAXA	True	False	False
+29	29	NUM	CD	nummod	schoepfii		False	False	False
+Alutera	Alutera	PROPN	NNP	compound	schoepfii	TAXA	True	False	False
+schoepfii	schoepfii	PROPN	NNP	appos	neogenensis	TAXA	True	False	False
+297	297	NUM	CD	nummod	rupestris		False	False	False
+Ambloplites	Ambloplites	PROPN	NNP	compound	rupestris	TAXA	True	False	False
+rupestris	rupestris	PROPN	NNP	appos	schoepfii	TAXA	True	False	False
+295	295	NUM	CD	dep	catus		False	False	False
+,	,	PUNCT	,	punct	catus		False	True	False
+299	299	NUM	CD	nummod	catus		False	False	False
+Ameiurus	Ameiurus	PROPN	NNP	compound	catus	TAXA	True	False	False
+catus	catus	PROPN	NNP	appos	schoepfii	TAXA	True	False	False
+293	293	NUM	CD	nummod	natalis		False	False	False
+natalis	natalis	PROPN	NNP	appos	neogenensis		True	False	False
+.-	.-	PUNCT	.	punct	hians		False	True	False
+..	..	PUNCT	.	punct	hians		False	True	False
+293	293	NUM	CD	nummod	nebulosus		False	False	False
+nebulosus	nebulosus	PROPN	NNP	appos	hians		True	False	False
+293	293	NUM	CD	nummod	nebulosus		False	False	False
+,	,	PUNCT	,	punct	nebulosus		False	True	False
+299	299	NUM	CD	appos	nebulosus		False	False	False
+Amphianthus	Amphianthus	PROPN	NNP	compound	pusillus	TAXA	True	False	False
+pusillus	pusillus	PROPN	NNP	appos	nebulosus	TAXA	True	False	False
+244	244	NUM	CD	nummod	anomala		False	False	False
+Anachis	Anachis	PROPN	NNP	compound	anomala	TAXA	True	False	False
+anomala	anomala	PROPN	NNP	appos	pusillus	TAXA	True	False	False
+33	33	NUM	CD	nummod	carolinensis		False	False	False
+communis	communis	PROPN	NNP	compound	carolinensis		True	False	False
+carolinensis	carolinensis	PROPN	NNP	appos	anomala		True	False	False
+34	34	NUM	CD	nummod	obsoleta		False	False	False
+styliola	styliola	PROPN	NNP	compound	obsoleta		True	False	False
+obsoleta	obsoleta	PROPN	NNP	nmod	carolinensis		True	False	False
+30	30	NUM	CD	nummod	sumterensis		False	False	False
+sumterensis	sumterensis	PROPN	NNP	appos	anomala		True	False	False
+32	32	NUM	CD	nummod	barbatus		False	False	False
+Anastoechus	Anastoechus	PROPN	NNP	compound	barbatus	TAXA	True	False	False
+barbatus	barbatus	PROPN	NNP	nmod	sumterensis	TAXA	True	False	False
+179	179	NUM	CD	nummod	brownii		False	False	False
+Anchovia	Anchovia	PROPN	NNP	compound	brownii	TAXA	True	False	False
+brownii	brownii	PROPN	NNP	appos	barbatus	TAXA	True	False	False
+293	293	NUM	CD	nummod	lacustris		False	False	False
+Ancylus	Ancylus	PROPN	NNP	compound	lacustris	TAXA	True	False	False
+lacustris	lacustris	PROPN	NNP	appos	brownii	TAXA	True	False	False
+167	167	NUM	CD	nummod	angustifolia		False	False	False
+Angelonia	Angelonia	PROPN	NNP	compound	angustifolia	TAXA	True	False	False
+angustifolia	angustifolia	PROPN	NNP	appos	pusillus	TAXA	True	False	False
+258	258	NUM	CD	nummod	olia		False	False	False
+salicariaef	salicariaef	PROPN	NNP	compound	olia		True	False	False
+olia	olia	PROPN	NNP	appos	angustifolia		True	False	False
+257	257	NUM	CD	nummod	rostrata		False	False	False
+Anguilla	Anguilla	PROPN	NNP	compound	rostrata	TAXA	True	False	False
+rostrata	rostrata	PROPN	NNP	appos	angustifolia	TAXA	True	False	False
+293	293	NUM	CD	appos	hians		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+299	299	NUM	CD	nummod	Anisotamia		False	False	False
+Anisotamia	Anisotamia	PROPN	NNP	appos	hians	TAXA	True	False	False
+180	180	NUM	CD	nummod	cassioides		False	False	False
+Anonymos	Anonymos	PROPN	NNP	compound	cassioides	TAXA	True	False	False
+cassioides	cassioides	PROPN	NNP	appos	Anisotamia	TAXA	True	False	False
+264	264	NUM	CD	appos	hians		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+265	265	NUM	CD	nummod	erecta		False	False	False
+erecta	erecta	PROPN	NNP	appos	hians		True	False	False
+284	284	NUM	CD	nummod	setacea		False	False	False
+setacea	setacea	PROPN	NNP	appos	erecta		True	False	False
+282	282	NUM	CD	nummod	umbrosa		False	False	False
+umbrosa	umbrosa	PROPN	NNP	nmod	setacea		True	False	False
+248	248	NUM	CD	nummod	linaria		False	False	False
+Antirrhinum	Antirrhinum	PROPN	NNP	compound	linaria	TAXA	True	False	False
+canadense	canadense	PROPN	NNP	dep	linaria	TAXA	True	False	False
+2S8	2s8	NUM	CD	nummod	linaria		False	False	False
+elatine	elatine	PROPN	NNP	dep	linaria		True	False	False
+259	259	NUM	CD	nummod	linaria		False	False	False
+linaria	linaria	PROPN	NNP	nmod	umbrosa		True	False	False
+258	258	NUM	CD	nummod	Aochletus		False	False	False
+Aochletus	Aochletus	PROPN	NNP	appos	hians	TAXA	True	False	False
+172	172	NUM	CD	nummod	albopilosup		False	False	False
+albopilosup	albopilosup	PROPN	NNP	appos	Aochletus		True	False	False
+173	173	NUM	CD	nummod	nigropilosus		False	False	False
+nigropilosus	nigropilosus	PROPN	NNP	conj	Aochletus		True	False	False
+174	174	NUM	CD	nummod	quadracus		False	False	False
+Apeltes	Apeltes	PROPN	NNP	compound	quadracus	TAXA	True	False	False
+quadracus	quadracus	PROPN	NNP	appos	nigropilosus	TAXA	True	False	False
+294	294	NUM	CD	nummod	sayanus		False	False	False
+Aphredoderus	Aphredoderus	PROPN	NNP	compound	sayanus	TAXA	True	False	False
+sayanus	sayanus	PROPN	NNP	appos	Aochletus	TAXA	True	False	False
+295	295	NUM	CD	nummod	lineatus		False	False	False
+Arion	Arion	PROPN	NNP	compound	lineatus	TAXA	True	False	False
+lineatus	lineatus	PROPN	NNP	appos	sayanus	TAXA	True	False	False
+158	158	NUM	CD	nummod	jonesi		False	False	False
+Arthropeas	Arthropeas	PROPN	NNP	compound	jonesi	TAXA	True	False	False
+jonesi	jonesi	PROPN	NNP	appos	lineatus	TAXA	True	False	False
+176	176	NUM	CD	nummod	guttatus		False	False	False
+Astroscopus	Astroscopus	PROPN	NNP	compound	guttatus	TAXA	True	False	False
+guttatus	guttatus	PROPN	NNP	appos	jonesi	TAXA	True	False	False
+298	298	NUM	CD	nummod	dispersa		False	False	False
+Aureolaria	Aureolaria	PROPN	NNP	compound	dispersa	TAXA	True	False	False
+dispersa	dispersa	PROPN	NNP	appos	guttatus	TAXA	True	False	False
+267	267	NUM	CD	nummod	dispersa		False	False	False
+,	,	PUNCT	,	punct	dispersa		False	True	False
+271	271	NUM	CD	nummod	flava		False	False	False
+flava	flava	NOUN	NN	appos	dispersa		True	False	False
+268	268	NUM	CD	nummod	flava		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+271	271	NUM	CD	nummod	reticulata		False	False	False
+f.	f.	NOUN	NN	compound	reticulata		False	False	False
+reticulata	reticulata	X	FW	appos	hians		True	False	False
+268	268	NUM	CD	nummod	reticulata		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+272	272	NUM	CD	nummod	laevigata		False	False	False
+laevigata	laevigata	NOUN	NN	appos	hians		True	False	False
+268	268	NUM	CD	nummod	laevigata		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+272	272	NUM	CD	nummod	levigata		False	False	False
+levigata	levigata	NOUN	NN	appos	hians		True	False	False
+272	272	NUM	CD	nummod	microcarpa		False	False	False
+microcarpa	microcarpa	NOUN	NN	appos	levigata		True	False	False
+267	267	NUM	CD	appos	hians		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+269	269	NUM	CD	nummod	patula		False	False	False
+patula	patula	PROPN	NNP	appos	hians		True	False	False
+267	267	NUM	CD	nummod	patula		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+269	269	NUM	CD	appos	hians		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+271	271	NUM	CD	nummod	pectinata		False	False	False
+pectinata	pectinata	X	FW	appos	hians		True	False	False
+267	267	NUM	CD	nummod	pectinata		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+269	269	NUM	CD	nummod	floridana		False	False	False
+p.	p.	NOUN	NN	compound	floridana		False	False	False
+floridana	floridana	PROPN	NNP	appos	hians		True	False	False
+267	267	NUM	CD	appos	hians		False	False	False
+,	,	PUNCT	,	punct	hians		False	True	False
+269	269	NUM	CD	nummod	1919		False	False	False
+1919	1919	NUM	CD	appos	hians		False	False	False
+.	.	PUNCT	.	punct	hians		False	True	False
+]	]	PUNCT	.	punct	hians		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	indicated		False	False	False
+325	325	NUM	CD	nummod	pedicularia		False	False	False
+pedicularia	pedicularia	PROPN	NNP	punct	indicated		True	False	False
+266	266	NUM	CD	appos	pedicularia		False	False	False
+,	,	PUNCT	,	punct	pedicularia		False	True	False
+268	268	NUM	CD	nummod	p.		False	False	False
+p.	p.	NOUN	NN	compound	austromontana		False	False	False
+austromontana	austromontana	PROPN	NNP	appos	pedicularia		True	False	False
+267	267	NUM	CD	nummod	austromontana		False	False	False
+,	,	PUNCT	,	punct	pedicularia		False	True	False
+268	268	NUM	CD	nummod	carolinensis		False	False	False
+p.	p.	NOUN	NN	compound	carolinensis		False	False	False
+carolinensis	carolinensis	PROPN	NNP	appos	pedicularia		True	False	False
+266	266	NUM	CD	appos	pedicularia		False	False	False
+,	,	PUNCT	,	punct	pedicularia		False	True	False
+268	268	NUM	CD	nummod	reticulata		False	False	False
+reticulata	reticulata	PROPN	NNP	appos	pedicularia		True	False	False
+272	272	NUM	CD	nummod	villosa		False	False	False
+villosa	villosa	PROPN	NNP	appos	reticulata		True	False	False
+266	266	NUM	CD	appos	pedicularia		False	False	False
+,	,	PUNCT	,	punct	pedicularia		False	True	False
+269	269	NUM	CD	nummod	virginica		False	False	False
+virginica	virginica	PROPN	NNP	appos	pedicularia		True	False	False
+267	267	NUM	CD	nummod	virginica		False	False	False
+,	,	PUNCT	,	punct	virginica		False	True	False
+269	269	NUM	CD	appos	virginica		False	False	False
+,	,	PUNCT	,	punct	virginica		False	True	False
+270	270	NUM	CD	nummod	virginica		False	False	False
+Auricula	Auricula	PROPN	NNP	compound	mysosotis		True	False	False
+mysosotis	mysosotis	PROPN	NNP	appos	virginica		True	False	False
+167	167	NUM	CD	nummod	Averellia		False	False	False
+Averellia	Averellia	PROPN	NNP	appos	pedicularia	TAXA	True	False	False
+(	(	PUNCT	-LRB-	punct	Averellia		False	True	False
+Trichodiscina	Trichodiscina	PROPN	NNP	appos	Averellia	TAXA	True	False	False
+)	)	PUNCT	-RRB-	punct	Averellia		False	True	False
+hinklej^i	hinklej^i	PROPN	NNP	dep	chrysura		False	False	False
+217	217	NUM	CD	nummod	chrysura		False	False	False
+Bairdiella	Bairdiella	PROPN	NNP	compound	chrysura	TAXA	True	False	False
+chrysura	chrysura	PROPN	NNP	appos	Averellia	TAXA	True	False	False
+296	296	NUM	CD	nummod	carolinensis		False	False	False
+Balistes	Balistes	PROPN	NNP	compound	carolinensis	TAXA	True	False	False
+carolinensis	carolinensis	PROPN	NNP	appos	Averellia	TAXA	True	False	False
+296	296	NUM	CD	nummod	forcipatus		False	False	False
+forcipatus	forcipatus	PROPN	NNP	appos	Averellia		True	False	False
+140	140	NUM	CD	nummod	pulchella		False	False	False
+Bartramia	Bartramia	PROPN	NNP	compound	pulchella	TAXA	True	False	False
+pulchella	pulchella	PROPN	NNP	appos	forcipatus	TAXA	True	False	False
+253	253	NUM	CD	nummod	coccinea		False	False	False
+Bartsia	Bartsia	PROPN	NNP	compound	coccinea	TAXA	True	False	False
+coccinea	coccinea	PROPN	NNP	appos	pulchella	TAXA	True	False	False
+290	290	NUM	CD	nummod	argalus		False	False	False
+Belone	Belone	PROPN	NNP	compound	argalus	TAXA	True	False	False
+argalus	argalus	PROPN	NNP	appos	coccinea	TAXA	True	False	False
+135	135	NUM	CD	nummod	belone		False	False	False
+belone	belone	PROPN	NNP	appos	coccinea		True	False	False
+2	2	NUM	CD	nummod	platyura		False	False	False
+platyura	platyura	PROPN	NNP	appos	belone		True	False	False
+2	2	NUM	CD	nummod	trachura		False	False	False
+trachura	trachura	PROPN	NNP	nmod	belone		True	False	False
+2	2	NUM	CD	nummod	Belonostomus		False	False	False
+Belonostomus	Belonostomus	PROPN	NNP	appos	Averellia	TAXA	True	False	False
+210	210	NUM	CD	nummod	comptoni		False	False	False
+comptoni	comptoni	PROPN	NNP	appos	Averellia		True	False	False
+210	210	NUM	CD	nummod	Bithynia		False	False	False
+Bithynia	Bithynia	PROPN	NNP	appos	Averellia		True	False	False
+168	168	NUM	CD	nummod	jaculator		False	False	False
+jaculator	jaculator	PROPN	NNP	appos	Bithynia		True	False	False
+168	168	NUM	CD	nummod	meridionalis		False	False	False
+meridionalis	meridionalis	PROPN	NNP	nmod	Bithynia		True	False	False
+168	168	NUM	CD	nummod	fusiformis		False	False	False
+Boleichthys	Boleichthys	PROPN	NNP	compound	fusiformis	TAXA	True	False	False
+fusiformis	fusiformis	PROPN	NNP	nmod	Bithynia	TAXA	True	False	False
+295	295	NUM	CD	nummod	olmstedi		False	False	False
+Boleosoma	Boleosoma	PROPN	NNP	compound	olmstedi	TAXA	True	False	False
+nigrum	nigrum	PROPN	NNP	compound	olmstedi	TAXA	True	False	False
+olmstedi	olmstedi	PROPN	NNP	appos	Bithynia	TAXA	True	False	False
+..	..	PUNCT	.	punct	pedicularia		False	True	False
+.295	.295	NUM	CD	ROOT	.295		False	False	False
+,	,	PUNCT	,	ROOT	,		False	True	False
+300	300	NUM	CD	ROOT	300		False	False	False
+Bombylius	Bombylius	PROPN	NNP	compound	facialis	TAXA	True	False	False
+facialis	facialis	PROPN	NNP	ROOT	facialis	TAXA	True	False	False
+187	187	NUM	CD	nummod	macrophylla		False	False	False
+Brachygyne	Brachygyne	PROPN	NNP	compound	macrophylla	TAXA	True	False	False
+macrophylla	macrophylla	PROPN	NNP	appos	facialis	TAXA	True	False	False
+26	26	NUM	CD	nummod	pulchella		False	False	False
+J^	J^	PROPN	NNP	nmod	pulchella		False	False	False
+Brachypodella	Brachypodella	PROPN	NNP	compound	pulchella	TAXA	True	False	False
+subtilis	subtilis	X	FW	compound	pulchella	TAXA	True	False	False
+pulchella	pulchella	PROPN	NNP	appos	macrophylla	TAXA	True	False	False
+....	....	PUNCT	:	punct	facialis		False	True	False
+218	218	NUM	CD	nummod	monnieri		False	False	False
+Bramia	Bramia	PROPN	NNP	compound	monnieri	TAXA	True	False	False
+monnieri	monnieri	PROPN	NNP	appos	facialis	TAXA	True	False	False
+243	243	NUM	CD	nummod	Brannerion		False	False	False
+Brannerion	Brannerion	PROPN	NNP	appos	monnieri	TAXA	True	False	False
+209	209	NUM	CD	nummod	americana		False	False	False
+Buchnera	Buchnera	PROPN	NNP	compound	americana	TAXA	True	False	False
+americana	americana	PROPN	NNP	nmod	Brannerion	TAXA	True	False	False
+287	287	NUM	CD	nummod	facialis		False	False	False
+,	,	PUNCT	,	punct	facialis		False	True	False
+288	288	NUM	CD	nummod	angustifolia		False	False	False
+angustifolia	angustifolia	PROPN	NNP	appos	facialis		True	False	False
+288	288	NUM	CD	nummod	elongata		False	False	False
+elongata	elongata	PROPN	NNP	appos	angustifolia		True	False	False
+288	288	NUM	CD	nummod	obtusa		False	False	False
+e.	e.	NOUN	NN	dep	obtusa		False	False	False
+obtusa	obtusa	PROPN	NNP	nmod	elongata		True	False	False
+288	288	NUM	CD	nummod	levicaulis		False	False	False
+levicaulis	levicaulis	PROPN	NNP	nmod	angustifolia		True	False	False
+288	288	NUM	CD	nummod	radiatus		False	False	False
+Bulimulus	Bulimulus	PROPN	NNP	compound	radiatus	TAXA	True	False	False
+radiatus	radiatus	PROPN	NNP	appos	facialis	TAXA	True	False	False
+164	164	NUM	CD	nummod	radiatus		False	False	False
+Caecum	Caecum	PROPN	NNP	compound	flemingi	TAXA	True	False	False
+flemingi	flemingi	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+40	40	NUM	CD	nummod	vestitus		False	False	False
+Calamopleurus	Calamopleurus	PROPN	NNP	nmod	vestitus	TAXA	True	False	False
+209	209	NUM	CD	nummod	vestitus		False	False	False
+vestitus	vestitus	PROPN	NNP	appos	radiatus		True	False	False
+209	209	NUM	CD	nummod	alba		False	False	False
+Calistachya	Calistachya	PROPN	NNP	compound	alba	TAXA	True	False	False
+alba	alba	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+260	260	NUM	CD	nummod	johnsoni		False	False	False
+Callicera	Callicera	PROPN	NNP	compound	johnsoni	TAXA	True	False	False
+johnsoni	johnsoni	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+190	190	NUM	CD	nummod	montensis		False	False	False
+montensis	montensis	PROPN	NNP	appos	radiatus		True	False	False
+190	190	NUM	CD	nummod	acutus		False	False	False
+Callyodon	Callyodon	PROPN	NNP	compound	acutus	TAXA	True	False	False
+acutus	acutus	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+147	147	NUM	CD	nummod	croicensis		False	False	False
+croicensis	croicensis	PROPN	NNP	appos	radiatus		True	False	False
+139	139	NUM	CD	nummod	emblematicus		False	False	False
+emblematicus	emblematicus	PROPN	NNP	appos	radiatus		True	False	False
+148	148	NUM	CD	nummod	radiatus		False	False	False
+margarita	margarita	PROPN	NNP	nmod	punctulatus		True	False	False
+lJi8	lJi8	PROPN	NNP	dep	punctulatus		False	False	False
+punctulatus	punctulatus	PROPN	NNP	appos	radiatus		True	False	False
+139	139	NUM	CD	nummod	tabulata		False	False	False
+Cancellaria	Cancellaria	PROPN	NNP	compound	tabulata	TAXA	True	False	False
+tabulata	tabulata	PROPN	NNP	appos	punctulatus	TAXA	True	False	False
+23	23	NUM	CD	nummod	naticoides		False	False	False
+Cantareus	Cantareus	PROPN	NNP	compound	naticoides	TAXA	True	False	False
+naticoides	naticoides	PROPN	NNP	appos	punctulatus	TAXA	True	False	False
+161	161	NUM	CD	nummod	sobaco		False	False	False
+Canthidermis	Canthidermis	PROPN	NNP	compound	sobaco	TAXA	True	False	False
+sobaco	sobaco	PROPN	NNP	appos	punctulatus	TAXA	True	False	False
+140	140	NUM	CD	nummod	bifiora		False	False	False
+Capraria	Capraria	PROPN	NNP	compound	bifiora	TAXA	True	False	False
+bifiora	bifiora	PROPN	NNP	nmod	punctulatus		True	False	False
+233	233	NUM	CD	nummod	gratioloides		False	False	False
+gratioloides	gratioloides	PROPN	NNP	appos	radiatus		True	False	False
+21,5	21,5	NUM	CD	nummod	multifida		False	False	False
+multifida	multifida	PROPN	NNP	appos	radiatus		True	False	False
+249	249	NUM	CD	nummod	crysos		False	False	False
+Caranx	Caranx	PROPN	NNP	compound	crysos	TAXA	True	False	False
+crysos	crysos	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+295	295	NUM	CD	nummod	hippos		False	False	False
+hippos	hippos	PROPN	NNP	appos	radiatus		True	False	False
+295	295	NUM	CD	nummod	coccinea		False	False	False
+Castilleja	Castilleja	PROPN	NNP	compound	coccinea	TAXA	True	False	False
+coccinea	coccinea	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+290	290	NUM	CD	nummod	fissifolia		False	False	False
+fissifolia	fissifolia	PROPN	NNP	appos	radiatus		True	False	False
+289	289	NUM	CD	nummod	commersonii		False	False	False
+Catostomus	Catostomus	PROPN	NNP	compound	commersonii	TAXA	True	False	False
+commersonii	commersonii	PROPN	NNP	nmod	fissifolia	TAXA	True	False	False
+299	299	NUM	CD	nummod	igricans		False	False	False
+n	n	PROPN	NNP	compound	igricans		True	False	False
+igricans	igricans	PROPN	NNPS	appos	commersonii		True	False	False
+299	299	NUM	CD	nummod	striatus		False	False	False
+Centropristis	Centropristis	PROPN	NNP	compound	striatus	TAXA	True	False	False
+striatus	striatus	PROPN	NNP	nmod	fissifolia	TAXA	True	False	False
+300	300	NUM	CD	nummod	faber		False	False	False
+Chaetodipterus	Chaetodipterus	PROPN	NNP	compound	faber	TAXA	True	False	False
+faber	faber	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+296	296	NUM	CD	nummod	cuthbertii		False	False	False
+Chelone	Chelone	PROPN	NNP	compound	cuthbertii	TAXA	True	False	False
+cuthbertii	cuthbertii	PROPN	NNP	appos	radiatus	TAXA	True	False	False
+255	255	NUM	CD	nummod	digitalis		False	False	False
+digitalis	digitalis	PROPN	NNP	appos	radiatus		True	False	False
+252	252	NUM	CD	nummod	glabra		False	False	False
+glabra	glabra	PROPN	NNP	appos	radiatus		True	False	False
+255	255	NUM	CD	nummod	latifolia		False	False	False
+latifolia	latifolia	PROPN	NNP	appos	radiatus		True	False	False
+256	256	NUM	CD	nummod	lyonii		False	False	False
+lyonii	lyonii	PROPN	NNP	nmod	latifolia		True	False	False
+255	255	NUM	CD	nummod	facialis		False	False	False
+,	,	PUNCT	,	punct	facialis		False	True	False
+256	256	NUM	CD	nummod	major		False	False	False
+major	major	ADJ	JJ	appos	facialis		True	False	False
+256	256	NUM	CD	nummod	pentstemon		False	False	False
+pentstemon	pentstemon	PROPN	NNP	appos	major		True	False	False
+250	250	NUM	CD	nummod	pentstemon		False	False	False
+,	,	PUNCT	,	punct	pentstemon		False	True	False
+252	252	NUM	CD	nummod	atinga		False	False	False
+Chilomycterus	Chilomycterus	PROPN	NNP	compound	atinga	TAXA	True	False	False
+atinga	atinga	PROPN	NNP	nmod	pentstemon	TAXA	True	False	False
+297	297	NUM	CD	nummod	schoepfi		False	False	False
+schoepfi	schoepfi	PROPN	NNP	appos	facialis		True	False	False
+297	297	NUM	CD	nummod	chrysurus		False	False	False
+Chloroscombrus	Chloroscombrus	PROPN	NNP	compound	chrysurus	TAXA	True	False	False
+chrysurus	chrysurus	PROPN	NNP	appos	schoepfi	TAXA	True	False	False
+147	147	NUM	CD	nummod	atherinoides		False	False	False
+Chriodorus	Chriodorus	PROPN	NNP	compound	atherinoides	TAXA	True	False	False
+atherinoides	atherinoides	PROPN	NNP	appos	facialis	TAXA	True	False	False
+6	6	NUM	CD	nummod	dilatus		False	False	False
+Chrysopilus	Chrysopilus	PROPN	NNP	compound	dilatus	TAXA	True	False	False
+dilatus	dilatus	PROPN	NNP	appos	facialis	TAXA	True	False	False
+.•	.•	PUNCT	.	punct	facialis		False	True	False
+177	177	NUM	CD	nummod	nudus		False	False	False
+nudus	nudus	PROPN	NNP	appos	facialis		True	False	False
+176	176	NUM	CD	nummod	bidens		False	False	False
+Clausilia	Clausilia	PROPN	NNP	compound	bidens	TAXA	True	False	False
+bidens	bidens	PROPN	NNP	appos	nudus	TAXA	True	False	False
+165	165	NUM	CD	nummod	charlotia		False	False	False
+charlotia	charlotia	PROPN	NNP	appos	facialis		True	False	False
+165	165	NUM	CD	nummod	cinerea		False	False	False
+cinerea	cinerea	PROPN	NNP	appos	facialis		True	False	False
+165	165	NUM	CD	nummod	crenulata		False	False	False
+crenulata	crenulata	PROPN	NNP	appos	facialis		True	False	False
+165	165	NUM	CD	nummod	heterostropha		False	False	False
+heterostropha	heterostropha	PROPN	NNP	appos	facialis		True	False	False
+166	166	NUM	CD	nummod	macluriana		False	False	False
+macluriana	macluriana	PROPN	NNP	appos	facialis		True	False	False
+166	166	NUM	CD	nummod	marceUa		False	False	False
+marceUa	marceUa	PROPN	NNP	appos	facialis		True	False	False
+166	166	NUM	CD	nummod	polita		False	False	False
+polita	polita	PROPN	NNP	appos	facialis		True	False	False
+166	166	NUM	CD	nummod	meridionalis		False	False	False
+Cochlicella	Cochlicella	PROPN	NNP	compound	meridionalis	TAXA	True	False	False
+meridionalis	meridionalis	PROPN	NNP	appos	facialis	TAXA	True	False	False
+164	164	NUM	CD	nummod	tenuis		False	False	False
+tenuis	tenuis	PROPN	NNP	appos	facialis		True	False	False
+164	164	NUM	CD	nummod	turricula		False	False	False
+turricula	turricula	PROPN	NNP	appos	facialis		True	False	False
+164	164	NUM	CD	nummod	ventrosa		False	False	False
+ventrosa	ventrosa	PROPN	NNP	appos	facialis		True	False	False
+164	164	NUM	CD	nummod	lubrica		False	False	False
+Cochlicopa	Cochlicopa	PROPN	NNP	compound	lubrica	TAXA	True	False	False
+lubrica	lubrica	PROPN	NNP	appos	facialis	TAXA	True	False	False
+165	165	NUM	CD	nummod	verna		False	False	False
+Collinsia	Collinsia	PROPN	NNP	compound	verna	TAXA	True	False	False
+verna	verna	PROPN	NNP	appos	facialis	TAXA	True	False	False
+257	257	NUM	CD	nummod	fuchsioides		False	False	False
+Conradia	Conradia	PROPN	NNP	compound	fuchsioides	TAXA	True	False	False
+fuchsioides	fuchsioides	PROPN	NNP	appos	facialis	TAXA	True	False	False
+263	263	NUM	CD	nummod	gracilis		False	False	False
+Cottus	Cottus	PROPN	NNP	compound	gracilis	TAXA	True	False	False
+gracilis	gracilis	PROPN	NNP	appos	fuchsioides	TAXA	True	False	False
+300	300	NUM	CD	nummod	Crenea		False	False	False
+Crenea	Crenea	PROPN	NNP	appos	facialis	TAXA	True	False	False
+165	165	NUM	CD	nummod	vitrea		False	False	False
+vitrea	vitrea	PROPN	NNP	nmod	Crenea		True	False	False
+165	165	NUM	CD	nummod	amnica		False	False	False
+Cyclas	Cyclas	PROPN	NNP	compound	amnica	TAXA	True	False	False
+amnica	amnica	PROPN	NNP	appos	Crenea	TAXA	True	False	False
+169	169	NUM	CD	nummod	vitrea		False	False	False
+vitrea	vitrea	PROPN	NNP	appos	Crenea		True	False	False
+169	169	NUM	CD	nummod	mariae		False	False	False
+Cyclopium	Cyclopium	PROPN	NNP	compound	mariae	TAXA	True	False	False
+mariae	mariae	PROPN	NNP	appos	Crenea	TAXA	True	False	False
+125	125	NUM	CD	nummod	lumpus		False	False	False
+Cyclopterus	Cyclopterus	PROPN	NNP	compound	lumpus	TAXA	True	False	False
+lumpus	lumpus	PROPN	NNP	appos	Crenea	TAXA	True	False	False
+298	298	NUM	CD	nummod	affinis		False	False	False
+Cyclostoma	Cyclostoma	PROPN	NNP	compound	affinis	TAXA	True	False	False
+affinis	affinis	PROPN	NNP	appos	Crenea	TAXA	True	False	False
+169	169	NUM	CD	nummod	elegans		False	False	False
+elegans	elegan	NOUN	NNS	nmod	Crenea		True	False	False
+169	169	NUM	CD	nummod	obtusum		False	False	False
+obtusum	obtusum	PROPN	NNP	appos	Crenea		True	False	False
+169	169	NUM	CD	nummod	nebulosus		False	False	False
+Cynoscion	Cynoscion	PROPN	NNP	compound	nebulosus	TAXA	True	False	False
+nebulosus	nebulosus	PROPN	NNP	nmod	Crenea	TAXA	True	False	False
+296	296	NUM	CD	nummod	regalis		False	False	False
+regalis	regalis	PROPN	NNP	nmod	Crenea		True	False	False
+296	296	NUM	CD	nummod	mydus		False	False	False
+Cyprinodon	Cyprinodon	PROPN	NNP	compound	mydus	TAXA	True	False	False
+mydus	mydus	PROPN	NNP	appos	Crenea		True	False	False
+152	152	NUM	CD	nummod	variegatus		False	False	False
+variegatus	variegatus	NOUN	NN	appos	Crenea		True	False	False
+294	294	NUM	CD	nummod	carpio		False	False	False
+Cyprinus	Cyprinus	PROPN	NNP	compound	carpio	TAXA	True	False	False
+carpio	carpio	PROPN	NNP	appos	Crenea	TAXA	True	False	False
+293	293	NUM	CD	nummod	agoo		False	False	False
+Cypselurus	Cypselurus	PROPN	NNP	compound	agoo	TAXA	True	False	False
+agoo	agoo	PROPN	NNP	appos	Crenea	TAXA	True	False	False
+15	15	NUM	CD	nummod	bahiensis		False	False	False
+bahiensis	bahiensis	PROPN	NNP	nmod	Crenea		True	False	False
+15	15	NUM	CD	nummod	bicolor		False	False	False
+bicolor	bicolor	PROPN	NNP	nmod	bahiensis		True	False	False
+14	14	NUM	CD	nummod	ornicus		False	False	False
+calif	calif	PROPN	NNP	compound	ornicus		True	False	False
+ornicus	ornicus	PROPN	NNP	nmod	bicolor		True	False	False
+15	15	NUM	CD	nummod	exsiliens		False	False	False
+exsiliens	exsilien	NOUN	NNS	nmod	ornicus		True	False	False
+10	10	NUM	CD	nummod	.		False	False	False
+furcatus	furcatus	PROPN	NNP	dep	.		True	False	False
+llf	llf	PROPN	NNP	dep	.		True	False	False
+.	.	PUNCT	.	nmod	exsiliens		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+gibbifrons	gibbifrons	PROPN	NNP	dobj	"
+"		True	False	False
+15	15	NUM	CD	nummod	heterurus		False	False	False
+heterurus	heterurus	PROPN	NNP	appos	gibbifrons		True	False	False
+14	14	NUM	CD	nummod	hyperistius		False	False	False
+hyperistius	hyperistius	PROPN	NNP	appos	heterurus		True	False	False
+12	12	NUM	CD	nummod	lineatus		False	False	False
+lineatus	lineatus	PROPN	NNP	nmod	hyperistius		True	False	False
+15	15	NUM	CD	nummod	lutkeni		False	False	False
+lutkeni	lutkeni	PROPN	NNP	nmod	lineatus		True	False	False
+14	14	NUM	CD	dep	sadina		False	False	False
+,	,	PUNCT	,	punct	nigricans		False	True	False
+146	146	NUM	CD	nummod	nigricans		False	False	False
+nigricans	nigricans	PROPN	NNPS	poss	sadina		True	False	False
+14	14	NUM	CD	nummod	polyethmus		False	False	False
+polyethmus	polyethmus	PROPN	NNP	nmod	nigricans		True	False	False
+10	10	NUM	CD	nummod	quindecimradiatus		False	False	False
+quindecimradiatus	quindecimradiatus	PROPN	NNP	nmod	nigricans		True	False	False
+15	15	NUM	CD	nummod	rondeleti		False	False	False
+rondeleti	rondeleti	PROPN	NNP	nmod	quindecimradiatus		True	False	False
+10	10	NUM	CD	nummod	rufipinnis		False	False	False
+rufipinnis	rufipinnis	PROPN	NNP	poss	sadina		True	False	False
+14	14	NUM	CD	nummod	simus		False	False	False
+simus	simus	PROPN	NNP	nmod	rufipinnis		True	False	False
+15	15	NUM	CD	nummod	speculiger		False	False	False
+speculiger	speculiger	PROPN	NNP	nmod	simus		True	False	False
+14	14	NUM	CD	dep	sadina		False	False	False
+326	326	NUM	CD	quantmod	14		False	False	False
+[	[	PUNCT	-LRB-	dep	sadina		False	True	False
+Dec	Dec	PROPN	NNP	dep	sadina		True	False	False
+,	,	PUNCT	,	punct	sadina		False	True	False
+Cypselus	Cypselus	PROPN	NNP	compound	vinciguerrse	TAXA	True	False	False
+vinciguerrse	vinciguerrse	PROPN	NNP	dep	sadina		True	False	False
+12	12	NUM	CD	nummod	macrophylla		False	False	False
+Cyrenoidea	Cyrenoidea	PROPN	NNP	nmod	macrophylla	TAXA	True	False	False
+guatemalensis	guatemalensis	PROPN	NNP	dep	blaisdelli	TAXA	True	False	False
+221	221	NUM	CD	nummod	blaisdelli		False	False	False
+Dalmannia	Dalmannia	PROPN	NNP	compound	blaisdelli	TAXA	True	False	False
+blaisdelli	blaisdelli	PROPN	NNP	dep	aurea	TAXA	True	False	False
+190	190	NUM	CD	nummod	aurea		False	False	False
+Dasistoma	Dasistoma	PROPN	NNP	compound	aurea	TAXA	True	False	False
+aurea	aurea	PROPN	NNP	dep	macrophylla	TAXA	True	False	False
+264	264	NUM	CD	nummod	macrophylla		False	False	False
+macrophylla	macrophylla	PROPN	NNP	compound	sadina		True	False	False
+264	264	NUM	CD	nummod	Dasyatissay		False	False	False
+Dasyatissay	Dasyatissay	PROPN	NNP	compound	sadina		True	False	False
+300	300	NUM	CD	dep	sadina		False	False	False
+Dasystoma	Dasystoma	PROPN	NNP	compound	bignoniiflora	TAXA	True	False	False
+bignoniiflora	bignoniiflora	PROPN	NNP	dep	sadina	TAXA	True	False	False
+'	'	NUM	CD	nummod	bignoniiflora		False	True	False
+272	272	NUM	CD	nummod	brachycarpa		False	False	False
+brachycarpa	brachycarpa	PROPN	NNP	nmod	bignoniiflora		True	False	False
+270	270	NUM	CD	nummod	dispersa		False	False	False
+dispersa	dispersa	PROPN	NNP	nmod	brachycarpa		True	False	False
+271	271	NUM	CD	nummod	patula		False	False	False
+patula	patula	PROPN	NNP	nmod	brachycarpa		True	False	False
+271	271	NUM	CD	nummod	pubescens		False	False	False
+pubescens	pubescens	PROPN	NNP	nmod	brachycarpa		True	False	False
+270	270	NUM	CD	nummod	tubulosa		False	False	False
+tubulosa	tubulosa	PROPN	NNP	nmod	pubescens		True	False	False
+26S	26s	NUM	CD	nmod	brachycarpa		False	False	False
+Decapterus	Decapterus	PROPN	NNP	compound	punetatus	TAXA	True	False	False
+punetatus	punetatus	PROPN	NNP	nmod	brachycarpa	TAXA	True	False	False
+294	294	NUM	CD	nummod	viviparus		False	False	False
+Dermatogenys	Dermatogenys	PROPN	NNP	compound	viviparus	TAXA	True	False	False
+viviparus	viviparus	PROPN	NNP	appos	punetatus	TAXA	True	False	False
+10	10	NUM	CD	nummod	cuneola		False	False	False
+Donax	Donax	PROPN	NNP	compound	cuneola	TAXA	True	False	False
+cuneola	cuneola	PROPN	NNP	appos	viviparus	TAXA	True	False	False
+49	49	NUM	CD	nummod	mediamericana		False	False	False
+mediamericana	mediamericana	PROPN	NNP	nmod	brachycarpa		True	False	False
+222	222	NUM	CD	nummod	mediamericana		False	False	False
+Dorosoma	Dorosoma	PROPN	NNP	compound	cepedianum	TAXA	True	False	False
+cepedianum	cepedianum	PROPN	NNP	nmod	brachycarpa	TAXA	True	False	False
+293	293	NUM	CD	nummod	precursor		False	False	False
+Drillia	Drillia	PROPN	NNP	compound	precursor	TAXA	True	False	False
+precursor	precursor	PROPN	NNP	nmod	brachycarpa	TAXA	True	False	False
+21	21	NUM	CD	nummod	tricatenaria		False	False	False
+sumterensis	sumterensis	PROPN	NNP	dep	tricatenaria		True	False	False
+22	22	NUM	CD	nummod	tricatenaria		False	False	False
+tricatenaria	tricatenaria	PROPN	NNP	appos	precursor		True	False	False
+19	19	NUM	CD	nmod	bignoniiflora		False	False	False
+Drymaeus	Drymaeus	PROPN	NNP	compound	dombeyanus	TAXA	True	False	False
+dombeyanus	dombeyanus	PROPN	NNP	dep	ornatus	TAXA	True	False	False
+218	218	NUM	CD	nummod	ornatus		False	False	False
+d.	d.	PROPN	NNP	compound	ornatus		False	False	False
+ornatus	ornatus	PROPN	NNP	dep	sadina		True	False	False
+218	218	NUM	CD	nummod	sadina		False	False	False
+Eolimus	Eolimus	PROPN	NNP	dep	yosemite		True	False	False
+182	182	NUM	CD	nummod	yosemite		False	False	False
+laniger	laniger	PROPN	NNP	dep	yosemite		True	False	False
+182	182	NUM	CD	nummod	yosemite		False	False	False
+yosemite	yosemite	PROPN	NNP	dep	sadina		True	False	False
+183	183	NUM	CD	nummod	limbatus		False	False	False
+Ecthypus	Ecthypus	PROPN	NNP	compound	limbatus	TAXA	True	False	False
+limbatus	limbatus	PROPN	NNP	appos	yosemite	TAXA	True	False	False
+188	188	NUM	CD	dep	sadina		False	False	False
+Eleotris	Eleotris	PROPN	NNP	compound	amblyopsis	TAXA	True	False	False
+amblyopsis	amblyopsis	PROPN	NNP	dep	sadina	TAXA	True	False	False
+132	132	NUM	CD	nummod	perniger		False	False	False
+perniger	perniger	PROPN	NNP	dep	sadina		True	False	False
+142	142	NUM	CD	dep	sadina		False	False	False
+Enchelycore	Enchelycore	PROPN	NNP	compound	nigrocastaneus	TAXA	True	False	False
+nigrocastaneus	nigrocastaneus	PROPN	NNP	dep	sadina	TAXA	True	False	False
+133	133	NUM	CD	nummod	gloriosus		False	False	False
+Enneacanthus	Enneacanthus	PROPN	NNP	compound	gloriosus	TAXA	True	False	False
+gloriosus	gloriosus	PROPN	NNP	appos	nigrocastaneus	TAXA	True	False	False
+295	295	NUM	CD	nummod	sadina		False	False	False
+Ennelichthys	Ennelichthys	PROPN	NNP	compound	sadina	TAXA	True	False	False
+208	208	NUM	CD	nummod	derbyi		False	False	False
+derbyi	derbyi	PROPN	NNP	dep	sadina		True	False	False
+208	208	NUM	CD	nummod	sadina		False	False	False
+Epacmus	Epacmus	PROPN	NNP	dep	pallidus	TAXA	True	False	False
+181	181	NUM	CD	nummod	pallidus		False	False	False
+modestus	modestus	PROPN	NNP	dep	pallidus		True	False	False
+181	181	NUM	CD	nummod	pallidus		False	False	False
+pallidus	pallidus	PROPN	NNP	dep	sadina		True	False	False
+181	181	NUM	CD	nummod	Epibates		False	False	False
+Epibates	Epibates	PROPN	NNP	dep	sadina	TAXA	True	False	False
+182	182	NUM	CD	nummod	muldrowi		False	False	False
+Epitonium	Epitonium	PROPN	NNP	compound	muldrowi	TAXA	True	False	False
+muldrowi	muldrowi	PROPN	NNP	compound	sadina		True	False	False
+36	36	NUM	CD	dep	sadina		False	False	False
+Ericymba	Ericymba	PROPN	NNP	compound	buccata	TAXA	True	False	False
+buccata	buccata	PROPN	NNP	dep	sadina	TAXA	True	False	False
+299	299	NUM	CD	nummod	oblongus		False	False	False
+Erimyzon	Erimyzon	PROPN	NNP	dep	oblongus	TAXA	True	False	False
+sucetta	sucetta	PROPN	NNP	compound	oblongus	TAXA	True	False	False
+oblongus	oblongus	PROPN	NNP	appos	buccata	TAXA	True	False	False
+293	293	NUM	CD	nummod	oblongus		False	False	False
+Erinus	Erinus	PROPN	NNP	compound	procumbens	TAXA	True	False	False
+procumbens	procumbens	PROPN	NNP	dep	sadina	TAXA	True	False	False
+2S7	2s7	NUM	CD	nummod	americanus		False	False	False
+Esox	Esox	PROPN	NNP	compound	americanus	TAXA	True	False	False
+americanus	americanus	PROPN	NNP	appos	procumbens	TAXA	True	False	False
+294	294	NUM	CD	nummod	americanus		False	False	False
+,	,	PUNCT	,	punct	procumbens		False	True	False
+299	299	NUM	CD	nmod	procumbens		False	False	False
+tridecemlineatus	tridecemlineatus	PROPN	NNP	nmod	procumbens		True	False	False
+294	294	NUM	CD	nummod	tridecemlineatus		False	False	False
+,	,	PUNCT	,	punct	procumbens		False	True	False
+299	299	NUM	CD	nmod	procumbens		False	False	False
+Etrumeus	Etrumeus	PROPN	NNP	compound	sadina	TAXA	True	False	False
+sadina	sadina	PROPN	NNP	appos	heterurus	TAXA	True	False	False
+293	293	NUM	CD	nummod	platyodon		False	False	False
+Euconulus	Euconulus	PROPN	NNP	nmod	platyodon	TAXA	True	False	False
+f	f	NUM	CD	dep	alaskensis		True	False	False
+ulvus	ulvus	PROPN	NNP	compound	alaskensis		True	False	False
+alaskensis	alaskensis	PROPN	NNP	appos	Euconulus		True	False	False
+202	202	NUM	CD	nummod	milberti		False	False	False
+Eulamia	Eulamia	PROPN	NNP	compound	milberti	TAXA	True	False	False
+milberti	milberti	PROPN	NNP	nmod	Euconulus	TAXA	True	False	False
+292	292	NUM	CD	nummod	platyodon		False	False	False
+platyodon	platyodon	PROPN	NNP	appos	sadina		True	False	False
+146	146	NUM	CD	nummod	retiuscula		False	False	False
+(	(	PUNCT	-LRB-	punct	retiuscula		False	True	False
+Leiostraca	Leiostraca	PROPN	NNP	nmod	retiuscula	TAXA	True	False	False
+)	)	PUNCT	-RRB-	punct	retiuscula		False	True	False
+retiuscula	retiuscula	PROPN	NNP	appos	platyodon		True	False	False
+39	39	NUM	CD	nummod	Euparhyphus		False	False	False
+Eulepidorhamphus	Eulepidorhamphus	PROPN	NNP	dep	Euparhyphus	TAXA	True	False	False
+7	7	NUM	CD	nummod	velox		False	False	False
+Euleptorhamphus	Euleptorhamphus	PROPN	NNP	compound	velox	TAXA	True	False	False
+velox	velox	PROPN	NNP	appos	Eulepidorhamphus	TAXA	True	False	False
+10	10	NUM	CD	nummod	Euparhyphus		False	False	False
+Euparhyphus	Euparhyphus	PROPN	NNP	appos	retiuscula	TAXA	True	False	False
+171	171	NUM	CD	nummod	quadrimaculatus		False	False	False
+quadrimaculatus	quadrimaculatus	PROPN	NNP	nmod	Euparhyphus		True	False	False
+172	172	NUM	CD	nummod	minima		False	False	False
+Eupera	Eupera	PROPN	NNP	compound	minima	TAXA	True	False	False
+yucatanensis	yucatanensis	PROPN	NNP	compound	minima	TAXA	True	False	False
+minima	minima	PROPN	NNP	nmod	quadrimaculatus	TAXA	True	False	False
+222	222	NUM	CD	nummod	alba		False	False	False
+Eustachya	Eustachya	PROPN	NNP	compound	alba	TAXA	True	False	False
+alba	alba	PROPN	NNP	nmod	quadrimaculatus	TAXA	True	False	False
+260	260	NUM	CD	nummod	microptera		False	False	False
+Evolantia	Evolantia	PROPN	NNP	compound	microptera	TAXA	True	False	False
+microptera	microptera	PROPN	NNP	nmod	Euparhyphus	TAXA	True	False	False
+10	10	NUM	CD	nummod	chilensis		False	False	False
+Exocoetus	Exocoetus	PROPN	NNP	compound	chilensis	TAXA	True	False	False
+chilensis	chilensis	PROPN	NNP	appos	microptera	TAXA	True	False	False
+10	10	NUM	CD	nummod	.		False	False	False
+lutkeni	lutkeni	PROPN	NNP	dep	.		True	False	False
+IJj	IJj	PROPN	NNP	dep	.		True	False	False
+.	.	PROPN	NNP	nmod	Euparhyphus		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+scylla	scylla	PROPN	NNP	compound	litvolitans		True	False	False
+litvolitans	litvolitans	PROPN	NNP	appos	"
+"		True	False	False
+10	10	NUM	CD	nummod	maxillingua		False	False	False
+Exoglossum	Exoglossum	PROPN	NNP	compound	maxillingua	TAXA	True	False	False
+maxillingua	maxillingua	PROPN	NNP	appos	litvolitans	TAXA	True	False	False
+299	299	NUM	CD	nummod	fumosa		False	False	False
+Exoprosopa	Exoprosopa	PROPN	NNP	compound	fumosa	TAXA	True	False	False
+fumosa	fumosa	PROPN	NNP	appos	maxillingua	TAXA	True	False	False
+177	177	NUM	CD	nummod	ingens		False	False	False
+(	(	PUNCT	-LRB-	punct	ingens		False	True	False
+Exoptata	Exoptata	PROPN	NNP	nmod	ingens	TAXA	True	False	False
+)	)	PUNCT	-RRB-	punct	ingens		False	True	False
+ingens	ingens	PROPN	NNP	appos	maxillingua		True	False	False
+178	178	NUM	CD	nummod	jonesi		False	False	False
+jonesi	jonesi	PROPN	NNP	appos	litvolitans		True	False	False
+178	178	NUM	CD	nummod	sayea		False	False	False
+Ferrussacia	Ferrussacia	PROPN	NNP	nmod	sayea	TAXA	True	False	False
+165	165	NUM	CD	nummod	sayea		False	False	False
+gronoviana	gronoviana	PROPN	NNP	nmod	sayea		True	False	False
+165	165	NUM	CD	nummod	sayea		False	False	False
+sayea	sayea	PROPN	NNP	appos	litvolitans		True	False	False
+165	165	NUM	CD	nummod	tabacaria		False	False	False
+Fistularia	Fistularia	PROPN	NNP	compound	tabacaria	TAXA	True	False	False
+tabacaria	tabacaria	PROPN	NNP	appos	sayea	TAXA	True	False	False
+147	147	NUM	CD	nummod	acutus		False	False	False
+Fodiator	Fodiator	PROPN	NNP	compound	acutus	TAXA	True	False	False
+acutus	acutus	PROPN	NNP	conj	sayea	TAXA	True	False	False
+10	10	NUM	CD	nummod	macrolepidotus		False	False	False
+Fundulus	Fundulus	PROPN	NNP	compound	diaphanus	TAXA	True	False	False
+diaphanus	diaphanus	PROPN	NNP	dep	macrolepidotus	TAXA	True	False	False
+294,299	294,299	NUM	CD	dep	macrolepidotus		False	False	False
+grandis	grandis	PROPN	NNP	nmod	macrolepidotus		True	False	False
+151	151	NUM	CD	nummod	macrolepidotus		False	False	False
+heteroclitus	heteroclitus	PROPN	NNP	compound	macrolepidotus		True	False	False
+macrolepidotus	macrolepidotus	PROPN	NNP	conj	sayea		True	False	False
+294	294	NUM	CD	nummod	macrolepidotus		False	False	False
+,	,	PUNCT	,	punct	macrolepidotus		False	True	False
+300	300	NUM	CD	nummod	lucise		False	False	False
+lucise	lucise	PROPN	NNP	conj	macrolepidotus		True	False	False
+294	294	NUM	CD	nummod	majalis		False	False	False
+majalis	majalis	PROPN	NNP	nmod	lucise		True	False	False
+294	294	NUM	CD	nmod	majalis		False	False	False
+,	,	PUNCT	,	punct	lucise		False	True	False
+300	300	NUM	CD	dep	lucise		False	False	False
+Gerardia	Gerardia	PROPN	NNP	compound	afzelia	TAXA	True	False	False
+afzelia	afzelia	PROPN	NNP	appos	litvolitans	TAXA	True	False	False
+265	265	NUM	CD	nummod	aphylla		False	False	False
+aphylla	aphylla	PROPN	NNP	dep	v		True	False	False
+28S	28s	NUM	CD	dep	v		False	False	False
+a.	a.	PROPN	NNP	compound	v		False	False	False
+filicaulis	filicaulis	PROPN	NNP	compound	v		True	False	False
+v	v	PROPN	NNP	nmod	afzelia		True	False	False
+..	..	PUNCT	NFP	punct	v		False	True	False
+287	287	NUM	CD	ROOT	287		False	False	False
+a.	a.	PROPN	NNP	ROOT	a.		False	False	False
+grandiflora	grandiflora	PROPN	NNP	ROOT	grandiflora		True	False	False
+28S	28s	NUM	CD	ROOT	28S		False	False	False
+auriculata	auriculata	PROPN	NNP	ROOT	auriculata		True	False	False
+287	287	NUM	CD	nummod	auriculata		False	False	False
+besseyana	besseyana	PROPN	NNP	appos	auriculata		True	False	False
+286	286	NUM	CD	nummod	cuneifolia		False	False	False
+cuneifolia	cuneifolia	PROPN	NNP	appos	auriculata		True	False	False
+236	236	NUM	CD	nummod	decemloba		False	False	False
+decemloba	decemloba	PROPN	NNP	nmod	auriculata		True	False	False
+28Jt^	28jt^	X	XX	nmod	auriculata		False	False	False
+divaricata	divaricata	PROPN	NNP	nmod	auriculata		True	False	False
+286	286	NUM	CD	nummod	divaricata		False	False	False
+>	>	X	XX	nmod	auriculata		False	False	False
+fasciculata	fasciculata	PROPN	NNP	nmod	auriculata		True	False	False
+279	279	NUM	CD	nummod	filifolia		False	False	False
+filifolia	filifolia	PROPN	NNP	appos	auriculata		True	False	False
+280	280	NUM	CD	nummod	gatesii		False	False	False
+f.	f.	PROPN	NNP	compound	gatesii		False	False	False
+gatesii	gatesii	PROPN	NNP	appos	filifolia		True	False	False
+282	282	NUM	CD	nummod	flammea		False	False	False
+flammea	flammea	PROPN	NNP	appos	auriculata		True	False	False
+263	263	NUM	CD	nummod	flava		False	False	False
+flava	flava	PROPN	NNP	nmod	flammea		True	False	False
+271	271	NUM	CD	nummod	gattingeri		False	False	False
+gattingeri	gattingeri	PROPN	NNP	nmod	auriculata		True	False	False
+285	285	NUM	CD	nummod	georgiana		False	False	False
+georgiana	georgiana	PROPN	NNP	appos	gattingeri		True	False	False
+280	280	NUM	CD	nummod	holmiana		False	False	False
+holmiana	holmiana	PROPN	NNP	appos	auriculata		True	False	False
+281	281	NUM	CD	nummod	leucanthera		False	False	False
+leucanthera	leucanthera	PROPN	NNP	appos	holmiana		True	False	False
+286	286	NUM	CD	nummod	levigata		False	False	False
+levigata	levigata	PROPN	NNP	appos	auriculata		True	False	False
+272	272	NUM	CD	nummod	linifolia		False	False	False
+linifolia	linifolia	PROPN	NNP	appos	auriculata		True	False	False
+277	277	NUM	CD	nummod	grandiflora		False	False	False
+maritima	maritima	PROPN	NNP	compound	grandiflora		True	False	False
+grandiflora	grandiflora	PROPN	NNP	appos	linifolia		True	False	False
+277	277	NUM	CD	nummod	major		False	False	False
+m.	m.	PROPN	NNP	compound	major		False	False	False
+major	major	PROPN	NNP	appos	grandiflora		True	False	False
+277	277	NUM	CD	nummod	mcttaneri		False	False	False
+mcttaneri	mcttaneri	PROPN	NNP	appos	auriculata		True	False	False
+286	286	NUM	CD	nummod	clausa		False	False	False
+m.	m.	PROPN	NNP	compound	clausa		False	False	False
+clausa	clausa	PROPN	NNP	appos	mcttaneri		True	False	False
+286	286	NUM	CD	nummod	nuda		False	False	False
+m.	m.	PROPN	NNP	compound	nuda		False	False	False
+nuda	nuda	PROPN	NNP	nmod	auriculata		True	False	False
+.287	.287	NUM	CD	ROOT	.287		False	False	False
+pedic'ularia	pedic'ularia	PROPN	NNP	ROOT	pedic'ularia		False	False	False
+268	268	NUM	CD	nummod	pectinata		False	False	False
+p.	p.	NOUN	NN	compound	pectinata		False	False	False
+pectinata	pectinata	PROPN	NNP	appos	pedic'ularia		True	False	False
+269	269	NUM	CD	nummod	phmkenetii		False	False	False
+phmkenetii	phmkenetii	PROPN	NNP	appos	pedic'ularia		True	False	False
+282	282	NUM	CD	nummod	mieroi)hylla		False	False	False
+p.	p.	NOUN	NN	compound	mieroi)hylla		False	False	False
+mieroi)hylla	mieroi)hylla	PROPN	NNP	appos	pedic'ularia		False	False	False
+.^	.^	PUNCT	.	nmod	pedic'ularia		False	False	False
+283	283	NUM	CD	nummod	polyphylki		False	False	False
+polyphylki	polyphylki	PROPN	NNP	dep	"
+"		True	False	False
+286	286	NUM	CD	nummod	purpurea		False	False	False
+purpurea	purpurea	PROPN	NNP	appos	polyphylki		True	False	False
+278	278	NUM	CD	nummod	olia		False	False	False
+quercif	quercif	PROPN	NNP	compound	olia		True	False	False
+olia	olia	PROPN	NNP	appos	polyphylki		True	False	False
+271	271	NUM	CD	nummod	parvifolia		False	False	False
+setacea	setacea	PROPN	NNP	compound	parvifolia		True	False	False
+parvifolia	parvifolia	PROPN	NNP	appos	polyphylki		True	False	False
+28Jj	28Jj	PROPN	NNP	nmod	polyphylki		False	False	False
+.	.	PROPN	NNP	nmod	polyphylki		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+spidflora	spidflora	PROPN	NNP	dobj	.		True	False	False
+277	277	NUM	CD	nummod	tenuifolia		False	False	False
+tenuifolia	tenuifolia	PROPN	NNP	appos	spidflora		True	False	False
+285	285	NUM	CD	nummod	filiformis		False	False	False
+t.	t.	PROPN	NNP	compound	filiformis		False	False	False
+filiformis	filiformis	PROPN	NNP	appos	tenuifolia		True	False	False
+285	285	NUM	CD	nummod	leptophylla		False	False	False
+t.	t.	NOUN	NN	compound	leptophylla		False	False	False
+leptophylla	leptophylla	PROPN	NNP	appos	spidflora		True	False	False
+285	285	NUM	CD	nummod	macrophylla		False	False	False
+t.	t.	NOUN	NN	compound	macrophylla		False	False	False
+macrophylla	macrophylla	PROPN	NNP	appos	leptophylla		True	False	False
+286	286	NUM	CD	nummod	Geron		False	False	False
+Geron	Geron	PROPN	NNP	appos	spidflora	TAXA	True	False	False
+.	.	PUNCT	.	punct	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	.		False	False	False
+183	183	NUM	CD	nummod	digitaria		False	False	False
+digitaria	digitaria	PROPN	NNP	appos	.		True	False	False
+184	184	NUM	CD	nummod	robusta		False	False	False
+d.	d.	PROPN	NNP	compound	robusta		False	False	False
+robusta	robusta	PROPN	NNP	appos	digitaria		True	False	False
+185	185	NUM	CD	nummod	nivea		False	False	False
+nivea	nivea	PROPN	NNP	appos	robusta		True	False	False
+185	185	NUM	CD	nummod	umbrosa		False	False	False
+Globifera	Globifera	PROPN	NNP	compound	umbrosa	TAXA	True	False	False
+umbrosa	umbrosa	PROPN	NNP	appos	nivea	TAXA	True	False	False
+248	248	NUM	CD	nummod	cerasinus		False	False	False
+Gobiesox	Gobiesox	PROPN	NNP	compound	cerasinus	TAXA	True	False	False
+cerasinus	cerasinus	PROPN	NNP	appos	robusta	TAXA	True	False	False
+143	143	NUM	CD	nummod	cerasinus		False	False	False
+,	,	PUNCT	,	punct	robusta		False	True	False
+149	149	NUM	CD	nummod	strumosus		False	False	False
+strumosus	strumosus	PROPN	NNP	appos	robusta		True	False	False
+300	300	NUM	CD	nummod	1919		False	False	False
+1919	1919	NUM	CD	appos	digitaria		False	False	False
+.	.	PUNCT	.	punct	digitaria		False	True	False
+]	]	PUNCT	.	punct	digitaria		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	digitaria		False	False	False
+327	327	NUM	CD	nummod	bosc		False	False	False
+Gobiosoma	Gobiosoma	PROPN	NNP	compound	bosc	TAXA	True	False	False
+bosc	bosc	PROPN	NNP	appos	digitaria	TAXA	True	False	False
+300	300	NUM	CD	nummod	acuminata		False	False	False
+Gratiola	Gratiola	PROPN	NNP	compound	acuminata	TAXA	True	False	False
+acuminata	acuminata	PROPN	NNP	appos	bosc	TAXA	True	False	False
+236	236	NUM	CD	nummod	anagallidea		False	False	False
+anagallidea	anagallidea	PROPN	NNP	appos	acuminata		True	False	False
+246	246	NUM	CD	nummod	aurea		False	False	False
+aurea	aurea	PROPN	NNP	appos	anagallidea		True	False	False
+240	240	NUM	CD	nummod	caroliniensis		False	False	False
+caroliniensis	caroliniensis	PROPN	NNP	appos	aurea		True	False	False
+242	242	NUM	CD	nummod	dilatata		False	False	False
+dilatata	dilatata	PROPN	NNP	appos	caroliniensis		True	False	False
+246	246	NUM	CD	nummod	dubia		False	False	False
+dubia	dubia	PROPN	NNP	appos	dilatata		True	False	False
+245	245	NUM	CD	nummod	floridana		False	False	False
+floridana	floridana	PROPN	NNP	appos	dubia		True	False	False
+239	239	NUM	CD	appos	acuminata		False	False	False
+,	,	PUNCT	,	punct	acuminata		False	True	False
+241	241	NUM	CD	nummod	georgiana	CARDINAL	False	False	False
+georgiana	georgiana	PROPN	NNP	appos	acuminata		True	False	False
+238	238	NUM	CD	appos	georgiana		False	False	False
+,	,	PUNCT	,	punct	georgiana		False	True	False
+239	239	NUM	CD	appos	georgiana		False	False	False
+,	,	PUNCT	,	punct	georgiana		False	True	False
+240	240	NUM	CD	nummod	megalocarpa	CARDINAL	False	False	False
+megalocarpa	megalocarpa	PROPN	NNP	appos	georgiana		True	False	False
+24I	24i	NUM	CD	appos	acuminata		False	False	False
+,	,	PUNCT	,	punct	acuminata		False	True	False
+242	242	NUM	CD	nummod	micrantha	CARDINAL	False	False	False
+micrantha	micrantha	PROPN	NNP	appos	acuminata		True	False	False
+234	234	NUM	CD	appos	acuminata		False	False	False
+,	,	PUNCT	,	punct	acuminata		False	True	False
+2,41	2,41	NUM	CD	nummod	neglecta	CARDINAL	False	False	False
+neglecta	neglecta	PROPN	NNP	appos	acuminata		True	False	False
+239	239	NUM	CD	appos	neglecta		False	False	False
+,	,	PUNCT	,	punct	neglecta		False	True	False
+241	241	NUM	CD	nummod	officinalis		False	False	False
+officinalis	officinalis	PROPN	NNP	appos	neglecta		True	False	False
+238	238	NUM	CD	nummod	pilosa		False	False	False
+pilosa	pilosa	PROPN	NNP	appos	officinalis		True	False	False
+238	238	NUM	CD	appos	neglecta		False	False	False
+,	,	PUNCT	,	punct	neglecta		False	True	False
+239	239	NUM	CD	nummod	epilis	CARDINAL	False	False	False
+p.	p.	PROPN	NNP	compound	epilis		False	False	False
+epilis	epilis	PROPN	NNP	appos	neglecta		True	False	False
+238	238	NUM	CD	nummod	epilis		False	False	False
+,	,	PUNCT	,	punct	neglecta		False	True	False
+239	239	NUM	CD	nummod	quadridentata		False	False	False
+quadridentata	quadridentata	PROPN	NNP	appos	neglecta		True	False	False
+24O	24o	NUM	CD	nummod	ramosa		False	False	False
+ramosa	ramosa	PROPN	NNP	appos	bosc		True	False	False
+238	238	NUM	CD	nummod	ramosa		False	False	False
+,	,	PUNCT	,	punct	ramosa		False	True	False
+240	240	NUM	CD	nummod	sphajrocarpa		False	False	False
+sphajrocarpa	sphajrocarpa	PROPN	NNP	appos	ramosa		True	False	False
+241	241	NUM	CD	nummod	subulata		False	False	False
+subulata	subulata	PROPN	NNP	appos	sphajrocarpa		True	False	False
+242	242	NUM	CD	nummod	tetragona		False	False	False
+tetragona	tetragona	PROPN	NNP	appos	subulata		True	False	False
+245	245	NUM	CD	nummod	virginiana		False	False	False
+virginiana	virginiana	PROPN	NNP	appos	tetragona		True	False	False
+239	239	NUM	CD	nummod	ramosa		False	False	False
+,	,	PUNCT	,	punct	ramosa		False	True	False
+241	241	NUM	CD	nummod	viscidula		False	False	False
+viscidula	viscidula	PROPN	NNP	appos	ramosa		True	False	False
+238	238	NUM	CD	nummod	viscidula		False	False	False
+,	,	PUNCT	,	punct	ramosa		False	True	False
+240	240	NUM	CD	nummod	viscosa		False	False	False
+viscosa	viscosa	PROPN	NNP	appos	ramosa		True	False	False
+240	240	NUM	CD	nummod	Jalisco		False	False	False
+Guppya	Guppya	PROPN	NNP	compound	Jalisco	TAXA	True	False	False
+Jalisco	Jalisco	PROPN	NNP	appos	ramosa		True	False	False
+216	216	NUM	CD	nummod	elegantula		False	False	False
+elegantula	elegantula	PROPN	NNP	appos	ramosa		True	False	False
+215	215	NUM	CD	nummod	pensacola		False	False	False
+Harengula	Harengula	PROPN	NNP	compound	pensacola	TAXA	True	False	False
+pensacola	pensacola	PROPN	NNP	appos	elegantula	TAXA	True	False	False
+;	;	PUNCT	:	punct	pensacola		False	True	False
+151	151	NUM	CD	nummod	albella		False	False	False
+Helicella	Helicella	PROPN	NNP	compound	albella	TAXA	True	False	False
+albella	albella	PROPN	NNP	appos	ramosa	TAXA	True	False	False
+162	162	NUM	CD	nummod	algira		False	False	False
+algira	algira	PROPN	NNP	appos	albella		True	False	False
+162	162	NUM	CD	nummod	elegans		False	False	False
+elegans	elegans	PROPN	NNP	appos	albella		True	False	False
+162	162	NUM	CD	nummod	conica		False	False	False
+conica	conica	PROPN	NNP	appos	albella		True	False	False
+162	162	NUM	CD	nummod	ericetorum		False	False	False
+ericetorum	ericetorum	PROPN	NNP	appos	albella		True	False	False
+163	163	NUM	CD	nummod	fasciata		False	False	False
+fasciata	fasciata	PROPN	NNP	appos	ramosa		True	False	False
+163	163	NUM	CD	nummod	ferruginea		False	False	False
+ferruginea	ferruginea	PROPN	NNP	appos	ramosa		True	False	False
+163	163	NUM	CD	nummod	hispida		False	False	False
+hispida	hispida	PROPN	NNP	appos	ramosa		True	False	False
+163	163	NUM	CD	nummod	hispidula		False	False	False
+hispidula	hispidula	PROPN	NNP	appos	ramosa		True	False	False
+163	163	NUM	CD	nummod	mamillata		False	False	False
+mamillata	mamillata	PROPN	NNP	appos	ramosa		True	False	False
+162	162	NUM	CD	nummod	nitida		False	False	False
+nitida	nitida	PROPN	NNP	appos	ramosa		True	False	False
+...	...	PUNCT	:	punct	bosc		False	True	False
+163	163	NUM	CD	nummod	prevostiana		False	False	False
+prevostiana	prevostiana	PROPN	NNP	appos	bosc		True	False	False
+163	163	NUM	CD	nummod	radiatus		False	False	False
+radiatus	radiatus	PROPN	NNP	appos	prevostiana		True	False	False
+162	162	NUM	CD	nummod	rupestris		False	False	False
+rupestris	rupestris	PROPN	NNP	appos	prevostiana		True	False	False
+162	162	NUM	CD	nummod	solarium		False	False	False
+solarium	solarium	PROPN	NNP	appos	prevostiana		True	False	False
+162	162	NUM	CD	nummod	submaritima		False	False	False
+submaritima	submaritima	PROPN	NNP	appos	prevostiana		True	False	False
+163	163	NUM	CD	nummod	variabilis		False	False	False
+variabilis	variabilis	PROPN	NNP	appos	prevostiana		True	False	False
+163	163	NUM	CD	nummod	varians		False	False	False
+varians	varian	NOUN	NNS	appos	prevostiana		True	False	False
+162	162	NUM	CD	nummod	cornea		False	False	False
+Helic'gona	Helic'gona	PROPN	NNP	compound	cornea		False	False	False
+cornea	cornea	PROPN	NNP	appos	bosc		True	False	False
+161	161	NUM	CD	nummod	lapicida		False	False	False
+lapicida	lapicida	PROPN	NNP	appos	cornea		True	False	False
+161	161	NUM	CD	nummod	obvoluta		False	False	False
+Helicodonta	Helicodonta	PROPN	NNP	compound	obvoluta	TAXA	True	False	False
+obvoluta	obvoluta	PROPN	NNP	appos	cornea	TAXA	True	False	False
+161	161	NUM	CD	nummod	candidissima		False	False	False
+Helicogena	Helicogena	PROPN	NNP	compound	candidissima	TAXA	True	False	False
+candidissima	candidissima	PROPN	NNP	appos	cornea	TAXA	True	False	False
+160	160	NUM	CD	nummod	imperfecta		False	False	False
+imperfecta	imperfecta	PROPN	NNP	appos	cornea		True	False	False
+161	161	NUM	CD	nummod	libellula		False	False	False
+libellula	libellula	PROPN	NNP	appos	cornea		True	False	False
+161	161	NUM	CD	nummod	aspersa		False	False	False
+nemoralis	nemoralis	PROPN	NNP	compound	aspersa		True	False	False
+160	160	NUM	CD	nummod	aspersa		False	False	False
+nicoeensis	nicoeensis	PROPN	NNP	nmod	olivacea		True	False	False
+161	161	NUM	CD	nummod	olivacea		False	False	False
+olivacea	olivacea	PROPN	NNP	nmod	splendida		True	False	False
+161	161	NUM	CD	nummod	splendida		False	False	False
+pomatia	pomatia	PROPN	NNP	nmod	splendida		True	False	False
+160	160	NUM	CD	nummod	splendida		False	False	False
+splendida	splendida	PROPN	NNP	compound	aspersa		True	False	False
+160	160	NUM	CD	nummod	aspersa		False	False	False
+Helix	Helix	PROPN	NNP	compound	aspersa	TAXA	True	False	False
+aspersa	aspersa	PROPN	NNP	appos	cornea	TAXA	True	False	False
+161	161	NUM	CD	nummod	rugulosa		False	False	False
+rugulosa	rugulosa	PROPN	NNP	appos	aspersa		True	False	False
+161	161	NUM	CD	nummod	vermiculata		False	False	False
+vermiculata	vermiculata	PROPN	NNP	conj	aspersa		True	False	False
+161	161	NUM	CD	nummod	glomeratus		False	False	False
+Hemianthus	Hemianthus	PROPN	NNP	compound	glomeratus	TAXA	True	False	False
+glomeratus	glomeratus	PROPN	NNP	appos	aspersa	TAXA	True	False	False
+248	248	NUM	CD	nummod	glomeratus		False	False	False
+,	,	PUNCT	,	punct	aspersa		False	True	False
+249	249	NUM	CD	nummod	micranthemoides		False	False	False
+micranthemoides	micranthemoides	PROPN	NNP	conj	aspersa		True	False	False
+248	248	NUM	CD	nummod	micranthus		False	False	False
+micranthus	micranthus	PROPN	NNP	appos	aspersa		True	False	False
+248	248	NUM	CD	nummod	caudimaculatus		False	False	False
+Hemiexoccetus	Hemiexoccetus	PROPN	NNP	compound	caudimaculatus	TAXA	True	False	False
+caudimaculatus	caudimaculatus	PROPN	NNP	appos	aspersa	TAXA	True	False	False
+10	10	NUM	CD	nummod	balao		False	False	False
+Hemirhamphus	Hemirhamphus	PROPN	NNP	compound	affinis	TAXA	True	False	False
+affinis	affinis	PROPN	NNP	nmod	balao	TAXA	True	False	False
+8	8	NUM	CD	nummod	balao		False	False	False
+balao	balao	PROPN	NNP	appos	caudimaculatus		True	False	False
+152	152	NUM	CD	nummod	brasiliensis		False	False	False
+brasiliensis	brasiliensis	PROPN	NNP	nmod	balao		True	False	False
+7	7	NUM	CD	nummod	brasiliensis		False	False	False
+,	,	PUNCT	,	punct	balao		False	True	False
+152	152	NUM	CD	nummod	far		False	False	False
+far	far	PROPN	NNP	dep	limbatus		True	False	False
+7	7	NUM	CD	nummod	limbatus		False	False	False
+limbatus	limbatus	PROPN	NNP	dep	quoyi		True	False	False
+8	8	NUM	CD	nummod	quoyi		False	False	False
+quoyi	quoyi	PROPN	NNP	conj	balao		True	False	False
+8	8	NUM	CD	nummod	rotundifolia		False	False	False
+Herpestis	Herpestis	PROPN	NNP	compound	rotundifolia	TAXA	True	False	False
+rotundifolia	rotundifolia	PROPN	NNP	nmod	quoyi	TAXA	True	False	False
+244	244	NUM	CD	nummod	vierecki		False	False	False
+Heterostylum	Heterostylum	PROPN	NNP	compound	vierecki	TAXA	True	False	False
+vierecki	vierecki	PROPN	NNP	nmod	balao	TAXA	True	False	False
+186	186	NUM	CD	nummod	hudsonius		False	False	False
+Hippocampus	Hippocampus	PROPN	NNP	compound	hudsonius	TAXA	True	False	False
+hudsonius	hudsonius	PROPN	NNP	nmod	balao	TAXA	True	False	False
+294	294	NUM	CD	nummod	punctulatus		False	False	False
+punctulatus	punctulatus	PROPN	NNP	nmod	balao		True	False	False
+146	146	NUM	CD	nummod	regius		False	False	False
+Hybognathus	Hybognathus	PROPN	NNP	compound	regius	TAXA	True	False	False
+nuchalis	nuchalis	PROPN	NNP	compound	regius	TAXA	True	False	False
+regius	regius	PROPN	NNP	nmod	balao	TAXA	True	False	False
+293	293	NUM	CD	nummod	kentuckiensis		False	False	False
+Hybopsis	Hybopsis	PROPN	NNP	compound	kentuckiensis	TAXA	True	False	False
+kentuckiensis	kentuckiensis	PROPN	NNP	nmod	balao	TAXA	True	False	False
+299	299	NUM	CD	nummod	aspersa		False	False	False
+Hydro	Hydro	PROPN	NNP	compound	tida	TAXA	True	False	False
+tida	tida	NOUN	NN	compound	.	TAXA	True	False	False
+caroliniana	caroliniana	PROPN	NNP	appos	tida	TAXA	True	False	False
+243	243	NUM	CD	nummod	cinctella		False	False	False
+Hygromia	Hygromia	PROPN	NNP	compound	cinctella	TAXA	True	False	False
+cinctella	cinctella	PROPN	NNP	appos	tida	TAXA	True	False	False
+161	161	NUM	CD	nummod	folliculata		False	False	False
+folliculata	folliculata	X	FW	appos	tida		True	False	False
+.....	.....	PUNCT	:	punct	folliculata		False	True	False
+162	162	NUM	CD	nummod	intermedins		False	False	False
+Hyporhamphus	Hyporhamphus	PROPN	NNP	compound	intermedins	TAXA	True	False	False
+intermedins	intermedin	NOUN	NNS	appos	tida	TAXA	True	False	False
+7	7	NUM	CD	nummod	kurumeus		False	False	False
+kurumeus	kurumeus	PROPN	NNP	appos	intermedins		True	False	False
+7	7	NUM	CD	nummod	neglectus		False	False	False
+neglectus	neglectus	PROPN	NNP	nmod	kurumeus		True	False	False
+6	6	NUM	CD	nummod	pacificus		False	False	False
+pacificus	pacificus	PROPN	NNP	appos	intermedins		True	False	False
+6	6	NUM	CD	nummod	roberti		False	False	False
+roberti	roberti	PROPN	NNP	nmod	pacificus		True	False	False
+7	7	NUM	CD	appos	tida		False	False	False
+,	,	PUNCT	,	punct	tida		False	True	False
+1.52	1.52	NUM	CD	nummod	unifasciatus		False	False	False
+unifasciatus	unifasciatus	PROPN	NNP	appos	tida		True	False	False
+6	6	NUM	CD	nummod	hentz		False	False	False
+Hypsoblennius	Hypsoblennius	PROPN	NNP	compound	hentz	TAXA	True	False	False
+hentz	hentz	PROPN	NNP	appos	tida	TAXA	True	False	False
+300	300	NUM	CD	nummod	grandiflora		False	False	False
+Ilysanthes	Ilysanthes	PROPN	NNP	nmod	grandiflora	TAXA	True	False	False
+dubia	dubia	PROPN	NNP	dep	grandiflora	TAXA	True	False	False
+245	245	NUM	CD	nummod	grandiflora		False	False	False
+grandiflora	grandiflora	PROPN	NNP	appos	tida		True	False	False
+245	245	NUM	CD	npadvmod	grandiflora		False	False	False
+,	,	PUNCT	,	punct	tida		False	True	False
+247	247	NUM	CD	nummod	inaequalis		False	False	False
+inaequalis	inaequalis	PROPN	NNP	appos	tida		True	False	False
+245	245	NUM	CD	appos	tida		False	False	False
+,	,	PUNCT	,	punct	tida		False	True	False
+246	246	NUM	CD	nummod	refracta		False	False	False
+refracta	refracta	PROPN	NNP	appos	tida		True	False	False
+245,247	245,247	NUM	CD	nummod	riparia		False	False	False
+riparia	riparia	PROPN	NNP	appos	tida		True	False	False
+245	245	NUM	CD	nummod	saxicola		False	False	False
+saxicola	saxicola	PROPN	NNP	appos	tida		True	False	False
+245,246	245,246	NUM	CD	nummod	Jaminia		False	False	False
+Jaminia	Jaminia	PROPN	NNP	appos	tida	TAXA	True	False	False
+166	166	NUM	CD	nummod	edentula		False	False	False
+edentula	edentula	PROPN	NNP	appos	Jaminia		True	False	False
+166	166	NUM	CD	nummod	granum		False	False	False
+granum	granum	NOUN	NN	appos	Jaminia		True	False	False
+'	'	PUNCT	.	punct	tida		False	True	False
+.	.	PUNCT	.	ROOT	.		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+166	166	NUM	CD	nummod	heterostropha		False	False	False
+heterostropha	heterostropha	NOUN	NN	ROOT	heterostropha		True	False	False
+167	167	NUM	CD	nummod	marginata		False	False	False
+marginata	marginata	NOUN	NN	appos	heterostropha		True	False	False
+166	166	NUM	CD	nummod	niso		False	False	False
+niso	niso	NOUN	NN	appos	marginata		True	False	False
+'	'	PUNCT	.	punct	heterostropha		False	True	False
+.	.	PUNCT	.	punct	heterostropha		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	heterostropha		False	False	False
+167	167	NUM	CD	nummod	muscorum		False	False	False
+muscorum	muscorum	PROPN	NNP	appos	heterostropha		True	False	False
+166	166	NUM	CD	nummod	quinquelamellata		False	False	False
+quinquelamellata	quinquelamellata	NOUN	NN	appos	muscorum		True	False	False
+167	167	NUM	CD	nummod	secale		False	False	False
+secale	secale	NOUN	NN	appos	muscorum		True	False	False
+166	166	NUM	CD	nummod	septemdentata		False	False	False
+septemdentata	septemdentata	NOUN	NN	appos	muscorum		True	False	False
+167	167	NUM	CD	nummod	sulculata		False	False	False
+sulculata	sulculata	PROPN	NNP	appos	septemdentata		True	False	False
+166	166	NUM	CD	nummod	tridens		False	False	False
+tridens	triden	NOUN	NNS	nmod	sulculata		True	False	False
+166	166	NUM	CD	nummod	trilamillata		False	False	False
+trilamillata	trilamillata	NOUN	NN	appos	septemdentata		True	False	False
+167	167	NUM	CD	nummod	stolifera		False	False	False
+Jenkinsia	Jenkinsia	PROPN	NNP	compound	stolifera	TAXA	True	False	False
+stolifera	stolifera	PROPN	NNP	appos	septemdentata	TAXA	True	False	False
+151	151	NUM	CD	nummod	elatine		False	False	False
+Kickxia	Kickxia	PROPN	NNP	compound	elatine	TAXA	True	False	False
+elatine	elatine	PROPN	NNP	appos	septemdentata	TAXA	True	False	False
+259	259	NUM	CD	nummod	spuria		False	False	False
+spuria	spuria	PROPN	NNP	appos	septemdentata		True	False	False
+2.59	2.59	NUM	CD	nummod	vigatus		False	False	False
+Lagocephalus	Lagocephalus	PROPN	NNP	nmod	vigatus	TAXA	True	False	False
+lae	lae	X	FW	dep	vigatus	TAXA	True	False	False
+vigatus	vigatus	PROPN	NNP	nmod	spuria		True	False	False
+297	297	NUM	CD	nummod	Leachia		False	False	False
+Leachia	Leachia	PROPN	NNP	appos	muscorum	TAXA	True	False	False
+169	169	NUM	CD	nummod	cornea		False	False	False
+cornea	cornea	NOUN	NN	appos	Leachia		True	False	False
+169	169	NUM	CD	nummod	lineolata		False	False	False
+lineolata	lineolata	NOUN	NN	appos	Leachia		True	False	False
+169	169	NUM	CD	nummod	viridescens		False	False	False
+viridescens	viridescens	PROPN	NNP	appos	Leachia		True	False	False
+169	169	NUM	CD	nummod	vitrea		False	False	False
+vitrea	vitrea	PROPN	NNP	appos	Leachia		True	False	False
+169	169	NUM	CD	nummod	xanthurus		False	False	False
+Leiostdmus	Leiostdmus	PROPN	NNP	compound	xanthurus	TAXA	True	False	False
+xanthurus	xanthurus	PROPN	NNP	appos	Leachia	TAXA	True	False	False
+296	296	NUM	CD	nummod	auritus		False	False	False
+,	,	PUNCT	,	punct	auritus		False	True	False
+300	300	NUM	CD	nummod	auritus		False	False	False
+Lepomis	Lepomis	PROPN	NNP	compound	auritus	TAXA	True	False	False
+auritus	auritus	PROPN	NNP	nmod	villosa	TAXA	True	False	False
+299	299	NUM	CD	nummod	villosa		False	False	False
+Leptandra	Leptandra	PROPN	NNP	nmod	villosa	TAXA	True	False	False
+all)a	all)a	X	XX	dep	villosa		False	False	False
+260	260	NUM	CD	nummod	villosa		False	False	False
+villosa	villosa	PROPN	NNP	appos	Leachia		True	False	False
+..	..	PUNCT	.	punct	villosa		False	True	False
+260	260	NUM	CD	nummod	naucrates		False	False	False
+Leptecheneis	Leptecheneis	PROPN	NNP	compound	naucrates	TAXA	True	False	False
+naucrates	naucrates	PROPN	NNP	appos	muscorum	TAXA	True	False	False
+298	298	NUM	CD	nummod	brachyrhynchus		False	False	False
+Leptomydas	Leptomydas	PROPN	NNP	compound	brachyrhynchus	TAXA	True	False	False
+brachyrhynchus	brachyrhynchus	PROPN	NNP	appos	naucrates	TAXA	True	False	False
+189	189	NUM	CD	nummod	pantherinus		False	False	False
+pantherinus	pantherinus	PROPN	NNP	appos	naucrates		True	False	False
+188	188	NUM	CD	nummod	sponsor		False	False	False
+sponsor	sponsor	PROPN	NNP	appos	naucrates		True	False	False
+188	188	NUM	CD	nummod	328		False	False	False
+328	328	NUM	CD	appos	muscorum		False	False	False
+[	[	PUNCT	-LRB-	nmod	agrestis		False	True	False
+Dec	Dec	PROPN	NNP	nmod	agrestis		True	False	False
+,	,	PUNCT	,	punct	agrestis		False	True	False
+Leucospora	Leucospora	PROPN	NNP	compound	multifida	TAXA	True	False	False
+multifida	multifida	PROPN	NNP	nmod	agrestis	TAXA	True	False	False
+249	249	NUM	CD	nummod	agrestis		False	False	False
+Limax	Limax	PROPN	NNP	compound	agrestis	TAXA	True	False	False
+agrestis	agrestis	PROPN	NNP	dep	.	TAXA	True	False	False
+159	159	NUM	CD	nummod	carinatus		False	False	False
+antiquorum	antiquorum	PROPN	NNP	dep	carinatus		True	False	False
+158	158	NUM	CD	nummod	carinatus		False	False	False
+carinatus	carinatus	PROPN	NNP	appos	agrestis		True	False	False
+159	159	NUM	CD	nummod	gagates		False	False	False
+gagates	gagates	PROPN	NNP	appos	agrestis		True	False	False
+158	158	NUM	CD	nummod	lineolatus		False	False	False
+lineolatus	lineolatus	PROPN	NNP	dep	marginatus		True	False	False
+159	159	NUM	CD	nummod	marginatus		False	False	False
+marginatus	marginatus	PROPN	NNP	dep	variegatus		True	False	False
+159	159	NUM	CD	nummod	variegatus		False	False	False
+variegatus	variegatus	PROPN	NNP	appos	agrestis		True	False	False
+159	159	NUM	CD	nummod	canadensis		False	False	False
+Linaria	Linaria	PROPN	NNP	compound	canadensis	TAXA	True	False	False
+canadensis	canadensis	PROPN	NNP	appos	agrestis	TAXA	True	False	False
+258	258	NUM	CD	nummod	floridana		False	False	False
+floridana	floridana	PROPN	NNP	appos	canadensis		True	False	False
+258	258	NUM	CD	nummod	linaria		False	False	False
+linaria	linaria	PROPN	NNP	appos	canadensis		True	False	False
+258	258	NUM	CD	dep	texana		False	False	False
+,	,	PUNCT	,	punct	texana		False	True	False
+259	259	NUM	CD	nummod	texana		False	False	False
+texana	texana	PROPN	NNP	nmod	linaria		True	False	False
+258	258	NUM	CD	nmod	linaria		False	False	False
+,	,	PUNCT	,	punct	linaria		False	True	False
+259	259	NUM	CD	nummod	vulgaris		False	False	False
+vulgaris	vulgaris	PROPN	NNP	appos	linaria		True	False	False
+259	259	NUM	CD	nummod	dilatata		False	False	False
+Lindernia	Lindernia	PROPN	NNP	compound	attenuata	TAXA	True	False	False
+attenuata	attenuata	PROPN	NNP	dep	dilatata	TAXA	True	False	False
+245	245	NUM	CD	nummod	dilatata		False	False	False
+dilatata	dilatata	PROPN	NNP	appos	agrestis		True	False	False
+246	246	NUM	CD	nummod	grandifiora		False	False	False
+grandifiora	grandifiora	PROPN	NNP	nmod	dilatata		True	False	False
+247	247	NUM	CD	nummod	refracta		False	False	False
+refracta	refracta	PROPN	NNP	nmod	grandifiora		True	False	False
+247	247	NUM	CD	nummod	saxicola		False	False	False
+saxicola	saxicola	PROPN	NNP	nmod	grandifiora		True	False	False
+246	246	NUM	CD	nummod	major		False	False	False
+Liotia	Liotia	PROPN	NNP	nmod	major	TAXA	True	False	False
+(	(	PUNCT	-LRB-	punct	Liotia	TAXA	False	True	False
+Arene	Arene	PROPN	NNP	appos	Liotia	TAXA	True	False	False
+)	)	PUNCT	-RRB-	punct	major	TAXA	False	True	False
+major	major	PROPN	NNP	nmod	dilatata	TAXA	True	False	False
+42	42	NUM	CD	nummod	divisus		False	False	False
+Lordotus	Lordotus	PROPN	NNP	compound	divisus	TAXA	True	False	False
+divisus	divisus	PROPN	NNP	appos	agrestis	TAXA	True	False	False
+186	186	NUM	CD	nummod	auricula		False	False	False
+Lymnea	Lymnea	PROPN	NNP	compound	auricula	TAXA	True	False	False
+auricula	auricula	PROPN	NNP	appos	divisus	TAXA	True	False	False
+167	167	NUM	CD	nummod	labrosa		False	False	False
+labrosa	labrosa	PROPN	NNP	appos	agrestis		True	False	False
+167	167	NUM	CD	nummod	leachiana		False	False	False
+leachiana	leachiana	PROPN	NNP	appos	agrestis		True	False	False
+167	167	NUM	CD	nummod	minuta		False	False	False
+minuta	minuta	PROPN	NNP	appos	agrestis		True	False	False
+167	167	NUM	CD	nummod	pereger		False	False	False
+pereger	pereger	PROPN	NNP	appos	agrestis		True	False	False
+167	167	NUM	CD	nummod	monnieri		False	False	False
+Lysimachia	Lysimachia	PROPN	NNP	compound	monnieri	TAXA	True	False	False
+monnieri	monnieri	PROPN	NNP	appos	agrestis	TAXA	True	False	False
+2Ji3	2ji3	NUM	CD	compound	carolinensis		False	False	False
+Macoma	Macoma	PROPN	NNP	compound	carolinensis	TAXA	True	False	False
+carolinensis	carolinensis	PROPN	NNP	appos	monnieri	TAXA	True	False	False
+.	.	PUNCT	.	ROOT	.		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+50	50	NUM	CD	nummod	lecontei		False	False	False
+Macranthera	Macranthera	PROPN	NNP	compound	lecontei	TAXA	True	False	False
+lecontei	lecontei	PROPN	NNP	npadvmod	"
+"	TAXA	True	False	False
+263	263	NUM	CD	nummod	nigrescens		False	False	False
+Matourea	Matourea	PROPN	NNP	compound	nigrescens	TAXA	True	False	False
+nigrescens	nigrescens	PROPN	NNP	appos	lecontei	TAXA	True	False	False
+236	236	NUM	CD	nummod	acuminata		False	False	False
+Mecardonia	Mecardonia	PROPN	NNP	compound	acuminata	TAXA	True	False	False
+acuminata	acuminata	PROPN	NNP	appos	nigrescens	TAXA	True	False	False
+236	236	NUM	CD	nummod	brevifolia		False	False	False
+a.	a.	NOUN	NN	compound	brevifolia		False	False	False
+brevifolia	brevifolia	NOUN	NN	appos	lecontei		True	False	False
+...	...	PUNCT	:	punct	brevifolia		False	True	False
+236	236	NUM	CD	nummod	peninsularis		False	False	False
+,	,	PUNCT	,	punct	peninsularis		False	True	False
+237	237	NUM	CD	nummod	peninsularis		False	False	False
+a.	a.	NOUN	NN	compound	peninsularis		False	False	False
+peninsularis	peninsularis	PROPN	NNP	ROOT	peninsularis		True	False	False
+236	236	NUM	CD	appos	peninsularis		False	False	False
+,	,	PUNCT	,	punct	peninsularis		False	True	False
+237	237	NUM	CD	nummod	ovata		False	False	False
+ovata	ovata	NOUN	NNS	appos	peninsularis		True	False	False
+235	235	NUM	CD	nummod	procumbens	CARDINAL	False	False	False
+procumbens	procumben	NOUN	NNS	appos	ovata		True	False	False
+236	236	NUM	CD	appos	peninsularis		False	False	False
+.	.	PUNCT	.	appos	peninsularis		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	peninsularis		False	False	False
+237	237	NUM	CD	nummod	tenuis		False	False	False
+tenuis	tenuis	PROPN	NNP	appos	peninsularis		True	False	False
+236	236	NUM	CD	dep	,		False	False	False
+,	,	PUNCT	,	punct	tenuis		False	True	False
+238	238	NUM	CD	nummod	atlanticus		False	False	False
+Megalops	Megalops	PROPN	NNP	compound	atlanticus	TAXA	True	False	False
+atlanticus	atlanticus	PROPN	NNP	appos	tenuis	TAXA	True	False	False
+293	293	NUM	CD	nummod	americanum		False	False	False
+Melampyrum	Melampyrum	PROPN	NNP	compound	americanum	TAXA	True	False	False
+americanum	americanum	PROPN	NNP	appos	atlanticus	TAXA	True	False	False
+291	291	NUM	CD	nummod	cristatum		False	False	False
+cristatum	cristatum	PROPN	NNP	appos	atlanticus		True	False	False
+291	291	NUM	CD	nummod	latifolium		False	False	False
+latifolium	latifolium	PROPN	NNP	dep	lineare		True	False	False
+291	291	NUM	CD	nummod	lineare		False	False	False
+lineare	lineare	PROPN	NNP	dep	piceus		True	False	False
+291	291	NUM	CD	nummod	piceus		False	False	False
+1	1	NUM	CD	nummod	piceus		False	False	False
+.	.	PUNCT	.	dep	piceus		False	True	False
+latifolium	latifolium	PROPN	NNP	nmod	piceus		True	False	False
+291	291	NUM	CD	nummod	bartschi		False	False	False
+Melanella	Melanella	PROPN	NNP	compound	bartschi	TAXA	True	False	False
+bartschi	bartschi	PROPN	NNP	nmod	magnoliana	TAXA	True	False	False
+37	37	NUM	CD	nummod	magnoliana		False	False	False
+magnoliana	magnoliana	PROPN	NNP	compound	piceus		True	False	False
+38	38	NUM	CD	nummod	piceus		False	False	False
+Melichthys	Melichthys	PROPN	NNP	compound	piceus	TAXA	True	False	False
+piceus	piceus	PROPN	NNP	appos	atlanticus	TAXA	True	False	False
+149	149	NUM	CD	nummod	beryllina		False	False	False
+Menidia	Menidia	PROPN	NNP	compound	beryllina	TAXA	True	False	False
+beryllina	beryllina	PROPN	NNP	conj	atlanticus	TAXA	True	False	False
+300	300	NUM	CD	nummod	notata		False	False	False
+menidia	menidia	PROPN	NNP	compound	notata		True	False	False
+notata	notata	PROPN	NNP	appos	beryllina		True	False	False
+294	294	NUM	CD	nmod	beryllina		False	False	False
+,	,	PUNCT	,	punct	beryllina		False	True	False
+300	300	NUM	CD	conj	beryllina	CARDINAL	False	False	False
+Menticirrhus	Menticirrhus	PROPN	NNP	ROOT	Menticirrhus	TAXA	True	False	False
+americanus	americanus	PROPN	NNP	appos	Menticirrhus	TAXA	True	False	False
+296	296	NUM	CD	nummod	saxatilis		False	False	False
+saxatilis	saxatilis	PROPN	NNP	appos	Menticirrhus		True	False	False
+296	296	NUM	CD	nummod	Mermiria		False	False	False
+Mermiria	Mermiria	PROPN	NNP	appos	Menticirrhus	TAXA	True	False	False
+55	55	NUM	CD	appos	Mermiria		False	False	False
+,	,	PUNCT	,	punct	Mermiria		False	True	False
+56	56	NUM	CD	nummod	alacris		False	False	False
+alacris	alacris	PROPN	NNP	appos	Mermiria		True	False	False
+65	65	NUM	CD	appos	alacris		False	False	False
+,	,	PUNCT	,	punct	alacris		False	True	False
+81	81	NUM	CD	appos	alacris	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Mermiria		False	True	False
+93	93	NUM	CD	nummod	belfragii		False	False	False
+belfragii	belfragii	PROPN	NNP	appos	Mermiria		True	False	False
+56	56	NUM	CD	appos	belfragii		False	False	False
+,	,	PUNCT	,	punct	Mermiria		False	True	False
+72	72	NUM	CD	nummod	bivittata		False	False	False
+bivittata	bivittata	PROPN	NNP	appos	Mermiria		True	False	False
+65	65	NUM	CD	dep	99		False	False	False
+,	,	PUNCT	,	punct	99		False	True	False
+88	88	NUM	CD	nummod	99	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	99		False	True	False
+93	93	NUM	CD	nummod	99	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	99		False	True	False
+95	95	NUM	CD	nummod	99	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	99		False	True	False
+99	99	NUM	CD	appos	bivittata		False	False	False
+,	,	PUNCT	,	punct	99		False	True	False
+102	102	NUM	CD	appos	99	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	102		False	True	False
+103	103	NUM	CD	appos	102	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	103		False	True	False
+104	104	NUM	CD	appos	103	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	104		False	True	False
+110	110	NUM	CD	appos	104	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	110		False	True	False
+111	111	NUM	CD	appos	110	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	111		False	True	False
+112	112	NUM	CD	appos	111	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	bivittata		False	True	False
+116	116	NUM	CD	nummod	intertexta	CARDINAL	False	False	False
+intertexta	intertexta	X	FW	appos	bivittata		True	False	False
+....	....	PUNCT	:	punct	Menticirrhus		False	True	False
+65	65	NUM	CD	ROOT	65	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	65		False	True	False
+88	88	NUM	CD	appos	65	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	88		False	True	False
+93	93	NUM	CD	appos	88	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	93		False	True	False
+94	94	NUM	CD	appos	93	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	65		False	True	False
+95	95	NUM	CD	nummod	macolungi	CARDINAL	False	False	False
+maculipennis	maculipennis	PROPN	NNP	compound	macolungi		True	False	False
+macolungi	macolungi	PROPN	NNP	appos	65		True	False	False
+....	....	PUNCT	:	punct	macolungi		False	True	False
+65	65	NUM	CD	nummod	maculipennis	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	65		False	True	False
+69	69	NUM	CD	appos	65	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	69		False	True	False
+103	103	NUM	CD	appos	69	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	103		False	True	False
+104	104	NUM	CD	appos	103	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	104		False	True	False
+106	106	NUM	CD	appos	104	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	106		False	True	False
+107	107	NUM	CD	appos	106	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	107		False	True	False
+109	109	NUM	CD	appos	107	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	109		False	True	False
+111	111	NUM	CD	appos	109	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	111		False	True	False
+112	112	NUM	CD	appos	111	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	112		False	True	False
+113	113	NUM	CD	appos	112	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	113		False	True	False
+115	115	NUM	CD	appos	113	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	65		False	True	False
+116	116	NUM	CD	nummod	m.	CARDINAL	False	False	False
+m.	m.	PROPN	NNP	appos	65		False	False	False
+maculipennis	maculipennis	PROPN	NNP	ROOT	maculipennis		True	False	False
+.65	.65	NUM	CD	appos	maculipennis		False	False	False
+,	,	PUNCT	,	punct	.65		False	True	False
+88	88	NUM	CD	appos	.65	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	88		False	True	False
+95	95	NUM	CD	appos	88	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	95		False	True	False
+99	99	NUM	CD	appos	95	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	88		False	True	False
+102	102	NUM	CD	appos	88	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	102		False	True	False
+103	103	NUM	CD	appos	102	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	103		False	True	False
+104	104	NUM	CD	appos	103		False	False	False
+,	,	PUNCT	,	punct	104		False	True	False
+106	106	NUM	CD	dep	104		False	False	False
+-	-	SYM	SYM	punct	116		False	True	False
+116	116	NUM	CD	prep	106		False	False	False
+neo	neo	PROPN	NNP	appos	maculipennis		True	False	False
+-	-	PROPN	NNP	appos	maculipennis		False	True	False
+mexicana	mexicana	PROPN	NNP	appos	maculipennis		True	False	False
+64	64	NUM	CD	appos	mexicana		False	False	False
+,	,	PUNCT	,	punct	maculipennis		False	True	False
+72	72	NUM	CD	nummod	rostrata		False	False	False
+rostrata	rostrata	PROPN	NNP	appos	maculipennis		True	False	False
+81	81	NUM	CD	appos	rostrata		False	False	False
+texana	texana	PROPN	NNP	appos	maculipennis		True	False	False
+64	64	NUM	CD	appos	texana		False	False	False
+,	,	PUNCT	,	punct	64		False	True	False
+65	65	NUM	CD	appos	64	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	65		False	True	False
+69	69	NUM	CD	appos	65	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	64		False	True	False
+106	106	NUM	CD	appos	64	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	maculipennis		False	True	False
+112	112	NUM	CD	nummod	vigilans		False	False	False
+vigilans	vigilans	PROPN	NNPS	appos	maculipennis		True	False	False
+81	81	NUM	CD	appos	vigilans		False	False	False
+,	,	PUNCT	,	punct	vigilans		False	True	False
+93	93	NUM	CD	appos	vigilans	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	vigilans		False	True	False
+95	95	NUM	CD	appos	vigilans		False	False	False
+Merodon	Merodon	PROPN	NNP	compound	.	TAXA	True	False	False
+equestris	equestris	X	FW	dep	.	TAXA	True	False	False
+var	var	X	FW	compound	.		True	False	False
+.	.	PUNCT	.	dep	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	maculipennis		False	False	False
+validus	validus	PROPN	NNP	oprd	"
+"		True	False	False
+190	190	NUM	CD	nummod	validus		False	False	False
+validus	validus	PROPN	NNP	appos	validus		True	False	False
+190	190	NUM	CD	nummod	chsetodon		False	False	False
+Mesogonistius	Mesogonistius	PROPN	NNP	compound	chsetodon	TAXA	True	False	False
+chsetodon	chsetodon	PROPN	NNP	appos	validus		True	False	False
+295	295	NUM	CD	nummod	emarginatum		False	False	False
+Micranthemum	Micranthemum	PROPN	NNP	compound	emarginatum	TAXA	True	False	False
+emarginatum	emarginatum	PROPN	NNP	appos	chsetodon	TAXA	True	False	False
+248	248	NUM	CD	nummod	glomeratum		False	False	False
+nuttallii	nuttallii	PROPN	NNP	compound	glomeratum		True	False	False
+glomeratum	glomeratum	X	FW	appos	emarginatum		True	False	False
+2Ji8	2Ji8	PROPN	NNP	compound	orbiculatum		False	False	False
+orbiculatum	orbiculatum	PROPN	NNP	appos	glomeratum		True	False	False
+248	248	NUM	CD	nummod	flammea		False	False	False
+Micranthera	Micranthera	PROPN	NNP	compound	flammea	TAXA	True	False	False
+flammea	flammea	PROPN	NNP	appos	emarginatum	TAXA	True	False	False
+263	263	NUM	CD	nummod	baliopterus		False	False	False
+Microdon	Microdon	PROPN	NNP	compound	baliopterus	TAXA	True	False	False
+baliopterus	baliopterus	PROPN	NNP	appos	validus	TAXA	True	False	False
+189	189	NUM	CD	nummod	undulatus		False	False	False
+Micro	Micro	PROPN	NNP	compound	undulatus	TAXA	True	False	False
+pogon	pogon	PROPN	NNP	compound	undulatus	TAXA	True	False	False
+undulatus	undulatus	PROPN	NNP	appos	baliopterus	TAXA	True	False	False
+296	296	NUM	CD	nummod	baliopterus		False	False	False
+,	,	PUNCT	,	punct	baliopterus		False	True	False
+300	300	NUM	CD	nummod	baliopterus		False	False	False
+Micropterus	Micropterus	PROPN	NNP	compound	dolomieu	TAXA	True	False	False
+dolomieu	dolomieu	PROPN	NNP	appos	baliopterus	TAXA	True	False	False
+299	299	NUM	CD	nummod	salmoides		False	False	False
+salmoides	salmoides	PROPN	NNP	appos	dolomieu		True	False	False
+295	295	NUM	CD	nummod	baliopterus		False	False	False
+,	,	PUNCT	,	punct	validus		False	True	False
+299	299	NUM	CD	nummod	alatus		False	False	False
+Mimulus	Mimulus	PROPN	NNP	compound	alatus	TAXA	True	False	False
+alatus	alatus	PROPN	NNP	appos	validus	TAXA	True	False	False
+234	234	NUM	CD	nummod	alatus		False	False	False
+,	,	PUNCT	,	punct	validus		False	True	False
+235	235	NUM	CD	nummod	minthodes		False	False	False
+minthodes	minthode	NOUN	NNS	appos	validus		True	False	False
+234	234	NUM	CD	nummod	minthodes		False	False	False
+,	,	PUNCT	,	punct	validus		False	True	False
+235	235	NUM	CD	nummod	ringens		False	False	False
+ringens	ringen	NOUN	NNS	appos	validus		True	False	False
+234	234	NUM	CD	nummod	ringens		False	False	False
+,	,	PUNCT	,	punct	validus		False	True	False
+235	235	NUM	CD	nummod	dalli		False	False	False
+Mitra	Mitra	PROPN	NNP	compound	dalli	TAXA	True	False	False
+dalli	dalli	PROPN	NNP	appos	validus	TAXA	True	False	False
+25	25	NUM	CD	nummod	mitrodita		False	False	False
+Mitromorpha	Mitromorpha	PROPN	NNP	compound	mitrodita	TAXA	True	False	False
+mitrodita	mitrodita	PROPN	NNP	appos	dalli	TAXA	True	False	False
+26	26	NUM	CD	nummod	dalli		False	False	False
+Mixogaster	Mixogaster	PROPN	NNP	compound	breviventris	TAXA	True	False	False
+breviventris	breviventris	PROPN	NNP	appos	validus	TAXA	True	False	False
+190	190	NUM	CD	nummod	mola		False	False	False
+Mola	Mola	PROPN	NNP	compound	mola	TAXA	True	False	False
+mola	mola	PROPN	NNP	appos	breviventris	TAXA	True	False	False
+297	297	NUM	CD	nummod	latipinna		False	False	False
+Mollienisia	Mollienisia	PROPN	NNP	compound	latipinna	TAXA	True	False	False
+latipinna	latipinna	PROPN	NNP	appos	breviventris	TAXA	True	False	False
+152	152	NUM	CD	nummod	amplexicaulis		False	False	False
+Monniera	Monniera	PROPN	NNP	compound	amplexicaulis	TAXA	True	False	False
+amplexicaulis	amplexicaulis	PROPN	NNP	appos	breviventris	TAXA	True	False	False
+243	243	NUM	CD	nummod	peduncularis		False	False	False
+chamtedryoides	chamtedryoides	PROPN	NNP	compound	peduncularis		True	False	False
+peduncularis	peduncularis	X	FW	appos	amplexicaulis		True	False	False
+..	..	PUNCT	.	punct	amplexicaulis		False	True	False
+237	237	NUM	CD	nummod	crenulata		False	False	False
+crenulata	crenulata	PROPN	NNP	nmod	breviventris		True	False	False
+243	243	NUM	CD	nummod	cuneifolia		False	False	False
+cuneifolia	cuneifolia	PROPN	NNP	appos	crenulata		True	False	False
+2Ji3	2ji3	NUM	CD	nummod	rotundifolia		False	False	False
+rotundifolia	rotundifolia	PROPN	NNP	appos	cuneifolia		True	False	False
+242	242	NUM	CD	nummod	americana		False	False	False
+Morone	Morone	PROPN	NNP	compound	americana	TAXA	True	False	False
+americana	americana	PROPN	NNP	appos	rotundifolia	TAXA	True	False	False
+295	295	NUM	CD	nummod	curema		False	False	False
+Mugil	Mugil	PROPN	NNP	compound	curema	TAXA	True	False	False
+curema	curema	PROPN	NNP	appos	americana	TAXA	True	False	False
+153	153	NUM	CD	nummod	curema		False	False	False
+,	,	PUNCT	,	punct	curema		False	True	False
+294	294	NUM	CD	nummod	curema		False	False	False
+Mulinia	Mulinia	PROPN	NNP	compound	magnoliana	TAXA	True	False	False
+magnoliana	magnoliana	PROPN	NNP	appos	curema	TAXA	True	False	False
+52	52	NUM	CD	nummod	miliaris		False	False	False
+Mura	Mura	PROPN	NNP	compound	miliaris	TAXA	True	False	False
+>	>	PROPN	NNP	compound	miliaris	TAXA	False	False	False
+na	na	PROPN	NNP	compound	miliaris	TAXA	True	False	False
+miliaris	miliaris	PROPN	NNP	appos	magnoliana	TAXA	True	False	False
+134	134	NUM	CD	nummod	vibrans		False	False	False
+Musca	Musca	PROPN	NNP	compound	vibrans	TAXA	True	False	False
+vibrans	vibrans	PROPN	NNP	appos	magnoliana	TAXA	True	False	False
+192	192	NUM	CD	nummod	hornigi		False	False	False
+Mycetaulus	Mycetaulus	PROPN	NNP	compound	hornigi	TAXA	True	False	False
+hornigi	hornigi	PROPN	NNP	appos	vibrans	TAXA	True	False	False
+193	193	NUM	CD	nummod	Myodina		False	False	False
+Myodina	Myodina	PROPN	NNP	appos	curema	TAXA	True	False	False
+191	191	NUM	CD	nummod	seneus		False	False	False
+Myoxocephalus	Myoxocephalus	PROPN	NNP	compound	seneus	TAXA	True	False	False
+seneus	seneus	PROPN	NNP	appos	curema	TAXA	True	False	False
+298	298	NUM	CD	nummod	crenulata		False	False	False
+Neorondania	Neorondania	PROPN	NNP	compound	scutellata	TAXA	True	False	False
+scutellata	scutellata	PROPN	NNP	dep	.	TAXA	True	False	False
+174	174	NUM	CD	nummod	scutellata		False	False	False
+Neritilia	Neritilia	PROPN	NNP	nmod	scutellata	TAXA	True	False	False
+.	.	PUNCT	.	appos	validus		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	maculipennis		False	False	False
+.	.	PUNCT	NFP	punct	maculipennis		False	True	False
+_	_	PUNCT	NFP	nmod	guatemalensis		False	True	False
+219	219	NUM	CD	nummod	guatemalensis		False	False	False
+succinea	succinea	PROPN	NNP	compound	guatemalensis		True	False	False
+guatemalensis	guatemalensis	PROPN	NNP	nmod	atherinoides		True	False	False
+220	220	NUM	CD	nummod	atherinoides		False	False	False
+Notropis	Notropis	PROPN	NNP	compound	atherinoides	TAXA	True	False	False
+atherinoides	atherinoides	PROPN	NNP	nmod	cornutus	TAXA	True	False	False
+299	299	NUM	CD	nummod	cornutus		False	False	False
+cornutus	cornutus	PROPN	NNP	appos	.		True	False	False
+299	299	NUM	CD	nummod	amarus		False	False	False
+hudsonius	hudsonius	PROPN	NNP	compound	amarus		True	False	False
+amarus	amarus	PROPN	NNP	nmod	cornutus		True	False	False
+293	293	NUM	CD	nummod	analostanus		False	False	False
+whipplii	whipplii	PROPN	NNP	compound	analostanus		True	False	False
+analostanus	analostanus	PROPN	NNP	appos	amarus		True	False	False
+299	299	NUM	CD	nummod	caroliniana		False	False	False
+Obolaria	Obolaria	PROPN	NNP	compound	caroliniana	TAXA	True	False	False
+caroliniana	caroliniana	PROPN	NNP	nmod	analostanus	TAXA	True	False	False
+'	'	PUNCT	''	case	caroliniana		False	True	False
+243	243	NUM	CD	nummod	baliopterus		False	False	False
+Omegasyrphus	Omegasyrphus	PROPN	NNP	compound	baliopterus	TAXA	True	False	False
+baliopterus	baliopterus	PROPN	NNP	appos	caroliniana	TAXA	True	False	False
+189	189	NUM	CD	nummod	bivittata		False	False	False
+Opomala	Opomala	PROPN	NNP	compound	bivittata	TAXA	True	False	False
+bivittata	bivittata	PROPN	NNP	appos	baliopterus	TAXA	True	False	False
+93	93	NUM	CD	nmod	cornutus		False	False	False
+.	.	PUNCT	.	nmod	cornutus		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	maculipennis		False	False	False
+///	///	X	FW	ROOT	///		False	True	False
+neo	neo	PROPN	NNP	ROOT	neo		True	False	False
+-	-	PROPN	NNP	ROOT	-		False	True	False
+mexicana	mexicana	PROPN	NNP	ROOT	mexicana		True	False	False
+72	72	NUM	CD	ROOT	72		False	False	False
+Orbitina	Orbitina	PROPN	NNP	ROOT	Orbitina	TAXA	True	False	False
+165	165	NUM	CD	nummod	trunratella		False	False	False
+incomparabilis	incomparabilis	PROPN	NNP	nmod	trunratella		True	False	False
+165	165	NUM	CD	nummod	trunratella		False	False	False
+trunratella	trunratella	PROPN	NNP	appos	Orbitina		True	False	False
+165	165	NUM	CD	nummod	apiarium		False	False	False
+Oreohelix	Oreohelix	PROPN	NNP	nmod	apiarium	TAXA	True	False	False
+cooperi	cooperi	X	FW	nmod	apiarium	TAXA	True	False	False
+apiarium	apiarium	PROPN	NNP	nmod	trunratella	TAXA	True	False	False
+198	198	NUM	CD	nummod	ferrussaci		False	False	False
+Oris	Oris	PROPN	NNP	compound	ferrussaci	TAXA	True	False	False
+ferrussaci	ferrussaci	PROPN	NNP	nmod	trunratella	TAXA	True	False	False
+159	159	NUM	CD	nummod	chrysopterus		False	False	False
+Orthopristis	Orthopristis	PROPN	NNP	compound	chrysopterus	TAXA	True	False	False
+chrysopterus	chrysopterus	PROPN	NNP	nmod	trunratella	TAXA	True	False	False
+296	296	NUM	CD	nummod	Orbitina		False	False	False
+,	,	PUNCT	,	punct	Orbitina		False	True	False
+300	300	NUM	CD	nummod	Orbitina		False	False	False
+Otophylla	Otophylla	PROPN	NNP	compound	auriculata	TAXA	True	False	False
+auriculata	auriculata	PROPN	NNP	appos	Orbitina	TAXA	True	False	False
+287	287	NUM	CD	nummod	michauxii		False	False	False
+michauxii	michauxii	PROPN	NNP	appos	auriculata		True	False	False
+287	287	NUM	CD	nummod	Orbitina		False	False	False
+Pandora	Pandora	PROPN	NNP	ROOT	Pandora	TAXA	True	False	False
+(	(	PUNCT	-LRB-	punct	prodromos	TAXA	False	True	False
+Clidiophora	Clidiophora	PROPN	NNP	nmod	prodromos	TAXA	True	False	False
+)	)	PUNCT	-RRB-	punct	prodromos	TAXA	False	True	False
+prodromos	prodromos	PROPN	NNP	appos	Pandora	TAXA	True	False	False
+44	44	NUM	CD	nummod	tuomeyi		False	False	False
+trilineata	trilineata	X	FW	dep	tuomeyi		True	False	False
+45	45	NUM	CD	dep	tuomeyi		False	False	False
+,	,	PUNCT	,	punct	tuomeyi		False	True	False
+46	46	NUM	CD	nummod	tuomeyi		False	False	False
+(	(	PUNCT	-LRB-	punct	tuomeyi		False	True	False
+Clidio])hora	clidio])hora	X	FW	nmod	tuomeyi		False	False	False
+)	)	PUNCT	-RRB-	punct	tuomeyi		False	True	False
+tuomeyi	tuomeyi	PROPN	NNP	appos	prodromos		True	False	False
+45	45	NUM	CD	nummod	arizonensis		False	False	False
+Papagoa	Papagoa	PROPN	NNP	compound	arizonensis	TAXA	True	False	False
+arizonensis	arizonensis	PROPN	NNP	appos	tuomeyi	TAXA	True	False	False
+65	65	NUM	CD	appos	prodromos		False	False	False
+1919	1919	NUM	CD	appos	prodromos		False	False	False
+.	.	PUNCT	.	appos	prodromos		False	True	False
+"
+"	"
+"	SPACE	_SP	nmod	Pandora		False	False	False
+329	329	NUM	CD	nummod	dentatus		False	False	False
+Paralichthys	Paralichthys	PROPN	NNP	compound	dentatus	TAXA	True	False	False
+dentatus	dentatus	PROPN	NNP	appos	Pandora	TAXA	True	False	False
+298	298	NUM	CD	nummod	dentatus		False	False	False
+,	,	PUNCT	,	punct	dentatus		False	True	False
+300	300	NUM	CD	nummod	brachypterus		False	False	False
+ParexoccEtuF	ParexoccEtuF	PROPN	NNP	compound	brachypterus	TAXA	True	False	False
+brachypterus	brachypterus	PROPN	NNP	appos	dentatus	TAXA	True	False	False
+10	10	NUM	CD	nummod	mesogastei		False	False	False
+mesogastei	mesogastei	PROPN	NNP	appos	brachypterus		True	False	False
+'	'	PART	POS	case	mesogastei		False	True	False
+10	10	NUM	CD	nummod	tonientosa		False	False	False
+Paulovvnia	Paulovvnia	PROPN	NNP	compound	tonientosa		True	False	False
+tonientosa	tonientosa	PROPN	NNP	appos	brachypterus		True	False	False
+233	233	NUM	CD	nummod	canadensis		False	False	False
+Pedicularis	Pedicularis	PROPN	NNP	compound	canadensis	TAXA	True	False	False
+canadensis	canadensis	X	FW	appos	brachypterus	TAXA	True	False	False
+290	290	NUM	CD	npadvmod	brachypterus		False	False	False
+,	,	PUNCT	,	punct	brachypterus		False	True	False
+291	291	NUM	CD	nummod	lanceolata		False	False	False
+lanceolata	lanceolata	PROPN	NNP	appos	brachypterus		True	False	False
+290	290	NUM	CD	nummod	palustris		False	False	False
+palustris	palustris	PROPN	NNP	appos	brachypterus		True	False	False
+290	290	NUM	CD	nummod	Pegea		False	False	False
+Pegea	Pegea	PROPN	NNP	appos	brachypterus	TAXA	True	False	False
+166	166	NUM	CD	nummod	carnea		False	False	False
+carnea	carnea	PROPN	NNP	appos	Pegea		True	False	False
+1	1	NUM	CD	nmod	carnea		False	False	False
+66	66	NUM	CD	appos	brachypterus		False	False	False
+Penstemon	Penstemon	PROPN	NNP	compound	australis	TAXA	True	False	False
+australis	australis	PROPN	NNP	appos	brachypterus	TAXA	True	False	False
+251	251	NUM	CD	appos	brachypterus		False	False	False
+,	,	PUNCT	,	punct	brachypterus		False	True	False
+254	254	NUM	CD	nummod	calycosus		False	False	False
+calycosus	calycosus	PROPN	NNP	appos	brachypterus		True	False	False
+251	251	NUM	CD	appos	brachypterus		False	False	False
+,	,	PUNCT	,	punct	dentatus		False	True	False
+253	253	NUM	CD	nummod	canescens		False	False	False
+canescens	canescens	PROPN	NNPS	appos	dentatus		True	False	False
+251	251	NUM	CD	appos	canescens		False	False	False
+,	,	PUNCT	,	punct	canescens		False	True	False
+254	254	NUM	CD	nummod	digitalis		False	False	False
+digitalis	digitalis	PROPN	NNPS	appos	canescens		True	False	False
+251	251	NUM	CD	appos	digitalis		False	False	False
+,	,	PUNCT	,	punct	canescens		False	True	False
+252	252	NUM	CD	nummod	dissectus		False	False	False
+dissectus	dissectus	PROPN	NNP	appos	canescens		True	False	False
+250	250	NUM	CD	appos	dissectus		False	False	False
+,	,	PUNCT	,	punct	canescens		False	True	False
+251	251	NUM	CD	nummod	laevigatas		False	False	False
+laevigatas	laevigatas	PROPN	NNP	appos	canescens		True	False	False
+263	263	NUM	CD	nmod	laevigatas		False	False	False
+1	1	NUM	CD	nmod	laevigatas		False	False	False
+.	.	PUNCT	.	punct	dentatus		False	True	False
+canescens	canescens	PROPN	NNP	ROOT	canescens		True	False	False
+254	254	NUM	CD	nummod	multiflorus		False	False	False
+multiflorus	multiflorus	PROPN	NNP	appos	canescens		True	False	False
+250	250	NUM	CD	appos	multiflorus		False	False	False
+,	,	PUNCT	,	punct	canescens		False	True	False
+252	252	NUM	CD	nummod	pentstemon		False	False	False
+pentstemon	pentstemon	PROPN	NNP	appos	canescens		True	False	False
+251	251	NUM	CD	appos	pentstemon		False	False	False
+,	,	PUNCT	,	punct	canescens		False	True	False
+252	252	NUM	CD	appos	canescens		False	False	False
+pubescens	pubescens	PROPN	NNP	compound	£		True	False	False
+mult'florus	mult'florus	PROPN	NNP	dep	£		False	False	False
+£	£	PROPN	NNP	dep	-52		False	False	False
+-52	-52	NUM	CD	quantmod	252		False	False	False
+smallii	smallii	PROPN	NNP	ROOT	smallii		True	False	False
+251	251	NUM	CD	appos	smallii		False	False	False
+,	,	PUNCT	,	punct	smallii		False	True	False
+253	253	NUM	CD	nummod	tenuiflorus		False	False	False
+tenuiflorus	tenuiflorus	PROPN	NNP	appos	smallii		True	False	False
+251	251	NUM	CD	appos	smallii		False	False	False
+,	,	PUNCT	,	punct	smallii		False	True	False
+255	255	NUM	CD	appos	smallii		False	False	False
+Perca	Perca	PROPN	NNP	compound	flavescens	TAXA	True	False	False
+flavescens	flavescens	PROPN	NNP	appos	smallii	TAXA	True	False	False
+295	295	NUM	CD	appos	smallii		False	False	False
+,	,	PUNCT	,	punct	smallii		False	True	False
+299	299	NUM	CD	appos	smallii		False	False	False
+Petromyzon	Petromyzon	PROPN	NNP	compound	marinus	TAXA	True	False	False
+marinus	marinus	PROPN	NNP	appos	smallii	TAXA	True	False	False
+292	292	NUM	CD	nummod	sloani		False	False	False
+Phos	Phos	PROPN	NNP	compound	sloani	TAXA	True	False	False
+sloani	sloani	PROPN	NNP	appos	marinus	TAXA	True	False	False
+27	27	NUM	CD	nummod	psi		False	False	False
+Phthiria	Phthiria	PROPN	NNP	compound	psi	TAXA	True	False	False
+psi	psi	PROPN	NNP	appos	sloani	TAXA	True	False	False
+185	185	NUM	CD	nummod	solidissima		False	False	False
+Physa	Physa	PROPN	NNP	compound	solidissima	TAXA	True	False	False
+solidissima	solidissima	X	FW	appos	psi	TAXA	True	False	False
+219	219	NUM	CD	nummod	hypnorum		False	False	False
+Phyza	Phyza	PROPN	NNP	compound	fontinalis	TAXA	True	False	False
+fontinalis	fontinalis	PROPN	NNP	dep	hypnorum	TAXA	True	False	False
+167	167	NUM	CD	nummod	hypnorum		False	False	False
+hypnorum	hypnorum	PROPN	NNP	appos	psi		True	False	False
+167	167	NUM	CD	nummod	notatus		False	False	False
+Pimephales	Pimephales	PROPN	NNP	compound	notatus	TAXA	True	False	False
+notatus	notatus	PROPN	NNP	nmod	hypnorum	TAXA	True	False	False
+299	299	NUM	CD	nummod	abditum		False	False	False
+Pisidium	Pisidium	PROPN	NNP	compound	abditum	TAXA	True	False	False
+abditum	abditum	PROPN	NNP	nmod	hypnorum	TAXA	True	False	False
+204	204	NUM	CD	nummod	monacanthus		False	False	False
+Plagioscion	Plagioscion	PROPN	NNP	compound	monacanthus	TAXA	True	False	False
+monacanthus	monacanthus	PROPN	NNP	appos	abditum	TAXA	True	False	False
+131	131	NUM	CD	nummod	carinatus		False	False	False
+Planorbis	Planorbis	PROPN	NNP	compound	carinatus	TAXA	True	False	False
+carinatus	carinatus	PROPN	NNP	nmod	hypnorum	TAXA	True	False	False
+168	168	NUM	CD	nummod	cristatus		False	False	False
+cristatus	cristatus	PROPN	NNP	appos	carinatus		True	False	False
+168	168	NUM	CD	nummod	marginatus		False	False	False
+marginatus	marginatus	X	FW	nmod	cristatus		True	False	False
+168	168	NUM	CD	nummod	spirorbis		False	False	False
+nitidus	nitidus	PROPN	NNP	dep	spirorbis		True	False	False
+168	168	NUM	CD	nummod	spirorbis		False	False	False
+reticulatus	reticulatus	X	FW	dep	spirorbis		True	False	False
+168	168	NUM	CD	nummod	spirorbis		False	False	False
+spirorbis	spirorbis	X	FW	nmod	marginatus		True	False	False
+168	168	NUM	CD	nummod	vortex		False	False	False
+vortex	vortex	NOUN	NN	nmod	spirorbis		True	False	False
+168	168	NUM	CD	nummod	obstructa		False	False	False
+Planorbula	Planorbula	PROPN	NNP	compound	obstructa	TAXA	True	False	False
+obstructa	obstructa	PROPN	NNP	nmod	carinatus	TAXA	True	False	False
+219	219	NUM	CD	nmod	hypnorum		False	False	False
+Platybelone	Platybelone	PROPN	NNP	nmod	hypnorum	TAXA	True	False	False
+2	2	NUM	CD	nummod	tricatenaria		False	False	False
+Pleurotoma	Pleurotoma	PROPN	NNP	compound	tricatenaria	TAXA	True	False	False
+tricatenaria	tricatenaria	PROPN	NNP	appos	Platybelone	TAXA	True	False	False
+19	19	NUM	CD	nummod	tricatenaria		False	False	False
+Poecilichthys	Poecilichthys	PROPN	NNP	compound	flabeliaris	TAXA	True	False	False
+flabeliaris	flabeliaris	PROPN	NNP	dep	cromis	TAXA	True	False	False
+300	300	NUM	CD	nummod	cromis		False	False	False
+Pogonias	Pogonias	PROPN	NNP	compound	cromis	TAXA	True	False	False
+cromis	cromis	PROPN	NNP	dep	binneyana	TAXA	True	False	False
+296	296	NUM	CD	nummod	binneyana		False	False	False
+Polita	Polita	PROPN	NNP	compound	binneyana	TAXA	True	False	False
+binneyana	binneyana	PROPN	NNP	appos	Platybelone	TAXA	True	False	False
+202	202	NUM	CD	nummod	chersinella		False	False	False
+chersinella	chersinella	PROPN	NNP	conj	Platybelone		True	False	False
+203	203	NUM	CD	nummod	virens		False	False	False
+Pollachius	Pollachius	PROPN	NNP	compound	virens	TAXA	True	False	False
+virens	virens	PROPN	NNP	nmod	chersinella	TAXA	True	False	False
+298	298	NUM	CD	nummod	saltatrix		False	False	False
+Pomatomus	Pomatomus	PROPN	NNP	compound	saltatrix	TAXA	True	False	False
+saltatrix	saltatrix	PROPN	NNP	nmod	chersinella	TAXA	True	False	False
+295	295	NUM	CD	nummod	pseudoharengus		False	False	False
+Pomolobus	Pomolobus	PROPN	NNP	compound	pseudoharengus	TAXA	True	False	False
+pseudoharengus	pseudoharengus	PROPN	NNP	nmod	chersinella	TAXA	True	False	False
+293	293	NUM	CD	nummod	gibbosus		False	False	False
+Pomotis	Pomotis	PROPN	NNP	compound	gibbosus	TAXA	True	False	False
+gibbosus	gibbosus	PROPN	NNP	appos	pseudoharengus	TAXA	True	False	False
+295	295	NUM	CD	nummod	sparoides		False	False	False
+Pomoxis	Pomoxis	PROPN	NNP	compound	sparoides	TAXA	True	False	False
+sparoides	sparoides	PROPN	NNP	nmod	chersinella	TAXA	True	False	False
+...	...	PUNCT	:	punct	Platybelone		False	True	False
+295	295	NUM	CD	nummod	triacanthus		False	False	False
+Poronotus	Poronotus	PROPN	NNP	compound	triacanthus	TAXA	True	False	False
+triacanthus	triacanthus	PROPN	NNP	ROOT	triacanthus	TAXA	True	False	False
+295	295	NUM	CD	dep	,		False	False	False
+,	,	PUNCT	,	punct	triacanthus		False	True	False
+300	300	NUM	CD	appos	triacanthus		False	False	False
+Potamorrhaphis	Potamorrhaphis	PROPN	NNP	compound	guianensis	TAXA	True	False	False
+guianensis	guianensis	PROPN	NNP	appos	triacanthus	TAXA	True	False	False
+6	6	NUM	CD	nummod	strigatus		False	False	False
+Prionotus	Prionotus	PROPN	NNP	nmod	strigatus	TAXA	True	False	False
+evolans	evolans	X	FW	dep	strigatus	TAXA	True	False	False
+strigatus	strigatus	X	FW	nmod	guianensis	TAXA	True	False	False
+..	..	PUNCT	.	punct	strigatus		False	True	False
+298	298	NUM	CD	nummod	maya		False	False	False
+Pseudohyalina	Pseudohyalina	PROPN	NNP	compound	maya	TAXA	True	False	False
+maya	maya	PROPN	NNP	appos	triacanthus	TAXA	True	False	False
+216	216	NUM	CD	nummod	opal		False	False	False
+opal	opal	PROPN	NNP	dep	amphioxj		True	False	False
+216	216	NUM	CD	nummod	amphioxj		False	False	False
+Pseudomonacanthus	Pseudomonacanthus	PROPN	NNP	compound	amphioxj	TAXA	True	False	False
+amphioxj	amphioxj	PROPN	NNP	appos	maya		True	False	False
+-	-	NUM	CD	dep	maya		False	True	False
+s	s	PROPN	NNP	dep	maya		True	False	False
+.	.	PUNCT	.	punct	triacanthus		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+.	.	PUNCT	.	ROOT	.		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	.		False	False	False
+141	141	NUM	CD	nummod	marten		False	False	False
+Pseudosubulina	Pseudosubulina	PROPN	NNP	compound	marten	TAXA	True	False	False
+marten	marten	PROPN	NNP	npadvmod	"
+"	TAXA	True	False	False
+?	?	PUNCT	.	punct	marten		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	.		False	False	False
+Jana	Jana	PROPN	NNP	appos	.	TAXA	True	False	False
+314	314	NUM	CD	nummod	angustata		False	False	False
+Psila	Psila	PROPN	NNP	compound	angustata	TAXA	True	False	False
+angustata	angustata	PROPN	NNP	appos	Jana	TAXA	True	False	False
+193	193	NUM	CD	nummod	californicum		False	False	False
+Punctum	Punctum	PROPN	NNP	compound	californicum	TAXA	True	False	False
+californicum	californicum	PROPN	NNP	appos	angustata	TAXA	True	False	False
+202	202	NUM	CD	nummod	carinata		False	False	False
+Pyramidella	Pyramidella	PROPN	NNP	compound	carinata	TAXA	True	False	False
+carinata	carinata	PROPN	NNP	appos	californicum	TAXA	True	False	False
+167	167	NUM	CD	nummod	gracilis		False	False	False
+gracilis	gracilis	PROPN	NNP	appos	carinata		True	False	False
+167	167	NUM	CD	nummod	cronkhitei		False	False	False
+Pyramidula	Pyramidula	PROPN	NNP	compound	cronkhitei	TAXA	True	False	False
+cronkhitei	cronkhitei	PROPN	NNP	appos	californicum	TAXA	True	False	False
+202	202	NUM	CD	nummod	erinacea		False	False	False
+Raja	Raja	PROPN	NNP	compound	erinacea	TAXA	True	False	False
+erinacea	erinacea	PROPN	NNP	appos	angustata	TAXA	True	False	False
+293	293	NUM	CD	nummod	eisenii		False	False	False
+Ranapalus	Ranapalus	PROPN	NNP	compound	eisenii	TAXA	True	False	False
+eisenii	eisenii	PROPN	NNP	appos	erinacea	TAXA	True	False	False
+242	242	NUM	CD	nummod	rotundifolius		False	False	False
+rotundifolius	rotundifolius	PROPN	NNP	appos	erinacea		True	False	False
+242	242	NUM	CD	nummod	virginicus		False	False	False
+Rhinanthus	Rhinanthus	PROPN	NNP	compound	virginicus	TAXA	True	False	False
+virginicus	virginicus	PROPN	NNP	nmod	rotundifolius	TAXA	True	False	False
+269	269	NUM	CD	nummod	atronasus		False	False	False
+Rhinichthys	Rhinichthys	PROPN	NNP	compound	atronasus	TAXA	True	False	False
+atronasus	atronasus	PROPN	NNP	nmod	rotundifolius	TAXA	True	False	False
+299	299	NUM	CD	nummod	Jana		False	False	False
+,	,	PUNCT	,	punct	Jana		False	True	False
+300	300	NUM	CD	nummod	cataractffi		False	False	False
+cataractffi	cataractffi	PROPN	NNP	appos	Jana		True	False	False
+299	299	NUM	CD	nummod	bonasus		False	False	False
+Rhinoptera	Rhinoptera	PROPN	NNP	compound	bonasus	TAXA	True	False	False
+bonasus	bonasus	PROPN	NNP	appos	cataractffi	TAXA	True	False	False
+293	293	NUM	CD	nummod	osteochir		False	False	False
+Rhombochirus	Rhombochirus	PROPN	NNP	compound	osteochir	TAXA	True	False	False
+osteochir	osteochir	PROPN	NNP	appos	bonasus	TAXA	True	False	False
+154	154	NUM	CD	nummod	cognata		False	False	False
+Rivellia	Rivellia	PROPN	NNP	compound	cognata	TAXA	True	False	False
+cognata	cognata	PROPN	NNP	appos	cataractffi	TAXA	True	False	False
+191	191	NUM	CD	nummod	lineatus		False	False	False
+Roccus	Roccus	PROPN	NNP	compound	lineatus	TAXA	True	False	False
+lineatus	lineatus	PROPN	NNP	appos	cognata	TAXA	True	False	False
+295	295	NUM	CD	nummod	Rumina		False	False	False
+Rumina	Rumina	PROPN	NNP	appos	cataractffi	TAXA	True	False	False
+164	164	NUM	CD	nummod	decollata		False	False	False
+decollata	decollata	NOUN	NN	nmod	Rumina		True	False	False
+164	164	NUM	CD	nummod	juncea		False	False	False
+Russelia	Russelia	PROPN	NNP	compound	juncea	TAXA	True	False	False
+juncea	juncea	PROPN	NNP	nmod	Rumina	TAXA	True	False	False
+257	257	NUM	CD	nummod	sarmentosa		False	False	False
+sarmentosa	sarmentosa	PROPN	NNP	nmod	Rumina		True	False	False
+257	257	NUM	CD	nummod	guatemalensis		False	False	False
+Salasiella	Salasiella	PROPN	NNP	compound	guatemalensis	TAXA	True	False	False
+guatemalensis	guatemalensis	PROPN	NNP	nmod	Rumina	TAXA	True	False	False
+213	213	NUM	CD	nummod	hinkleyi		False	False	False
+hinkleyi	hinkleyi	NOUN	NN	nmod	Rumina		True	False	False
+212	212	NUM	CD	nummod	fontinalis		False	False	False
+Salmo	Salmo	PROPN	NNP	compound	fario	TAXA	True	False	False
+fario	fario	PROPN	NNP	dep	fontinalis	TAXA	True	False	False
+29S	29s	NUM	CD	compound	fontinalis		False	False	False
+formosanus	formosanus	PROPN	NNP	dep	fontinalis		True	False	False
+122	122	NUM	CD	nummod	fontinalis		False	False	False
+Salvelinus	Salvelinus	PROPN	NNP	compound	fontinalis	TAXA	True	False	False
+fontinalis	fontinalis	PROPN	NNP	appos	cataractffi	TAXA	True	False	False
+293	293	NUM	CD	nummod	fontinalis		False	False	False
+,	,	PUNCT	,	punct	fontinalis		False	True	False
+298	298	NUM	CD	nummod	fontinalis		False	False	False
+Sarda	Sarda	PROPN	NNP	compound	sarda	TAXA	True	False	False
+sarda	sarda	PROPN	NNP	ROOT	sarda	TAXA	True	False	False
+294	294	NUM	CD	nummod	Saraphda		False	False	False
+Saraphda	Saraphda	PROPN	NNP	appos	sarda		True	False	False
+165	165	NUM	CD	nummod	bidentata		False	False	False
+bidentata	bidentata	PROPN	NNP	appos	Saraphda		True	False	False
+165	165	NUM	CD	nummod	plejd'elia		False	False	False
+plejd'elia	plejd'elia	PROPN	NNP	nmod	Saraphda		False	False	False
+165	165	NUM	CD	nummod	tridentata		False	False	False
+tridentata	tridentata	PROPN	NNP	appos	Saraphda		True	False	False
+165	165	NUM	CD	nummod	unidentata		False	False	False
+unidentata	unidentata	PROPN	NNP	nmod	tridentata		True	False	False
+165	165	NUM	CD	nummod	uniplicata		False	False	False
+uniplicata	uniplicata	PROPN	NNP	nmod	unidentata		True	False	False
+165	165	NUM	CD	nummod	hinkleyi		False	False	False
+Schasicheila	Schasicheila	PROPN	NNP	compound	hinkleyi	TAXA	True	False	False
+hinkleyi	hinkleyi	PROPN	NNP	nmod	uniplicata	TAXA	True	False	False
+221	221	NUM	CD	nummod	insignis		False	False	False
+Schilbeodes	Schilbeodes	PROPN	NNP	compound	insignis	TAXA	True	False	False
+insignis	insignis	PROPN	NNP	nmod	uniplicata	TAXA	True	False	False
+299	299	NUM	CD	nummod	americana		False	False	False
+Schwalbea	Schwalbea	PROPN	NNP	compound	americana	TAXA	True	False	False
+americana	americana	PROPN	NNP	appos	insignis	TAXA	True	False	False
+289	289	NUM	CD	nummod	australis		False	False	False
+australis	australis	PROPN	NNP	appos	Saraphda		True	False	False
+289	289	NUM	CD	nummod	ocellatus		False	False	False
+Sciaenops	Sciaenops	PROPN	NNP	compound	ocellatus	TAXA	True	False	False
+ocellatus	ocellatus	PROPN	NNP	nmod	australis	TAXA	True	False	False
+296	296	NUM	CD	nummod	colias		False	False	False
+Scomber	Scomber	PROPN	NNP	compound	colias	TAXA	True	False	False
+colias	colias	PROPN	NNP	appos	Saraphda	TAXA	True	False	False
+294	294	NUM	CD	nummod	scombrus		False	False	False
+scombrus	scombrus	PROPN	NNP	appos	Saraphda		True	False	False
+294	294	NUM	CD	nummod	saurus		False	False	False
+Scomberesox	Scomberesox	PROPN	NNP	compound	saurus	TAXA	True	False	False
+saurus	saurus	PROPN	NNP	appos	Saraphda	TAXA	True	False	False
+6	6	NUM	CD	nummod	maculatus		False	False	False
+Scomberomorus	Scomberomorus	PROPN	NNP	compound	maculatus	TAXA	True	False	False
+maculatus	maculatus	PROPN	NNP	appos	Saraphda	TAXA	True	False	False
+294	294	NUM	CD	nummod	maculatus		False	False	False
+,	,	PUNCT	,	punct	maculatus		False	True	False
+300	300	NUM	CD	nummod	dulcis		False	False	False
+Scoparia	Scoparia	PROPN	NNP	compound	dulcis	TAXA	True	False	False
+dulcis	dulcis	PROPN	NNP	appos	maculatus	TAXA	True	False	False
+234	234	NUM	CD	nummod	grandiflora		False	False	False
+grandiflora	grandiflora	PROPN	NNP	appos	Saraphda		True	False	False
+234	234	NUM	CD	nummod	leporella		False	False	False
+Scrophularia	Scrophularia	PROPN	NNP	compound	leporella	TAXA	True	False	False
+leporella	leporella	PROPN	NNP	nmod	grandiflora	TAXA	True	False	False
+257	257	NUM	CD	nummod	marilandica		False	False	False
+marilandica	marilandica	PROPN	NNP	nmod	Saraphda		True	False	False
+256	256	NUM	CD	nummod	nodosa		False	False	False
+nodosa	nodosa	PROPN	NNP	nmod	marilandica		True	False	False
+256	256	NUM	CD	nmod	marilandica		False	False	False
+,	,	PUNCT	,	punct	Saraphda		False	True	False
+257	257	NUM	CD	nummod	serrulata		False	False	False
+serrulata	serrulata	X	FW	appos	Saraphda		True	False	False
+257	257	NUM	CD	nummod	Seioptera		False	False	False
+Seioptera	Seioptera	PROPN	NNP	appos	sarda	TAXA	True	False	False
+191	191	NUM	CD	nummod	albipes		False	False	False
+albipes	albipe	NOUN	NNS	appos	Seioptera		True	False	False
+192	192	NUM	CD	nummod	colon		False	False	False
+colon	colon	NOUN	NN	appos	Seioptera		True	False	False
+192	192	NUM	CD	nummod	vibrans		False	False	False
+vibrans	vibran	NOUN	NNS	nmod	Seioptera		True	False	False
+192	192	NUM	CD	nummod	vomer		False	False	False
+Selene	Selene	PROPN	NNP	compound	vomer	TAXA	True	False	False
+vomer	vomer	PROPN	NNP	appos	Seioptera	TAXA	True	False	False
+295	295	NUM	CD	nummod	atromaculatus		False	False	False
+Semotilus	Semotilus	PROPN	NNP	compound	atromaculatus	TAXA	True	False	False
+atromaculatus	atromaculatus	PROPN	NNP	appos	Seioptera	TAXA	True	False	False
+299	299	NUM	CD	nummod	buUaris		False	False	False
+buUaris	buUaris	PROPN	NNP	nmod	Seioptera		True	False	False
+299	299	NUM	CD	nummod	Seoptera		False	False	False
+Seoptera	Seoptera	PROPN	NNP	nmod	Seioptera	TAXA	True	False	False
+191	191	NUM	CD	nummod	zonata		False	False	False
+Seriola	Seriola	PROPN	NNP	compound	zonata	TAXA	True	False	False
+zonata	zonata	PROPN	NNP	nmod	Seoptera	TAXA	True	False	False
+294	294	NUM	CD	nmod	Seioptera		False	False	False
+,	,	PUNCT	,	punct	Seioptera		False	True	False
+300	300	NUM	CD	nummod	heterophyla		False	False	False
+Seymeria	Seymeria	PROPN	NNP	compound	heterophyla	TAXA	True	False	False
+heterophyla	heterophyla	PROPN	NNP	dep	jacksoni	TAXA	True	False	False
+26	26	NUM	CD	nummod	jacksoni		False	False	False
+-	-	SYM	SYM	punct	jacksoni		False	True	False
+5	5	NUM	CD	nummod	jacksoni		False	False	False
+jacksoni	jacksoni	PROPN	NNP	appos	Seioptera		True	False	False
+265	265	NUM	CD	nummod	macrophylla		False	False	False
+macrophylla	macrophylla	PROPN	NNP	appos	Seioptera		True	False	False
+264	264	NUM	CD	nummod	pectinata		False	False	False
+pectinata	pectinata	NOUN	NN	nmod	macrophylla		True	False	False
+265	265	NUM	CD	nummod	tenuifolia		False	False	False
+tenuifolia	tenuifolia	NOUN	NN	nmod	macrophylla		True	False	False
+265	265	NUM	CD	nummod	jonesi		False	False	False
+Silvius	Silvius	PROPN	NNP	compound	jonesi	TAXA	True	False	False
+jonesi	jonesi	PROPN	NNP	appos	Seioptera	TAXA	True	False	False
+175	175	NUM	CD	nummod	hispida		False	False	False
+Sopronanthe	Sopronanthe	PROPN	NNP	compound	hispida	TAXA	True	False	False
+hispida	hispida	PROPN	NNP	appos	Seioptera	TAXA	True	False	False
+242	242	NUM	CD	nummod	hoplomystax		False	False	False
+Sparisoma	Sparisoma	PROPN	NNP	compound	hoplomystax	TAXA	True	False	False
+hoplomystax	hoplomystax	PROPN	NNP	appos	hispida	TAXA	True	False	False
+138	138	NUM	CD	nummod	niphobles		False	False	False
+niphobles	niphobles	PROPN	NNP	appos	hispida		True	False	False
+150	150	NUM	CD	nummod	marmoratus		False	False	False
+Spheroides	Spheroides	PROPN	NNP	compound	marmoratus	TAXA	True	False	False
+marmoratus	marmoratus	PROPN	NNP	appos	niphobles	TAXA	True	False	False
+142	142	NUM	CD	nummod	zygjena		False	False	False
+Sphyrna	Sphyrna	PROPN	NNP	compound	zygjena	TAXA	True	False	False
+zygjena	zygjena	PROPN	NNP	appos	hispida		True	False	False
+293	293	NUM	CD	nummod	longior		False	False	False
+330	330	NUM	CD	nummod	longior		False	False	False
+IDec	IDec	PROPN	NNP	dep	livingstonensis		True	False	False
+,	,	PUNCT	,	punct	livingstonensis		False	True	False
+Spiraxis	Spiraxis	PROPN	NNP	compound	livingstonensis	TAXA	True	False	False
+livingstonensis	livingstonensis	PROPN	NNP	dep	longior	TAXA	True	False	False
+213	213	NUM	CD	nummod	longior		False	False	False
+longior	longior	PROPN	NNP	appos	hispida		True	False	False
+214	214	NUM	CD	nummod	Spisula		False	False	False
+Spisula	Spisula	PROPN	NNP	appos	hispida	TAXA	True	False	False
+(	(	PUNCT	-LRB-	punct	Spisula		False	True	False
+Hemimactra	Hemimactra	PROPN	NNP	appos	Spisula	TAXA	True	False	False
+?	?	PUNCT	-RRB-	punct	Hemimactra		False	True	False
+)	)	PUNCT	-RRB-	punct	Spisula		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+magnoliana	magnoliana	PROPN	NNP	npadvmod	"
+"		True	False	False
+52	52	NUM	CD	nummod	vierecki		False	False	False
+Spogostylum	Spogostylum	PROPN	NNP	compound	vierecki	TAXA	True	False	False
+vierecki	vierecki	PROPN	NNP	appos	magnoliana	TAXA	True	False	False
+180	180	NUM	CD	nummod	chrysops		False	False	False
+Stenotomus	Stenotomus	PROPN	NNP	compound	chrysops	TAXA	True	False	False
+chrysops	chrysops	PROPN	NNP	appos	vierecki	TAXA	True	False	False
+300	300	NUM	CD	nummod	hispidus		False	False	False
+Stephanolepis	Stephanolepis	PROPN	NNP	compound	hispidus	TAXA	True	False	False
+hispidus	hispidus	PROPN	NNP	appos	chrysops	TAXA	True	False	False
+297	297	NUM	CD	nummod	pugetensis		False	False	False
+Striatura	Striatura	PROPN	NNP	compound	pugetensis	TAXA	True	False	False
+milium	milium	NOUN	NN	nmod	pugetensis	TAXA	True	False	False
+pugetensis	pugetensis	NOUN	NN	nmod	hispidus	TAXA	True	False	False
+203	203	NUM	CD	nummod	eutykta		False	False	False
+Strigilla	Strigilla	PROPN	NNP	compound	eutykta	TAXA	True	False	False
+eutykta	eutykta	NOUN	NN	appos	vierecki		True	False	False
+47	47	NUM	CD	nummod	dalli		False	False	False
+Strombiformis	Strombiformis	PROPN	NNP	compound	dalli	TAXA	True	False	False
+dalli	dalli	PROPN	NNP	appos	eutykta	TAXA	True	False	False
+39	39	NUM	CD	nummod	Strongylura		False	False	False
+Strongylura	Strongylura	PROPN	NNP	appos	vierecki	TAXA	True	False	False
+2	2	NUM	CD	nummod	acus		False	False	False
+acus	acus	PROPN	NNP	nmod	Strongylura		True	False	False
+5	5	NUM	CD	nummod	acus		False	False	False
+,	,	PUNCT	,	punct	Strongylura		False	True	False
+294	294	NUM	CD	nummod	anostomella		False	False	False
+anostomella	anostomella	PROPN	NNP	appos	Strongylura		True	False	False
+5	5	NUM	CD	nummod	coromandelica		False	False	False
+coromandelica	coromandelica	PROPN	NNP	appos	Strongylura		True	False	False
+5	5	NUM	CD	nummod	crocodila		False	False	False
+crocodila	crocodila	PROPN	NNP	nmod	coromandelica		True	False	False
+5	5	NUM	CD	nummod	exile		False	False	False
+exile	exile	PROPN	NNP	nmod	Strongylura		True	False	False
+3	3	NUM	CD	nummod	leiura		False	False	False
+leiura	leiura	PROPN	NNP	nmod	Strongylura		True	False	False
+5	5	NUM	CD	nummod	leiuroides		False	False	False
+leiuroides	leiuroides	PROPN	NNP	nmod	leiura		True	False	False
+5	5	NUM	CD	nummod	marina		False	False	False
+marina	marina	PROPN	NNP	nmod	leiuroides		True	False	False
+5	5	NUM	CD	nmod	marina		False	False	False
+,	,	PUNCT	,	punct	magnoliana		False	True	False
+294	294	NUM	CD	appos	magnoliana		False	False	False
+,	,	PUNCT	,	punct	magnoliana		False	True	False
+300	300	NUM	CD	nummod	notata		False	False	False
+notata	notata	PROPN	NNP	appos	,		True	False	False
+3	3	NUM	CD	nmod	notata		False	False	False
+,	,	PUNCT	,	punct	magnoliana		False	True	False
+152	152	NUM	CD	nummod	peruana		False	False	False
+peruana	peruana	NOUN	NN	appos	magnoliana		True	False	False
+3	3	NUM	CD	nummod	raphidoma		False	False	False
+raphidoma	raphidoma	PROPN	NNP	appos	peruana		True	False	False
+5	5	NUM	CD	nummod	scapulare		False	False	False
+scapulare	scapulare	PROPN	NNP	appos	raphidoma		True	False	False
+3	3	NUM	CD	nummod	strongylura		False	False	False
+strongylura	strongylura	PROPN	NNP	appos	scapulare		True	False	False
+3	3	NUM	CD	nummod	timucu		False	False	False
+timucu	timucu	PROPN	NNP	appos	strongylura		True	False	False
+3	3	NUM	CD	nmod	timucu		False	False	False
+,	,	PUNCT	,	punct	peruana		False	True	False
+136	136	NUM	CD	nummod	elegans		False	False	False
+Succinea	Succinea	PROPN	NNP	compound	elegans	TAXA	True	False	False
+elegans	elegan	NOUN	NNS	appos	peruana	TAXA	True	False	False
+160	160	NUM	CD	nummod	major		False	False	False
+major	major	ADJ	JJ	appos	magnoliana		True	False	False
+160	160	NUM	CD	nummod	panamensis		False	False	False
+panamensis	panamensis	PROPN	NNP	nmod	major		True	False	False
+218	218	NUM	CD	nummod	Surcula		False	False	False
+Surcula	Surcula	PROPN	NNP	appos	magnoliana	TAXA	True	False	False
+(	(	PUNCT	-LRB-	punct	Surcula	TAXA	False	True	False
+Pleurotoma	Pleurotoma	PROPN	NNP	nmod	tricatenaria	TAXA	True	False	False
+)	)	PUNCT	-RRB-	punct	tricatenaria	TAXA	False	True	False
+tricatenaria	tricatenaria	PROPN	NNP	appos	Surcula	TAXA	True	False	False
+19	19	NUM	CD	nummod	fuscus		False	False	False
+Syngnathus	Syngnathus	PROPN	NNP	compound	fuscus	TAXA	True	False	False
+fuscus	fuscus	PROPN	NNP	appos	Surcula	TAXA	True	False	False
+294	294	NUM	CD	appos	Surcula		False	False	False
+,	,	PUNCT	,	punct	Surcula		False	True	False
+300	300	NUM	CD	nummod	mackayi		False	False	False
+mackayi	mackayi	NOUN	NNS	appos	Surcula		True	False	False
+•.	•.	PUNCT	.	appos	magnoliana		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+146	146	NUM	CD	nummod	?		False	False	False
+Tautogolabrui	Tautogolabrui	PROPN	NNP	dep	?		True	False	False
+?	?	PUNCT	.	npadvmod	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+adspersus	adspersus	PROPN	NNP	ROOT	adspersus		True	False	False
+296	296	NUM	CD	nummod	episcia		False	False	False
+Testacella	Testacella	PROPN	NNP	compound	episcia	TAXA	True	False	False
+episcia	episcia	PROPN	NNP	appos	adspersus	TAXA	True	False	False
+160	160	NUM	CD	nummod	bisulcatus		False	False	False
+Testacellus	Testacellus	PROPN	NNP	compound	bisulcatus	TAXA	True	False	False
+bisulcatus	bisulcatus	PROPN	NNP	appos	episcia	TAXA	True	False	False
+159	159	NUM	CD	nummod	Theba		False	False	False
+Theba	Theba	PROPN	NNP	appos	episcia	TAXA	True	False	False
+163	163	NUM	CD	nummod	Theba		False	False	False
+carthusiana	carthusiana	PROPN	NNP	appos	adspersus		True	False	False
+164	164	NUM	CD	nummod	carthusiana		False	False	False
+carthus'anella	carthus'anella	PROPN	NNP	nmod	cemenelea		False	False	False
+164	164	NUM	CD	nummod	cemenelea		False	False	False
+cemenelea	cemenelea	PROPN	NNP	appos	carthusiana		True	False	False
+164	164	NUM	CD	nummod	charpentiera		False	False	False
+charpentiera	charpentiera	PROPN	NNP	appos	cemenelea		True	False	False
+164	164	NUM	CD	nummod	carthusiana		False	False	False
+conspurcata	conspurcata	PROPN	NNP	appos	carthusiana		True	False	False
+164	164	NUM	CD	nummod	conspurcata		False	False	False
+lucostoma	lucostoma	PROPN	NNP	appos	conspurcata		True	False	False
+164	164	NUM	CD	nummod	lucostoma		False	False	False
+meridionalis	meridionalis	PROPN	NNP	appos	adspersus		True	False	False
+164	164	NUM	CD	nummod	pisana		False	False	False
+pisana	pisana	PROPN	NNP	appos	meridionalis		True	False	False
+163	163	NUM	CD	nummod	pyramidata		False	False	False
+pyramidata	pyramidata	PROPN	NNP	appos	adspersus		True	False	False
+164	164	NUM	CD	nummod	rubella		False	False	False
+rubella	rubella	PROPN	NNP	appos	pyramidata		True	False	False
+164	164	NUM	CD	nummod	pyramidata		False	False	False
+Thysanophora	Thysanophora	PROPN	NNP	compound	ingersolli	TAXA	True	False	False
+ingersolli	ingersolli	PROPN	NNP	appos	pyramidata	TAXA	True	False	False
+202	202	NUM	CD	nummod	rhoadsi		False	False	False
+rhoadsi	rhoadsi	PROPN	NNP	appos	ingersolli		True	False	False
+217	217	NUM	CD	nummod	pyramidata		False	False	False
+Tittmannia	Tittmannia	PROPN	NNP	compound	monticola	TAXA	True	False	False
+monticola	monticola	PROPN	NNP	appos	adspersus	TAXA	True	False	False
+2Jfl	2jfl	NUM	CD	nummod	monticola		False	False	False
+Trachinotus	Trachinotus	PROPN	NNP	compound	carolinus	TAXA	True	False	False
+carolinus	carolinus	PROPN	NNP	appos	monticola	TAXA	True	False	False
+295	295	NUM	CD	nummod	carolinus		False	False	False
+Trichiurus	Trichiurus	PROPN	NNP	compound	lepturus	TAXA	True	False	False
+lepturus	lepturus	PROPN	NNP	appos	monticola	TAXA	True	False	False
+.	.	PUNCT	.	punct	adspersus		False	True	False
+*	*	PUNCT	NFP	ROOT	*		False	True	False
+.....	.....	PUNCT	NFP	punct	*		False	True	False
+"
+"	"
+"	SPACE	_SP	det	*		False	False	False
+294	294	NUM	CD	nummod	duplinensis		False	False	False
+Turritella	Turritella	PROPN	NNP	compound	duplinensis	TAXA	True	False	False
+duplinensis	duplinensis	PROPN	NNP	npadvmod	"
+"	TAXA	True	False	False
+41	41	NUM	CD	nummod	Tylosurus		False	False	False
+Tylosurus	Tylosurus	PROPN	NNP	appos	duplinensis		True	False	False
+2	2	NUM	CD	nummod	phriknos		False	False	False
+Urosalpinx	Urosalpinx	PROPN	NNP	compound	phriknos	TAXA	True	False	False
+phriknos	phriknos	PROPN	NNP	appos	Tylosurus		True	False	False
+35	35	NUM	CD	nummod	pygmaea		False	False	False
+Umbra	Umbra	PROPN	NNP	compound	pygmaea	TAXA	True	False	False
+pygmaea	pygmaea	PROPN	NNP	appos	phriknos	TAXA	True	False	False
+294	294	NUM	CD	nummod	coroides		False	False	False
+Umbrina	Umbrina	PROPN	NNP	compound	coroides	TAXA	True	False	False
+coroides	coroides	PROPN	NNP	appos	pygmaea	TAXA	True	False	False
+137	137	NUM	CD	nummod	phillipsi		False	False	False
+Upeneus	Upeneus	PROPN	NNP	compound	phillipsi	TAXA	True	False	False
+phillipsi	phillipsi	PROPN	NNP	appos	duplinensis	TAXA	True	False	False
+296	296	NUM	CD	nummod	moreleti		False	False	False
+Vaginulus	Vaginulus	PROPN	NNP	compound	moreleti	TAXA	True	False	False
+moreleti	moreleti	PROPN	NNP	appos	phillipsi	TAXA	True	False	False
+219	219	NUM	CD	nummod	Vallonia		False	False	False
+Vallonia	Vallonia	PROPN	NNP	appos	duplinensis	TAXA	True	False	False
+...	...	PUNCT	:	punct	Vallonia		False	True	False
+169	169	NUM	CD	nummod	rosalia		False	False	False
+rosalia	rosalia	PROPN	NNP	dep	Vallonia		True	False	False
+169	169	NUM	CD	nummod	minuta		False	False	False
+Valvata	Valvata	PROPN	NNP	compound	minuta	TAXA	True	False	False
+minuta	minuta	PROPN	NNP	appos	rosalia	TAXA	True	False	False
+168	168	NUM	CD	nummod	planorbis		False	False	False
+planorbis	planorbis	PROPN	NNP	appos	duplinensis		True	False	False
+168	168	NUM	CD	nummod	duplinensis		False	False	False
+Vediantius	Vediantius	PROPN	NNP	appos	duplinensis	TAXA	True	False	False
+165	165	NUM	CD	nummod	eristalius		False	False	False
+eristalius	eristalius	PROPN	NNP	appos	Vediantius		True	False	False
+165	165	NUM	CD	nummod	Verbascum		False	False	False
+Verbascum	Verbascum	PROPN	NNP	appos	duplinensis	TAXA	True	False	False
+blattaria	blattaria	PROPN	NNP	appos	Verbascum	TAXA	True	False	False
+249	249	NUM	CD	appos	Verbascum		False	False	False
+,	,	PUNCT	,	punct	Verbascum		False	True	False
+250	250	NUM	CD	nummod	lychnitis		False	False	False
+lychnitis	lychnitis	PROPN	NNP	appos	Verbascum		True	False	False
+250	250	NUM	CD	nummod	thapsus		False	False	False
+thapsus	thapsus	PROPN	NNP	appos	lychnitis		True	False	False
+249	249	NUM	CD	appos	Verbascum		False	False	False
+,	,	PUNCT	,	punct	duplinensis		False	True	False
+250	250	NUM	CD	nummod	virgatum		False	False	False
+virgatum	virgatum	X	FW	appos	duplinensis		True	False	False
+....	....	PUNCT	:	punct	duplinensis		False	True	False
+249	249	NUM	CD	dep	agrestis		False	False	False
+,	,	PUNCT	,	punct	agrestis		False	True	False
+250	250	NUM	CD	nummod	agrestis		False	False	False
+Veronica	Veronica	PROPN	NNP	compound	agrestis	TAXA	True	False	False
+agrestis	agrestis	PROPN	NNP	appos	duplinensis	TAXA	True	False	False
+260	260	NUM	CD	appos	agrestis		False	False	False
+,	,	PUNCT	,	punct	duplinensis		False	True	False
+262	262	NUM	CD	nummod	americana		False	False	False
+americana	americana	PROPN	NNP	appos	duplinensis		True	False	False
+261	261	NUM	CD	appos	americana		False	False	False
+,	,	PUNCT	,	punct	duplinensis		False	True	False
+262	262	NUM	CD	nummod	arvensis		False	False	False
+arvensis	arvensis	PROPN	NNP	appos	duplinensis		True	False	False
+.	.	PUNCT	.	punct	duplinensis		False	True	False
+!	!	PUNCT	.	punct	duplinensis		False	True	False
+.	.	PUNCT	.	punct	duplinensis		False	True	False
+"
+"	"
+"	SPACE	_SP	prep	*		False	False	False
+261	261	NUM	CD	appos	*		False	False	False
+,	,	PUNCT	,	punct	261		False	True	False
+262	262	NUM	CD	nummod	glandifera	CARDINAL	False	False	False
+glandifera	glandifera	PROPN	NNP	appos	261		True	False	False
+261,263	261,263	NUM	CD	nummod	hederaefolia		False	False	False
+hederaefolia	hederaefolia	PROPN	NNP	appos	glandifera		True	False	False
+260	260	NUM	CD	nummod	officinalis		False	False	False
+officinalis	officinalis	PROPN	NNP	appos	glandifera		True	False	False
+260	260	NUM	CD	appos	glandifera		False	False	False
+-	-	SYM	SYM	appos	glandifera		False	True	False
+262	262	NUM	CD	nummod	peregrina		False	False	False
+peregrina	peregrina	PROPN	NNP	appos	glandifera		True	False	False
+261	261	NUM	CD	appos	glandifera		False	False	False
+,	,	PUNCT	,	punct	261		False	True	False
+262	262	NUM	CD	nummod	p.	CARDINAL	False	False	False
+p.	p.	NOUN	NN	appos	261		False	False	False
+xalapensis	xalapensis	PROPN	NNP	appos	p.		True	False	False
+261	261	NUM	CD	appos	261		False	False	False
+,	,	PUNCT	,	punct	261		False	True	False
+262	262	NUM	CD	nummod	persica	CARDINAL	False	False	False
+persica	persica	PROPN	NNP	appos	261		True	False	False
+261	261	NUM	CD	appos	persica		False	False	False
+,	,	PUNCT	,	punct	261		False	True	False
+262	262	NUM	CD	nummod	serpyllifolia	CARDINAL	False	False	False
+serpyllifolia	serpyllifolia	PROPN	NNP	appos	261		True	False	False
+261	261	NUM	CD	appos	serpyllifolia		False	False	False
+,	,	PUNCT	,	punct	261		False	True	False
+262	262	NUM	CD	nummod	virginica	CARDINAL	False	False	False
+virginica	virginica	PROPN	NNP	appos	261		True	False	False
+.259	.259	NUM	CD	nummod	xalapensis		False	False	False
+,	,	PUNCT	,	punct	xalapensis		False	True	False
+260	260	NUM	CD	nummod	xalapensis	CARDINAL	False	False	False
+xalapensis	xalapensis	PROPN	NNP	appos	virginica		True	False	False
+262	262	NUM	CD	nummod	album		False	False	False
+Veronicastrum	Veronicastrum	PROPN	NNP	compound	album	TAXA	True	False	False
+album	album	PROPN	NNP	appos	xalapensis	TAXA	True	False	False
+260	260	NUM	CD	nummod	virginicum		False	False	False
+virginicum	virginicum	PROPN	NNP	appos	album		True	False	False
+260	260	NUM	CD	nummod	parietalis		False	False	False
+Vertigo	Vertigo	PROPN	NNP	compound	parietalis	TAXA	True	False	False
+modesta	modesta	PROPN	NNP	compound	parietalis	TAXA	True	False	False
+parietalis	parietalis	PROPN	NNP	appos	virginicum	TAXA	True	False	False
+204	204	NUM	CD	nummod	Vinotifer		False	False	False
+Vinotifer	Vinotifer	PROPN	NNP	appos	261		True	False	False
+210	210	NUM	CD	nummod	alaskana		False	False	False
+Vitrina	Vitrina	PROPN	NNP	compound	alaskana	TAXA	True	False	False
+alaskana	alaskana	PROPN	NNP	appos	Vinotifer	TAXA	True	False	False
+204	204	NUM	CD	nummod	cancila		False	False	False
+Xenentodon	Xenentodon	PROPN	NNP	compound	cancila	TAXA	True	False	False
+cancila	cancila	PROPN	NNP	appos	alaskana	TAXA	True	False	False
+6	6	NUM	CD	nummod	venezuelensis		False	False	False
+Xenodisc	Xenodisc	PROPN	NNP	compound	venezuelensis		True	False	False
+ula	ula	PROPN	NNP	nmod	venezuelensis		True	False	False
+venezuelensis	venezuelensis	PROPN	NNP	appos	cancila		True	False	False
+206	206	NUM	CD	nummod	magnicornis		False	False	False
+Zabrachia	Zabrachia	PROPN	NNP	compound	magnicornis	TAXA	True	False	False
+magnicornis	magnicornis	PROPN	NNP	appos	venezuelensis	TAXA	True	False	False
+171	171	NUM	CD	nummod	dispar		False	False	False
+Zenarchopterus	Zenarchopterus	PROPN	NNP	compound	dispar	TAXA	True	False	False
+dispar	dispar	PROPN	NNP	appos	magnicornis	TAXA	True	False	False
+9	9	NUM	CD	nummod	hendersoni		False	False	False
+hendersoni	hendersoni	PROPN	NNP	appos	dispar		True	False	False
+8	8	NUM	CD	nummod	philippinus		False	False	False
+philippinus	philippinus	PROPN	NNP	appos	cancila		True	False	False
+9	9	NUM	CD	nummod	arborea		False	False	False
+Zonitoides	Zonitoides	PROPN	NNP	compound	arborea	TAXA	True	False	False
+arborea	arborea	NOUN	NN	appos	philippinus	TAXA	True	False	False
+202	202	NUM	CD	nummod	1919		False	False	False
+1919	1919	NUM	CD	appos	Vinotifer		False	False	False
+.	.	PUNCT	.	punct	261		False	True	False
+]	]	PUNCT	.	punct	261		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+331	331	NUM	CD	nummod	INDEX		False	False	False
+GENERAL	general	ADJ	JJ	amod	INDEX		True	False	False
+INDEX	INDEX	PROPN	NNP	npadvmod	"
+"		True	False	False
+.	.	PUNCT	.	punct	INDEX		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	INDEX		False	False	False
+1919	1919	NUM	CD	nummod	Additions		False	False	False
+Additions	addition	NOUN	NNS	appos	INDEX		True	False	False
+to	to	ADP	IN	prep	Additions		True	False	True
+the	the	DET	DT	det	IVIuseum		True	False	True
+IVIuseum	IVIuseum	PROPN	NNP	pobj	to	ORG	True	False	False
+,	,	PUNCT	,	punct	Additions		False	True	False
+317	317	NUM	CD	appos	Additions	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Additions		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	INDEX		False	False	False
+Bender	Bender	PROPN	NNP	appos	INDEX	PERSON	True	False	False
+,	,	PUNCT	,	punct	Bender		False	True	False
+Charles	Charles	PROPN	NNP	compound	J.	PERSON	True	False	False
+J.	J.	PROPN	NNP	appos	Bender	PERSON	False	False	False
+"
+"	"
+"	SPACE	_SP	compound	Announcement		False	False	False
+Announcement	announcement	NOUN	NN	ROOT	Announcement		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+54	54	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Announcement		False	False	False
+Berry	Berry	PROPN	NNP	appos	Announcement	PERSON	True	False	False
+,	,	PUNCT	,	punct	Berry		False	True	False
+S.	S.	PROPN	NNP	compound	StiDman	PERSON	False	False	False
+StiDman	StiDman	PROPN	NNP	appos	Berry	PERSON	True	False	False
+.	.	PUNCT	.	punct	Berry		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	MoUusca		False	False	False
+MoUusca	MoUusca	PROPN	NNP	ROOT	MoUusca	PERSON	True	False	False
+of	of	ADP	IN	prep	MoUusca		True	False	True
+Glacier	Glacier	PROPN	NNP	compound	Park	LOC	True	False	False
+National	National	PROPN	NNP	compound	Park	LOC	True	False	False
+Park	Park	PROPN	NNP	pobj	of	LOC	True	False	False
+,	,	PUNCT	,	punct	Park		False	True	False
+Montana	Montana	PROPN	NNP	npadvmod	Park	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	MoUusca		False	True	False
+Plates	plate	NOUN	NNS	appos	MoUusca		True	False	False
+IX	ix	NUM	CD	nummod	Plates	CARDINAL	True	False	False
+,	,	PUNCT	,	punct	Plates		False	True	False
+X	x	NUM	CD	nummod	Plates	CARDINAL	True	False	False
+)	)	PUNCT	-RRB-	punct	Plates		False	True	False
+,	,	PUNCT	-RRB-	punct	MoUusca		False	True	False
+195	195	NUM	CD	appos	MoUusca	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	MoUusca		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Biological	biological	ADJ	JJ	amod	Section		True	False	False
+and	and	CCONJ	CC	cc	Biological		True	False	True
+Microscopical	microscopical	ADJ	JJ	conj	Biological		True	False	False
+Section	Section	PROPN	NNP	npadvmod	"
+"		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Section		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+312	312	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Blanchard		False	False	False
+Blanchard	Blanchard	PROPN	NNP	ROOT	Blanchard	PERSON	True	False	False
+,	,	PUNCT	,	punct	Blanchard		False	True	False
+Harriet	Harriet	PROPN	NNP	appos	Blanchard	PERSON	True	False	False
+.	.	PUNCT	.	punct	Blanchard		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Announcement		False	False	False
+Announcement	announcement	NOUN	NN	ROOT	Announcement		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+207	207	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Blanchard		False	False	False
+Blanchard	Blanchard	PROPN	NNP	ROOT	Blanchard	PERSON	True	False	False
+,	,	PUNCT	,	punct	Blanchard		False	True	False
+Raphael	Raphael	PROPN	NNP	appos	Blanchard	PERSON	True	False	False
+.	.	PUNCT	.	punct	Blanchard		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Blanchard		False	False	False
+Announcement	announcement	NOUN	NN	appos	Blanchard		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+54	54	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Blanchard		False	False	False
+Botanical	Botanical	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	appos	Blanchard		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Blanchard		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+314	314	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Blanchard		False	False	False
+Boyer	Boyer	PROPN	NNP	nmod	Report	PERSON	True	False	False
+,	,	PUNCT	,	punct	Boyer		False	True	False
+Charles	Charles	PROPN	NNP	compound	S.	PERSON	True	False	False
+S.	S.	PROPN	NNP	appos	Boyer	PERSON	False	False	False
+Report	Report	PROPN	NNP	appos	Blanchard	PERSON	True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section	ORG	True	False	True
+Biological	biological	ADJ	JJ	amod	Section	ORG	True	False	False
+and	and	CCONJ	CC	cc	Biological	ORG	True	False	True
+Microscopical	Microscopical	PROPN	NNP	conj	Biological	ORG	True	False	False
+Section	Section	PROPN	NNP	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+312	312	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Blanchard		False	False	False
+Bullock	Bullock	PROPN	NNP	appos	Blanchard	PERSON	True	False	False
+,	,	PUNCT	,	punct	Bullock		False	True	False
+David	David	PROPN	NNP	compound	Jayne	PERSON	True	False	False
+Jayne	Jayne	PROPN	NNP	appos	Bullock	PERSON	True	False	False
+.	.	PUNCT	.	punct	Bullock		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Blanchard		False	False	False
+Announcement	announcement	NOUN	NN	appos	Blanchard		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+121	121	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Blanchard		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Blanchard		False	False	False
+Caziot	Caziot	PROPN	NNP	appos	Blanchard	PERSON	True	False	False
+,	,	PUNCT	,	punct	Caziot		False	True	False
+E.	E.	PROPN	NNP	prep	Blanchard		False	False	False
+SynonjTnic	SynonjTnic	PROPN	NNP	compound	study		True	False	False
+study	study	NOUN	NN	appos	Blanchard		True	False	False
+on	on	ADP	IN	prep	study		True	False	True
+the	the	DET	DT	det	moUusks		True	False	True
+moUusks	mouusk	NOUN	NNS	pobj	on		True	False	False
+of	of	ADP	IN	prep	moUusks		True	False	True
+the	the	DET	DT	det	Maritimes	ORG	True	False	True
+Departement	Departement	PROPN	NNP	nmod	Maritimes	ORG	True	False	False
+des	des	X	FW	nmod	Maritimes	ORG	True	False	False
+Alpes	Alpes	PROPN	NNP	compound	Maritimes	ORG	True	False	False
+-	-	PUNCT	HYPH	punct	Maritimes	ORG	False	True	False
+Maritimes	Maritimes	PROPN	NNP	pobj	of	ORG	True	False	False
+mentioned	mention	VERB	VBN	acl	study		True	False	False
+by	by	ADP	IN	agent	mentioned		True	False	True
+Antoine	Antoine	PROPN	NNP	compound	Risso	PERSON	True	False	False
+Risso	Risso	PROPN	NNP	pobj	by	PERSON	True	False	False
+,	,	PUNCT	,	punct	study		False	True	False
+with	with	ADP	IN	prep	study		True	False	True
+notes	note	NOUN	NNS	pobj	with		True	False	False
+on	on	ADP	IN	prep	notes		True	False	True
+their	their	PRON	PRP$	poss	classification		True	False	True
+classification	classification	NOUN	NN	pobj	on		True	False	False
+,	,	PUNCT	,	punct	study		False	True	False
+156	156	NUM	CD	appos	study	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Blanchard		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Committees	committee	NOUN	NNS	ROOT	Committees		True	False	False
+for	for	ADP	IN	prep	Committees		True	False	True
+1920	1920	NUM	CD	pobj	for	DATE	False	False	False
+,	,	PUNCT	,	punct	Committees		False	True	False
+316	316	NUM	CD	appos	Committees	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Committees		False	True	False
+"
+"	"
+"	SPACE	_SP	nmod	Secretary		False	False	False
+Corresponding	correspond	VERB	VBG	amod	Secretary		True	False	False
+Secretary	Secretary	PROPN	NNP	ROOT	Secretary		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Secretary		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	report		False	True	False
+301	301	NUM	CD	appos	report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Secretary		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Council	Council	PROPN	NNP	ROOT	Council		True	False	False
+for	for	ADP	IN	prep	Council		True	False	True
+1920	1920	NUM	CD	pobj	for	DATE	False	False	False
+,	,	PUNCT	,	punct	315		False	True	False
+315	315	NUM	CD	appos	Council	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	315		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Council		False	False	False
+Cresson	Cresson	PROPN	NNP	nmod	Jr.	PERSON	True	False	False
+,	,	PUNCT	,	punct	Cresson		False	True	False
+Ezra	Ezra	PROPN	NNP	compound	T.	PERSON	True	False	False
+T.	T.	PROPN	NNP	appos	Cresson	PERSON	False	False	False
+,	,	PUNCT	,	punct	Cresson	PERSON	False	True	False
+Jr.	Jr.	PROPN	NNP	appos	Council		False	False	False
+Dipterological	dipterological	ADJ	JJ	amod	notes		True	False	False
+notes	note	NOUN	NNS	ROOT	notes		True	False	False
+and	and	CCONJ	CC	cc	notes		True	False	True
+descriptions	description	NOUN	NNS	conj	notes		True	False	False
+,	,	PUNCT	,	punct	notes		False	True	False
+171	171	NUM	CD	appos	notes	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	notes		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Report		False	False	False
+Report	report	NOUN	NN	ROOT	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Entomological	Entomological	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+313	313	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Cresson	Cresson	PROPN	NNP	ROOT	Cresson	PERSON	True	False	False
+,	,	PUNCT	,	punct	Cresson		False	True	False
+George	George	PROPN	NNP	compound	B.	PERSON	True	False	False
+B.	B.	PROPN	NNP	appos	Cresson	PERSON	False	False	False
+"
+"	"
+"	SPACE	_SP	punct	Cresson	PERSON	False	False	False
+Announcement	announcement	NOUN	NN	appos	Cresson	PERSON	True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	Announcement		False	True	False
+207	207	NUM	CD	appos	Announcement	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Cresson		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Cunningham		False	False	False
+Cunningham	Cunningham	PROPN	NNP	ROOT	Cunningham	PERSON	True	False	False
+,	,	PUNCT	,	punct	Cunningham		False	True	False
+Francis	Francis	PROPN	NNP	compound	J.	PERSON	True	False	False
+J.	J.	PROPN	NNP	appos	Cunningham	PERSON	False	False	False
+Announcement	announcement	NOUN	NN	appos	Cunningham		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	Announcement		False	True	False
+54	54	NUM	CD	appos	Announcement	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Curators	curator	NOUN	NNS	attr	"
+"		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Curators		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+306	306	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Deaths	death	NOUN	NNS	attr	"
+"		True	False	False
+announced	announce	VERB	VBN	acl	Deaths		True	False	False
+,	,	PUNCT	,	punct	Deaths		False	True	False
+54	54	NUM	CD	appos	Deaths	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	54		False	True	False
+121	121	NUM	CD	appos	54	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Deaths		False	True	False
+207	207	NUM	CD	appos	Deaths	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Deaths		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Eckfeldt	Eckfeldt	PROPN	NNP	ROOT	Eckfeldt	PERSON	True	False	False
+,	,	PUNCT	,	punct	Eckfeldt		False	True	False
+John	John	PROPN	NNP	compound	W.	PERSON	True	False	False
+W.	W.	PROPN	NNP	appos	Eckfeldt	PERSON	False	False	False
+Report	report	NOUN	NN	appos	Eckfeldt	PERSON	True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Botanical	Botanical	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+314	314	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Eckfeldt		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Elections	election	NOUN	NNS	attr	"
+"		True	False	False
+in	in	ADP	IN	prep	Elections		True	False	True
+1920	1920	NUM	CD	pobj	in	DATE	False	False	False
+,	,	PUNCT	,	punct	Elections		False	True	False
+317	317	NUM	CD	appos	Elections	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Elections		False	True	False
+"
+"	"
+"	SPACE	_SP	det	Section		False	False	False
+Entomological	Entomological	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	ROOT	Section		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Section		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	report		False	True	False
+313	313	NUM	CD	appos	report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Fowler	Fowler	PROPN	NNP	ROOT	Fowler	PERSON	True	False	False
+,	,	PUNCT	,	punct	Fowler		False	True	False
+Henry	Henry	PROPN	NNP	compound	W.	PERSON	True	False	False
+W.	W.	PROPN	NNP	appos	Fowler	PERSON	False	False	False
+Notes	note	NOUN	NNS	appos	Fowler		True	False	False
+on	on	ADP	IN	prep	Notes		True	False	True
+synentognathous	synentognathous	ADJ	JJ	amod	fishes		True	False	False
+fishes	fish	NOUN	NNS	pobj	on		True	False	False
+,	,	PUNCT	,	punct	Notes		False	True	False
+2	2	NUM	CD	nummod	Notes	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Notes		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+A	a	DET	DT	det	fish		True	False	True
+new	new	ADJ	JJ	amod	fish		True	False	False
+siluroid	siluroid	ADJ	JJ	amod	fish		True	False	False
+fish	fish	NOUN	NN	dobj	"
+"		True	False	False
+of	of	ADP	IN	prep	fish		True	False	True
+the	the	DET	DT	det	Cyclopium		True	False	True
+genus	genus	NOUN	NN	compound	Cyclopium		True	False	False
+Cyclopium	Cyclopium	PROPN	NNP	pobj	of	TAXA	True	False	False
+from	from	ADP	IN	prep	fish		True	False	True
+Colombia	Colombia	PROPN	NNP	pobj	from	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	fish		False	True	False
+Plate	Plate	PROPN	NNP	appos	fish		True	False	False
+VIII	viii	NUM	CD	nummod	Plate		True	False	False
+)	)	PUNCT	-RRB-	punct	Plate		False	True	False
+,	,	PUNCT	-RRB-	punct	fish		False	True	False
+125	125	NUM	CD	appos	fish	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	fish		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Notes	note	NOUN	NNS	attr	"
+"		True	False	False
+on	on	ADP	IN	prep	Notes		True	False	True
+tropical	tropical	ADJ	JJ	amod	fishes		True	False	False
+American	american	ADJ	JJ	amod	fishes	NORP	True	False	False
+fishes	fish	NOUN	NNS	pobj	on		True	False	False
+,	,	PUNCT	,	punct	Notes		False	True	False
+128	128	NUM	CD	appos	Notes	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Notes		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Notes	note	NOUN	NNS	attr	"
+"		True	False	False
+on	on	ADP	IN	prep	Notes		True	False	True
+New	New	PROPN	NNP	nmod	Jersey	GPE	True	False	False
+Jersey	Jersey	PROPN	NNP	nmod	fishes	GPE	True	False	False
+,	,	PUNCT	,	punct	Jersey		False	True	False
+Pennsylvania	Pennsylvania	PROPN	NNP	conj	Jersey	GPE	True	False	False
+,	,	PUNCT	,	punct	Pennsylvania		False	True	False
+and	and	CCONJ	CC	cc	Pennsylvania		True	False	True
+Virginia	Virginia	PROPN	NNP	conj	Pennsylvania	GPE	True	False	False
+fishes	fish	NOUN	NNS	pobj	on		True	False	False
+,	,	PUNCT	,	punct	Notes		False	True	False
+292	292	NUM	CD	appos	Notes	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Notes		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Gardner		False	False	False
+Gardner	Gardner	PROPN	NNP	ROOT	Gardner	PERSON	True	False	False
+,	,	PUNCT	,	punct	Gardner		False	True	False
+Julia	Julia	PROPN	NNP	compound	A.	PERSON	True	False	False
+A.	A.	PROPN	NNP	conj	Gardner	PERSON	False	False	False
+,	,	PUNCT	,	punct	Gardner		False	True	False
+and	and	CCONJ	CC	cc	Gardner		True	False	True
+T.	T.	PROPN	NNP	compound	Aldrich	PERSON	False	False	False
+H.	H.	PROPN	NNP	compound	Aldrich	PERSON	False	False	False
+Aldrich	Aldrich	PROPN	NNP	conj	Gardner	PERSON	True	False	False
+•	•	PUNCT	``	punct	Mollusca		False	True	False
+Mollusca	Mollusca	PROPN	NNP	conj	Gardner	TAXA	True	False	False
+of	of	ADP	IN	prep	Mollusca		True	False	True
+the	the	DET	DT	det	Miocene	DATE	True	False	True
+Upper	upper	ADJ	JJ	amod	Miocene	DATE	True	False	False
+Miocene	Miocene	PROPN	NNP	pobj	of	DATE	True	False	False
+of	of	ADP	IN	prep	Miocene	DATE	True	False	True
+South	South	PROPN	NNP	compound	Carolina	DATE	True	False	False
+Carolina	Carolina	PROPN	NNP	pobj	of	DATE	True	False	False
+(	(	PUNCT	-LRB-	punct	Mollusca		False	True	False
+Plates	Plates	PROPN	NNP	appos	Mollusca		True	False	False
+I	i	NUM	CD	prep	Mollusca		True	False	True
+-	-	SYM	SYM	punct	IV		False	True	False
+IV	iv	NUM	CD	prep	I		True	False	False
+)	)	PUNCT	-RRB-	punct	Mollusca		False	True	False
+,	,	PUNCT	-RRB-	punct	Mollusca		False	True	False
+17	17	NUM	CD	nummod	Mollusca	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Mollusca		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Gardner		False	False	False
+Godman	Godman	PROPN	NNP	appos	Gardner	PERSON	True	False	False
+,	,	PUNCT	,	punct	Godman		False	True	False
+Frederick	Frederick	PROPN	NNP	compound	D.	PERSON	True	False	False
+D.	D.	PROPN	NNP	appos	Godman	PERSON	False	False	False
+Announcement	announcement	NOUN	NN	ROOT	Announcement		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	Announcement		False	True	False
+121	121	NUM	CD	appos	Announcement	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Harrison		False	False	False
+Harrison	Harrison	PROPN	NNP	ROOT	Harrison	PERSON	True	False	False
+,	,	PUNCT	,	punct	Harrison		False	True	False
+George	George	PROPN	NNP	compound	L.	PERSON	True	False	False
+L.	L.	PROPN	NNP	appos	Harrison	PERSON	False	False	False
+,	,	PUNCT	,	punct	Harrison	PERSON	False	True	False
+Jr.	Jr.	PROPN	NNP	appos	Harrison		False	False	False
+Elected	elect	VERB	VBN	acl	Harrison		True	False	False
+a	a	DET	DT	det	member		True	False	True
+member	member	NOUN	NN	oprd	Elected		True	False	False
+of	of	ADP	IN	prep	member		True	False	True
+the	the	DET	DT	det	Council		True	False	True
+Council	Council	PROPN	NNP	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	Elected		False	True	False
+16	16	NUM	CD	dep	Elected	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Harrison		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Harrison		False	False	False
+Harrison	Harrison	PROPN	NNP	ROOT	Harrison	PERSON	True	False	False
+,	,	PUNCT	,	punct	Harrison		False	True	False
+Thomas	Thomas	PROPN	NNP	compound	Skelton	PERSON	True	False	False
+Skelton	Skelton	PROPN	NNP	appos	Harrison	PERSON	True	False	False
+.	.	PUNCT	.	punct	Harrison		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Announcement		False	False	False
+Announcement	announcement	NOUN	NN	ROOT	Announcement		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+207	207	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Jordan	Jordan	PROPN	NNP	ROOT	Jordan	PERSON	True	False	False
+,	,	PUNCT	,	punct	Jordan		False	True	False
+David	David	PROPN	NNP	compound	Starr	PERSON	True	False	False
+Starr	Starr	PROPN	NNP	appos	Jordan	PERSON	True	False	False
+.	.	PUNCT	.	punct	Jordan		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	genera		False	False	False
+New	new	ADJ	JJ	amod	genera		True	False	False
+genera	genus	NOUN	NNS	ROOT	genera		True	False	False
+of	of	ADP	IN	prep	genera		True	False	True
+fossil	fossil	ADJ	JJ	amod	fishes		True	False	False
+fishes	fish	NOUN	NNS	pobj	of		True	False	False
+from	from	ADP	IN	prep	fishes		True	False	True
+Brazil	Brazil	PROPN	NNP	pobj	from	GPE	True	False	False
+,	,	PUNCT	,	punct	genera		False	True	False
+208	208	NUM	CD	appos	genera	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	genera		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Jordan		False	False	False
+Jordan	Jordan	PROPN	NNP	ROOT	Jordan	PERSON	True	False	False
+,	,	PUNCT	,	punct	Jordan		False	True	False
+David	David	PROPN	NNP	compound	Starr	PERSON	True	False	False
+Starr	Starr	PROPN	NNP	conj	Jordan	PERSON	True	False	False
+,	,	PUNCT	,	punct	Starr		False	True	False
+and	and	CCONJ	CC	cc	Starr		True	False	True
+Masamitsu	Masamitsu	PROPN	NNP	compound	Oshima	PERSON	True	False	False
+Oshima	Oshima	PROPN	NNP	conj	Starr	PERSON	True	False	False
+.	.	PUNCT	.	punct	Jordan		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Salmo	Salmo	PROPN	NNP	compound	formosanus	TAXA	True	False	False
+formosanus	formosanus	NOUN	NN	attr	"
+"	TAXA	True	False	False
+,	,	PUNCT	,	punct	formosanus		False	True	False
+a	a	DET	DT	det	trout		True	False	True
+new	new	ADJ	JJ	amod	trout		True	False	False
+trout	trout	NOUN	NN	appos	formosanus		True	False	False
+from	from	ADP	IN	prep	trout		True	False	True
+the	the	DET	DT	det	streams		True	False	True
+mountain	mountain	NOUN	NN	compound	streams		True	False	False
+streams	stream	NOUN	NNS	pobj	from	HABITAT	True	False	False
+of	of	ADP	IN	prep	streams		True	False	True
+Formosa	Formosa	PROPN	NNP	pobj	of	LOC	True	False	False
+,	,	PUNCT	,	punct	formosanus		False	True	False
+122	122	NUM	CD	appos	formosanus	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	formosanus		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Keelev		False	False	False
+Keelev	Keelev	PROPN	NNP	ROOT	Keelev	PERSON	True	False	False
+,	,	PUNCT	,	punct	Keelev		False	True	False
+F.	F.	PROPN	NNP	compound	J.	PERSON	False	False	False
+J.	J.	PROPN	NNP	appos	Keelev	PERSON	False	False	False
+"
+"	"
+"	SPACE	_SP	punct	Keelev	PERSON	False	False	False
+Report	report	NOUN	NN	appos	Keelev	PERSON	True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+Curator	curator	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	Curator		True	False	True
+the	the	DET	DT	det	Collections	ORG	True	False	True
+William	William	PROPN	NNP	compound	Vaux	ORG	True	False	False
+S.	S.	PROPN	NNP	compound	Vaux	ORG	False	False	False
+Vaux	Vaux	PROPN	NNP	compound	Collections	ORG	True	False	False
+Collections	Collections	PROPN	NNPS	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+312	312	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Keelev		False	False	False
+Report	Report	PROPN	NNP	appos	Keelev		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+Mineralogical	Mineralogical	PROPN	NNP	amod	Section	ORG	True	False	False
+and	and	CCONJ	CC	cc	Mineralogical	ORG	True	False	True
+Geological	geological	ADJ	JJ	conj	Mineralogical	ORG	True	False	False
+Section	Section	PROPN	NNP	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+314	314	NUM	CD	amod	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Keelev		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	report		False	False	False
+Librarian	librarian	NOUN	NN	dep	report		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	ROOT	report		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	of		False	True	False
+302	302	NUM	CD	pobj	of	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Staff		False	False	False
+Library	Library	PROPN	NNP	compound	Staff	ORG	True	False	False
+Staff	Staff	PROPN	NNP	ROOT	Staff		True	False	False
+,	,	PUNCT	,	punct	Staff		False	True	False
+316	316	NUM	CD	appos	Staff	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Staff		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Staff		False	False	False
+Mineralogical	mineralogical	ADJ	JJ	amod	Section		True	False	False
+and	and	CCONJ	CC	cc	Mineralogical		True	False	True
+Geological	geological	ADJ	JJ	conj	Mineralogical		True	False	False
+Section	Section	PROPN	NNP	appos	Staff		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Section		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	report		False	True	False
+314	314	NUM	CD	appos	report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Staff		False	False	False
+Moore	Moore	PROPN	NNP	appos	Staff	PERSON	True	False	False
+,	,	PUNCT	,	punct	Moore		False	True	False
+J.	J.	PROPN	NNP	compound	Percy	PERSON	False	False	False
+Percy	Percy	PROPN	NNP	appos	Moore	PERSON	True	False	False
+.	.	PUNCT	.	punct	Moore		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Staff		False	False	False
+Report	report	NOUN	NN	appos	Staff		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Secretarv		True	False	True
+Corresponding	correspond	VERB	VBG	amod	Secretarv		True	False	False
+Secretarv	Secretarv	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Staff		False	True	False
+301	301	NUM	CD	appos	Staff	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Staff		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Staff		False	False	False
+Museum	Museum	PROPN	NNP	compound	Staff		True	False	False
+Staff	Staff	PROPN	NNP	ROOT	Staff		True	False	False
+,	,	PUNCT	,	punct	Staff		False	True	False
+316	316	NUM	CD	appos	Staff	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Staff		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Staff		False	False	False
+Nolan	Nolan	PROPN	NNP	appos	Staff	PERSON	True	False	False
+,	,	PUNCT	,	punct	Nolan		False	True	False
+Edward	Edward	PROPN	NNP	compound	J.	PERSON	True	False	False
+J.	J.	PROPN	NNP	appos	Nolan	PERSON	False	False	False
+"
+"	"
+"	SPACE	_SP	punct	Staff	PERSON	False	False	False
+Report	report	NOUN	NN	appos	Staff	PERSON	True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+Recording	Recording	PROPN	NNP	compound	Secretary		True	False	False
+Secretary	Secretary	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+300	300	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Staff		False	False	False
+Report	report	NOUN	NN	appos	Staff		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Librarian		True	False	True
+Librarian	Librarian	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+302	302	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Staff		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Staff		False	False	False
+Officers	Officers	PROPN	NNP	appos	Staff		True	False	False
+,	,	PUNCT	,	punct	Officers		False	True	False
+Councillors	councillor	NOUN	NNS	conj	Officers		True	False	False
+,	,	PUNCT	,	punct	Councillors		False	True	False
+and	and	CCONJ	CC	cc	Councillors		True	False	True
+Committee	Committee	PROPN	NNP	conj	Councillors	ORG	True	False	False
+on	on	ADP	IN	prep	Committee	ORG	True	False	True
+Accounts	Accounts	PROPN	NNPS	pobj	on	ORG	True	False	False
+,	,	PUNCT	,	punct	Staff		False	True	False
+315	315	NUM	CD	appos	Staff	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Staff		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Section		False	False	False
+Ornithological	ornithological	ADJ	JJ	amod	Section		True	False	False
+Section	Section	PROPN	NNP	ROOT	Section		True	False	False
+,	,	PUNCT	,	punct	report		False	True	False
+report	report	NOUN	NN	appos	Section		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	report		False	True	False
+314	314	NUM	CD	appos	report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Section		False	False	False
+Pennell	Pennell	PROPN	NNP	appos	Section	PERSON	True	False	False
+,	,	PUNCT	,	punct	Pennell		False	True	False
+Francis	Francis	PROPN	NNP	compound	Scrophulariaceise	PERSON	True	False	False
+W.	W.	PROPN	NNP	compound	Scrophulariaceise	PERSON	False	False	False
+Scrophulariaceise	Scrophulariaceise	PROPN	NNP	appos	Pennell	PERSON	True	False	False
+of	of	ADP	IN	prep	Scrophulariaceise		True	False	True
+the	the	DET	DT	det	States		True	False	True
+southeastern	southeastern	ADJ	JJ	amod	States		True	False	False
+United	United	PROPN	NNP	compound	States	GPE	True	False	False
+States	States	PROPN	NNP	pobj	of	GPE	True	False	False
+,	,	PUNCT	,	punct	Pennell		False	True	False
+224	224	NUM	CD	appos	Pennell	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Pennell		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Pilsbry		False	False	False
+Pilsbry	Pilsbry	PROPN	NNP	ROOT	Pilsbry	PERSON	True	False	False
+,	,	PUNCT	,	punct	Pilsbry		False	True	False
+Henry	Henry	PROPN	NNP	compound	A.	PERSON	True	False	False
+A.	A.	PROPN	NNP	appos	Pilsbry	PERSON	False	False	False
+"
+"	"
+"	SPACE	_SP	conj	Pilsbry	PERSON	False	False	False
+Oyster	Oyster	PROPN	NNP	compound	farms	PERSON	True	False	False
+farms	farm	NOUN	NNS	appos	Pilsbry		True	False	False
+of	of	ADP	IN	prep	farms		True	False	True
+Delaware	Delaware	PROPN	NNP	compound	Bay	LOC	True	False	False
+Bay	Bay	PROPN	NNP	pobj	of	LOC	True	False	False
+,	,	PUNCT	,	punct	farms		False	True	False
+54	54	NUM	CD	appos	farms	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Pilsbry		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+A	a	DET	DT	det	snail		True	False	True
+peculiar	peculiar	ADJ	JJ	amod	snail		True	False	False
+Venezuelan	venezuelan	ADJ	JJ	amod	snail	NORP	True	False	False
+land	land	NOUN	NN	compound	snail		True	False	False
+snail	snail	NOUN	NN	dobj	"
+"		True	False	False
+,	,	PUNCT	,	punct	snail		False	True	False
+206	206	NUM	CD	appos	snail	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	snail		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Mollusca	mollusca	NOUN	NN	attr	"
+"	TAXA	True	False	False
+from	from	ADP	IN	prep	Mollusca		True	False	True
+Central	Central	PROPN	NNP	compound	America	LOC	True	False	False
+America	America	PROPN	NNP	pobj	from	LOC	True	False	False
+and	and	CCONJ	CC	cc	America		True	False	True
+Mexico	Mexico	PROPN	NNP	conj	America	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	Mollusca		False	True	False
+Plate	Plate	PROPN	NNP	appos	Mollusca		True	False	False
+XI	xi	NUM	CD	nummod	Plate		True	False	False
+)	)	PUNCT	-RRB-	punct	Mollusca		False	True	False
+,	,	PUNCT	-RRB-	punct	Mollusca		False	True	False
+212	212	NUM	CD	appos	Mollusca	CARDINAL	False	False	False
+.	.	PUNCT	.	appos	Mollusca		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Mollusca		False	False	False
+Recording	record	VERB	VBG	compound	Secretar}^		True	False	False
+Secretar}^	Secretar}^	PROPN	NNP	dep	report		False	False	False
+report	report	NOUN	NN	appos	Mollusca		True	False	False
+of	of	ADP	IN	prep	report		True	False	True
+,	,	PUNCT	,	punct	report		False	True	False
+300	300	NUM	CD	nummod	report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Mollusca		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Rehn		False	False	False
+Rehn	Rehn	PROPN	NNP	ROOT	Rehn	PERSON	True	False	False
+,	,	PUNCT	,	punct	Rehn		False	True	False
+James	James	PROPN	NNP	compound	G.	PERSON	True	False	False
+A.	A.	PROPN	NNP	compound	G.	PERSON	False	False	False
+G.	G.	PROPN	NNP	appos	Rehn	PERSON	False	False	False
+A	a	DET	DT	det	study		True	False	True
+study	study	NOUN	NN	nmod	Rehn		True	False	False
+of	of	ADP	IN	prep	study		True	False	True
+the	the	DET	DT	det	genus		True	False	True
+orthopterous	orthopterous	ADJ	JJ	amod	genus		True	False	False
+genus	genus	NOUN	NN	pobj	of		True	False	False
+Mermiria	Mermiria	PROPN	NNP	compound	Stal	TAXA	True	False	False
+Stal	Stal	PROPN	NNP	appos	genus		True	False	False
+(	(	PUNCT	-LRB-	punct	V		False	True	False
+Plates	Plates	PROPN	NNP	compound	V		True	False	False
+V	v	NOUN	NN	appos	study		True	False	False
+-	-	SYM	SYM	punct	V		False	True	False
+VII	vii	NUM	CD	nummod	V		True	False	False
+)	)	PUNCT	,	punct	V		False	True	False
+,	,	PUNCT	,	punct	study		False	True	False
+54	54	NUM	CD	appos	study	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	study		False	True	False
+55	55	NUM	CD	appos	study	CARDINAL	False	False	False
+.	.	PUNCT	.	appos	Rehn		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Rehn		False	False	False
+Report	report	NOUN	NN	appos	Rehn		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Biological	biological	ADJ	JJ	amod	Section		True	False	False
+and	and	CCONJ	CC	cc	Biological		True	False	True
+Microscopical	microscopical	ADJ	JJ	conj	Biological		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+312	312	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Rehn		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Rehn		False	False	False
+Report	report	NOUN	NN	appos	Rehn		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Botanical	Botanical	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+314	314	NUM	CD	amod	Report	CARDINAL	False	False	False
+.	.	NUM	CD	appos	Rehn		False	True	False
+"
+"	"
+"	SPACE	_SP	prep	Rehn		False	False	False
+332	332	NUM	CD	nummod	Rehn		False	False	False
+[	[	PUNCT	-LRB-	nmod	Report		False	True	False
+Dec	Dec	PROPN	NNP	nmod	Report	DATE	True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+Report	report	NOUN	NN	appos	Rehn		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Secretary		True	False	True
+Corresponding	Corresponding	PROPN	NNP	compound	Secretary		True	False	False
+Secretary	Secretary	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+301	301	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Rehn		False	False	False
+Report	report	NOUN	NN	appos	Rehn		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Curator		True	False	True
+Curator	curator	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	Curator		True	False	True
+the	the	DET	DT	det	Collections	ORG	True	False	True
+William	William	PROPN	NNP	compound	Vaux	ORG	True	False	False
+S.	S.	PROPN	NNP	compound	Vaux	ORG	False	False	False
+Vaux	Vaux	PROPN	NNP	compound	Collections	ORG	True	False	False
+Collections	Collections	PROPN	NNPS	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+312	312	NUM	CD	punct	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Report		False	False	False
+Report	report	NOUN	NN	ROOT	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Curators		True	False	True
+Curators	curator	NOUN	NNS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+306	306	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Report		False	False	False
+Report	report	NOUN	NN	appos	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Entomological	entomological	ADJ	JJ	compound	Section		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+313	313	NUM	CD	nummod	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Report		False	False	False
+Report	Report	PROPN	NNP	ROOT	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Librarian		True	False	True
+Librarian	librarian	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+302	302	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Report		False	False	False
+Report	Report	PROPN	NNP	appos	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Mineralogical	mineralogical	ADJ	JJ	amod	Section		True	False	False
+and	and	CCONJ	CC	cc	Mineralogical		True	False	True
+Geological	geological	ADJ	JJ	conj	Mineralogical		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+314	314	NUM	CD	nummod	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Report		False	False	False
+Report	Report	PROPN	NNP	ROOT	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Ornithological	Ornithological	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+314	314	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Report		False	False	False
+Report	Report	PROPN	NNP	appos	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Secretary		True	False	True
+Recording	Recording	PROPN	NNP	compound	Secretary		True	False	False
+Secretary	Secretary	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+300	300	NUM	CD	nummod	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Stevenson	Stevenson	PROPN	NNP	ROOT	Stevenson	PERSON	True	False	False
+,	,	PUNCT	,	punct	Stevenson		False	True	False
+William	William	PROPN	NNP	compound	Jr.	PERSON	True	False	False
+C	C	PROPN	NNP	nmod	Jr.	PERSON	True	False	False
+,	,	PUNCT	,	punct	Jr.	PERSON	False	True	False
+Jr.	Jr.	PROPN	NNP	appos	Stevenson	PERSON	False	False	False
+Announcement	announcement	NOUN	NN	appos	Stevenson		True	False	False
+of	of	ADP	IN	prep	Announcement		True	False	True
+death	death	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+,	,	PUNCT	,	punct	Announcement		False	True	False
+207	207	NUM	CD	nummod	Announcement	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Announcement		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Stevenson		False	False	False
+Stone	Stone	PROPN	NNP	appos	Stevenson	PERSON	True	False	False
+,	,	PUNCT	,	punct	Stone		False	True	False
+Witmer	Witmer	PROPN	NNP	appos	Stone	PERSON	True	False	False
+.	.	PUNCT	.	punct	Stone		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Report		False	False	False
+Report	Report	PROPN	NNP	ROOT	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Curators		True	False	True
+Curators	Curators	PROPN	NNPS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+306	306	NUM	CD	appos	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Report		False	False	False
+Report	Report	PROPN	NNP	appos	Report		True	False	False
+of	of	ADP	IN	prep	Report		True	False	True
+the	the	DET	DT	det	Section		True	False	True
+Ornithological	Ornithological	PROPN	NNP	compound	Section		True	False	False
+Section	Section	PROPN	NNP	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Report		False	True	False
+314	314	NUM	CD	nummod	Report	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Report		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Williams	Williams	PROPN	NNP	ROOT	Williams	PERSON	True	False	False
+,	,	PUNCT	,	punct	Williams		False	True	False
+Roswell	Roswell	PROPN	NNP	appos	Williams	PERSON	True	False	False
+C.	C.	PROPN	NNP	punct	Williams	PERSON	False	False	False
+,	,	PUNCT	,	punct	Williams	PERSON	False	True	False
+Jr.	Jr.	PROPN	NNP	appos	Williams	PERSON	False	False	False
+Elected	elect	VERB	VBN	acl	Williams		True	False	False
+a	a	DET	DT	det	member		True	False	True
+member	member	NOUN	NN	oprd	Elected		True	False	False
+of	of	ADP	IN	prep	member		True	False	True
+Council	Council	PROPN	NNP	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	Elected		False	True	False
+16	16	NUM	CD	dep	Elected	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	Williams		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Williams		False	False	False
+PLATE	plate	NOUN	NN	appos	Williams		True	False	False
+XI	xi	NUM	CD	nummod	PLATE		True	False	False
+.	.	PUNCT	.	punct	Williams		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Williams		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	appos	Williams		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+MOLLUSC	MOLLUSC	PROPN	NNP	compound	A		True	False	False
+A	A	PROPN	NNP	appos	Williams		True	False	True
+FROM	from	ADP	IN	prep	A		True	False	True
+CENTRAL	CENTRAL	PROPN	NNP	compound	AMERICA	LOC	True	False	False
+AMERICA	AMERICA	PROPN	NNP	pobj	FROM	LOC	True	False	False
+AND	and	CCONJ	CC	cc	AMERICA		True	False	True
+MEXICO	MEXICO	PROPN	NNP	conj	AMERICA	GPE	True	False	False
+.	.	PUNCT	.	punct	Williams		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Williams		False	False	False
+MBL	MBL	PROPN	NNP	compound	m		True	False	False
+WHUl	WHUl	PROPN	NNP	compound	LIBKAKY		True	False	False
+LIBKAKY	LIBKAKY	PROPN	NNP	appos	MBL		True	False	False
+liJH	liJH	PROPN	NNP	compound	K		True	False	False
+IflSK	IflSK	PROPN	NNP	compound	K		True	False	False
+K	K	PROPN	NNP	appos	LIBKAKY		True	False	False
+..	..	PUNCT	NFP	punct	MBL		False	True	False
+*	*	PUNCT	NFP	punct	MBL		False	True	False
+*	*	PUNCT	NFP	case	MBL		False	True	False
+•	•	PUNCT	``	punct	MBL		False	True	False
+m	m	NOUN	NN	appos	Williams		True	False	False
+:	:	PUNCT	:	punct	m		False	True	False
+•l	•l	PROPN	NNP	appos	m		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	Williams		False	False	False

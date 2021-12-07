@@ -1,0 +1,67 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOLLUSCA	ORG	True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOLLUSCA		True	False	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	appos	PILSBRY		True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO	GPE	True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF	GPE	True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	compound	XXVIIl		True	False	False
+XXVIIl	xxviil	NOUN	NN	pobj	"
+"		True	False	False
+.	.	PUNCT	.	punct	XXVIIl		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	attr	"
+"		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOI.LUSCA	ORG	True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOI.LUSCA		True	False	False
+MOI.LUSCA	MOI.LUSCA	PROPN	NNP	appos	PILSBRY		False	False	False
+OF	of	ADP	IN	prep	MOI.LUSCA		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO	GPE	True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF	GPE	True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	XXIX		False	False	False
+PLATE	plate	NOUN	NN	compound	XXIX		True	False	False
+XXIX	xxix	NOUN	NN	ROOT	XXIX		True	False	False
+.	.	PUNCT	.	punct	XXIX		False	True	False
+"
+"	"
+"	SPACE	_SP	nmod	PILSBRY		False	False	False
+^	^	PUNCT	NFP	punct	PILSBRY		False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	ROOT	PILSBRY		True	False	False
+:	:	PUNCT	:	punct	PILSBRY		False	True	False
+GABB	GABB	PROPN	NNP	poss	MOLLUSC		True	False	False
+'S	's	PART	POS	case	GABB		False	False	True
+TERTIARY	TERTIARY	PROPN	NNP	compound	MOLLUSC		True	False	False
+MOLLUSC	MOLLUSC	PROPN	NNP	compound	A		True	False	False
+A	A	PROPN	NNP	appos	PILSBRY		True	False	True
+OF	of	ADP	IN	prep	A		True	False	True
+SANTO	SANTO	PROPN	NNP	compound	DOMINGO	GPE	True	False	False
+DOMINGO	DOMINGO	PROPN	NNP	pobj	OF	GPE	True	False	False
+.	.	PUNCT	.	punct	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	dep	"
+"		True	False	False
+XXX	xxx	NOUN	NN	amod	PLATE		True	False	False
+.	.	PUNCT	.	punct	PLATE		False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False

@@ -1,0 +1,123 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+DONATIONS	donation	NOUN	NNS	ROOT	DONATIONS		True	False	False
+TO	to	PART	TO	prep	DONATIONS		True	False	True
+MUSEUM.^	museum.^	NOUN	NN	punct	DONATIONS		False	False	False
+Skins	skin	NOUN	NNS	nsubjpass	presented		True	False	False
+of	of	ADP	IN	prep	Skins		True	False	True
+the	the	DET	DT	det	Birds		True	False	True
+following	follow	VERB	VBG	amod	Birds		True	False	False
+Birds	bird	NOUN	NNS	pobj	of		True	False	False
+,	,	PUNCT	,	punct	Birds		False	True	False
+from	from	ADP	IN	prep	Birds		True	False	True
+Western	Western	PROPN	NNP	compound	Africa	LOC	True	False	False
+Africa	Africa	PROPN	NNP	pobj	from	LOC	True	False	False
+,	,	PUNCT	,	punct	Birds		False	True	False
+were	be	AUX	VBD	auxpass	presented		True	False	True
+presented	present	VERB	VBN	ROOT	presented		True	False	False
+by	by	ADP	IN	agent	presented		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Cassin		False	False	False
+Cassin	Cassin	PROPN	NNP	pobj	by	PERSON	True	False	False
+,	,	PUNCT	,	punct	presented		False	True	False
+viz	viz	X	FW	prep	presented		True	False	False
+:	:	PUNCT	:	punct	viz		False	True	False
+Chizasrhis	Chizasrhis	PROPN	NNP	compound	variegata	TAXA	True	False	False
+variegata	variegata	NOUN	NN	pobj	viz	TAXA	True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+Lauius	Lauius	PROPN	NNP	compound	cissoides	TAXA	True	False	False
+cissoides	cissoide	NOUN	NNS	appos	variegata	TAXA	True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+Centropus	Centropus	PROPN	NNP	compound	Senegalensis	TAXA	True	False	False
+Senegalensis	Senegalensis	PROPN	NNP	appos	variegata		True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+mollissimus	mollissimus	NOUN	NN	appos	variegata		True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+Pterocles	Pterocles	PROPN	NNP	compound	tricinctus	TAXA	True	False	False
+tricinctus	tricinctus	NOUN	NN	appos	variegata	TAXA	True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+Buphaga	Buphaga	PROPN	NNP	compound	Africana	TAXA	True	False	False
+Africana	Africana	PROPN	NNP	appos	variegata	TAXA	True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+Merops	Merops	PROPN	NNP	compound	hirundinacea	TAXA	True	False	False
+hirundinacea	hirundinacea	NOUN	NN	appos	variegata	TAXA	True	False	False
+,	,	PUNCT	,	punct	variegata		False	True	False
+Lamprotornis	Lamprotornis	PROPN	NNP	compound	leucogaster	TAXA	True	False	False
+leucogaster	leucogaster	NOUN	NN	appos	variegata	TAXA	True	False	False
+.	.	PUNCT	.	punct	presented		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+erythropterus	erythropterus	PROPN	NNP	attr	"
+"		True	False	False
+,	,	PUNCT	,	punct	erythropterus		False	True	False
+Cast	Cast	PROPN	NNP	appos	erythropterus		True	False	False
+or	or	CCONJ	CC	cc	Cast		True	False	True
+model	model	NOUN	NN	conj	Cast		True	False	False
+of	of	ADP	IN	prep	Cast		True	False	True
+the	the	DET	DT	det	stump		True	False	True
+stump	stump	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	stump		True	False	True
+a	a	DET	DT	det	tree		True	False	True
+fossil	fossil	NOUN	NN	compound	tree		True	False	False
+tree	tree	NOUN	NN	pobj	of	HABITAT	True	False	False
+,	,	PUNCT	,	punct	Cast		False	True	False
+found	find	VERB	VBN	acl	Cast		True	False	False
+near	near	SCONJ	IN	prep	found		True	False	False
+New	New	PROPN	NNP	compound	Harmony	GPE	True	False	False
+Harmony	Harmony	PROPN	NNP	pobj	near	GPE	True	False	False
+,	,	PUNCT	,	punct	Harmony		False	True	False
+Indiana	Indiana	PROPN	NNP	appos	Harmony	GPE	True	False	False
+.	.	PUNCT	.	punct	erythropterus		False	True	False
+"
+"	"
+"	SPACE	_SP	dobj	represents		False	False	False
+This	this	DET	DT	det	cast		True	False	True
+cast	cast	NOUN	NN	nsubj	represents		True	False	False
+represents	represent	VERB	VBZ	ROOT	represents		True	False	False
+but	but	CCONJ	CC	cc	one	CARDINAL	True	False	True
+one	one	NUM	CD	nummod	size	CARDINAL	True	False	True
+-	-	PUNCT	HYPH	punct	one	CARDINAL	False	True	False
+fourth	fourth	NOUN	NN	quantmod	one	CARDINAL	True	False	False
+the	the	DET	DT	det	size		True	False	True
+size	size	NOUN	NN	dobj	represents		True	False	False
+of	of	ADP	IN	prep	size		True	False	True
+the	the	DET	DT	det	specimen		True	False	True
+original	original	ADJ	JJ	amod	specimen		True	False	False
+specimen	specimen	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	specimen		False	True	False
+which	which	DET	WDT	nsubj	is		True	False	True
+is	be	VERB	VBZ	relcl	specimen		True	False	True
+nearly	nearly	ADV	RB	advmod	two	QUANTITY	True	False	False
+two	two	NUM	CD	nummod	feet	QUANTITY	True	False	True
+feet	foot	NOUN	NNS	attr	is	QUANTITY	True	False	False
+in	in	ADP	IN	prep	feet		True	False	True
+height	height	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	feet		False	True	False
+and	and	CCONJ	CC	cc	feet		True	False	True
+from	from	ADP	IN	quantmod	ten		True	False	True
+nine	nine	NUM	CD	quantmod	ten	QUANTITY	True	False	True
+to	to	PART	TO	quantmod	ten	QUANTITY	True	False	True
+ten	ten	NUM	CD	nummod	inches	QUANTITY	True	False	True
+inches	inch	NOUN	NNS	conj	feet	QUANTITY	True	False	False
+in	in	ADP	IN	prep	inches		True	False	True
+diameter	diameter	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	represents		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Presented	present	VERB	VBN	advcl	"
+"		True	False	False
+by	by	ADP	IN	agent	Presented		True	False	True
+Dr.	Dr.	PROPN	NNP	compound	"D.""~Owen"		False	False	False
+D.	D.	PROPN	NNP	compound	"D.""~Owen"	PERSON	False	False	False
+"D.""~Owen"	"D.""~Owen"	PROPN	NNP	pobj	by	PERSON	False	False	False
+,	,	PUNCT	,	punct	"D.""~Owen"	PERSON	False	True	False
+of	of	ADP	IN	prep	"D.""~Owen"		True	False	True
+New	New	PROPN	NNP	compound	Harmony	GPE	True	False	False
+Harmony	Harmony	PROPN	NNP	pobj	of	GPE	True	False	False
+.	.	PUNCT	.	punct	Presented		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

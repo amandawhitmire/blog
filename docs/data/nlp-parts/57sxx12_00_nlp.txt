@@ -1,0 +1,53 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+PILSBRY	PILSBRY	PROPN	NNP	dep	"
+"		True	False	False
+.	.	PUNCT	.	nmod	PILSBRY		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+MOLLUSCA	MOLLUSCA	PROPN	NNP	npadvmod	"
+"		True	False	False
+OF	of	ADP	IN	prep	MOLLUSCA		True	False	True
+THE	the	DET	DT	det	STATES		True	False	True
+SOUTHWESTERN	SOUTHWESTERN	PROPN	NNP	compound	STATES		True	False	False
+STATES	STATES	PROPN	NNPS	pobj	OF		True	False	False
+.	.	PUNCT	.	punct	MOLLUSCA		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+PLATE	plate	NOUN	NN	compound	XVII		True	False	False
+XVII	xvii	NOUN	NN	appos	"
+"		True	False	False
+.	.	PUNCT	.	appos	XVII		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	XVII		False	False	False
+11	11	NUM	CD	nummod	"
+"		False	False	False
+13	13	NUM	CD	nummod	11		False	False	False
+^^'-Tf^ig^	^^'-tf^ig^	X	FW	appos	11		False	False	False
+^	^	PUNCT	NFP	punct	11		False	False	False
+14	14	NUM	CD	appos	11		False	False	False
+&	&	CCONJ	CC	cc	14		False	True	False
+^'^^	^'^^	X	FW	conj	14		False	False	False
+■	■	PUNCT	``	punct	XVII		False	False	False
+'	'	PUNCT	:	advcl	■		False	True	False
+10	10	NUM	CD	nummod	15		False	False	False
+15	15	NUM	CD	nummod	21		False	False	False
+16	16	NUM	CD	nummod	21		False	False	False
+17	17	NUM	CD	nummod	21		False	False	False
+18	18	NUM	CD	nummod	21		False	False	False
+12	12	NUM	CD	nummod	21		False	False	False
+19	19	NUM	CD	nummod	21		False	False	False
+20	20	NUM	CD	nummod	21		False	False	False
+24	24	NUM	CD	nummod	21		False	False	False
+21	21	NUM	CD	compound	22		False	False	False
+^1	^1	NUM	CD	compound	22		False	False	False
+22	22	NUM	CD	appos	'		False	False	False
+—	—	PUNCT	``	punct	22		False	True	False
+23	23	NUM	CD	conj	'		False	False	False
+"
+"	"
+"	SPACE	_SP	relcl	XVII		False	False	False

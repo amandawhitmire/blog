@@ -1,0 +1,18 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+THE	the	DET	DT	det	TRACHEATION		True	False	True
+RECTAL	rectal	ADJ	JJ	amod	TRACHEATION		True	False	False
+TRACHEATION	tracheation	NOUN	NN	ROOT	TRACHEATION		True	False	False
+AND	and	CCONJ	CC	cc	TRACHEATION		True	False	True
+RECTAL	rectal	ADJ	JJ	amod	RESPIRATION		True	False	False
+RESPIRATION	respiration	NOUN	NN	conj	TRACHEATION		True	False	False
+OF	of	ADP	IN	prep	TRACHEATION		True	False	True
+THE	the	DET	DT	det	LARVAE		True	False	True
+LARVAE	LARVAE	PROPN	NNP	pobj	OF		True	False	False
+OF	of	ADP	IN	prep	LARVAE		True	False	True
+ODONATA	ODONATA	PROPN	NNP	compound	ZYGOPTERA		True	False	False
+ZYGOPTERA	ZYGOPTERA	PROPN	NNP	pobj	OF		True	False	False
+.	.	PROPN	NNP	pobj	OF		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

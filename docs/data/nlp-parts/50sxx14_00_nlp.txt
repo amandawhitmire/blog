@@ -1,0 +1,307 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+DESCRIPTION	description	NOUN	NN	ROOT	DESCRIPTION		True	False	False
+OF	of	ADP	IN	prep	DESCRIPTION		True	False	True
+A	a	DET	DT	det	TETHYS		True	False	True
+NEW	new	ADJ	JJ	amod	TETHYS		True	False	False
+TETHYS	TETHYS	PROPN	NNP	pobj	OF		True	False	False
+(	(	PUNCT	-LRB-	punct	TETHYS		False	True	False
+APLYSIA	APLYSIA	PROPN	NNP	appos	TETHYS		True	False	False
+)	)	PUNCT	.	punct	TETHYS		False	True	False
+.	.	PUNCT	.	punct	DESCRIPTION		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+BY	by	ADP	IN	agent	"
+"		True	False	True
+E.	E.	PROPN	NNP	compound	LETSON	PERSON	False	False	False
+J.	J.	PROPN	NNP	compound	LETSON	PERSON	False	False	False
+LETSON	LETSON	PROPN	NNP	pobj	BY	PERSON	True	False	False
+.	.	PUNCT	.	punct	LETSON		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	sp		False	False	False
+Tethys	Tethys	PROPN	NNP	compound	sp	TAXA	True	False	False
+Pilsbryi	Pilsbryi	PROPN	NNP	compound	sp		True	False	False
+n.	n.	PROPN	NNP	compound	sp		False	False	False
+sp	sp	PROPN	NNP	ROOT	sp		True	False	False
+.	.	PUNCT	.	punct	sp		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Plate	plate	NOUN	NN	npadvmod	"
+"		True	False	False
+VIII	viii	NUM	CD	nummod	Plate	CARDINAL	True	False	False
+.	.	PUNCT	.	punct	Plate		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Length	length	NOUN	NN	npadvmod	"
+"		True	False	False
+11	11	NUM	CD	nummod	cm	QUANTITY	False	False	False
+£	£	NOUN	NN	nmod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NN	appos	Length	QUANTITY	True	False	False
+.	.	PUNCT	,	appos	Length		False	True	False
+,	,	PUNCT	,	punct	Length		False	True	False
+body	body	NOUN	NN	appos	Length		True	False	False
+elongated	elongated	ADJ	JJ	amod	plump		True	False	False
+,	,	PUNCT	,	punct	plump		False	True	False
+flabby	flabby	ADJ	JJ	amod	plump		True	False	False
+,	,	PUNCT	,	punct	plump		False	True	False
+plump	plump	ADJ	JJ	amod	body		True	False	False
+,	,	PUNCT	,	punct	body		False	True	False
+enlarged	enlarge	VERB	VBN	acl	body		True	False	False
+behind	behind	ADV	RB	advmod	enlarged		True	False	True
+.	.	PUNCT	.	punct	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Mouth	mouth	NOUN	NN	ROOT	Mouth		True	False	False
+encircled	encircle	VERB	VBN	acl	Mouth		True	False	False
+by	by	ADP	IN	agent	encircled		True	False	True
+wide	wide	ADJ	JJ	amod	lips		True	False	False
+lips	lip	NOUN	NNS	pobj	by		True	False	False
+and	and	CCONJ	CC	cc	lips		True	False	True
+large	large	ADJ	JJ	amod	appendages		True	False	False
+buccal	buccal	ADJ	JJ	amod	appendages		True	False	False
+appendages	appendage	NOUN	NNS	conj	lips		True	False	False
+.	.	PUNCT	.	punct	Mouth		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Rhinophores	rhinophore	NOUN	NNS	attr	"
+"		True	False	False
+(	(	PUNCT	-LRB-	punct	Rhinophores		False	True	False
+posterior	posterior	ADJ	JJ	amod	tentacles		True	False	False
+tentacles	tentacle	NOUN	NNS	appos	Rhinophores		True	False	False
+,	,	PUNCT	-RRB-	punct	Rhinophores		False	True	False
+)	)	PUNCT	-RRB-	punct	Rhinophores		False	True	False
+stout	stout	ADJ	JJ	amod	conic		True	False	False
+,	,	PUNCT	,	punct	conic		False	True	False
+short	short	ADJ	JJ	amod	conic		True	False	False
+conic	conic	NOUN	NN	appos	Rhinophores		True	False	False
+,	,	PUNCT	,	punct	Rhinophores		False	True	False
+slit	slit	VERB	VBN	acl	Rhinophores		True	False	False
+at	at	ADP	IN	prep	slit		True	False	True
+the	the	DET	DT	det	extremities		True	False	True
+extremities	extremity	NOUN	NNS	pobj	at		True	False	False
+;	;	PUNCT	:	punct	Rhinophores		False	True	False
+eyes	eye	NOUN	NNS	appos	Rhinophores		True	False	False
+small	small	ADJ	JJ	amod	black		True	False	False
+,	,	PUNCT	,	punct	black		False	True	False
+black	black	ADJ	JJ	amod	eyes		True	False	False
+,	,	PUNCT	,	punct	black		False	True	False
+placed	place	VERB	VBN	acl	eyes		True	False	False
+before	before	ADP	IN	prep	placed		True	False	True
+the	the	DET	DT	det	rhinophores		True	False	True
+rhinophores	rhinophore	NOUN	NNS	pobj	before		True	False	False
+.	.	PUNCT	.	punct	Rhinophores		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Anterior	anterior	ADJ	JJ	amod	ends		True	False	False
+ends	end	NOUN	NNS	nsubj	separated		True	False	False
+of	of	ADP	IN	prep	ends		True	False	True
+pleuropodial	pleuropodial	ADJ	JJ	amod	lobes		True	False	False
+lobes	lobe	NOUN	NNS	pobj	of		True	False	False
+well	well	ADV	RB	advmod	separated		True	False	True
+separated	separate	VERB	VBN	ccomp	surrounded		True	False	False
+,	,	PUNCT	,	punct	surrounded		False	True	False
+posterior	posterior	ADJ	JJ	amod	ends		True	False	False
+ends	end	NOUN	NNS	nsubj	joined		True	False	False
+joined	join	VERB	VBN	ccomp	surrounded		True	False	False
+behind	behind	ADV	RB	advmod	joined		True	False	True
+,	,	PUNCT	,	punct	surrounded		False	True	False
+mantle	mantle	NOUN	NN	nsubj	large		True	False	False
+large	large	ADJ	JJ	amod	perforation		True	False	False
+,	,	PUNCT	,	punct	perforation		False	True	False
+median	median	ADJ	JJ	amod	perforation		True	False	False
+perforation	perforation	NOUN	NN	nsubj	small		True	False	False
+very	very	ADV	RB	advmod	small		True	False	True
+small	small	ADJ	JJ	ccomp	surrounded		True	False	False
+,	,	PUNCT	,	punct	small		False	True	False
+surrounded	surround	VERB	VBN	advcl	"
+"		True	False	False
+by	by	ADP	IN	agent	surrounded		True	False	True
+radial	radial	ADJ	JJ	amod	striae		True	False	False
+striae	stria	NOUN	NNS	pobj	by		True	False	False
+(	(	PUNCT	-LRB-	punct	striae		False	True	False
+visible	visible	ADJ	JJ	amod	striae		True	False	False
+only	only	ADV	RB	advmod	under		True	False	True
+under	under	ADP	IN	prep	visible		True	False	True
+a	a	DET	DT	det	lens		True	False	True
+lens	lens	NOUN	NN	pobj	under		True	False	False
+)	)	PUNCT	.	punct	striae		False	True	False
+.	.	PUNCT	.	punct	surrounded		False	True	False
+"
+"	"
+"	SPACE	_SP	amod	margin		False	False	False
+Right	right	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	ROOT	margin		True	False	False
+of	of	ADP	IN	prep	margin		True	False	True
+mantle	mantle	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	margin		False	True	False
+folded	fold	VERB	VBN	acl	margin		True	False	False
+over	over	ADP	IN	quantmod	half		True	False	True
+about	about	ADP	IN	quantmod	half	CARDINAL	True	False	True
+half	half	DET	PDT	nummod	width	CARDINAL	True	False	False
+its	its	PRON	PRP$	poss	width		True	False	True
+width	width	NOUN	NN	npadvmod	folded		True	False	False
+,	,	PUNCT	,	punct	margin		False	True	False
+and	and	CCONJ	CC	cc	margin		True	False	True
+largely	largely	ADV	RB	advmod	adnate		True	False	False
+adnate	adnate	ADJ	JJ	conj	margin		True	False	False
+;	;	PUNCT	:	punct	margin		False	True	False
+posteriorly	posteriorly	ADV	RB	advmod	forming		True	False	False
+not	not	PART	RB	neg	forming		True	False	True
+forming	form	VERB	VBG	acl	margin		True	False	False
+an	an	DET	DT	det	siphon		True	False	True
+excurrent	excurrent	ADJ	JJ	amod	siphon		True	False	False
+siphon	siphon	NOUN	NN	dobj	forming		True	False	False
+;	;	PUNCT	:	punct	exposed		False	True	False
+gill	gill	NOUN	NN	nsubj	exposed		True	False	False
+considerably	considerably	ADV	RB	advmod	exposed		True	False	False
+exposed	expose	VERB	VBN	conj	margin		True	False	False
+.	.	PUNCT	.	punct	exposed		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	margin		False	False	False
+Genital	genital	ADJ	JJ	amod	opening		True	False	False
+opening	opening	NOUN	NN	appos	margin		True	False	False
+under	under	ADP	IN	prep	opening		True	False	True
+forward	forward	ADJ	JJ	amod	border		True	False	False
+right	right	ADJ	JJ	amod	border		True	False	False
+border	border	NOUN	NN	pobj	under		True	False	False
+of	of	ADP	IN	prep	border		True	False	True
+mantle	mantle	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	opening		False	True	False
+surmounted	surmount	VERB	VBN	acl	opening		True	False	False
+by	by	ADP	IN	agent	surmounted		True	False	True
+a	a	DET	DT	det	prominence		True	False	True
+fleshy	fleshy	ADJ	JJ	amod	prominence		True	False	False
+prominence	prominence	NOUN	NN	pobj	by		True	False	False
+.	.	PUNCT	.	punct	margin		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Opening	opening	NOUN	NN	prep	"
+"		True	False	False
+of	of	ADP	IN	prep	Opening		True	False	True
+opaline	opaline	ADJ	JJ	amod	gland		True	False	False
+gland	gland	NOUN	NN	pobj	of		True	False	False
+large	large	ADJ	JJ	amod	mill		True	False	False
+,	,	PUNCT	,	punct	mill		False	True	False
+single	single	ADJ	JJ	amod	mill		True	False	False
+,	,	PUNCT	,	punct	mill		False	True	False
+about	about	ADV	RB	advmod	13	QUANTITY	True	False	True
+13	13	NUM	CD	nummod	mill	QUANTITY	False	False	False
+mill	mill	NOUN	NN	appos	Opening	QUANTITY	True	False	False
+,	,	PUNCT	,	punct	mill		False	True	False
+back	back	NOUN	NN	conj	mill		True	False	True
+of	of	ADP	IN	prep	back		True	False	True
+the	the	DET	DT	det	pore		True	False	True
+genital	genital	ADJ	JJ	amod	pore		True	False	False
+pore	pore	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	back		False	True	False
+and	and	CCONJ	CC	cc	back		True	False	True
+well	well	ADV	RB	advmod	under		True	False	True
+under	under	ADP	IN	conj	back		True	False	True
+the	the	DET	DT	det	gill		True	False	True
+gill	gill	NOUN	NN	pobj	under		True	False	False
+.	.	PUNCT	.	punct	Opening		False	True	False
+"
+"	"
+"	SPACE	_SP	npadvmod	foliated		False	False	False
+Gills	gill	NOUN	NNS	nsubj	foliated		True	False	False
+foliated	foliate	VERB	VBN	ROOT	foliated		True	False	False
+in	in	ADP	IN	prep	foliated		True	False	True
+regular	regular	ADJ	JJ	amod	branches		True	False	False
+branches	branch	NOUN	NNS	pobj	in		True	False	False
+.	.	PUNCT	.	punct	foliated		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	normal		False	False	False
+External	external	ADJ	JJ	amod	integument		True	False	False
+integument	integument	NOUN	NN	dep	normal		True	False	False
+smooth	smooth	ADJ	JJ	amod	integument		True	False	False
+;	;	PUNCT	:	punct	integument		False	True	False
+with	with	ADP	IN	prep	normal		True	False	True
+a	a	DET	DT	quantmod	few		True	False	True
+few	few	ADJ	JJ	nummod	warts		True	False	True
+inconspicuous	inconspicuous	ADJ	JJ	amod	warts		True	False	False
+scattered	scatter	VERB	VBN	amod	warts		True	False	False
+warts	wart	NOUN	NNS	pobj	with		True	False	False
+;	;	PUNCT	:	punct	with		False	True	False
+olive	olive	NOUN	NN	npadvmod	colored		True	False	False
+colored	color	VERB	VBN	amod	with		True	False	False
+,	,	PUNCT	,	punct	colored		False	True	False
+with	with	ADP	IN	prep	colored		True	False	True
+some	some	DET	DT	det	clouding		True	False	True
+clouding	clouding	NOUN	NN	pobj	with		True	False	False
+of	of	ADP	IN	prep	clouding		True	False	True
+black	black	NOUN	NN	pobj	of		True	False	False
+on	on	ADP	IN	prep	clouding		True	False	True
+the	the	DET	DT	det	mantle		True	False	True
+reflexed	reflexed	ADJ	JJ	amod	mantle		True	False	False
+mantle	mantle	NOUN	NN	pobj	on		True	False	False
+and	and	CCONJ	CC	cc	with		True	False	True
+sometimes	sometimes	ADV	RB	advmod	also		True	False	True
+also	also	ADV	RB	advmod	near		True	False	True
+near	near	SCONJ	IN	conj	with		True	False	False
+the	the	DET	DT	det	tail		True	False	True
+tail	tail	NOUN	NN	pobj	near		True	False	False
+;	;	PUNCT	:	punct	normal		False	True	False
+shell	shell	NOUN	NN	nsubj	normal		True	False	False
+normal	normal	ADJ	JJ	ROOT	normal		True	False	False
+.	.	PUNCT	.	punct	normal		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Silam	Silam	PROPN	NNP	attr	"
+"	PRODUCT	True	False	False
+,	,	PUNCT	,	punct	Silam		False	True	False
+North	North	PROPN	NNP	compound	Coast	LOC	True	False	False
+Coast	Coast	PROPN	NNP	appos	Silam	LOC	True	False	False
+of	of	ADP	IN	prep	Coast	LOC	True	False	True
+Yucatan	Yucatan	PROPN	NNP	pobj	of	LOC	True	False	False
+,	,	PUNCT	,	punct	Silam		False	True	False
+(	(	PUNCT	-LRB-	punct	Silam		False	True	False
+Heilprin	Heilprin	PROPN	NNP	appos	Silam	PRODUCT	True	False	False
+)	)	PUNCT	-RRB-	punct	Silam		False	True	False
+.	.	PUNCT	-RRB-	punct	Silam		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	differs		False	False	False
+This	this	DET	DT	nsubj	differs		True	False	True
+differs	differ	VERB	VBZ	ROOT	differs		True	False	False
+from	from	ADP	IN	prep	differs		True	False	True
+all	all	DET	DT	det	species		True	False	True
+other	other	ADJ	JJ	amod	species		True	False	True
+known	know	VERB	VBN	amod	species		True	False	False
+species	specie	NOUN	NNS	pobj	from		True	False	False
+in	in	ADP	IN	prep	differs		True	False	True
+having	have	VERB	VBG	pcomp	in		True	False	False
+the	the	DET	DT	det	mantle		True	False	True
+mantle	mantle	NOUN	NN	nsubj	folded		True	False	False
+folded	fold	VERB	VBN	ccomp	having		True	False	False
+back	back	ADV	RB	advmod	folded		True	False	True
+upon	upon	SCONJ	IN	prep	back		True	False	True
+itself	itself	PRON	PRP	pobj	upon		True	False	True
+and	and	CCONJ	CC	cc	back		True	False	True
+adnate	adnate	NOUN	NN	dep	folded		True	False	False
+except	except	SCONJ	IN	prep	adnate		True	False	True
+near	near	SCONJ	IN	prep	except		True	False	False
+the	the	DET	DT	det	edge		True	False	True
+edge	edge	NOUN	NN	pobj	near		True	False	False
+.	.	PUNCT	.	punct	differs		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False

@@ -1,0 +1,3102 @@
+Token	Lemma	POS	Tag	Dependency	Head	Ent Type	IsAlpha	IsPunct	IsStop
+NEW	new	ADJ	JJ	amod	SPECIES		True	False	False
+SPECIES	specie	NOUN	NNS	ROOT	SPECIES		True	False	False
+OF	of	ADP	IN	prep	SPECIES		True	False	True
+FRESH	fresh	ADJ	JJ	amod	WATER		True	False	False
+WATER	water	NOUN	NN	compound	MOLLUSKS		True	False	False
+MOLLUSKS	mollusk	NOUN	NNS	pobj	OF		True	False	False
+FROM	from	ADP	IN	prep	MOLLUSKS		True	False	True
+SOUTH	SOUTH	PROPN	NNP	compound	AMERICA	LOC	True	False	False
+AMERICA	AMERICA	PROPN	NNP	pobj	FROM	LOC	True	False	False
+.	.	PUNCT	.	punct	SPECIES		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+BY	by	ADP	IN	prep	"
+"		True	False	True
+HENRY	HENRY	PROPN	NNP	compound	PILSBRY	PERSON	True	False	False
+A.	A.	PROPN	NNP	compound	PILSBRY	PERSON	False	False	False
+PILSBRY	PILSBRY	PROPN	NNP	pobj	BY	PERSON	True	False	False
+.	.	PUNCT	.	punct	BY		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	encountered		False	False	False
+The	the	DET	DT	det	forms		True	False	True
+forms	form	NOUN	NNS	nsubjpass	encountered		True	False	False
+described	describe	VERB	VBN	acl	forms		True	False	False
+below	below	ADV	RB	advmod	described		True	False	True
+were	be	AUX	VBD	auxpass	encountered		True	False	True
+encountered	encounter	VERB	VBN	ROOT	encountered		True	False	False
+in	in	ADP	IN	prep	encountered		True	False	True
+the	the	DET	DT	det	course		True	False	True
+course	course	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	course		True	False	True
+identifying	identify	VERB	VBG	pcomp	of		True	False	False
+a	a	DET	DT	det	series		True	False	True
+series	series	NOUN	NN	dobj	identifying		True	False	False
+of	of	ADP	IN	prep	series		True	False	True
+mollusks	mollusk	NOUN	NNS	pobj	of		True	False	False
+collected	collect	VERB	VBN	acl	mollusks		True	False	False
+by	by	ADP	IN	agent	collected		True	False	True
+Dr.	Dr.	PROPN	NNP	compound	.		False	False	False
+Wm	Wm	PROPN	NNP	compound	.	PERSON	True	False	False
+.	.	PROPN	NNP	appos	series	PERSON	False	True	False
+"
+"	"
+"	SPACE	_SP	punct	encountered	PERSON	False	False	False
+H.	H.	PROPN	NNP	compound	Rush	PERSON	False	False	False
+Rush	Rush	PROPN	NNP	pobj	"
+"	PERSON	True	False	False
+,	,	PUNCT	,	punct	Rush		False	True	False
+U.	U.	PROPN	NNP	compound	N.	GPE	False	False	False
+S.	S.	PROPN	NNP	compound	N.	GPE	False	False	False
+N.	N.	PROPN	NNP	appos	Rush	GPE	False	False	False
+,	,	PUNCT	,	punct	Rush		False	True	False
+in	in	ADP	IN	prep	Rush		True	False	True
+Uruguay	Uruguay	PROPN	NNP	pobj	in	GPE	True	False	False
+and	and	CCONJ	CC	cc	Uruguay		True	False	True
+Argentina	Argentina	PROPN	NNP	conj	Uruguay	GPE	True	False	False
+,	,	PUNCT	,	punct	Rush		False	True	False
+a	a	DET	DT	det	list		True	False	True
+list	list	NOUN	NN	nsubjpass	found		True	False	False
+of	of	ADP	IN	prep	list		True	False	True
+which	which	DET	WDT	pobj	of		True	False	True
+will	will	AUX	MD	aux	found		True	False	True
+be	be	AUX	VB	auxpass	found		True	False	True
+found	find	VERB	VBN	relcl	Rush		True	False	False
+in	in	ADP	IN	prep	found		True	False	True
+The	the	DET	DT	det	Nautilus	ORG	True	False	True
+Nautilus	Nautilus	PROPN	NNP	pobj	in	ORG	True	False	False
+for	for	ADP	IN	prep	found		True	False	True
+November	November	PROPN	NNP	pobj	for	DATE	True	False	False
+of	of	ADP	IN	prep	November	DATE	True	False	True
+this	this	DET	DT	det	year	DATE	True	False	True
+year	year	NOUN	NN	pobj	of	DATE	True	False	False
+.	.	PUNCT	.	punct	encountered		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+To	to	ADP	IN	prep	added		True	False	True
+the	the	DET	DT	det	forms		True	False	True
+forms	form	NOUN	NNS	pobj	To		True	False	False
+collected	collect	VERB	VBN	acl	forms		True	False	False
+by	by	ADP	IN	agent	collected		True	False	True
+Dr.	Dr.	PROPN	NNP	pobj	by		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	To		False	False	False
+Rush	Rush	PROPN	NNP	npadvmod	"
+"	PERSON	True	False	False
+have	have	AUX	VBP	aux	added		True	False	True
+been	be	AUX	VBN	auxpass	added		True	False	True
+added	add	VERB	VBN	ROOT	added		True	False	False
+several	several	ADJ	JJ	amod	others		True	False	True
+others	other	NOUN	NNS	dobj	added		True	False	True
+,	,	PUNCT	,	punct	others		False	True	False
+apparently	apparently	ADV	RB	advmod	undescribed		True	False	False
+undescribed	undescribed	ADJ	JJ	relcl	others		True	False	False
+,	,	PUNCT	,	punct	others		False	True	False
+from	from	ADP	IN	prep	others		True	False	True
+the	the	DET	DT	det	collection		True	False	True
+collection	collection	NOUN	NN	pobj	from		True	False	False
+of	of	ADP	IN	prep	collection		True	False	True
+the	the	DET	DT	det	Academy	ORG	True	False	True
+Academy	Academy	PROPN	NNP	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy	ORG	True	False	True
+Natural	Natural	PROPN	NNP	compound	Sciences	ORG	True	False	False
+Sciences	Sciences	PROPN	NNPS	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy	ORG	True	False	True
+Philadelphia	Philadelphia	PROPN	NNP	pobj	of	ORG	True	False	False
+,	,	PUNCT	,	punct	added		False	True	False
+To	to	ADP	IN	prep	referred		True	False	True
+the	the	DET	DT	det	paper		True	False	True
+above	above	ADV	RB	advmod	mentioned		True	False	True
+-	-	PUNCT	HYPH	punct	mentioned		False	True	False
+mentioned	mention	VERB	VBN	amod	paper		True	False	False
+paper	paper	NOUN	NN	pobj	To		True	False	False
+in	in	ADP	IN	prep	paper		True	False	True
+The	the	DET	DT	det	Nautilus	ORG	True	False	True
+Nautilus	Nautilus	PROPN	NNP	pobj	in	ORG	True	False	False
+the	the	DET	DT	det	reader		True	False	True
+reader	reader	NOUN	NN	nsubjpass	referred		True	False	False
+is	be	AUX	VBZ	auxpass	referred		True	False	True
+referred	refer	VERB	VBN	ROOT	referred		True	False	False
+for	for	ADP	IN	prep	referred		True	False	True
+some	some	DET	DT	det	account		True	False	True
+account	account	NOUN	NN	pobj	for		True	False	False
+of	of	ADP	IN	prep	account		True	False	True
+the	the	DET	DT	det	localities		True	False	True
+localities	locality	NOUN	NNS	pobj	of		True	False	False
+represented	represent	VERB	VBN	acl	localities		True	False	False
+by	by	ADP	IN	agent	represented		True	False	True
+specimens	specimen	NOUN	NNS	pobj	by		True	False	False
+here	here	ADV	RB	advmod	described		True	False	True
+described	describe	VERB	VBN	acl	specimens		True	False	False
+,	,	PUNCT	,	punct	for		False	True	False
+and	and	CCONJ	CC	cc	for		True	False	True
+for	for	ADP	IN	conj	for		True	False	True
+notes	note	NOUN	NNS	pobj	for		True	False	False
+on	on	ADP	IN	prep	notes		True	False	True
+the	the	DET	DT	det	species		True	False	True
+species	specie	NOUN	NNS	pobj	on		True	False	False
+associated	associate	VERB	VBN	acl	species		True	False	False
+with	with	ADP	IN	prep	associated		True	False	True
+them	they	PRON	PRP	pobj	with		True	False	True
+,	,	PUNCT	,	punct	species		False	True	False
+CHILINIDiE.	CHILINIDiE.	PROPN	NNP	appos	species		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	referred		False	False	False
+Chilina	Chilina	PROPN	NNP	compound	sp	TAXA	True	False	False
+RusMi	RusMi	PROPN	NNP	compound	sp		True	False	False
+n.	n.	NOUN	NN	compound	sp		False	False	False
+sp	sp	NOUN	NN	compound	.		True	False	False
+.	.	PROPN	NNP	dobj	referred		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	referred		False	False	False
+PI	pi	NOUN	NN	compound	.		True	False	False
+.	.	PROPN	NNP	punct	referred		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	referred		False	False	False
+XXVI	xxvi	NUM	CD	npadvmod	referred		True	False	False
+,	,	PUNCT	,	punct	referred		False	True	False
+fi^s	fi^s	PROPN	NNP	npadvmod	referred		False	False	False
+.	.	PROPN	NNP	npadvmod	referred		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	referred		False	False	False
+6	6	NUM	CD	punct	referred	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	referred		False	True	False
+7	7	NUM	CD	punct	referred	CARDINAL	False	False	False
+.	.	NUM	CD	punct	referred		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	referred		False	False	False
+Shell	shell	NOUN	NN	punct	referred		True	False	False
+oval	oval	ADJ	JJ	amod	Shell		True	False	False
+,	,	PUNCT	,	punct	oval		False	True	False
+strong	strong	ADJ	JJ	amod	olivaceous		True	False	False
+,	,	PUNCT	,	punct	olivaceous		False	True	False
+yellowish	yellowish	ADJ	JJ	amod	olivaceous		True	False	False
+-	-	PUNCT	HYPH	punct	olivaceous		False	True	False
+olivaceous	olivaceous	ADJ	JJ	amod	Shell		True	False	False
+with	with	ADP	IN	prep	olivaceous		True	False	True
+five	five	NUM	CD	nummod	girdles	CARDINAL	True	False	True
+girdles	girdle	NOUN	NNS	pobj	with		True	False	False
+of	of	ADP	IN	prep	girdles		True	False	True
+dusky	dusky	ADJ	JJ	amod	spots		True	False	False
+,	,	PUNCT	,	punct	spots		False	True	False
+narrow	narrow	ADJ	JJ	amod	spots		True	False	False
+spots	spot	NOUN	NNS	pobj	of		True	False	False
+alternating	alternate	VERB	VBG	acl	spots		True	False	False
+with	with	ADP	IN	prep	alternating		True	False	True
+lighter	light	ADJ	JJR	amod	ones		True	False	False
+ones	one	NOUN	NNS	pobj	with		True	False	False
+.	.	PUNCT	.	punct	referred		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Spire	spire	NOUN	NN	npadvmod	keeled		True	False	False
+produced	produced	ADJ	JJ	amod	Spire		True	False	False
+,	,	PUNCT	,	punct	produced		False	True	False
+terraced	terraced	ADJ	JJ	conj	produced		True	False	False
+,	,	PUNCT	,	punct	terraced		False	True	False
+but	but	CCONJ	CC	cc	terraced		True	False	True
+flat	flat	ADJ	JJ	amod	topped		True	False	False
+-	-	PUNCT	HYPH	punct	topped		False	True	False
+topped	topped	ADJ	JJ	conj	terraced		True	False	False
+,	,	PUNCT	,	punct	keeled		False	True	False
+the	the	DET	DT	det	whorls		True	False	True
+whorls	whorl	NOUN	NNS	nsubj	keeled		True	False	False
+strongly	strongly	ADV	RB	advmod	keeled		True	False	False
+keeled	keeled	ADJ	JJ	ccomp	flat		True	False	False
+around	around	ADP	IN	prep	keeled		True	False	True
+the	the	DET	DT	det	shoulder		True	False	True
+shoulder	shoulder	NOUN	NN	pobj	around		True	False	False
+,	,	PUNCT	,	punct	flat		False	True	False
+flat	flat	ADJ	JJ	oprd	"
+"		True	False	False
+above	above	ADP	IN	prep	flat		True	False	True
+the	the	DET	DT	det	keel		True	False	True
+keel	keel	NOUN	NN	pobj	above		True	False	False
+.	.	PUNCT	.	punct	flat		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Aperture	aperture	NOUN	NN	ROOT	Aperture		True	False	False
+long	long	ADJ	JJ	amod	ovate		True	False	False
+-	-	PUNCT	HYPH	punct	ovate		False	True	False
+ovate	ovate	NOUN	NN	appos	Aperture		True	False	False
+,	,	PUNCT	,	punct	ovate		False	True	False
+white	white	ADJ	JJ	amod	ovate		True	False	False
+with	with	ADP	IN	prep	white		True	False	True
+chestnut	chestnut	NOUN	NN	compound	spots		True	False	False
+spots	spot	NOUN	NNS	pobj	with		True	False	False
+inside	inside	ADV	RB	advmod	spots		True	False	False
+;	;	PUNCT	:	punct	Aperture		False	True	False
+outer	outer	ADJ	JJ	amod	lip		True	False	False
+lip	lip	NOUN	NN	appos	Aperture		True	False	False
+thin	thin	ADJ	JJ	amod	lip		True	False	False
+;	;	PUNCT	:	punct	lip		False	True	False
+columellar	columellar	ADJ	JJ	amod	lip		True	False	False
+lip	lip	NOUN	NN	appos	lip		True	False	False
+white	white	ADJ	JJ	amod	lip		True	False	False
+,	,	PUNCT	,	punct	white		False	True	False
+callous	callous	ADJ	JJ	conj	white		True	False	False
+,	,	PUNCT	,	punct	callous		False	True	False
+with	with	ADP	IN	prep	callous		True	False	True
+a	a	DET	DT	det	fold		True	False	True
+strong	strong	ADJ	JJ	amod	fold		True	False	False
+,	,	PUNCT	,	punct	fold		False	True	False
+acute	acute	ADJ	JJ	amod	fold		True	False	False
+entering	enter	VERB	VBG	amod	fold		True	False	False
+fold	fold	NOUN	NN	pobj	with		True	False	False
+at	at	ADP	IN	prep	fold		True	False	True
+the	the	DET	DT	det	root		True	False	True
+root	root	NOUN	NN	pobj	at		True	False	False
+,	,	PUNCT	,	punct	fold		False	True	False
+and	and	CCONJ	CC	cc	fold		True	False	True
+a	a	DET	DT	det	fold		True	False	True
+very	very	ADV	RB	advmod	inconsijicuous		True	False	True
+inconsijicuous	inconsijicuous	ADJ	JJ	amod	fold		True	False	False
+fold	fold	NOUN	NN	conj	fold		True	False	False
+in	in	ADP	IN	prep	fold		True	False	True
+the	the	DET	DT	det	middle		True	False	True
+middle	middle	NOUN	NN	pobj	in		True	False	False
+;	;	PUNCT	:	punct	lip		False	True	False
+the	the	DET	DT	det	wall		True	False	True
+parietal	parietal	ADJ	JJ	amod	wall		True	False	False
+wall	wall	NOUN	NN	appos	lip		True	False	False
+with	with	ADP	IN	prep	wall		True	False	True
+a	a	DET	DT	det	fold		True	False	True
+strong	strong	ADJ	JJ	amod	fold		True	False	False
+entering	enter	VERB	VBG	amod	fold		True	False	False
+fold	fold	NOUN	NN	pobj	with		True	False	False
+which	which	DET	WDT	nsubj	is		True	False	True
+is	be	VERB	VBZ	relcl	fold		True	False	True
+abrupt	abrupt	ADJ	JJ	acomp	is		True	False	False
+below	below	ADV	RB	advmod	is		True	False	True
+,	,	PUNCT	,	punct	is		False	True	False
+and	and	CCONJ	CC	cc	is		True	False	True
+filled	fill	VERB	VBN	conj	is		True	False	False
+in	in	ADP	RP	prt	filled		True	False	True
+above	above	ADV	RB	advmod	filled		True	False	True
+with	with	ADP	IN	prep	filled		True	False	True
+a	a	DET	DT	det	callus		True	False	True
+heavy	heavy	ADJ	JJ	amod	callus		True	False	False
+callus	callus	NOUN	NN	pobj	with		True	False	False
+.	.	PUNCT	.	punct	Aperture		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	River		False	False	False
+Alt	alt	NOUN	NN	compound	River		True	False	False
+.	.	NOUN	NN	appos	Alt		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	Alt		False	False	False
+16	16	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	16		False	True	False
+diam	diam	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	16		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	mm		False	False	False
+lOj	loj	NOUN	NN	compound	mm		True	False	False
+mm	mm	NOUN	NN	dobj	"
+"		True	False	False
+.	.	NOUN	NN	appos	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	mm		False	False	False
+;	;	PUNCT	:	punct	mm		False	True	False
+alt	alt	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Alt		False	False	False
+of	of	ADP	IN	prep	"
+"		True	False	True
+aperture	aperture	NOUN	NN	pobj	of		True	False	False
+12	12	NUM	CD	nummod	mm	QUANTITY	False	False	False
+mm	mm	NOUN	NNS	appos	aperture	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	of		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Alt		False	False	False
+Uruguay	Uruguay	PROPN	NNP	compound	River	LOC	True	False	False
+River	River	PROPN	NNP	ROOT	River	LOC	True	False	False
+at	at	ADP	IN	prep	River		True	False	True
+Fray	Fray	PROPN	NNP	compound	Bentos	FAC	True	False	False
+Bentos	Bentos	PROPN	NNP	pobj	at	FAC	True	False	False
+(	(	PUNCT	-LRB-	punct	River		False	True	False
+Dr.	Dr.	PROPN	NNP	appos	River		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	River		False	False	False
+Rush	Rush	PROPN	NNP	appos	River	PERSON	True	False	False
+!	!	PUNCT	.	punct	Rush		False	True	False
+)	)	PUNCT	.	punct	Rush		False	True	False
+.	.	PUNCT	.	punct	River		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+The	the	DET	DT	det	spire		True	False	True
+conspicuously	conspicuously	ADV	RB	advmod	angular		True	False	False
+angular	angular	ADJ	JJ	amod	spire		True	False	False
+spire	spire	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+a	a	DET	DT	det	feature		True	False	True
+peculiar	peculiar	ADJ	JJ	amod	feature		True	False	False
+feature	feature	NOUN	NN	attr	is		True	False	False
+of	of	ADP	IN	prep	feature		True	False	True
+this	this	DET	DT	det	shell		True	False	True
+shell	shell	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	eroded		False	False	False
+The	the	DET	DT	det	apex		True	False	True
+apex	apex	NOUN	NN	nsubjpass	eroded		True	False	False
+is	be	AUX	VBZ	auxpass	eroded		True	False	True
+considerably	considerably	ADV	RB	advmod	eroded		True	False	False
+eroded	erode	VERB	VBN	ROOT	eroded		True	False	False
+,	,	PUNCT	,	punct	eroded		False	True	False
+so	so	SCONJ	IN	mark	stated		True	False	True
+that	that	SCONJ	IN	mark	stated		True	False	True
+the	the	DET	DT	det	number		True	False	True
+number	number	NOUN	NN	nsubjpass	stated		True	False	False
+of	of	ADP	IN	prep	number		True	False	True
+whorls	whorl	NOUN	NNS	pobj	of		True	False	False
+can	can	AUX	MD	aux	stated		True	False	True
+not	not	AUX	MD	neg	stated		True	False	True
+be	be	AUX	VB	auxpass	stated		True	False	True
+stated	state	VERB	VBN	advcl	eroded		True	False	False
+.	.	PUNCT	.	punct	eroded		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	eroded		False	False	False
+LIMW^IDJE	LIMW^IDJE	PROPN	NNP	compound	.		False	False	False
+.	.	PROPN	NNP	punct	eroded		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	.		False	False	False
+Planorbis	Planorbis	PROPN	NNP	ROOT	Planorbis	TAXA	True	False	False
+castaneonitens	castaneonitens	PROPN	NNP	compound	Pilsbry		True	False	False
+Pilsbry	Pilsbry	PROPN	NNP	ROOT	Pilsbry		True	False	False
+&	&	CCONJ	CC	cc	Pilsbry		False	True	False
+,	,	PUNCT	,	punct	Pilsbry		False	True	False
+Vanatta	Vanatta	PROPN	NNP	conj	Pilsbry	PERSON	True	False	False
+,	,	PUNCT	,	punct	Pilsbry		False	True	False
+n.	n.	NOUN	NN	compound	sp		False	False	False
+sp	sp	NOUN	NN	appos	Pilsbry		True	False	False
+.	.	NOUN	NN	appos	Pilsbry		False	True	False
+"
+"	"
+"	SPACE	_SP	ccomp	wider		False	False	False
+PI	PI	PROPN	NNP	npadvmod	"
+"		True	False	False
+.	.	PROPN	NNP	appos	PI		False	True	False
+"
+"	"
+"	SPACE	_SP	advcl	wider		False	False	False
+XXVII	xxvii	NUM	CD	amod	"
+"		True	False	False
+,	,	PUNCT	,	punct	XXVII		False	True	False
+figs	fig	NOUN	NNS	appos	XXVII		True	False	False
+.	.	PROPN	NNP	appos	XXVII		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	wider		False	False	False
+10	10	NUM	CD	nummod	.	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	10		False	True	False
+11	11	NUM	CD	appos	10	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	10		False	True	False
+12	12	NUM	CD	appos	10	CARDINAL	False	False	False
+.	.	PUNCT	.	npadvmod	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	ccomp	wider		False	False	False
+Shellthin	shellthin	ADJ	JJ	amod	brown		True	False	False
+,	,	PUNCT	,	punct	brown		False	True	False
+chestnut	chestnut	NOUN	NN	compound	brown		True	False	False
+brown	brown	NOUN	NN	npadvmod	wider		True	False	False
+,	,	PUNCT	,	punct	brown		False	True	False
+very	very	ADV	RB	advmod	smooth		True	False	True
+smooth	smooth	ADJ	JJ	conj	brown		True	False	False
+and	and	CCONJ	CC	cc	smooth		True	False	True
+glossy	glossy	ADJ	JJ	conj	smooth		True	False	False
+;	;	PUNCT	:	punct	wider		False	True	False
+growth	growth	NOUN	NN	compound	striae		True	False	False
+-	-	PUNCT	HYPH	punct	striae		False	True	False
+striae	stria	NOUN	NNS	nsubj	light		True	False	False
+light	light	ADJ	JJ	ccomp	wider		True	False	False
+;	;	PUNCT	:	punct	wider		False	True	False
+right	right	ADJ	JJ	amod	sides		True	False	False
+and	and	CCONJ	CC	cc	right		True	False	True
+left	left	ADJ	JJ	conj	right		True	False	False
+sides	side	NOUN	NNS	nsubj	showing		True	False	False
+showing	show	VERB	VBG	advcl	wider		True	False	False
+4	4	NUM	CD	nummod	whorls	CARDINAL	False	False	False
+whorls	whorl	NOUN	NNS	dobj	showing		True	False	False
+,	,	PUNCT	,	punct	whorls		False	True	False
+about	about	ADV	RB	advmod	equally		True	False	True
+equally	equally	ADV	RB	advmod	concave		True	False	False
+and	and	CCONJ	CC	cc	equally		True	False	True
+quite	quite	ADV	RB	advmod	shallowly		True	False	True
+shallowly	shallowly	ADV	RB	advmod	concave		True	False	False
+concave	concave	ADJ	JJ	amod	whorls		True	False	False
+;	;	PUNCT	:	punct	wider		False	True	False
+spire	spire	NOUN	NN	nsubj	wider		True	False	False
+on	on	ADP	IN	prep	spire		True	False	True
+right	right	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+less	less	ADJ	JJR	amod	half		True	False	True
+than	than	SCONJ	IN	quantmod	half		True	False	True
+half	half	DET	PDT	nummod	diameter		True	False	False
+the	the	DET	DT	det	diameter		True	False	True
+diameter	diameter	NOUN	NN	appos	spire		True	False	False
+of	of	ADP	IN	prep	diameter		True	False	True
+shell	shell	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	spire		False	True	False
+inner	inner	ADJ	JJ	amod	whorls		True	False	False
+1	1	NUM	CD	nummod	whorls	QUANTITY	False	False	False
+h	h	NOUN	NN	compound	whorls	QUANTITY	True	False	False
+whorls	whorl	NOUN	NNS	npadvmod	sunken	QUANTITY	True	False	False
+more	more	ADV	RBR	advmod	sunken		True	False	True
+sunken	sunken	ADJ	JJ	prep	,		True	False	False
+;	;	PUNCT	:	punct	spire		False	True	False
+spire	spire	NOUN	NN	appos	spire		True	False	False
+on	on	ADP	IN	prep	spire		True	False	True
+left	left	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+decidedly	decidedly	ADV	RB	advmod	wider		True	False	False
+wider	wide	ADJ	JJR	ROOT	wider		True	False	False
+than	than	SCONJ	IN	prep	wider		True	False	True
+on	on	ADP	IN	prep	than		True	False	True
+the	the	DET	DT	det	right		True	False	True
+right	right	ADJ	JJ	pobj	on		True	False	False
+.	.	PUNCT	.	punct	wider		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	angular		False	False	False
+Last	last	ADJ	JJ	amod	whorl	ORDINAL	True	False	True
+whorl	whorl	NOUN	NN	npadvmod	wide		True	False	False
+wide	wide	ADJ	JJ	amod	narrow		True	False	False
+on	on	ADP	IN	prep	wide		True	False	True
+the	the	DET	DT	det	right		True	False	True
+right	right	NOUN	NN	pobj	on		True	False	False
+,	,	PUNCT	,	punct	narrow		False	True	False
+narrow	narrow	ADJ	JJ	ccomp	angular		True	False	False
+on	on	ADP	IN	prep	narrow		True	False	True
+the	the	DET	DT	det	side		True	False	True
+left	left	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+,	,	PUNCT	,	punct	angular		False	True	False
+the	the	DET	DT	det	periphery		True	False	True
+periphery	periphery	NOUN	NN	nsubj	angular		True	False	False
+very	very	ADV	RB	advmod	obtusely		True	False	True
+obtusely	obtusely	ADV	RB	advmod	angular		True	False	False
+angular	angular	ADJ	JJ	ROOT	angular		True	False	False
+near	near	SCONJ	IN	prep	angular		True	False	False
+the	the	DET	DT	det	side		True	False	True
+left	left	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	near		True	False	True
+.	.	PUNCT	.	punct	angular		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Aperture	aperture	NOUN	NN	ROOT	Aperture		True	False	False
+quite	quite	ADV	RB	advmod	oblique		True	False	True
+oblique	oblique	ADJ	JJ	amod	cordate		True	False	False
+,	,	PUNCT	,	punct	cordate		False	True	False
+cordate	cordate	ADJ	JJ	amod	Aperture		True	False	False
+,	,	PUNCT	,	punct	thin		False	True	False
+the	the	DET	DT	det	peristome		True	False	True
+peristome	peristome	ADJ	JJ	nsubj	thin		True	False	False
+thin	thin	ADJ	JJ	advcl	cordate		True	False	False
+and	and	CCONJ	CC	cc	thin		True	False	True
+fragile	fragile	ADJ	JJ	conj	thin		True	False	False
+,	,	PUNCT	,	punct	thin		False	True	False
+produced	produce	VERB	VBN	acl	Aperture		True	False	False
+forward	forward	ADV	RB	advmod	produced		True	False	False
+on	on	ADP	IN	prep	produced		True	False	True
+the	the	DET	DT	det	side		True	False	True
+right	right	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+.	.	PUNCT	.	punct	Aperture		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Rush		False	False	False
+Alt	alt	NOUN	NN	poss	.		True	False	False
+.	.	NOUN	NN	nsubj	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	ccomp	Rush		False	False	False
+r7	r7	NUM	CD	attr	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	r7		False	True	False
+diam	diam	NOUN	NN	appos	r7		True	False	False
+.	.	NOUN	NN	appos	r7		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	r7		False	False	False
+7	7	NUM	CD	nummod	mm	QUANTITY	False	False	False
+mm	mm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	r7		False	False	False
+Ponds	pond	NOUN	NNS	appos	r7		True	False	False
+and	and	CCONJ	CC	cc	Ponds		True	False	True
+small	small	ADJ	JJ	amod	streams	HABITAT	True	False	False
+streams	stream	NOUN	NNS	conj	Ponds	HABITAT	True	False	False
+near	near	SCONJ	IN	prep	Ponds		True	False	False
+Maid	Maid	PROPN	NNP	pobj	near	GPE	True	False	False
+on	on	ADP	IN	prep	Ponds		True	False	True
+ado	ado	NOUN	NN	pobj	on		True	False	False
+,	,	PUNCT	,	punct	Ponds		False	True	False
+Uruguay	Uruguay	PROPN	NNP	appos	Ponds	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	Ponds		False	True	False
+Dr.	Dr.	PROPN	NNP	prep	Ponds		False	False	False
+"
+"	"
+"	SPACE	_SP	dep	Rush		False	False	False
+Rush	Rush	PROPN	NNP	ROOT	Rush	PERSON	True	False	False
+!	!	PUNCT	.	punct	Rush		False	True	False
+)	)	PUNCT	.	punct	Rush		False	True	False
+.	.	PUNCT	.	punct	Rush		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+Compared	compare	VERB	VBN	prep	is		True	False	False
+with	with	ADP	IN	prep	Compared		True	False	True
+P.	P.	PROPN	NNP	compound	d'Orb	TAXA	False	False	False
+heloicus	heloicus	PROPN	NNP	compound	d'Orb	TAXA	True	False	False
+d'Orb	d'Orb	PROPN	NNP	pobj	with		False	False	False
+.	.	PROPN	NNP	pobj	with		False	True	False
+,	,	PROPN	NNP	pobj	with		False	True	False
+this	this	DET	DT	det	species		True	False	True
+species	species	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ccomp	is		True	False	True
+flatter	flat	ADJ	JJR	acomp	is		True	False	False
+and	and	CCONJ	CC	cc	flatter		True	False	True
+more	more	ADV	RBR	advmod	glossy		True	False	True
+glossy	glossy	ADJ	JJ	conj	flatter		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+has	have	VERB	VBZ	dep	is		True	False	True
+the	the	DET	DT	det	spire		True	False	True
+spire	spire	NOUN	NN	nsubj	narrower		True	False	False
+much	much	ADV	RB	advmod	narrower		True	False	True
+narrower	narrow	ADJ	JJR	ccomp	has		True	False	False
+on	on	ADP	IN	prep	narrower		True	False	True
+the	the	DET	DT	det	side		True	False	True
+right	right	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+,	,	PUNCT	,	punct	wider		False	True	False
+the	the	DET	DT	det	whorl		True	False	True
+outer	outer	ADJ	JJ	amod	whorl		True	False	False
+whorl	whorl	NOUN	NN	nsubj	wider		True	False	False
+wider	wide	ADJ	JJR	conj	is		True	False	False
+and	and	CCONJ	CC	cc	wider		True	False	True
+less	less	ADV	RBR	advmod	cylindrical		True	False	True
+cylindrical	cylindrical	ADJ	JJ	conj	wider		True	False	False
+;	;	PUNCT	:	punct	is		False	True	False
+the	the	DET	DT	det	color		True	False	True
+color	color	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+darker	dark	ADJ	JJR	acomp	is		True	False	False
+and	and	CCONJ	CC	cc	is		True	False	True
+the	the	DET	DT	det	periphery		True	False	True
+periphery	periphery	NOUN	NN	nsubj	angular		True	False	False
+rounded	rounded	ADJ	JJ	amod	angular		True	False	False
+-	-	PUNCT	HYPH	punct	angular		False	True	False
+angular	angular	ADJ	JJ	conj	is		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Planorbis	Planorbis	PROPN	NNP	compound	Pilsbry	TAXA	True	False	False
+heteropleurus	heteropleurus	PROPN	NNP	compound	Pilsbry	TAXA	True	False	False
+Pilsbry	Pilsbry	PROPN	NNP	attr	"
+"		True	False	False
+&	&	CCONJ	CC	cc	Pilsbry		False	True	False
+Vanatta	Vanatta	PROPN	NNP	conj	Pilsbry		True	False	False
+,	,	PUNCT	,	punct	Pilsbry		False	True	False
+n.	n.	NOUN	NN	compound	sp		False	False	False
+sp	sp	PROPN	NNP	appos	Pilsbry		True	False	False
+.	.	PUNCT	.	appos	Pilsbry		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Pilsbry		False	False	False
+PI	PI	PROPN	NNP	appos	Pilsbry		True	False	False
+.	.	PUNCT	.	appos	Pilsbry		False	True	False
+"
+"	"
+"	SPACE	_SP	dobj	flat		False	False	False
+XXVI	XXVI	PROPN	NNP	ROOT	XXVI		True	False	False
+,	,	PUNCT	,	punct	XXVI		False	True	False
+iags	iags	PROPN	NNP	appos	XXVI		True	False	False
+.	.	PROPN	NNP	appos	XXVI		False	True	False
+"
+"	"
+"	SPACE	_SP	appos	XXVI		False	False	False
+1	1	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	1		False	True	False
+2	2	NUM	CD	appos	1	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	2		False	True	False
+3	3	NUM	CD	appos	2	CARDINAL	False	False	False
+.	.	NUM	CD	appos	XXVI		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	XXVI		False	False	False
+Shell	shell	NOUN	NN	appos	XXVI		True	False	False
+moderately	moderately	ADV	RB	advmod	solid		True	False	False
+solid	solid	ADJ	JJ	amod	Shell		True	False	False
+,	,	PUNCT	,	punct	solid		False	True	False
+corneous	corneous	ADJ	JJ	amod	white		True	False	False
+-	-	PUNCT	HYPH	punct	white		False	True	False
+white	white	ADJ	JJ	conj	solid		True	False	False
+,	,	PUNCT	,	punct	white		False	True	False
+rather	rather	ADV	RB	advmod	opaque		True	False	True
+opaque	opaque	ADJ	JJ	conj	solid		True	False	False
+,	,	PUNCT	,	punct	Shell		False	True	False
+the	the	DET	DT	det	surface		True	False	True
+surface	surface	NOUN	NN	appos	Shell		True	False	False
+with	with	ADP	IN	prep	surface		True	False	True
+fine	fine	ADJ	JJ	amod	lines		True	False	False
+,	,	PUNCT	,	punct	lines		False	True	False
+close	close	ADJ	JJ	amod	lines		True	False	False
+growth	growth	NOUN	NN	compound	lines		True	False	False
+-	-	PUNCT	HYPH	punct	lines		False	True	False
+lines	line	NOUN	NNS	pobj	with		True	False	False
+;	;	PUNCT	:	punct	Shell		False	True	False
+earlier	early	ADJ	JJR	amod	whorls		True	False	False
+whorls	whorl	NOUN	NNS	npadvmod	flat		True	False	False
+rather	rather	ADV	RB	advmod	deeply		True	False	True
+deeply	deeply	ADV	RB	advmod	whorls		True	False	False
+and	and	CCONJ	CC	cc	deeply		True	False	True
+about	about	ADV	RB	advmod	equally		True	False	True
+equally	equally	ADV	RB	advmod	sunken		True	False	False
+sunken	sunken	ADJ	JJ	conj	deeply		True	False	False
+on	on	ADP	IN	prep	whorls		True	False	True
+the	the	DET	DT	det	sides		True	False	True
+two	two	NUM	CD	nummod	sides	CARDINAL	True	False	True
+sides	side	NOUN	NNS	pobj	on		True	False	False
+;	;	PUNCT	:	punct	whorls		False	True	False
+convex	convex	ADJ	JJ	amod	whorls		True	False	False
+,	,	PUNCT	,	punct	convex		False	True	False
+and	and	CCONJ	CC	cc	convex		True	False	True
+strongly	strongly	ADV	RB	advmod	angular		True	False	False
+angular	angular	ADJ	JJ	conj	convex		True	False	False
+or	or	CCONJ	CC	cc	angular		True	False	True
+keeled	keel	VERB	VBN	conj	angular		True	False	False
+in	in	ADP	IN	prep	keeled		True	False	True
+the	the	DET	DT	det	middle		True	False	True
+middle	middle	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	keeled		False	True	False
+on	on	ADP	IN	conj	keeled		True	False	True
+the	the	DET	DT	det	side		True	False	True
+right	right	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+;	;	PUNCT	:	punct	whorls		False	True	False
+periphery	periphery	NOUN	NN	nsubj	carinated		True	False	False
+conspicuously	conspicuously	ADV	RB	advmod	carinated		True	False	False
+carinated	carinate	VERB	VBN	amod	whorls		True	False	False
+on	on	ADP	IN	prep	carinated		True	False	True
+the	the	DET	DT	det	side		True	False	True
+left	left	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+,	,	PUNCT	,	punct	side		False	True	False
+which	which	DET	WDT	nsubj	is		True	False	True
+is	be	VERB	VBZ	relcl	side		True	False	True
+shallowly	shallowly	ADV	RB	advmod	shaped		True	False	False
+vortex	vortex	NOUN	NN	npadvmod	shaped		True	False	False
+-	-	PUNCT	HYPH	punct	shaped		False	True	False
+shaped	shaped	ADJ	JJ	acomp	is		True	False	False
+,	,	PUNCT	,	punct	flat		False	True	False
+the	the	DET	DT	det	whorls		True	False	True
+whorls	whorl	NOUN	NNS	nsubj	flat		True	False	False
+nearly	nearly	ADV	RB	advmod	flat		True	False	False
+flat	flat	ADJ	JJ	conj	Shell		True	False	False
+.	.	PUNCT	.	punct	Shell		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	whorl		False	False	False
+Last	last	ADJ	JJ	amod	whorl	ORDINAL	True	False	True
+whorl	whorl	NOUN	NN	ROOT	whorl		True	False	False
+slightly	slightly	ADV	RB	advmod	wider		True	False	False
+wider	wide	ADJ	JJR	amod	whorl		True	False	False
+on	on	ADP	IN	prep	wider		True	False	True
+the	the	DET	DT	det	right		True	False	True
+right	right	NOUN	NN	pobj	on		True	False	False
+than	than	SCONJ	IN	prep	wider		True	False	True
+on	on	ADP	IN	prep	than		True	False	True
+the	the	DET	DT	det	side		True	False	True
+left	left	ADJ	JJ	amod	side		True	False	False
+side	side	NOUN	NN	pobj	on		True	False	True
+.	.	PUNCT	.	punct	whorl		False	True	False
+"
+"	"
+"	SPACE	_SP	npadvmod	wider		False	False	False
+Whorls	whorl	NOUN	NNS	nsubj	wider		True	False	False
+3	3	NUM	CD	nummod	J	CARDINAL	False	False	False
+J	j	NOUN	NN	appos	Whorls		True	False	False
+,	,	PUNCT	,	punct	Whorls		False	True	False
+all	all	DET	DT	nsubj	visible		True	False	True
+visible	visible	ADJ	JJ	amod	Whorls		True	False	False
+on	on	ADP	IN	prep	visible		True	False	True
+both	both	DET	DT	det	sides		True	False	True
+sides	side	NOUN	NNS	pobj	on		True	False	False
+,	,	PUNCT	,	punct	Whorls		False	True	False
+the	the	DET	DT	det	last		True	False	True
+last	last	ADJ	JJ	nsubj	wider		True	False	True
+wider	wide	ADJ	JJR	ROOT	wider		True	False	False
+than	than	SCONJ	IN	prep	wider		True	False	True
+the	the	DET	DT	det	spire		True	False	True
+spire	spire	NOUN	NN	pobj	than		True	False	False
+.	.	PUNCT	.	punct	wider		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Aperture	aperture	NOUN	NN	ROOT	Aperture		True	False	False
+very	very	ADV	RB	advmod	oblique		True	False	True
+oblique	oblique	ADJ	JJ	amod	pentagonal		True	False	False
+,	,	PUNCT	,	punct	pentagonal		False	True	False
+rounded	rounded	ADJ	JJ	amod	pentagonal		True	False	False
+-	-	PUNCT	HYPH	punct	pentagonal		False	True	False
+pentagonal	pentagonal	ADJ	JJ	amod	Aperture		True	False	False
+,	,	PUNCT	,	punct	Aperture		False	True	False
+the	the	DET	DT	det	margin		True	False	True
+right	right	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	appos	Aperture		True	False	False
+produced	produce	VERB	VBN	acl	margin		True	False	False
+forward	forward	ADV	RB	advmod	produced		True	False	False
+.	.	PUNCT	.	punct	Aperture		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Alt	alt	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	nsubj	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	aux	"
+"		False	False	False
+4i	4i	NUM	CD	dobj	"
+"		False	False	False
+,	,	PUNCT	,	punct	4i		False	True	False
+greatest	great	ADJ	JJS	amod	diam		True	False	False
+diam	diam	NOUN	NN	appos	4i		True	False	False
+.	.	NOUN	NN	appos	diam		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	4i		False	False	False
+11	11	NUM	CD	nummod	J		False	False	False
+J	j	NOUN	NN	dobj	"
+"		True	False	False
+,	,	PUNCT	,	punct	J		False	True	False
+lesser	less	ADJ	JJR	amod	mm		True	False	False
+8	8	NUM	CD	nummod	mm	QUANTITY	False	False	False
+}	}	PUNCT	-RRB-	punct	mm	QUANTITY	False	True	False
+mm	mm	NOUN	NNS	compound	.	QUANTITY	True	False	False
+.	.	NOUN	NN	appos	J		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	4i		False	False	False
+;	;	PUNCT	:	punct	4i		False	True	False
+oblique	oblique	ADJ	JJ	amod	alt		True	False	False
+alt	alt	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	4i		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	4i		False	False	False
+of	of	ADP	IN	prep	"
+"		True	False	True
+aperture	aperture	NOUN	NN	pobj	of		True	False	False
+5J	5j	NUM	CD	nummod	aperture		False	False	False
+,	,	PUNCT	,	punct	aperture		False	True	False
+diam	diam	NOUN	NN	appos	aperture		True	False	False
+.	.	NOUN	NN	appos	4i		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	4i		False	False	False
+4	4	NUM	CD	nummod	mm	QUANTITY	False	False	False
+mm	mm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	4i		False	False	False
+Lake	Lake	PROPN	NNP	compound	Titicaca	LOC	True	False	False
+Titicaca	Titicaca	PROPN	NNP	appos	4i	LOC	True	False	False
+(	(	PUNCT	-LRB-	punct	Titicaca		False	True	False
+A.	A.	PROPN	NNP	compound	Agassiz		False	False	False
+Agassiz	Agassiz	PROPN	NNP	appos	Titicaca		True	False	False
+!	!	PUNCT	.	punct	Agassiz		False	True	False
+)	)	PUNCT	.	punct	Titicaca		False	True	False
+.	.	PUNCT	.	punct	4i		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	No		False	False	False
+Types	type	NOUN	NNS	compound	No		True	False	False
+No	No	PROPN	NNP	ROOT	No		True	False	True
+.	.	PROPN	NNP	appos	No		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	No		False	False	False
+69,645	69,645	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	69,645		False	True	False
+collection	collection	NOUN	NN	appos	69,645		True	False	False
+of	of	ADP	IN	prep	collection		True	False	True
+the	the	DET	DT	det	Academy	ORG	True	False	True
+Academy	Academy	PROPN	NNP	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy	ORG	True	False	True
+Natural	Natural	PROPN	NNP	compound	Sciences	ORG	True	False	False
+Sciences	Sciences	PROPN	NNPS	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy		True	False	True
+Philadelphia	Philadelphia	PROPN	NNP	pobj	of		True	False	False
+.	.	PUNCT	.	punct	No		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+This	this	DET	DT	det	species		True	False	True
+remarkable	remarkable	ADJ	JJ	amod	species		True	False	False
+species	species	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+totally	totally	ADV	RB	advmod	unlike		True	False	False
+unlike	unlike	ADP	IN	prep	is		True	False	False
+P.	P.	PROPN	NNP	nmod	Cless	TAXA	False	False	False
+titicacensis	titicacensis	PROPN	NNP	nmod	Cless	TAXA	True	False	False
+Cless	Cless	PROPN	NNP	pobj	unlike		True	False	False
+.	.	PUNCT	,	punct	Cless		False	True	False
+,	,	PUNCT	,	punct	Cless		False	True	False
+'	'	PUNCT	''	punct	Cless		False	True	False
+P	P	PROPN	NNP	conj	Cless		True	False	False
+,	,	PUNCT	,	punct	P		False	True	False
+montanus	montanus	PROPN	NNP	compound	d'Orbigny^		True	False	False
+d'Orbigny^	d'Orbigny^	PROPN	NNP	conj	P		False	False	False
+and	and	CCONJ	CC	cc	d'Orbigny^		True	False	True
+P.	P.	PROPN	NNP	compound	d'Orbigny,^	TAXA	False	False	False
+andicola	andicola	PROPN	NNP	compound	d'Orbigny,^	TAXA	True	False	False
+d'Orbigny,^	d'Orbigny,^	PROPN	NNP	conj	d'Orbigny^		False	False	False
+species	specie	NOUN	NNS	pobj	unlike		True	False	False
+already	already	ADV	RB	advmod	known		True	False	True
+known	know	VERB	VBN	acl	species		True	False	False
+from	from	ADP	IN	prep	known		True	False	True
+this	this	DET	DT	det	lake		True	False	True
+Andean	andean	ADJ	JJ	amod	lake	NORP	True	False	False
+lake	lake	NOUN	NN	pobj	from		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+It	it	PRON	PRP	nsubj	is		True	False	True
+is	be	AUX	VBZ	ROOT	is		True	False	True
+most	most	ADV	RBS	advmod	like		True	False	True
+like	like	ADP	IN	prep	is		True	False	False
+P.	P.	PROPN	NNP	compound	andicola	TAXA	False	False	False
+andicola	andicola	PROPN	NNP	pobj	like	TAXA	True	False	False
+,	,	PUNCT	,	punct	like		False	True	False
+but	but	CCONJ	CC	cc	like		True	False	True
+much	much	ADV	RB	advmod	flatter		True	False	True
+flatter	flat	ADJ	JJR	conj	like		True	False	False
+with	with	ADP	IN	prep	flatter		True	False	True
+diflferently	diflferently	ADV	RB	advmod	placed		True	False	False
+placed	place	VERB	VBN	amod	keels		True	False	False
+keels	keel	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	flatter		False	True	False
+and	and	CCONJ	CC	cc	flatter		True	False	True
+,	,	PUNCT	,	punct	flatter		False	True	False
+in	in	ADP	IN	prep	flatter		True	False	True
+fact	fact	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	flatter		False	True	False
+so	so	ADV	RB	advmod	diverse		True	False	True
+diverse	diverse	ADJ	JJ	conj	flatter		True	False	False
+in	in	ADP	IN	prep	diverse		True	False	True
+characters	character	NOUN	NNS	pobj	in		True	False	False
+that	that	SCONJ	IN	mark	made		True	False	True
+no	no	DET	DT	det	comparison		True	False	True
+profitable	profitable	ADJ	JJ	amod	comparison		True	False	False
+comparison	comparison	NOUN	NN	nsubjpass	made		True	False	False
+can	can	AUX	MD	aux	made		True	False	True
+be	be	AUX	VB	auxpass	made		True	False	True
+made	make	VERB	VBN	ccomp	diverse		True	False	True
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Described	describe	VERB	VBN	ROOT	Described		True	False	False
+from	from	ADP	IN	prep	Described		True	False	True
+eight	eight	NUM	CD	nummod	specimens	CARDINAL	True	False	True
+specimens	specimen	NOUN	NNS	pobj	from		True	False	False
+,	,	PUNCT	,	punct	specimens		False	True	False
+which	which	DET	WDT	nsubj	are		True	False	True
+are	be	VERB	VBP	relcl	specimens		True	False	True
+alike	alike	ADJ	JJ	acomp	are		True	False	False
+in	in	ADP	IN	prep	are		True	False	True
+all	all	DET	DT	det	characters		True	False	True
+essential	essential	ADJ	JJ	amod	characters		True	False	False
+characters	character	NOUN	NNS	pobj	in		True	False	False
+.	.	PUNCT	.	punct	Described		False	True	False
+"
+"	"
+"	SPACE	_SP	neg	"
+"		False	False	False
+CYRENID^.	CYRENID^.	PROPN	NNP	dep	"
+"		False	False	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Corbicula	Corbicula	PROPN	NNP	compound	Coloniensis		True	False	False
+Coloniensis	Coloniensis	PROPN	NNP	compound	PI		True	False	False
+n.	n.	NOUN	NN	compound	sp		False	False	False
+sp	sp	NOUN	NN	appos	Coloniensis		True	False	False
+.	.	PROPN	NNP	appos	Coloniensis		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Coloniensis		False	False	False
+PI	PI	PROPN	NNP	compound	XXVI		True	False	False
+.	.	PUNCT	.	appos	PI		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	PI		False	False	False
+XXVI	XXVI	PROPN	NNP	dobj	"
+"		True	False	False
+,	,	PUNCT	,	punct	XXVI		False	True	False
+fig	fig	NOUN	NN	appos	XXVI		True	False	False
+.	.	NOUN	NN	appos	XXVI		False	True	False
+"
+"	"
+"	SPACE	_SP	advcl	"
+"		False	False	False
+9	9	NUM	CD	nummod	.	CARDINAL	False	False	False
+.	.	PUNCT	.	npadvmod	"
+"		False	True	False
+"
+"	"
+"	SPACE	_SP	advcl	"
+"		False	False	False
+Shell	shell	NOUN	NN	ROOT	Shell		True	False	False
+subtriangular	subtriangular	ADJ	JJ	amod	inequilateral		True	False	False
+,	,	PUNCT	,	punct	inequilateral		False	True	False
+rather	rather	ADV	RB	advmod	ventricose		True	False	True
+ventricose	ventricose	ADJ	JJ	amod	inequilateral		True	False	False
+,	,	PUNCT	,	punct	inequilateral		False	True	False
+slightly	slightly	ADV	RB	advmod	inequilateral		True	False	False
+inequilateral	inequilateral	ADJ	JJ	amod	Shell		True	False	False
+;	;	PUNCT	:	punct	Shell		False	True	False
+anterior	anterior	ADJ	JJ	amod	margins		True	False	False
+and	and	CCONJ	CC	cc	anterior		True	False	True
+posterior	posterior	ADJ	JJ	conj	anterior		True	False	False
+margins	margin	NOUN	NNS	nsubj	angular		True	False	False
+obtusely	obtusely	ADV	RB	advmod	angular		True	False	False
+angular	angular	ADJ	JJ	ccomp	projecting		True	False	False
+,	,	PUNCT	,	punct	projecting		False	True	False
+the	the	DET	DT	det	slope		True	False	True
+slope	slope	NOUN	NN	nsubj	convex		True	False	False
+above	above	ADP	IN	prep	slope		True	False	True
+the	the	DET	DT	det	angles		True	False	True
+rounded	rounded	ADJ	JJ	amod	angles		True	False	False
+angles	angle	NOUN	NNS	pobj	above		True	False	False
+slightly	slightly	ADV	RB	advmod	convex		True	False	False
+convex	convex	ADJ	JJ	ccomp	projecting		True	False	False
+;	;	PUNCT	:	punct	projecting		False	True	False
+posterior	posterior	ADJ	JJ	amod	slope		True	False	False
+slope	slope	NOUN	NN	nsubj	longer		True	False	False
+decidedly	decidedly	ADV	RB	advmod	longer		True	False	False
+longer	long	ADJ	JJR	ccomp	projecting		True	False	False
+;	;	PUNCT	:	punct	projecting		False	True	False
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	nsubj	rounded		True	False	False
+well	well	ADV	RB	advmod	curved		True	False	True
+curved	curved	ADJ	JJ	amod	rounded		True	False	False
+,	,	PUNCT	,	punct	rounded		False	True	False
+rounded	rounded	ADJ	JJ	ccomp	projecting		True	False	False
+;	;	PUNCT	:	punct	projecting		False	True	False
+beaks	beak	NOUN	NNS	nsubj	projecting		True	False	False
+moderately	moderately	ADV	RB	advmod	projecting		True	False	False
+projecting	project	VERB	VBG	conj	Shell		True	False	False
+.	.	PUNCT	.	punct	projecting		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Shell		False	False	False
+Hinge	hinge	NOUN	NN	compound	ligament		True	False	False
+ligament	ligament	NOUN	NN	ROOT	ligament		True	False	False
+very	very	ADV	RB	advmod	convex		True	False	True
+convex	convex	ADJ	JJ	amod	ligament		True	False	False
+,	,	PUNCT	,	punct	convex		False	True	False
+short	short	ADJ	JJ	conj	convex		True	False	False
+and	and	CCONJ	CC	cc	short		True	False	True
+yellowish	yellowish	ADJ	JJ	conj	short		True	False	False
+.	.	PUNCT	.	punct	ligament		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Surface	surface	NOUN	NN	ROOT	Surface		True	False	False
+nearly	nearly	ADV	RB	advmod	Surface		True	False	False
+^	^	PUNCT	NFP	punct	Surface		False	False	False
+Conchylien	Conchylien	PROPN	NNP	compound	Cabinet	ORG	True	False	False
+Cabinet	Cabinet	PROPN	NNP	ROOT	Cabinet	ORG	True	False	False
+,	,	PUNCT	,	punct	Cabinet		False	True	False
+Planorbis	Planorbis	PROPN	NNP	npadvmod	Cabinet	TAXA	True	False	False
+,	,	PUNCT	,	punct	Cabinet		False	True	False
+p.	p.	NOUN	NN	appos	Cabinet		False	False	False
+147	147	NUM	CD	nummod	p.	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Cabinet		False	True	False
+pi	pi	NOUN	NN	appos	Cabinet		True	False	False
+.	.	NOUN	NN	appos	Cabinet		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Cabinet		False	False	False
+1	1	NUM	CD	nummod	2	CARDINAL	False	False	False
+2	2	NUM	CD	pobj	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Cabinet		False	True	False
+f.	f.	NOUN	NN	appos	Cabinet		False	False	False
+23	23	NUM	CD	nummod	f.	CARDINAL	False	False	False
+-	-	SYM	SYM	punct	25		False	True	False
+25	25	NUM	CD	prep	23		False	False	False
+.	.	PUNCT	.	punct	Cabinet		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Clessin	Clessin	PROPN	NNP	nsubj	locates	PERSON	True	False	False
+locates	locate	VERB	VBZ	ROOT	locates		True	False	False
+Lake	Lake	PROPN	NNP	compound	Titicaca	LOC	True	False	False
+Titicaca	Titicaca	PROPN	NNP	dobj	locates	LOC	True	False	False
+in	in	ADP	IN	prep	locates		True	False	True
+Ecuador	Ecuador	PROPN	NNP	pobj	in	GPE	True	False	False
+I	I	PUNCT	.	punct	locates		True	False	True
+On	on	ADP	IN	prep	calls		True	False	True
+p.	p.	NOUN	NN	pobj	On		False	False	False
+175	175	NUM	CD	nummod	p.	CARDINAL	False	False	False
+lie	lie	NOUN	NN	dep	calls		True	False	False
+calls	call	VERB	VBZ	ROOT	calls		True	False	False
+the	the	DET	DT	det	species		True	False	True
+species	species	NOUN	NN	dobj	calls		True	False	False
+P.	P.	PROPN	NNP	compound	titicacaensis	TAXA	False	False	False
+titicacaensis	titicacaensis	PROPN	NNP	oprd	calls	TAXA	True	False	False
+.	.	PUNCT	.	punct	calls		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+""""	""""	PUNCT	``	punct	■		False	True	False
+■	■	AUX	``	aux	"
+"		False	False	False
+Voy	Voy	PROPN	NNP	attr	■	ORG	True	False	False
+.	.	PUNCT	.	punct	Voy	ORG	False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Voy	ORG	False	False	False
+Am	Am	PROPN	NNP	nmod	p.	ORG	True	False	True
+.	.	PUNCT	.	case	Am	ORG	False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Am	ORG	False	False	False
+Merid	Merid	PROPN	NNP	dobj	"
+"		True	False	False
+.	.	PUNCT	,	punct	Am		False	True	False
+,	,	PUNCT	,	punct	Am		False	True	False
+p.	p.	NOUN	NN	appos	Voy		False	False	False
+345	345	NUM	CD	nummod	p.	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	p.		False	True	False
+pi	pi	NOUN	NN	appos	p.		True	False	False
+.	.	NOUN	NN	appos	p.		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Voy		False	False	False
+44	44	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	"
+"		False	True	False
+f.	f.	NOUN	NN	appos	"
+"		False	False	False
+5	5	NUM	CD	nummod	f.	CARDINAL	False	False	False
+-	-	SYM	SYM	punct	8		False	True	False
+8	8	NUM	CD	prep	5		False	False	False
+.	.	PUNCT	.	punct	f.		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Voy		False	False	False
+Ubid	Ubid	PROPN	NNP	appos	Voy	ORG	True	False	False
+.	.	PROPN	NNP	punct	Ubid		False	True	False
+,^.	,^.	PUNCT	.	punct	Ubid		False	False	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+346	346	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	"
+"		False	True	False
+f.	f.	NOUN	NN	npadvmod	"
+"		False	False	False
+1	1	NUM	CD	nummod	f.	CARDINAL	False	False	False
+-	-	SYM	SYM	punct	4		False	True	False
+4	4	NUM	CD	prep	1		False	False	False
+.	.	PUNCT	.	punct	f.		False	True	False
+smooth	smooth	ADJ	JJ	ROOT	smooth		True	False	False
+in	in	ADP	IN	prep	smooth		True	False	True
+the	the	DET	DT	det	middle		True	False	True
+middle	middle	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	smooth		False	True	False
+finely	finely	ADV	RB	advmod	striate		True	False	False
+,	,	PUNCT	,	punct	striate		False	True	False
+irregularly	irregularly	ADV	RB	advmod	striate		True	False	False
+striate	striate	NOUN	NN	conj	smooth		True	False	False
+at	at	ADP	IN	prep	striate		True	False	True
+the	the	DET	DT	det	ends		True	False	True
+ends	end	NOUN	NNS	pobj	at		True	False	False
+and	and	CCONJ	CC	cc	ends		True	False	True
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	conj	ends		True	False	False
+.	.	PUNCT	.	punct	striate		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Green	green	ADJ	JJ	amod	"
+"		True	False	False
+,	,	PUNCT	,	punct	Green		False	True	False
+duskier	dusky	ADJ	JJR	conj	Green		True	False	False
+above	above	ADV	RB	advmod	duskier		True	False	True
+,	,	PUNCT	,	punct	Green		False	True	False
+with	with	ADP	IN	prep	Green		True	False	True
+narrow	narrow	ADJ	JJ	amod	with		True	False	False
+,	,	PUNCT	,	punct	narrow		False	True	False
+widely	widely	ADV	RB	advmod	spaced		True	False	False
+spaced	spaced	ADJ	JJ	conj	narrow		True	False	False
+and	and	CCONJ	CC	cc	spaced		True	False	True
+inconspicuous	inconspicuous	ADJ	JJ	conj	spaced		True	False	False
+blackish	blackish	ADJ	JJ	amod	rays		True	False	False
+rays	ray	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	Green		False	True	False
+the	the	DET	DT	det	beaks		True	False	True
+eroded	erode	VERB	VBN	amod	beaks		True	False	False
+beaks	beak	NOUN	NNS	nsubj	purple		True	False	False
+deep	deep	ADJ	JJ	amod	purple		True	False	False
+purple	purple	NOUN	NN	conj	Green		True	False	False
+.	.	PUNCT	.	punct	Green		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Interior	interior	NOUN	NN	ROOT	Interior		True	False	False
+deep	deep	ADJ	JJ	amod	purple		True	False	False
+purple	purple	ADJ	JJ	appos	Interior		True	False	False
+,	,	PUNCT	,	punct	purple		False	True	False
+clouded	cloud	VERB	VBN	acl	purple		True	False	False
+with	with	ADP	IN	prep	clouded		True	False	True
+whitish	whitish	ADJ	JJ	amod	purple		True	False	False
+purple	purple	NOUN	NN	pobj	with		True	False	False
+within	within	ADP	IN	prep	purple		True	False	True
+the	the	DET	DT	det	line		True	False	True
+pallial	pallial	ADJ	JJ	amod	line		True	False	False
+line	line	NOUN	NN	pobj	within		True	False	False
+,	,	PUNCT	,	punct	Interior		False	True	False
+the	the	DET	DT	det	teeth		True	False	True
+teeth	tooth	NOUN	NNS	appos	Interior		True	False	False
+of	of	ADP	IN	prep	teeth		True	False	True
+the	the	DET	DT	det	tint		True	False	True
+same	same	ADJ	JJ	amod	tint		True	False	True
+light	light	ADJ	JJ	amod	tint		True	False	False
+tint	tint	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	Interior		False	True	False
+"
+"	"
+"	SPACE	_SP	amod	line		False	False	False
+Pallial	pallial	ADJ	JJ	amod	line		True	False	False
+line	line	NOUN	NN	ROOT	line		True	False	False
+with	with	ADP	IN	prep	line		True	False	True
+a	a	DET	DT	det	sinus		True	False	True
+short	short	ADJ	JJ	amod	sinus		True	False	False
+triangular	triangular	ADJ	JJ	amod	sinus		True	False	False
+sinus	sinus	NOUN	NN	pobj	with		True	False	False
+;	;	PUNCT	:	punct	line		False	True	False
+right	right	ADJ	JJ	amod	valve		True	False	False
+valve	valve	NOUN	NN	appos	line		True	False	False
+with	with	ADP	IN	prep	valve		True	False	True
+three	three	NUM	CD	nummod	teeth	CARDINAL	True	False	True
+divergent	divergent	ADJ	JJ	amod	teeth		True	False	False
+cardinal	cardinal	ADJ	JJ	amod	teeth		True	False	False
+teeth	tooth	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	with		False	True	False
+median	median	ADJ	JJ	amod	teeth		True	False	False
+and	and	CCONJ	CC	cc	median		True	False	True
+posterior	posterior	ADJ	JJ	conj	median		True	False	False
+teeth	tooth	NOUN	NNS	pobj	with		True	False	False
+bifid	bifid	NOUN	NN	amod	teeth		True	False	False
+at	at	ADP	IN	prep	bifid		True	False	True
+tip	tip	NOUN	NN	pobj	at		True	False	False
+;	;	PUNCT	:	punct	valve		False	True	False
+median	median	ADJ	JJ	compound	tooth		True	False	False
+tooth	tooth	NOUN	NN	compound	teeth		True	False	False
+wide	wide	ADJ	JJ	amod	tooth		True	False	False
+,	,	PUNCT	,	punct	teeth		False	True	False
+anterior	anterior	ADJ	JJ	amod	teeth		True	False	False
+and	and	CCONJ	CC	cc	anterior		True	False	True
+posterior	posterior	ADJ	JJ	conj	anterior		True	False	False
+teeth	tooth	NOUN	NNS	nsubj	long		True	False	False
+long	long	ADJ	JJ	relcl	valve		True	False	False
+and	and	CCONJ	CC	cc	long		True	False	True
+oblique	oblique	ADJ	JJ	conj	long		True	False	False
+;	;	PUNCT	:	punct	valve		False	True	False
+left	left	ADJ	JJ	amod	valve		True	False	False
+valve	valve	NOUN	NN	appos	valve		True	False	False
+with	with	ADP	IN	prep	valve		True	False	True
+three	three	NUM	CD	nummod	cardinals	CARDINAL	True	False	True
+cardinals	cardinal	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	with		False	True	False
+the	the	DET	DT	det	bifid		True	False	True
+median	median	ADJ	JJ	amod	bifid		True	False	False
+bifid	bifid	NOUN	NN	appos	line		True	False	False
+at	at	ADP	IN	prep	bifid		True	False	True
+tip	tip	NOUN	NN	pobj	at		True	False	False
+.	.	PUNCT	.	punct	line		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Laterals	lateral	NOUN	NNS	ROOT	Laterals		True	False	False
+crenulated	crenulate	VERB	VBN	amod	Laterals		True	False	False
+,	,	PUNCT	,	punct	Laterals		False	True	False
+long	long	ADJ	JJ	amod	Laterals		True	False	False
+,	,	PUNCT	,	punct	straight		False	True	False
+the	the	DET	DT	det	anterior		True	False	True
+anterior	anterior	ADJ	JJ	amod	straight		True	False	False
+slightly	slightly	ADV	RB	advmod	curved		True	False	False
+curved	curved	ADJ	JJ	amod	straight		True	False	False
+,	,	PUNCT	,	punct	straight		False	True	False
+posterior	posterior	ADJ	JJ	nsubj	straight		True	False	False
+straight	straight	ADJ	JJ	amod	Laterals		True	False	False
+;	;	PUNCT	:	punct	Laterals		False	True	False
+double	double	ADJ	JJ	amod	Laterals		True	False	False
+in	in	ADP	IN	prep	double		True	False	True
+right	right	ADJ	JJ	pobj	in		True	False	False
+,	,	PUNCT	,	punct	single		False	True	False
+single	single	ADJ	JJ	appos	Laterals		True	False	False
+in	in	ADP	IN	prep	single		True	False	True
+left	left	ADJ	JJ	amod	valve		True	False	False
+valve	valve	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	Laterals		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Length	length	NOUN	NN	npadvmod	"
+"		True	False	False
+32	32	NUM	CD	nummod	Length	CARDINAL	False	False	False
+*	*	PUNCT	,	punct	Length		False	True	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+27J	27j	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+diam	diam	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+15i	15i	NUM	CD	nummod	mm	QUANTITY	False	False	False
+mm	mm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+Length	length	NOUN	NN	appos	Length		True	False	False
+28	28	NUM	CD	nummod	Length	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	Length		False	False	False
+24	24	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+diam	diam	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+15	15	NUM	CD	nummod	mm	QUANTITY	False	False	False
+mm	mm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+La	La	PROPN	NNP	compound	River	LOC	True	False	False
+Plata	Plata	PROPN	NNP	compound	River	LOC	True	False	False
+River	River	PROPN	NNP	appos	Length	LOC	True	False	False
+above	above	ADP	IN	prep	River		True	False	True
+Colonia	Colonia	PROPN	NNP	pobj	above	TAXA	True	False	False
+,	,	PUNCT	,	punct	Colonia		False	True	False
+Uruguay	Uruguay	PROPN	NNP	appos	Colonia	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	River		False	True	False
+Dr.	Dr.	PROPN	NNP	appos	River		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	River		False	False	False
+Rush	Rush	PROPN	NNP	appos	River	PERSON	True	False	False
+)	)	PUNCT	-RRB-	punct	Rush		False	True	False
+.	.	PUNCT	-RRB-	punct	River		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+Larger	large	ADJ	JJR	appos	Length		True	False	False
+and	and	CCONJ	CC	cc	Larger		True	False	True
+more	more	ADV	RBR	advmod	triangular		True	False	True
+triangular	triangular	ADJ	JJ	conj	Larger		True	False	False
+than	than	SCONJ	IN	prep	Larger		True	False	True
+C.	C.	PROPN	NNP	compound	limosa	TAXA	False	False	False
+limosa	limosa	PROPN	NNP	pobj	than	TAXA	True	False	False
+.	.	PUNCT	.	punct	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+The	the	DET	DT	det	teeth		True	False	True
+lateral	lateral	ADJ	JJ	amod	teeth		True	False	False
+teeth	tooth	NOUN	NNS	nsubj	are		True	False	False
+are	be	AUX	VBP	ROOT	are		True	False	True
+unusually	unusually	ADV	RB	advmod	long		True	False	False
+long	long	ADJ	JJ	acomp	are		True	False	False
+,	,	PUNCT	,	punct	are		False	True	False
+and	and	CCONJ	CC	cc	are		True	False	True
+the	the	DET	DT	det	cardinals		True	False	True
+cardinals	cardinal	NOUN	NNS	nsubj	divergent		True	False	False
+widely	widely	ADV	RB	advmod	divergent		True	False	False
+divergent	divergent	ADJ	JJ	conj	are		True	False	False
+.	.	PUNCT	.	punct	divergent		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+MUTELID^.	MUTELID^.	PROPN	NNP	punct	are		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+Glabaris	Glabaris	PROPN	NNP	compound	Lea	TAXA	True	False	False
+latomarginatus	latomarginatus	PROPN	NNP	compound	Lea	TAXA	True	False	False
+Lea	Lea	PROPN	NNP	npadvmod	are		True	False	False
+var	var	PROPN	NNP	compound	.		True	False	False
+.	.	PROPN	NNP	appos	Lea		False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Lea		False	False	False
+felix	felix	PROPN	NNP	compound	.		True	False	False
+n.	n.	NOUN	NN	compound	.		False	False	False
+r.	r.	NOUN	NN	compound	.		False	False	False
+PI	PI	PROPN	NNP	compound	.		True	False	False
+.	.	NOUN	NN	appos	Lea		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+XXVI	xxvi	NOUN	NN	npadvmod	are		True	False	False
+,	,	PUNCT	,	punct	XXVI		False	True	False
+fig	fig	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	XXVI		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+8	8	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+.	.	PUNCT	.	punct	are		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+Similar	similar	ADJ	JJ	acomp	are		True	False	False
+in	in	ADP	IN	prep	Similar		True	False	True
+form	form	NOUN	NN	pobj	in		True	False	False
+to	to	ADP	IN	prep	Similar		True	False	True
+Anodonta	Anodonta	PROPN	NNP	compound	Lea	TAXA	True	False	False
+latomarginata	latomarginata	PROPN	NNP	compound	Lea	TAXA	True	False	False
+Lea	Lea	PROPN	NNP	pobj	to		True	False	False
+,	,	PUNCT	,	punct	Similar		False	True	False
+but	but	CCONJ	CC	cc	Similar		True	False	True
+epidermis	epidermis	NOUN	NN	conj	Similar		True	False	False
+light	light	ADJ	JJ	amod	green		True	False	False
+yellowish	yellowish	ADJ	JJ	amod	green		True	False	False
+-	-	PUNCT	HYPH	punct	green		False	True	False
+green	green	ADJ	JJ	amod	epidermis		True	False	False
+,	,	PUNCT	,	punct	green		False	True	False
+closely	closely	ADV	RB	advmod	painted		True	False	False
+painted	paint	VERB	VBN	conj	green		True	False	False
+with	with	ADP	IN	prep	painted		True	False	True
+short	short	ADJ	JJ	amod	lines		True	False	False
+radiating	radiate	VERB	VBG	amod	lines		True	False	False
+dichotomous	dichotomous	ADJ	JJ	amod	lines		True	False	False
+or	or	CCONJ	CC	cc	dichotomous		True	False	True
+simple	simple	ADJ	JJ	conj	dichotomous		True	False	False
+lines	line	NOUN	NNS	pobj	with		True	False	False
+or	or	CCONJ	CC	cc	lines		True	False	True
+narrow	narrow	ADJ	JJ	amod	V		True	False	False
+V	V	NOUN	NNS	conj	lines		True	False	False
+'s	'	NOUN	NNS	conj	lines		False	False	True
+of	of	ADP	IN	prep	's		True	False	True
+green	green	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	lines		False	True	False
+and	and	CCONJ	CC	cc	lines		True	False	True
+two	two	NUM	CD	nummod	rays	CARDINAL	True	False	True
+green	green	ADJ	JJ	amod	rays		True	False	False
+rays	ray	NOUN	NNS	conj	lines		True	False	False
+on	on	ADP	IN	prep	rays		True	False	True
+the	the	DET	DT	det	slope		True	False	True
+posterior	posterior	ADJ	JJ	amod	slope		True	False	False
+slope	slope	NOUN	NN	pobj	on		True	False	False
+.	.	PUNCT	.	punct	are		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Interior	interior	NOUN	NN	ROOT	Interior		True	False	False
+pale	pale	ADJ	JJ	amod	pink		True	False	False
+pink	pink	NOUN	NN	appos	Interior		True	False	False
+within	within	ADP	IN	prep	pink		True	False	True
+pallial	pallial	ADJ	JJ	amod	line		True	False	False
+line	line	NOUN	NN	pobj	within		True	False	False
+,	,	PUNCT	,	punct	pink		False	True	False
+prismatic	prismatic	ADJ	JJ	amod	border		True	False	False
+border	border	NOUN	NN	nsubj	buflf		True	False	False
+faint	faint	ADJ	JJ	amod	buflf		True	False	False
+olive	olive	ADJ	JJ	amod	buflf		True	False	False
+buflf	buflf	NOUN	NN	appos	Interior		True	False	False
+""""	""""	PUNCT	''	punct	buflf		False	True	False
+.	.	PUNCT	''	punct	buflf		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	zags		False	False	False
+Some	some	DET	DT	det	zags		True	False	True
+black	black	ADJ	JJ	amod	zags		True	False	False
+zig	zig	NOUN	NN	compound	zags		True	False	False
+-	-	PUNCT	HYPH	punct	zags		False	True	False
+zags	zag	NOUN	NNS	ROOT	zags		True	False	False
+along	along	ADP	IN	prep	zags		True	False	True
+pallial	pallial	ADJ	JJ	amod	line		True	False	False
+line	line	NOUN	NN	pobj	along		True	False	False
+or	or	CCONJ	CC	cc	along		True	False	True
+outlining	outline	VERB	VBG	conj	along		True	False	False
+muscle	muscle	NOUN	NN	compound	impressions		True	False	False
+impressions	impression	NOUN	NNS	dobj	outlining		True	False	False
+.	.	PUNCT	.	punct	zags		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Length	length	NOUN	NN	npadvmod	"
+"		True	False	False
+53	53	NUM	CD	nummod	Length	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	Length		False	False	False
+38	38	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+diam	diam	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+20	20	NUM	CD	nummod	mm	QUANTITY	False	False	False
+J	j	NOUN	NN	compound	mm	QUANTITY	True	False	False
+mm	mm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+Length	length	NOUN	NN	appos	Length		True	False	False
+49	49	NUM	CD	nummod	Length	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+35	35	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+diam	diam	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+18	18	NUM	CD	nummod	mm	QUANTITY	False	False	False
+mm	mm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	mm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+Colonia	Colonia	PROPN	NNP	appos	Length	TAXA	True	False	False
+,	,	PUNCT	,	punct	Colonia		False	True	False
+Uruguay	Uruguay	PROPN	NNP	appos	Colonia	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	Colonia		False	True	False
+Dr.	Dr.	PROPN	NNP	appos	Colonia		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+Rush	Rush	PROPN	NNP	appos	Length	PERSON	True	False	False
+)	)	PUNCT	.	punct	Rush		False	True	False
+.	.	PUNCT	.	punct	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Glabaris	Glabaris	PROPN	NNP	compound	Shell	TAXA	True	False	False
+trapesialis	trapesialis	NOUN	NN	appos	Glabaris		True	False	False
+var	var	NOUN	NN	nummod	trapesialis		True	False	False
+.	.	NOUN	NN	appos	trapesialis		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Glabaris		False	False	False
+cygneiformis	cygneiformis	NOUN	NN	compound	.		True	False	False
+n.	n.	NOUN	NN	dep	.		False	False	False
+v.	v.	NOUN	NN	compound	PI		False	False	False
+PI	pi	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	Glabaris		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Glabaris		False	False	False
+XXVI	xxvi	NUM	CD	nummod	"
+"		True	False	False
+,	,	PUNCT	,	punct	XXVI		False	True	False
+figs	figs	NOUN	NN	appos	XXVI		True	False	False
+.	.	NOUN	NN	appos	XXVI		False	True	False
+"
+"	"
+"	SPACE	_SP	appos	Glabaris		False	False	False
+4	4	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	4		False	True	False
+5	5	NUM	CD	appos	4	CARDINAL	False	False	False
+.	.	NUM	CD	appos	4		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Glabaris		False	False	False
+Shell	shell	NOUN	NN	ROOT	Shell		True	False	False
+similar	similar	ADJ	JJ	amod	Shell		True	False	False
+to	to	ADP	IN	prep	similar		True	False	True
+some	some	DET	DT	det	forms		True	False	True
+forms	form	NOUN	NNS	pobj	to		True	False	False
+of	of	ADP	IN	prep	forms		True	False	True
+Anodonta	Anodonta	PROPN	NNP	compound	eygnea	TAXA	True	False	False
+eygnea	eygnea	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	forms		False	True	False
+such	such	ADJ	JJ	amod	as		True	False	True
+as	as	ADP	IN	prep	forms		True	False	True
+that	that	DET	DT	pobj	as		True	False	True
+figured	figure	VERB	VBN	acl	that		True	False	False
+by	by	ADP	IN	agent	figured		True	False	True
+Rossmiissler	Rossmiissler	PROPN	NNP	pobj	by	ORG	True	False	False
+,	,	PUNCT	,	punct	Rossmiissler	ORG	False	True	False
+Iconogr	Iconogr	PROPN	NNP	appos	Rossmiissler	ORG	True	False	False
+.	.	PROPN	NNP	appos	Rossmiissler	ORG	False	True	False
+,	,	PROPN	NNP	punct	Rossmiissler		False	True	False
+I	I	PROPN	NNP	appos	Rossmiissler		True	False	True
+,	,	PUNCT	,	punct	Rossmiissler		False	True	False
+fig	fig	NOUN	NN	appos	Rossmiissler		True	False	False
+.	.	NOUN	NN	appos	that		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Shell		False	False	False
+280	280	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	280		False	True	False
+in	in	ADP	IN	prep	280		True	False	True
+the	the	DET	DT	det	form		True	False	True
+elongate	elongate	ADJ	JJ	amod	form		True	False	False
+form	form	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	280		False	True	False
+long	long	ADJ	JJ	amod	end		True	False	False
+and	and	CCONJ	CC	cc	long		True	False	True
+up	up	ADV	RB	advmod	curved		True	False	True
+-	-	PUNCT	HYPH	punct	curved		False	True	False
+curved	curved	ADJ	JJ	conj	long		True	False	False
+posterior	posterior	ADJ	JJ	amod	end		True	False	False
+end	end	NOUN	NN	appos	280		True	False	False
+,	,	PUNCT	,	punct	end		False	True	False
+but	but	CCONJ	CC	cc	end		True	False	True
+hinge	hinge	NOUN	NN	compound	line		True	False	False
+-	-	PUNCT	HYPH	punct	line		False	True	False
+line	line	NOUN	NN	conj	end		True	False	False
+straight	straight	ADJ	JJ	amod	line		True	False	False
+and	and	CCONJ	CC	cc	straight		True	False	True
+produced	produce	VERB	VBN	conj	straight		True	False	False
+in	in	ADP	IN	prep	produced		True	False	True
+a	a	DET	DT	det	wing		True	False	True
+small	small	ADJ	JJ	amod	wing		True	False	False
+wing	wing	NOUN	NN	pobj	in		True	False	False
+anteriorly	anteriorly	ADV	RB	advmod	produced		True	False	False
+,	,	PUNCT	,	punct	produced		False	True	False
+terminating	terminate	VERB	VBG	dep	produced		True	False	False
+angularly	angularly	ADV	RB	advmod	terminating		True	False	False
+.	.	PUNCT	.	punct	Shell		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Very	very	ADV	RB	advmod	thin		True	False	True
+thin	thin	ADJ	JJ	acomp	"
+"		True	False	False
+and	and	CCONJ	CC	cc	thin		True	False	True
+fragile	fragile	ADJ	JJ	conj	thin		True	False	False
+,	,	PUNCT	,	punct	thin		False	True	False
+even	even	ADV	RB	advmod	in		True	False	True
+in	in	ADP	IN	prep	thin		True	False	True
+specimens	specimen	NOUN	NNS	pobj	in		True	False	False
+14	14	NUM	CD	nummod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NNS	compound	.	QUANTITY	True	False	False
+.	.	NOUN	NN	appos	specimens		False	True	False
+"
+"	"
+"	SPACE	_SP	acl	specimens		False	False	False
+long	long	ADJ	JJ	amod	"
+"		True	False	False
+.	.	PUNCT	.	punct	thin		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Green	green	ADJ	JJ	ROOT	Green		True	False	False
+and	and	CCONJ	CC	cc	Green		True	False	True
+smooth	smooth	ADJ	JJ	conj	Green		True	False	False
+in	in	ADP	IN	prep	smooth		True	False	True
+middle	middle	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	Green		False	True	False
+blackish	blackish	ADJ	JJ	conj	Green		True	False	False
+and	and	CCONJ	CC	cc	blackish		True	False	True
+roughened	roughened	ADJ	JJ	conj	blackish		True	False	False
+at	at	ADP	IN	prep	roughened		True	False	True
+ends	end	NOUN	NNS	pobj	at		True	False	False
+and	and	CCONJ	CC	cc	ends		True	False	True
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	conj	ends		True	False	False
+;	;	PUNCT	:	punct	Green		False	True	False
+nacre	nacre	NOUN	NN	compound	bluewhite		True	False	False
+bluewhite	bluewhite	NOUN	NN	conj	Green		True	False	False
+,	,	PUNCT	,	punct	bluewhite		False	True	False
+iridescent	iridescent	ADJ	JJ	conj	bluewhite		True	False	False
+,	,	PUNCT	,	punct	iridescent		False	True	False
+dark	dark	ADV	RB	advmod	stained		True	False	False
+-	-	PUNCT	HYPH	punct	stained		False	True	False
+stained	stained	ADJ	JJ	conj	iridescent		True	False	False
+in	in	ADP	IN	prep	stained		True	False	True
+the	the	DET	DT	det	cavity		True	False	True
+cavity	cavity	NOUN	NN	pobj	in		True	False	False
+more	more	ADV	RBR	advmod	stained		True	False	True
+or	or	CCONJ	CC	cc	more		True	False	True
+less	less	ADV	RBR	conj	more		True	False	True
+,	,	PUNCT	,	punct	stained		False	True	False
+and	and	CCONJ	CC	cc	stained		True	False	True
+often	often	ADV	RB	advmod	with		True	False	True
+with	with	ADP	IN	conj	stained		True	False	True
+some	some	DET	DT	det	markings		True	False	True
+zig	zig	ADJ	JJ	amod	zag		True	False	False
+-	-	PUNCT	HYPH	punct	zag		False	True	False
+zag	zag	ADJ	JJ	amod	markings		True	False	False
+blackish	blackish	ADJ	JJ	amod	markings		True	False	False
+markings	marking	NOUN	NNS	pobj	with		True	False	False
+around	around	ADP	IN	prep	markings		True	False	True
+the	the	DET	DT	det	muscles		True	False	True
+muscles	muscle	NOUN	NNS	pobj	around		True	False	False
+.	.	PUNCT	.	punct	Green		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Length	length	NOUN	NN	npadvmod	"
+"		True	False	False
+142	142	NUM	CD	nummod	Length	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+75	75	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	75		False	True	False
+diam	diam	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	75		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+36	36	NUM	CD	nummod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	NOUN	NN	npadvmod	cm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+;	;	PUNCT	:	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+52	52	NUM	CD	quantmod	53	PERCENT	False	False	False
+-	-	SYM	SYM	punct	53	PERCENT	False	True	False
+53	53	NUM	CD	nummod	%	PERCENT	False	False	False
+%	%	NOUN	NN	appos	Length	PERCENT	False	True	False
+,	,	PUNCT	,	punct	%		False	True	False
+diam	diam	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	%		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Length		False	False	False
+26	26	NUM	CD	nummod	%	PERCENT	False	False	False
+%	%	NOUN	NN	pobj	"
+"	PERCENT	False	True	False
+of	of	ADP	IN	prep	%		True	False	True
+length	length	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+More	more	ADV	RBR	advmod	compressed		True	False	True
+compressed	compressed	ADJ	JJ	acomp	"
+"		True	False	False
+than	than	SCONJ	IN	prep	compressed		True	False	True
+G.	G.	PROPN	NNP	compound	riograndensis	TAXA	False	False	False
+riograndensis	riograndensis	PROPN	NNP	compound	Iher	TAXA	True	False	False
+Iher	Iher	PROPN	NNP	pobj	than		True	False	False
+.	.	PUNCT	,	pobj	than		False	True	False
+,	,	PUNCT	,	pobj	than		False	True	False
+with	with	ADP	IN	mark	angular		True	False	True
+the	the	DET	DT	det	line		True	False	True
+hinge	hinge	NOUN	NN	compound	line		True	False	False
+-	-	PUNCT	HYPH	punct	line		False	True	False
+line	line	NOUN	NN	nsubj	angular		True	False	False
+more	more	ADV	RBR	advmod	angular		True	False	True
+angular	angular	ADJ	JJ	advcl	compressed		True	False	False
+at	at	ADP	IN	prep	angular		True	False	True
+the	the	DET	DT	det	ends		True	False	True
+ends	end	NOUN	NNS	pobj	at		True	False	False
+and	and	CCONJ	CC	cc	angular		True	False	True
+the	the	DET	DT	det	end		True	False	True
+posterior	posterior	ADJ	JJ	amod	end		True	False	False
+end	end	NOUN	NN	nsubj	curved		True	False	False
+peculiarly	peculiarly	ADV	RB	advmod	curved		True	False	False
+up37	up37	ADV	RB	advmod	curved		False	False	False
+curved	curved	ADJ	JJ	conj	angular		True	False	False
+,	,	PUNCT	,	punct	curved		False	True	False
+as	as	ADP	IN	prep	curved		True	False	True
+in	in	ADP	IN	prep	as		True	False	True
+certain	certain	ADJ	JJ	amod	forms		True	False	False
+middle	middle	ADJ	JJ	amod	forms		True	False	False
+European	european	ADJ	JJ	amod	forms	NORP	True	False	False
+forms	form	NOUN	NNS	pobj	in		True	False	False
+of	of	ADP	IN	prep	forms		True	False	True
+A.	A.	PROPN	NNP	compound	cygnea	TAXA	False	False	False
+cygnea	cygnea	PROPN	NNP	pobj	of	TAXA	True	False	False
+.	.	PUNCT	.	punct	compressed		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+The	the	DET	DT	det	specimens		True	False	True
+specimens	specimen	NOUN	NNS	nsubj	are		True	False	False
+are	be	AUX	VBP	ROOT	are		True	False	True
+also	also	ADV	RB	advmod	are		True	False	True
+even	even	ADV	RB	advmod	thinner		True	False	True
+thinner	thin	ADJ	JJR	acomp	are		True	False	False
+than	than	SCONJ	IN	prep	thinner		True	False	True
+examples	example	NOUN	NNS	pobj	than		True	False	False
+of	of	ADP	IN	prep	examples		True	False	True
+riograndends	riograndends	PROPN	NNPS	pobj	of		True	False	False
+before	before	ADP	IN	prep	examples		True	False	True
+me	I	PRON	PRP	pobj	before		True	False	True
+,	,	PUNCT	,	punct	examples		False	True	False
+of	of	ADP	IN	prep	examples		True	False	True
+equal	equal	ADJ	JJ	amod	size		True	False	False
+size	size	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	are		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Pond	pond	NOUN	NN	attr	"
+"		True	False	False
+and	and	CCONJ	CC	cc	Pond		True	False	True
+a	a	DET	DT	det	creek		True	False	True
+small	small	ADJ	JJ	amod	creek		True	False	False
+creek	creek	NOUN	NN	conj	Pond		True	False	False
+near	near	SCONJ	IN	prep	creek		True	False	False
+Maldonado	Maldonado	PROPN	NNP	pobj	near	GPE	True	False	False
+,	,	PUNCT	,	punct	Maldonado		False	True	False
+Uruguay	Uruguay	PROPN	NNP	appos	Maldonado	GPE	True	False	False
+(	(	PUNCT	-LRB-	punct	Pond		False	True	False
+Dr.	Dr.	PROPN	NNP	appos	Pond		False	False	False
+"
+"	"
+"	SPACE	_SP	conj	Pond		False	False	False
+Rush	Rush	PROPN	NNP	appos	Pond	PERSON	True	False	False
+)	)	PUNCT	.	punct	Rush		False	True	False
+.	.	PUNCT	.	punct	Pond		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+The	the	DET	DT	det	differences		True	False	True
+differences	difference	NOUN	NNS	nsubj	are		True	False	False
+between	between	ADP	IN	prep	differences		True	False	True
+this	this	DET	DT	det	form		True	False	True
+form	form	NOUN	NN	pobj	between		True	False	False
+and	and	CCONJ	CC	cc	form		True	False	True
+typical	typical	ADJ	JJ	amod	trapesialis		True	False	False
+trapesialis	trapesiali	NOUN	NNS	conj	form		True	False	False
+are	be	AUX	VBP	ROOT	are		True	False	True
+manifest	manifest	ADJ	JJ	acomp	are		True	False	False
+when	when	ADV	WRB	advmod	compare		True	False	True
+we	we	PRON	PRP	nsubj	compare		True	False	True
+compare	compare	VERB	VBP	advcl	are		True	False	False
+the	the	DET	DT	det	figures		True	False	True
+typical	typical	ADJ	JJ	amod	figures		True	False	False
+figures	figure	NOUN	NNS	dobj	compare		True	False	False
+of	of	ADP	IN	prep	figures		True	False	True
+the	the	DET	DT	det	latter		True	False	True
+latter	latter	ADJ	JJ	pobj	of		True	False	True
+in	in	ADP	IN	prep	figures		True	False	True
+Encycl	Encycl	PROPN	NNP	pobj	in	WORK_OF_ART	True	False	False
+.	.	PUNCT	.	punct	are		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+Meth	Meth	PROPN	NNP	dep	are		True	False	False
+.	.	PUNCT	,	punct	Meth		False	True	False
+,	,	PUNCT	,	punct	Meth		False	True	False
+pi	pi	NOUN	NN	appos	Meth		True	False	False
+.	.	NOUN	NN	appos	Meth		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	are		False	False	False
+205	205	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	are		False	True	False
+which	which	DET	WDT	nsubj	agree		True	False	True
+agree	agree	VERB	VBP	advcl	are		True	False	False
+perfectly	perfectly	ADV	RB	advmod	agree		True	False	False
+with	with	ADP	IN	prep	agree		True	False	True
+specimens	specimen	NOUN	NNS	pobj	with		True	False	False
+before	before	ADP	IN	prep	specimens		True	False	True
+me	I	PRON	PRP	pobj	before		True	False	True
+.	.	PUNCT	.	punct	are		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	render		False	False	False
+The	the	DET	DT	det	divergence		True	False	True
+divergence	divergence	NOUN	NN	nsubj	render		True	False	False
+between	between	ADP	IN	prep	divergence		True	False	True
+the	the	DET	DT	det	races		True	False	True
+several	several	ADJ	JJ	amod	races		True	False	True
+geographic	geographic	ADJ	JJ	amod	races		True	False	False
+races	race	NOUN	NNS	pobj	between		True	False	False
+of	of	ADP	IN	prep	races		True	False	True
+G.	G.	PROPN	NNP	compound	trapesialis	TAXA	False	False	False
+trapesialis	trapesialis	PROPN	NNP	pobj	of	TAXA	True	False	False
+,	,	PUNCT	,	punct	races		False	True	False
+such	such	ADJ	JJ	amod	as		True	False	True
+as	as	ADP	IN	prep	races		True	False	True
+riograndensis	riograndensis	NOUN	NN	pobj	as		True	False	False
+,	,	PUNCT	,	punct	riograndensis		False	True	False
+exoticus	exoticus	NOUN	NN	conj	riograndensis		True	False	False
+and	and	CCONJ	CC	cc	exoticus		True	False	True
+cygneiformis	cygneiformis	NOUN	NN	conj	exoticus		True	False	False
+render	render	VERB	VBP	ROOT	render		True	False	False
+it	it	PRON	PRP	nsubj	necessary		True	False	True
+necessary	necessary	ADJ	JJ	ccomp	render		True	False	False
+,	,	PUNCT	,	punct	render		False	True	False
+in	in	ADP	IN	prep	render		True	False	True
+my	my	PRON	PRP$	poss	opinion		True	False	True
+opinion	opinion	NOUN	NN	pobj	in		True	False	False
+,	,	PUNCT	,	punct	render		False	True	False
+to	to	PART	TO	aux	recognize		True	False	True
+recognize	recognize	VERB	VB	acl	render		True	False	False
+these	these	DET	DT	dobj	recognize		True	False	True
+as	as	ADP	IN	prep	recognize		True	False	True
+of	of	ADP	IN	prep	as		True	False	True
+subspecific	subspecific	ADJ	JJ	amod	rank		True	False	False
+rank	rank	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	render		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	seem		False	False	False
+The	the	DET	DT	det	lumpers		True	False	True
+extreme	extreme	ADJ	JJ	amod	lumpers		True	False	False
+""""	""""	PUNCT	``	punct	lumpers		False	True	False
+lumpers	lumper	NOUN	NNS	nsubj	seem		True	False	False
+""""	""""	PUNCT	''	punct	lumpers		False	True	False
+do	do	AUX	VBP	aux	seem		True	False	True
+not	not	PART	RB	neg	seem		True	False	True
+seem	seem	VERB	VB	ROOT	seem		True	False	True
+to	to	PART	TO	aux	understand		True	False	True
+understand	understand	VERB	VB	xcomp	seem		True	False	False
+that	that	SCONJ	IN	mark	are		True	False	True
+if	if	SCONJ	IN	mark	granted		True	False	True
+evolution	evolution	NOUN	NN	nsubjpass	granted		True	False	False
+of	of	ADP	IN	prep	evolution		True	False	True
+species	specie	NOUN	NNS	pobj	of		True	False	False
+by	by	ADP	IN	prep	evolution		True	False	True
+divergence	divergence	NOUN	NN	pobj	by		True	False	False
+is	be	AUX	VBZ	auxpass	granted		True	False	True
+granted	grant	VERB	VBN	advcl	are		True	False	False
+,	,	PUNCT	,	punct	are		False	True	False
+""""	""""	PUNCT	``	punct	are		False	True	False
+subspecies	subspecie	NOUN	NNS	nsubj	are		True	False	False
+""""	""""	PUNCT	''	punct	are		False	True	False
+are	be	AUX	VBP	ccomp	understand		True	False	True
+a	a	DET	DT	det	consequence		True	False	True
+necessary	necessary	ADJ	JJ	amod	consequence		True	False	False
+consequence	consequence	NOUN	NN	attr	are		True	False	False
+,	,	PUNCT	,	punct	are		False	True	False
+whether	whether	SCONJ	IN	mark	distinguish		True	False	True
+we	we	PRON	PRP	nsubj	distinguish		True	False	True
+distinguish	distinguish	VERB	VBP	advcl	are		True	False	False
+them	they	PRON	PRP	dobj	distinguish		True	False	True
+by	by	ADP	IN	prep	distinguish		True	False	True
+name	name	NOUN	NN	pobj	by		True	False	True
+or	or	CCONJ	CC	cc	distinguish		True	False	True
+not	not	PART	RB	conj	distinguish		True	False	True
+.	.	PUNCT	.	punct	seem		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	wide		False	False	False
+Every	every	DET	DT	det	zoologist		True	False	True
+practical	practical	ADJ	JJ	amod	zoologist		True	False	False
+zoologist	zoologist	NOUN	NN	nsubj	knows		True	False	False
+knows	know	VERB	VBZ	ccomp	beaks		True	False	False
+that	that	SCONJ	IN	mark	exist		True	False	True
+they	they	PRON	PRP	nsubj	exist		True	False	True
+exist	exist	VERB	VBP	ccomp	knows		True	False	False
+,	,	PUNCT	,	punct	knows		False	True	False
+and	and	CCONJ	CC	cc	knows		True	False	True
+are	be	VERB	VBP	conj	knows		True	False	True
+neither	neither	CCONJ	CC	neg	more		True	False	True
+more	more	ADJ	JJR	advmod	artificial		True	False	True
+nor	nor	CCONJ	CC	cc	more		True	False	True
+less	less	ADV	RBR	conj	more		True	False	True
+artificial	artificial	ADJ	JJ	acomp	are		True	False	False
+or	or	CCONJ	CC	cc	artificial		True	False	True
+subjective	subjective	ADJ	JJ	conj	artificial		True	False	False
+conceptions	conception	NOUN	NNS	attr	are		True	False	False
+than	than	SCONJ	IN	prep	conceptions		True	False	True
+""""	""""	PUNCT	``	punct	than		False	True	False
+species	specie	NOUN	NNS	pobj	than		True	False	False
+;	;	PUNCT	:	punct	knows		False	True	False
+""""	""""	PUNCT	''	punct	knows		False	True	False
+and	and	CCONJ	CC	cc	knows		True	False	True
+it	it	PRON	PRP	nsubj	seems		True	False	True
+seems	seem	VERB	VBZ	conj	knows		True	False	True
+a	a	DET	DT	det	method		True	False	True
+truer	true	ADJ	JJR	amod	method		True	False	False
+method	method	NOUN	NN	oprd	seems		True	False	False
+to	to	PART	TO	aux	recognize		True	False	True
+recognize	recognize	VERB	VB	acl	method		True	False	False
+certain	certain	ADJ	JJ	amod	races		True	False	False
+races	race	NOUN	NNS	dobj	recognize		True	False	False
+in	in	ADP	IN	prep	correlated		True	False	True
+which	which	DET	WDT	pobj	in		True	False	True
+more	more	ADV	RBR	advmod	definite		True	False	True
+or	or	CCONJ	CC	cc	more		True	False	True
+less	less	ADV	RBR	conj	more		True	False	True
+definite	definite	ADJ	JJ	amod	characters		True	False	False
+characters	character	NOUN	NNS	nsubjpass	correlated		True	False	False
+are	be	AUX	VBP	auxpass	correlated		True	False	True
+correlated	correlate	VERB	VBN	relcl	races		True	False	False
+with	with	ADP	IN	prep	correlated		True	False	True
+geographic	geographic	ADJ	JJ	amod	range		True	False	False
+range	range	NOUN	NN	pobj	with		True	False	False
+,	,	PUNCT	,	punct	seems		False	True	False
+than	than	SCONJ	IN	mark	lose		True	False	True
+to	to	PART	TO	aux	lose		True	False	True
+lose	lose	VERB	VB	dep	seems		True	False	False
+sight	sight	NOUN	NN	dobj	lose		True	False	False
+of	of	ADP	IN	prep	sight		True	False	True
+the	the	DET	DT	det	differences		True	False	True
+differences	difference	NOUN	NNS	pobj	of		True	False	False
+induced	induce	VERB	VBN	acl	differences		True	False	False
+by	by	ADP	IN	agent	induced		True	False	True
+causes	cause	NOUN	NNS	pobj	by		True	False	False
+acting	act	VERB	VBG	acl	causes		True	False	False
+over	over	ADP	IN	prep	acting		True	False	True
+whole	whole	ADJ	JJ	amod	districts		True	False	True
+districts	district	NOUN	NNS	pobj	over		True	False	False
+or	or	CCONJ	CC	cc	districts		True	False	True
+river	river	NOUN	NN	compound	systems	HABITAT	True	False	False
+-	-	PUNCT	HYPH	punct	systems		False	True	False
+systems	system	NOUN	NNS	conj	districts		True	False	False
+by	by	ADP	IN	prep	differences		True	False	True
+lumping	lump	VERB	VBG	pcomp	by		True	False	False
+unlike	unlike	ADJ	JJ	amod	forms		True	False	False
+forms	form	NOUN	NNS	dobj	lumping		True	False	False
+under	under	ADP	IN	prep	lumping		True	False	True
+""""	""""	PUNCT	``	punct	species		False	True	False
+species	specie	NOUN	NNS	pobj	under		True	False	False
+""""	""""	PUNCT	''	punct	species		False	True	False
+which	which	DET	WDT	nsubj	are		True	False	True
+are	be	VERB	VBP	relcl	species		True	False	True
+equally	equally	ADV	RB	advmod	are		True	False	False
+with	with	ADP	IN	prep	are		True	False	True
+subspecies	subspecie	NOUN	NNS	pobj	with		True	False	False
+,	,	PUNCT	,	punct	are		False	True	False
+arbitrary	arbitrary	ADJ	JJ	amod	groupings		True	False	False
+groupings	grouping	NOUN	NNS	attr	are		True	False	False
+.	.	PUNCT	.	punct	seems		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	knows		False	False	False
+Glabaris	Glabaris	PROPN	NNP	compound	Simpsonianus	TAXA	True	False	False
+Simpsonianus	Simpsonianus	PROPN	NNP	nsubj	"
+"		True	False	False
+n.	n.	NOUN	NN	compound	sp		False	False	False
+sp	sp	PROPN	NNP	appos	Simpsonianus		True	False	False
+.	.	PROPN	NNP	appos	Simpsonianus		False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Simpsonianus		False	False	False
+PI	PI	PROPN	NNP	appos	Simpsonianus		True	False	False
+.	.	NOUN	NN	appos	PI		False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Simpsonianus		False	False	False
+XXVII	xxvii	NUM	CD	appos	Simpsonianus		True	False	False
+,	,	PUNCT	,	punct	XXVII		False	True	False
+fig	fig	NOUN	NN	appos	XXVII		True	False	False
+.	.	NOUN	NN	appos	fig		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	knows		False	False	False
+13	13	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+.	.	PUNCT	.	appos	13		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	knows		False	False	False
+Shell	shell	NOUN	NN	dep	knows		True	False	False
+oblong	oblong	ADJ	JJ	amod	oval		True	False	False
+-	-	PUNCT	HYPH	punct	oval		False	True	False
+oval	oval	ADJ	JJ	amod	Shell		True	False	False
+,	,	PUNCT	,	punct	oval		False	True	False
+ventricose	ventricose	ADJ	JJ	conj	oval		True	False	False
+,	,	PUNCT	,	punct	oval		False	True	False
+very	very	ADV	RB	advmod	inequilateral		True	False	True
+inequilateral	inequilateral	ADJ	JJ	amod	oval		True	False	False
+,	,	PUNCT	,	punct	inequilateral		False	True	False
+thick	thick	ADJ	JJ	conj	inequilateral		True	False	False
+,	,	PUNCT	,	punct	thick		False	True	False
+solid	solid	ADJ	JJ	conj	thick		True	False	False
+and	and	CCONJ	CC	cc	solid		True	False	True
+heavy	heavy	ADJ	JJ	conj	solid		True	False	False
+;	;	PUNCT	:	punct	Shell		False	True	False
+greatest	great	ADJ	JJS	amod	diameter		True	False	False
+diameter	diameter	NOUN	NN	appos	Shell		True	False	False
+about	about	ADV	RB	advmod	in		True	False	True
+in	in	ADP	IN	prep	diameter		True	False	True
+the	the	DET	DT	det	middle		True	False	True
+middle	middle	NOUN	NN	pobj	in		True	False	False
+;	;	PUNCT	:	punct	knows		False	True	False
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	nsubj	gaping		True	False	False
+gaping	gape	VERB	VBG	conj	knows		True	False	False
+from	from	ADP	IN	prep	gaping		True	False	True
+the	the	DET	DT	det	extremity		True	False	True
+anterior	anterior	ADJ	JJ	amod	extremity		True	False	False
+extremity	extremity	NOUN	NN	pobj	from		True	False	False
+nearly	nearly	ADV	RB	advmod	two	CARDINAL	True	False	False
+two	two	NUM	CD	nummod	distance	CARDINAL	True	False	True
+-	-	PUNCT	HYPH	punct	two	CARDINAL	False	True	False
+thirds	third	NOUN	NNS	quantmod	two	CARDINAL	True	False	False
+the	the	DET	DT	det	distance		True	False	True
+distance	distance	NOUN	NN	npadvmod	gaping		True	False	False
+to	to	ADP	IN	prep	distance		True	False	True
+posterior	posterior	ADJ	JJ	amod	end		True	False	False
+end	end	NOUN	NN	pobj	to		True	False	False
+;	;	PUNCT	:	punct	gaping		False	True	False
+dorsal	dorsal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	nsubj	gaping		True	False	False
+gaping	gape	VERB	VBG	advmod	gaping		True	False	False
+slightly	slightly	ADV	RB	advmod	gaping		True	False	False
+from	from	ADP	IN	prep	gaping		True	False	True
+the	the	DET	DT	det	end		True	False	True
+end	end	NOUN	NN	pobj	from		True	False	False
+of	of	ADP	IN	prep	end		True	False	True
+hinge	hinge	NOUN	NN	pobj	of		True	False	False
+to	to	ADP	IN	prep	from		True	False	True
+the	the	DET	DT	det	end		True	False	True
+posterior	posterior	ADJ	JJ	amod	end		True	False	False
+end	end	NOUN	NN	pobj	to		True	False	False
+of	of	ADP	IN	prep	end		True	False	True
+shell	shell	NOUN	NN	pobj	of		True	False	False
+;	;	PUNCT	:	punct	knows		False	True	False
+externally	externally	ADV	RB	advmod	green		True	False	False
+green	green	ADJ	JJ	amod	brown		True	False	False
+toward	toward	ADP	IN	prep	green		True	False	True
+the	the	DET	DT	det	beaks		True	False	True
+beaks	beak	NOUN	NNS	pobj	toward		True	False	False
+,	,	PUNCT	,	punct	brown		False	True	False
+the	the	DET	DT	det	part		True	False	True
+greater	great	ADJ	JJR	amod	part		True	False	False
+part	part	NOUN	NN	nsubj	olivaceous		True	False	True
+of	of	ADP	IN	prep	part		True	False	True
+the	the	DET	DT	det	surface		True	False	True
+surface	surface	NOUN	NN	pobj	of		True	False	False
+olivaceous	olivaceous	ADJ	JJ	amod	brown		True	False	False
+,	,	PUNCT	,	punct	brown		False	True	False
+blackish	blackish	ADJ	JJ	amod	brown		True	False	False
+brown	brown	NOUN	NN	oprd	;		True	False	False
+at	at	ADP	IN	prep	brown		True	False	True
+the	the	DET	DT	det	ends		True	False	True
+ends	end	NOUN	NNS	pobj	at		True	False	False
+and	and	CCONJ	CC	cc	ends		True	False	True
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	conj	ends		True	False	False
+,	,	PUNCT	,	punct	brown		False	True	False
+the	the	DET	DT	det	slopes		True	False	True
+posterior	posterior	ADJ	JJ	amod	slopes		True	False	False
+dorsal	dorsal	ADJ	JJ	amod	slopes		True	False	False
+slopes	slope	NOUN	NNS	nsubj	biradiate	HABITAT	True	False	False
+biradiate	biradiate	ADJ	JJ	amod	brown		True	False	False
+with	with	ADP	IN	prep	biradiate		True	False	True
+green	green	NOUN	NN	pobj	with		True	False	False
+;	;	PUNCT	:	punct	smooth		False	True	False
+the	the	DET	DT	det	surface		True	False	True
+surface	surface	NOUN	NN	nsubj	smooth		True	False	False
+smooth	smooth	ADJ	JJ	conj	knows		True	False	False
+and	and	CCONJ	CC	cc	smooth		True	False	True
+polished	polished	ADJ	JJ	conj	smooth		True	False	False
+,	,	PUNCT	,	punct	smooth		False	True	False
+with	with	ADP	IN	prep	smooth		True	False	True
+rather	rather	ADV	RB	advmod	coarse		True	False	True
+coarse	coarse	ADJ	JJ	amod	wrinkles		True	False	False
+,	,	PUNCT	,	punct	wrinkles		False	True	False
+low	low	ADJ	JJ	amod	wrinkles		True	False	False
+wrinkles	wrinkle	NOUN	NNS	pobj	with		True	False	False
+of	of	ADP	IN	prep	wrinkles		True	False	True
+growth	growth	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	wrinkles		False	True	False
+more	more	ADV	RBR	advmod	crowded		True	False	True
+crowded	crowded	ADJ	JJ	amod	wrinkles		True	False	False
+and	and	CCONJ	CC	cc	crowded		True	False	True
+somewhat	somewhat	ADV	RB	advmod	lamellose		True	False	False
+lamellose	lamellose	ADJ	JJ	conj	crowded		True	False	False
+at	at	ADP	IN	prep	crowded		True	False	True
+the	the	DET	DT	det	ends		True	False	True
+ends	end	NOUN	NNS	pobj	at		True	False	False
+and	and	CCONJ	CC	cc	ends		True	False	True
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	conj	ends		True	False	False
+.	.	PUNCT	.	punct	smooth		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	knows		False	False	False
+Upper	upper	ADJ	JJ	amod	outlines		True	False	False
+and	and	CCONJ	CC	cc	Upper		True	False	True
+basal	basal	ADJ	JJ	conj	Upper		True	False	False
+outlines	outline	NOUN	NNS	punct	knows		True	False	False
+about	about	ADV	RB	advmod	equally		True	False	True
+equally	equally	ADV	RB	advmod	curved		True	False	False
+curved	curved	ADJ	JJ	amod	outlines		True	False	False
+;	;	PUNCT	:	punct	knows		False	True	False
+hinge	hinge	NOUN	NN	compound	margin		True	False	False
+margin	margin	NOUN	NN	nsubj	long		True	False	False
+long	long	ADJ	JJ	ccomp	rounded		True	False	False
+,	,	PUNCT	,	punct	long		False	True	False
+wide	wide	ADJ	JJ	conj	long		True	False	False
+,	,	PUNCT	,	punct	wide		False	True	False
+somewhat	somewhat	ADV	RB	advmod	sloping		True	False	False
+sloping	sloping	ADJ	JJ	conj	wide		True	False	False
+,	,	PUNCT	,	punct	sloping		False	True	False
+gently	gently	ADV	RB	advmod	curved		True	False	False
+curved	curved	ADJ	JJ	conj	sloping		True	False	False
+,	,	PUNCT	,	punct	curved		False	True	False
+rounded	rounded	ADJ	JJ	conj	curved		True	False	False
+or	or	CCONJ	CC	cc	rounded		True	False	True
+hardly	hardly	ADV	RB	advmod	angular		True	False	False
+angular	angular	ADJ	JJ	conj	rounded		True	False	False
+at	at	ADP	IN	prep	angular		True	False	True
+the	the	DET	DT	det	ends		True	False	True
+ends	end	NOUN	NNS	pobj	at		True	False	False
+;	;	PUNCT	:	punct	rounded		False	True	False
+posterior	posterior	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	nsubj	sloping		True	False	False
+sloping	slope	VERB	VBG	ccomp	rounded		True	False	False
+above	above	ADV	RB	advmod	sloping		True	False	True
+,	,	PUNCT	,	punct	rounded		False	True	False
+rounded	rounded	ADJ	JJ	dep	knows		True	False	False
+below	below	ADP	IN	prep	rounded		True	False	True
+;	;	PUNCT	:	punct	rounded		False	True	False
+anterior	anterior	ADJ	JJ	amod	end		True	False	False
+end	end	NOUN	NN	nsubj	rounded		True	False	False
+somewhat	somewhat	ADV	RB	advmod	narrower		True	False	False
+narrower	narrow	ADJ	JJR	amod	rounded		True	False	False
+,	,	PUNCT	,	punct	rounded		False	True	False
+rounded	rounded	ADJ	JJ	conj	knows		True	False	False
+;	;	PUNCT	:	punct	beaks		False	True	False
+beaks	beak	NOUN	NNS	nsubj	wide		True	False	False
+wide	wide	ADJ	JJ	ROOT	wide		True	False	False
+and	and	CCONJ	CC	cc	wide		True	False	True
+low	low	ADJ	JJ	conj	wide		True	False	False
+.	.	PUNCT	.	punct	wide		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Interior	interior	NOUN	NN	ROOT	Interior		True	False	False
+silvery	silvery	ADJ	JJ	amod	Interior		True	False	False
+or	or	CCONJ	CC	cc	silvery		True	False	True
+salmon	salmon	NOUN	NN	npadvmod	tinted		True	False	False
+-	-	PUNCT	HYPH	punct	tinted		False	True	False
+tinted	tinted	ADJ	JJ	conj	silvery		True	False	False
+,	,	PUNCT	,	punct	silvery		False	True	False
+very	very	ADV	RB	advmod	pearly		True	False	True
+pearly	pearly	ADJ	JJ	amod	Interior		True	False	False
+,	,	PUNCT	,	punct	pearly		False	True	False
+usually	usually	ADV	RB	advmod	showing		True	False	False
+showing	show	VERB	VBG	advcl	pearly		True	False	False
+irregular	irregular	ADJ	JJ	amod	lines		True	False	False
+black	black	ADJ	JJ	amod	lines		True	False	False
+parallel	parallel	ADJ	JJ	amod	lines		True	False	False
+lines	line	NOUN	NNS	dobj	showing		True	False	False
+in	in	ADP	IN	prep	lines		True	False	True
+the	the	DET	DT	det	neighborhood		True	False	True
+neighborhood	neighborhood	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	neighborhood		True	False	True
+the	the	DET	DT	det	impressions		True	False	True
+muscle	muscle	NOUN	NN	compound	impressions		True	False	False
+impressions	impression	NOUN	NNS	pobj	of		True	False	False
+and	and	CCONJ	CC	cc	impressions		True	False	True
+pallial	pallial	ADJ	JJ	amod	line		True	False	False
+line	line	NOUN	NN	conj	impressions		True	False	False
+.	.	PUNCT	.	punct	Interior		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Cavity	cavity	NOUN	NN	compound	Plata		True	False	False
+of	of	ADP	IN	prep	Cavity		True	False	True
+valves	valve	NOUN	NNS	pobj	of		True	False	False
+deep	deep	ADJ	JJ	amod	of		True	False	False
+,	,	PUNCT	,	punct	of		False	True	False
+of	of	ADP	IN	prep	of		True	False	True
+beaks	beak	NOUN	NNS	pobj	of		True	False	False
+shallow	shallow	ADJ	JJ	amod	beaks		True	False	False
+and	and	CCONJ	CC	cc	shallow		True	False	True
+wide	wide	ADJ	JJ	conj	shallow		True	False	False
+;	;	PUNCT	:	punct	impressed		False	True	False
+muscle	muscle	NOUN	NN	compound	scars		True	False	False
+-	-	PUNCT	HYPH	punct	scars		False	True	False
+scars	scar	NOUN	NNS	nsubj	impressed		True	False	False
+well	well	ADV	RB	advmod	impressed		True	False	True
+impressed	impress	VERB	VBN	ccomp	long		True	False	False
+,	,	PUNCT	,	punct	impressed		False	True	False
+the	the	DET	DT	det	scar		True	False	True
+foot	foot	NOUN	NN	compound	protractor		True	False	False
+protractor	protractor	NOUN	NN	compound	scar		True	False	False
+scar	scar	NOUN	NN	nsubj	long		True	False	False
+unusually	unusually	ADV	RB	advmod	long		True	False	False
+long	long	ADJ	JJ	punct	narrow		True	False	False
+;	;	PUNCT	:	punct	narrow		False	True	False
+posterior	posterior	ADJ	JJ	amod	scar		True	False	False
+adductor	adductor	NOUN	NN	compound	scar		True	False	False
+scar	scar	NOUN	NN	nsubj	narrow		True	False	False
+situated	situate	VERB	VBN	acl	scar		True	False	False
+very	very	ADV	RB	advmod	near		True	False	True
+near	near	ADV	RB	advmod	situated		True	False	False
+to	to	ADP	IN	prep	near		True	False	True
+the	the	DET	DT	det	sinus		True	False	True
+sinus	sinus	NOUN	NN	pobj	to		True	False	False
+at	at	ADP	IN	prep	sinus		True	False	True
+end	end	NOUN	NN	pobj	at		True	False	False
+of	of	ADP	IN	prep	end		True	False	True
+hinge	hinge	NOUN	NN	compound	line		True	False	False
+line	line	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	situated		False	True	False
+and	and	CCONJ	CC	cc	situated		True	False	True
+connected	connect	VERB	VBN	conj	situated		True	False	False
+therewith	therewith	ADV	RB	advmod	connected		True	False	False
+by	by	ADP	IN	agent	connected		True	False	True
+a	a	DET	DT	det	impression		True	False	True
+short	short	ADJ	JJ	amod	impression		True	False	False
+impression	impression	NOUN	NN	pobj	by		True	False	False
+;	;	PUNCT	:	punct	narrow		False	True	False
+prismatic	prismatic	ADJ	JJ	amod	layer		True	False	False
+layer	layer	NOUN	NN	nsubj	narrow		True	False	False
+at	at	ADP	IN	prep	layer		True	False	True
+margins	margin	NOUN	NNS	pobj	at		True	False	False
+of	of	ADP	IN	prep	margins		True	False	True
+valves	valve	NOUN	NNS	pobj	of		True	False	False
+narrow	narrow	ADJ	JJ	conj	Cavity		True	False	False
+and	and	CCONJ	CC	cc	narrow		True	False	True
+bluish	bluish	ADJ	JJ	amod	green		True	False	False
+-	-	PUNCT	HYPH	punct	green		False	True	False
+green	green	ADJ	JJ	conj	narrow		True	False	False
+.	.	PUNCT	.	punct	narrow		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Cavity		False	False	False
+Length	length	NOUN	NN	appos	Cavity		True	False	False
+14	14	NUM	CD	nummod	Length	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	Length		False	False	False
+7'8	7'8	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+diam	diam	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Cavity		False	False	False
+5	5	NUM	CD	nummod	cm	QUANTITY	False	False	False
+*	*	NUM	CD	nummod	cm	QUANTITY	False	True	False
+4	4	NUM	CD	nummod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	cm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Cavity		False	False	False
+Length	length	NOUN	NN	appos	Cavity		True	False	False
+14	14	NUM	CD	nummod	Length	CARDINAL	False	False	False
+*	*	NUM	CD	nummod	Length	CARDINAL	False	True	False
+5	5	NUM	CD	nummod	*	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+alt	alt	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	Length		False	False	False
+8'1	8'1	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+,	,	PUNCT	,	punct	Length		False	True	False
+diam	diam	NOUN	NN	appos	Length		True	False	False
+.	.	NOUN	NN	appos	Length		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Cavity		False	False	False
+"5""5"	"5""5"	NUM	CD	nummod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NNS	dobj	"
+"	QUANTITY	True	False	False
+.	.	PUNCT	.	punct	cm		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Cavity		False	False	False
+Kio	Kio	PROPN	NNP	compound	Plata		True	False	False
+de	de	PROPN	NNP	compound	Plata		True	False	False
+la	la	PROPN	NNP	compound	Plata		True	False	False
+Plata	Plata	PROPN	NNP	dobj	"
+"		True	False	False
+.	.	PUNCT	.	punct	Plata		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Described	describe	VERB	VBN	ROOT	Described		True	False	False
+from	from	ADP	IN	prep	Described		True	False	True
+seven	seven	NUM	CD	nummod	specimens	CARDINAL	True	False	False
+specimens	specimen	NOUN	NNS	pobj	from		True	False	False
+in	in	ADP	IN	prep	specimens		True	False	True
+the	the	DET	DT	det	collection		True	False	True
+collection	collection	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	collection		True	False	True
+the	the	DET	DT	det	Academy	ORG	True	False	True
+Academy	Academy	PROPN	NNP	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy	ORG	True	False	True
+Natural	Natural	PROPN	NNP	compound	Sciences	ORG	True	False	False
+Sciences	Sciences	PROPN	NNPS	pobj	of	ORG	True	False	False
+of	of	ADP	IN	prep	Academy		True	False	True
+Philadelphia	Philadelphia	PROPN	NNP	pobj	of		True	False	False
+.	.	PUNCT	.	punct	Described		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	named		False	False	False
+This	this	DET	DT	det	species		True	False	True
+species	species	NOUN	NN	nsubjpass	named		True	False	False
+is	be	AUX	VBZ	auxpass	named		True	False	True
+named	name	VERB	VBN	ROOT	named		True	False	False
+in	in	ADP	IN	prep	named		True	False	True
+honor	honor	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	honor		True	False	True
+Mr.	Mr.	PROPN	NNP	compound	Simpson		False	False	False
+Charles	Charles	PROPN	NNP	compound	Simpson	PERSON	True	False	False
+Torrey	Torrey	PROPN	NNP	compound	Simpson	PERSON	True	False	False
+Simpson	Simpson	PROPN	NNP	pobj	of	PERSON	True	False	False
+,	,	PUNCT	,	punct	Simpson		False	True	False
+whose	whose	DET	WP$	poss	papers		True	False	True
+valuable	valuable	ADJ	JJ	amod	papers		True	False	False
+papers	paper	NOUN	NNS	nsubj	been		True	False	False
+upon	upon	SCONJ	IN	prep	papers		True	False	True
+the	the	DET	DT	det	Unionidce		True	False	True
+Unionidce	Unionidce	PROPN	NNP	pobj	upon	ORG	True	False	False
+have	have	AUX	VBP	aux	been		True	False	True
+been	be	VERB	VBN	relcl	Simpson		True	False	True
+of	of	ADP	IN	prep	been		True	False	True
+great	great	ADJ	JJ	amod	service		True	False	False
+service	service	NOUN	NN	pobj	of		True	False	False
+to	to	ADP	IN	prep	service		True	False	True
+students	student	NOUN	NNS	pobj	to		True	False	False
+of	of	ADP	IN	prep	students		True	False	True
+this	this	DET	DT	det	group		True	False	True
+intricate	intricate	ADJ	JJ	amod	group		True	False	False
+and	and	CCONJ	CC	cc	intricate		True	False	True
+difficult	difficult	ADJ	JJ	conj	intricate		True	False	False
+group	group	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	named		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	belongs		False	False	False
+G.	G.	PROPN	NNP	compound	Simpsonianus		False	False	False
+Simpsonianus	Simpsonianus	PROPN	NNP	nsubj	belongs		True	False	False
+belongs	belong	VERB	VBZ	ROOT	belongs		True	False	False
+to	to	ADP	IN	prep	belongs		True	False	True
+the	the	DET	DT	det	group		True	False	True
+group	group	NOUN	NN	pobj	to		True	False	False
+of	of	ADP	IN	prep	group		True	False	True
+G.	G.	PROPN	NNP	nmod	Lam	TAXA	False	False	False
+trapesialis	trapesialis	X	FW	nmod	Lam	TAXA	True	False	False
+Lam	Lam	PROPN	NNP	pobj	of		True	False	False
+.	.	PUNCT	.	punct	belongs		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+It	it	PRON	PRP	nsubj	differs		True	False	True
+differs	differ	VERB	VBZ	ccomp	is		True	False	False
+from	from	ADP	IN	prep	differs		True	False	True
+typical	typical	ADJ	JJ	amod	trapesialis		True	False	False
+trapesialis	trapesialis	X	FW	pobj	from		True	False	False
+(	(	PUNCT	-LRB-	punct	trapesialis		False	True	False
+Encycl	Encycl	PROPN	NNP	appos	trapesialis		True	False	False
+.	.	PROPN	NNP	punct	differs		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	differs		False	False	False
+Meth	Meth	PROPN	NNP	poss	.		True	False	False
+.	.	PUNCT	,	punct	Meth		False	True	False
+,	,	PUNCT	,	punct	.		False	True	False
+pi	pi	NOUN	NN	appos	.		True	False	False
+.	.	NOUN	NN	dobj	differs		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	differs		False	False	False
+205	205	NUM	CD	nummod	"
+"	CARDINAL	False	False	False
+)	)	PUNCT	-RRB-	punct	differs		False	True	False
+in	in	ADP	IN	prep	differs		True	False	True
+being	be	VERB	VBG	pcomp	in		True	False	True
+oval	oval	ADJ	JJ	acomp	being		True	False	False
+rather	rather	ADV	RB	advmod	than		True	False	True
+than	than	SCONJ	IN	cc	oval		True	False	True
+subtriangular	subtriangular	ADJ	JJ	conj	oval		True	False	False
+;	;	PUNCT	:	punct	is		False	True	False
+the	the	DET	DT	det	beaks		True	False	True
+beaks	beak	NOUN	NNS	nsubj	are		True	False	False
+are	be	AUX	VBP	ccomp	is		True	False	True
+far	far	ADV	RB	advmod	less		True	False	False
+less	less	ADV	RBR	advmod	inflated		True	False	True
+inflated	inflated	ADJ	JJ	acomp	are		True	False	False
+,	,	PUNCT	,	punct	inflated		False	True	False
+low	low	ADJ	JJ	conj	inflated		True	False	False
+and	and	CCONJ	CC	cc	low		True	False	True
+wide	wide	ADJ	JJ	conj	low		True	False	False
+;	;	PUNCT	:	punct	is		False	True	False
+the	the	DET	DT	det	nacre		True	False	True
+nacre	nacre	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ccomp	is		True	False	True
+peculiarly	peculiarly	ADV	RB	advmod	pearly		True	False	False
+pearly	pearly	ADJ	JJ	acomp	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+having	have	VERB	VBG	advcl	is		True	False	False
+the	the	DET	DT	det	luster		True	False	True
+luster	luster	NOUN	NN	dobj	having		True	False	False
+of	of	ADP	IN	prep	luster		True	False	True
+that	that	DET	DT	pobj	of		True	False	True
+of	of	ADP	IN	prep	that		True	False	True
+the	the	DET	DT	det	oyster		True	False	True
+pearl	pearl	NOUN	NN	compound	oyster		True	False	False
+oyster	oyster	NOUN	NN	pobj	of		True	False	False
+;	;	PUNCT	:	punct	is		False	True	False
+the	the	DET	DT	det	line		True	False	True
+hinge	hinge	NOUN	NN	compound	line		True	False	False
+line	line	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ccomp	is		True	False	True
+more	more	ADV	RBR	advmod	nearly		True	False	True
+nearly	nearly	ADV	RB	advmod	parallel		True	False	False
+parallel	parallel	ADJ	JJ	acomp	is		True	False	False
+with	with	ADP	IN	prep	parallel		True	False	True
+the	the	DET	DT	det	margin		True	False	True
+basal	basal	ADJ	JJ	amod	margin		True	False	False
+margin	margin	NOUN	NN	pobj	with		True	False	False
+and	and	CCONJ	CC	cc	is		True	False	True
+is	be	VERB	VBZ	conj	is		True	False	True
+far	far	ADV	RB	advmod	longer		True	False	False
+longer	long	ADJ	JJR	acomp	is		True	False	False
+in	in	ADP	IN	prep	is		True	False	True
+proportion	proportion	NOUN	NN	pobj	in		True	False	False
+to	to	ADP	IN	prep	proportion		True	False	True
+the	the	DET	DT	det	length		True	False	True
+length	length	NOUN	NN	pobj	to		True	False	False
+of	of	ADP	IN	prep	length		True	False	True
+the	the	DET	DT	det	shell		True	False	True
+shell	shell	NOUN	NN	pobj	of		True	False	False
+;	;	PUNCT	:	punct	is		False	True	False
+the	the	DET	DT	det	scar		True	False	True
+posterior	posterior	ADJ	JJ	amod	scar		True	False	False
+large	large	ADJ	JJ	amod	scar		True	False	False
+muscle	muscle	NOUN	NN	compound	scar		True	False	False
+-	-	PUNCT	HYPH	punct	scar		False	True	False
+scar	scar	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ccomp	is		True	False	True
+close	close	ADJ	JJ	advmod	distant		True	False	False
+to	to	ADP	IN	prep	close		True	False	True
+the	the	DET	DT	det	sinus		True	False	True
+sinus	sinus	NOUN	NN	pobj	to		True	False	False
+at	at	ADP	IN	prep	sinus		True	False	True
+end	end	NOUN	NN	pobj	at		True	False	False
+of	of	ADP	IN	prep	end		True	False	True
+hinge	hinge	NOUN	NN	compound	line		True	False	False
+-	-	PUNCT	HYPH	punct	line		False	True	False
+line	line	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	distant		False	True	False
+not	not	PART	RB	neg	distant		True	False	True
+distant	distant	ADJ	JJ	acomp	is		True	False	False
+from	from	ADP	IN	prep	distant		True	False	True
+it	it	PRON	PRP	pobj	from		True	False	True
+as	as	ADP	IN	prep	distant		True	False	True
+in	in	ADP	IN	prep	as		True	False	True
+trapesialis	trapesialis	NOUN	NN	pobj	in		True	False	False
+;	;	PUNCT	:	punct	is		False	True	False
+the	the	DET	DT	det	scar		True	False	True
+foot	foot	NOUN	NN	compound	protractor		True	False	False
+protractor	protractor	NOUN	NN	compound	scar		True	False	False
+scar	scar	NOUN	NN	nsubj	is		True	False	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+of	of	ADP	IN	prep	is		True	False	True
+a	a	DET	DT	det	shape		True	False	True
+very	very	ADV	RB	advmod	different		True	False	True
+different	different	ADJ	JJ	amod	shape		True	False	False
+shape	shape	NOUN	NN	pobj	of		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	is		False	False	False
+Finally	finally	ADV	RB	advmod	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+the	the	DET	DT	det	shell		True	False	True
+shell	shell	NOUN	NN	nsubj	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+while	while	SCONJ	IN	mark	smaller		True	False	True
+smaller	small	ADJ	JJR	advcl	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+is	be	AUX	VBZ	ROOT	is		True	False	True
+much	much	ADV	RB	advmod	more		True	False	True
+more	more	ADV	RBR	advmod	ponderous		True	False	True
+ponderous	ponderous	ADJ	JJ	acomp	is		True	False	False
+and	and	CCONJ	CC	cc	ponderous		True	False	True
+thick	thick	ADJ	JJ	conj	ponderous		True	False	False
+than	than	SCONJ	IN	prep	ponderous		True	False	True
+trapesialis	trapesialis	NOUN	NN	pobj	than		True	False	False
+.	.	PUNCT	.	punct	is		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	measure		False	False	False
+Well	well	ADV	RB	advmod	grown		True	False	True
+-	-	PUNCT	HYPH	punct	grown		False	True	False
+grown	grow	VERB	VBN	amod	specimens		True	False	False
+specimens	specimen	NOUN	NNS	nsubj	measure		True	False	False
+of	of	ADP	IN	prep	specimens		True	False	True
+trapesialis	trapesiali	NOUN	NNS	pobj	of		True	False	False
+measure	measure	VERB	VBP	ROOT	measure		True	False	False
+19	19	NUM	CD	nummod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NNS	dobj	measure	QUANTITY	True	False	False
+.	.	NOUN	NN	nummod	cm	QUANTITY	False	True	False
+"
+"	"
+"	SPACE	_SP	punct	measure	QUANTITY	False	False	False
+long	long	ADJ	JJ	amod	"
+"		True	False	False
+,	,	PUNCT	,	punct	measure		False	True	False
+and	and	CCONJ	CC	cc	measure		True	False	True
+are	be	VERB	VBP	conj	measure		True	False	True
+thinner	thin	ADJ	JJR	acomp	are		True	False	False
+than	than	SCONJ	IN	prep	thinner		True	False	True
+Simpsonianus	Simpsonianus	PROPN	NNP	nmod	cm		True	False	False
+14	14	NUM	CD	nummod	cm	QUANTITY	False	False	False
+cm	cm	NOUN	NNS	pobj	than	QUANTITY	True	False	False
+.	.	NOUN	NN	pobj	than	QUANTITY	False	True	False
+"
+"	"
+"	SPACE	_SP	nummod	length	QUANTITY	False	False	False
+in	in	NOUN	NN	amod	length		True	False	True
+length	length	NOUN	NN	dobj	measure		True	False	False
+.	.	PUNCT	.	punct	measure		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	resembles		False	False	False
+Anodon	Anodon	PROPN	NNP	compound	Gray	TAXA	True	False	False
+penicillatus	penicillatus	PROPN	NNP	compound	Gray	TAXA	True	False	False
+Gray	Gray	PROPN	NNP	nsubj	resembles		True	False	False
+*	*	PUNCT	NFP	appos	Gray		False	True	False
+apparently	apparently	ADV	RB	advmod	resembles		True	False	False
+resembles	resemble	VERB	VBZ	ROOT	resembles		True	False	False
+this	this	DET	DT	det	species		True	False	True
+species	species	NOUN	NN	dobj	resembles		True	False	False
+in	in	ADP	IN	prep	resembles		True	False	True
+the	the	DET	DT	det	markings		True	False	True
+internal	internal	ADJ	JJ	amod	markings		True	False	False
+markings	marking	NOUN	NNS	pobj	in		True	False	False
+(	(	PUNCT	-LRB-	punct	markings		False	True	False
+which	which	DET	WDT	nsubj	are		True	False	True
+are	be	VERB	VBP	relcl	markings		True	False	True
+common	common	ADJ	JJ	acomp	are		True	False	False
+to	to	ADP	IN	prep	common		True	False	True
+many	many	ADJ	JJ	amod	species		True	False	True
+species	specie	NOUN	NNS	pobj	to		True	False	False
+of	of	ADP	IN	prep	species		True	False	True
+Glaharis	Glaharis	PROPN	NNP	pobj	of		True	False	False
+)	)	PUNCT	-RRB-	punct	markings		False	True	False
+,	,	PUNCT	-RRB-	punct	resembles		False	True	False
+but	but	CCONJ	CC	cc	resembles		True	False	True
+it	it	PRON	PRP	nsubjpass	described		True	False	True
+is	be	AUX	VBZ	auxpass	described		True	False	True
+described	describe	VERB	VBN	conj	resembles		True	False	False
+as	as	ADP	IN	prep	described		True	False	True
+""""	""""	PUNCT	``	punct	subgracili		False	True	False
+Antice	antice	X	FW	nmod	subgracili		True	False	False
+suhcompressa	suhcompressa	X	FW	nmod	subgracili		True	False	False
+,	,	PUNCT	,	punct	suhcompressa		False	True	False
+rotundata	rotundata	X	FW	appos	suhcompressa		True	False	False
+,	,	PUNCT	,	punct	subgracili		False	True	False
+subgracili	subgracili	X	FW	pobj	as		True	False	False
+,	,	PUNCT	,	punct	as		False	True	False
+""""	""""	PUNCT	,	punct	as		False	True	False
+terms	term	NOUN	NNS	pobj	as		True	False	False
+applying	apply	VERB	VBG	acl	terms		True	False	False
+well	well	ADV	RB	advmod	applying		True	False	True
+to	to	ADP	IN	prep	applying		True	False	True
+some	some	DET	DT	det	forms		True	False	True
+forms	form	NOUN	NNS	pobj	to		True	False	False
+of	of	ADP	IN	prep	forms		True	False	True
+G.	G.	PROPN	NNP	compound	var	TAXA	False	False	False
+trapesialis	trapesialis	PROPN	NNP	nmod	var	TAXA	True	False	False
+var	var	NOUN	NN	compound	.		True	False	False
+.	.	PROPN	NNP	pobj	of		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	described		False	False	False
+exoticus	exoticus	PROPN	NNP	pobj	"
+"		True	False	False
+.	.	PUNCT	.	punct	described		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	separate		False	False	False
+The	the	DET	DT	det	solidity		True	False	True
+great	great	ADJ	JJ	amod	solidity		True	False	False
+solidity	solidity	NOUN	NN	nsubj	separate		True	False	False
+of	of	ADP	IN	prep	solidity		True	False	True
+the	the	DET	DT	det	shell		True	False	True
+shell	shell	NOUN	NN	pobj	of		True	False	False
+for	for	ADP	IN	prep	solidity		True	False	True
+a	a	DET	DT	det	Glabaris		True	False	True
+Glabaris	Glabaris	PROPN	NNP	pobj	for	TAXA	True	False	False
+will	will	AUX	MD	aux	separate		True	False	True
+separate	separate	VERB	VB	ROOT	separate		True	False	False
+the	the	DET	DT	det	species		True	False	True
+species	species	NOUN	NN	dobj	separate		True	False	False
+from	from	ADP	IN	prep	separate		True	False	True
+G.	G.	PROPN	NNP	nmod	var	TAXA	False	False	False
+trapesialis	trapesialis	PROPN	NNP	nmod	var	TAXA	True	False	False
+var	var	NOUN	NN	pobj	from		True	False	False
+.	.	PROPN	NNP	appos	var		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	separate		False	False	False
+exoticus	exoticus	PROPN	NNP	compound	Lam		True	False	False
+Lam	Lam	PROPN	NNP	dobj	"
+"		True	False	False
+.	.	PROPN	NNP	appos	Lam		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Lam		False	False	False
+and	and	CCONJ	CC	cc	"
+"		True	False	True
+var	var	NOUN	NN	compound	.		True	False	False
+.	.	NOUN	NN	appos	Lam		False	True	False
+"
+"	"
+"	SPACE	_SP	conj	Lam		False	False	False
+riograndensis	riograndensis	NOUN	NN	compound	Iher		True	False	False
+V.	V.	PROPN	NNP	compound	Iher		False	False	False
+Iher	Iher	PROPN	NNP	appos	Lam		True	False	False
+.	.	PUNCT	.	punct	separate		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	resembles		False	False	False
+It	it	PRON	PRP	nsubj	resembles		True	False	True
+resembles	resemble	VERB	VBZ	ROOT	resembles		True	False	False
+G.	G.	PROPN	NNP	compound	Lea		False	False	False
+Forbesianus	Forbesianus	PROPN	NNP	compound	Lea		True	False	False
+Lea	Lea	PROPN	NNP	dobj	resembles		True	False	False
+in	in	ADP	IN	prep	resembles		True	False	True
+the	the	DET	DT	det	thickness		True	False	True
+thickness	thickness	NOUN	NN	pobj	in		True	False	False
+of	of	ADP	IN	prep	thickness		True	False	True
+the	the	DET	DT	det	shell		True	False	True
+shell	shell	NOUN	NN	pobj	of		True	False	False
+,	,	PUNCT	,	punct	resembles		False	True	False
+but	but	CCONJ	CC	cc	resembles		True	False	True
+is	be	VERB	VBZ	conj	resembles		True	False	True
+more	more	ADV	RBR	advmod	oblong		True	False	True
+oblong	oblong	ADJ	JJ	acomp	is		True	False	False
+,	,	PUNCT	,	punct	is		False	True	False
+with	with	ADP	IN	prep	is		True	False	True
+longer	long	ADJ	JJR	amod	line		True	False	False
+hinge	hinge	NOUN	NN	compound	line		True	False	False
+-	-	PUNCT	HYPH	punct	line		False	True	False
+line	line	NOUN	NN	pobj	with		True	False	False
+,	,	PUNCT	,	punct	line		False	True	False
+wider	wide	ADJ	JJR	amod	beaks		True	False	False
+beaks	beak	NOUN	NNS	conj	line		True	False	False
+,	,	PUNCT	,	punct	beaks		False	True	False
+differently	differently	ADV	RB	advmod	shaped		True	False	False
+shaped	shape	VERB	VBN	amod	scar		True	False	False
+protractor	protractor	NOUN	NN	compound	scar		True	False	False
+pedis	pedis	NOUN	NN	compound	scar		True	False	False
+scar	scar	NOUN	NN	conj	beaks		True	False	False
+,	,	PUNCT	,	punct	scar		False	True	False
+and	and	CCONJ	CC	cc	scar		True	False	True
+wider	wide	ADJ	JJR	amod	gape		True	False	False
+ventral	ventral	ADJ	JJ	amod	gape		True	False	False
+gape	gape	NOUN	NN	conj	scar		True	False	False
+.	.	PUNCT	.	punct	resembles		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+*	*	PUNCT	NFP	punct	Proc		False	True	False
+Proc	Proc	PROPN	NNP	ROOT	Proc		True	False	False
+.	.	PUNCT	.	punct	Proc		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Proc		False	False	False
+Zool	Zool	PROPN	NNP	appos	Proc	ORG	True	False	False
+.	.	PUNCT	.	punct	Zool		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Zool		False	False	False
+Soc	Soc	PROPN	NNP	appos	Zool	ORG	True	False	False
+.	.	PUNCT	.	punct	Soc	ORG	False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Soc	ORG	False	False	False
+Lond	Lond	PROPN	NNP	npadvmod	"
+"	ORG	True	False	False
+.	.	PUNCT	,	punct	Lond	ORG	False	True	False
+,	,	PUNCT	,	punct	Lond		False	True	False
+1834	1834	NUM	CD	npadvmod	Lond	DATE	False	False	False
+,	,	PUNCT	,	punct	Lond		False	True	False
+p.	p.	NOUN	NN	appos	Lond		False	False	False
+57	57	NUM	CD	nummod	p.	CARDINAL	False	False	False
+.	.	PUNCT	.	nummod	p.		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	Proc		False	False	False
+566	566	NUM	CD	nummod	proceedings	CARDINAL	False	False	False
+proceedings	proceeding	NOUN	NNS	appos	Proc		True	False	False
+of	of	ADP	IN	prep	proceedings		True	False	True
+the	the	DET	DT	det	academy		True	False	True
+academy	academy	NOUN	NN	pobj	of		True	False	False
+of	of	ADP	IN	prep	academy		True	False	True
+[	[	X	XX	pcomp	of		False	True	False
+1896	1896	NUM	CD	npadvmod	of	DATE	False	False	False
+.	.	PUNCT	.	punct	of		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	proceedings		False	False	False
+December	December	PROPN	NNP	npadvmod	proceedings	DATE	True	False	False
+1	1	NUM	CD	nummod	December	DATE	False	False	False
+.	.	PUNCT	.	punct	proceedings		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+The	the	DET	DT	det	President		True	False	True
+President	President	PROPN	NNP	dobj	"
+"		True	False	False
+,	,	PUNCT	,	punct	President		False	True	False
+Samuel	Samuel	PROPN	NNP	compound	Dixon	PERSON	True	False	False
+G.	G.	PROPN	NNP	compound	Dixon	PERSON	False	False	False
+Dixon	Dixon	PROPN	NNP	appos	President	PERSON	True	False	False
+,	,	PUNCT	,	punct	Dixon		False	True	False
+M.	M.	PROPN	NNP	compound	D.		False	False	False
+D.	D.	PROPN	NNP	appos	Dixon		False	False	False
+,	,	PUNCT	,	punct	President		False	True	False
+in	in	ADP	IN	prep	President		True	False	True
+the	the	DET	DT	det	Chair		True	False	True
+Chair	chair	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	President		False	True	False
+"
+"	"
+"	SPACE	_SP	npadvmod	present		False	False	False
+Thirty	thirty	NUM	CD	compound	seven	CARDINAL	True	False	False
+-	-	PUNCT	HYPH	punct	seven	CARDINAL	False	True	False
+seven	seven	NUM	CD	nummod	persons	CARDINAL	True	False	False
+persons	person	NOUN	NNS	nsubj	present		True	False	False
+present	present	ADJ	JJ	ROOT	present		True	False	False
+.	.	PUNCT	.	punct	present		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+December	December	PROPN	NNP	npadvmod	"
+"	DATE	True	False	False
+8	8	NUM	CD	nummod	December	DATE	False	False	False
+.	.	PUNCT	.	punct	December		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+The	the	DET	DT	det	President		True	False	True
+President	President	PROPN	NNP	attr	"
+"		True	False	False
+,	,	PUNCT	,	punct	President		False	True	False
+Samuel	Samuel	PROPN	NNP	compound	Dixon	PERSON	True	False	False
+G.	G.	PROPN	NNP	compound	Dixon	PERSON	False	False	False
+Dixon	Dixon	PROPN	NNP	appos	President	PERSON	True	False	False
+,	,	PUNCT	,	punct	Dixon		False	True	False
+M.	M.	PROPN	NNP	compound	D.		False	False	False
+D.	D.	PROPN	NNP	appos	Dixon		False	False	False
+,	,	PUNCT	,	punct	President		False	True	False
+in	in	ADP	IN	prep	President		True	False	True
+the	the	DET	DT	det	Chair		True	False	True
+Chair	chair	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	President		False	True	False
+"
+"	"
+"	SPACE	_SP	npadvmod	present		False	False	False
+Twenty	twenty	NUM	CD	compound	seven	CARDINAL	True	False	True
+-	-	PUNCT	HYPH	punct	seven	CARDINAL	False	True	False
+seven	seven	NUM	CD	nummod	persons	CARDINAL	True	False	False
+persons	person	NOUN	NNS	nsubj	present		True	False	False
+present	present	ADJ	JJ	ROOT	present		True	False	False
+.	.	PUNCT	.	punct	present		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+December	December	PROPN	NNP	npadvmod	"
+"	DATE	True	False	False
+15	15	NUM	CD	nummod	December	DATE	False	False	False
+.	.	PUNCT	.	punct	December		False	True	False
+"
+"	"
+"	SPACE	_SP	compound	Morris		False	False	False
+Mr.	Mr.	PROPN	NNP	compound	Morris		False	False	False
+Charles	Charles	PROPN	NNP	compound	Morris	PERSON	True	False	False
+Morris	Morris	PROPN	NNP	ROOT	Morris	PERSON	True	False	False
+in	in	ADP	IN	prep	Morris		True	False	True
+the	the	DET	DT	det	Chair		True	False	True
+Chair	chair	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	Morris		False	True	False
+"
+"	"
+"	SPACE	_SP	npadvmod	present		False	False	False
+Twenty	twenty	NUM	CD	compound	five	CARDINAL	True	False	True
+-	-	PUNCT	HYPH	punct	five	CARDINAL	False	True	False
+five	five	NUM	CD	nummod	persons	CARDINAL	True	False	True
+persons	person	NOUN	NNS	nsubj	present		True	False	False
+present	present	ADJ	JJ	ROOT	present		True	False	False
+.	.	PUNCT	.	punct	present		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+December	December	PROPN	NNP	npadvmod	"
+"	DATE	True	False	False
+22	22	NUM	CD	nummod	December	DATE	False	False	False
+.	.	PUNCT	.	punct	December		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+The	the	DET	DT	det	President		True	False	True
+President	President	PROPN	NNP	attr	"
+"		True	False	False
+,	,	PUNCT	,	punct	President		False	True	False
+Samuel	Samuel	PROPN	NNP	compound	Dixon	PERSON	True	False	False
+G.	G.	PROPN	NNP	compound	Dixon	PERSON	False	False	False
+Dixon	Dixon	PROPN	NNP	appos	President	PERSON	True	False	False
+,	,	PUNCT	,	punct	Dixon		False	True	False
+M.	M.	PROPN	NNP	compound	D.		False	False	False
+D.	D.	PROPN	NNP	appos	Dixon		False	False	False
+,	,	PUNCT	,	punct	President		False	True	False
+in	in	ADP	IN	prep	President		True	False	True
+the	the	DET	DT	det	Chair		True	False	True
+Chair	chair	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	President		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Thirty	thirty	NUM	CD	compound	one	CARDINAL	True	False	False
+-	-	PUNCT	HYPH	punct	one	CARDINAL	False	True	False
+one	one	NUM	CD	nummod	persons	CARDINAL	True	False	True
+persons	person	NOUN	NNS	attr	"
+"		True	False	False
+present	present	ADJ	JJ	amod	persons		True	False	False
+.	.	PUNCT	.	punct	persons		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	announced		False	False	False
+The	the	DET	DT	det	death		True	False	True
+death	death	NOUN	NN	nsubjpass	announced		True	False	False
+of	of	ADP	IN	prep	death		True	False	True
+Auguste	Auguste	PROPN	NNP	compound	Brot	PERSON	True	False	False
+Louis	Louis	PROPN	NNP	compound	Brot	PERSON	True	False	False
+Brot	Brot	PROPN	NNP	pobj	of	PERSON	True	False	False
+,	,	PUNCT	,	punct	Brot		False	True	False
+a	a	DET	DT	det	Correspondent		True	False	True
+Correspondent	Correspondent	PROPN	NNP	appos	Brot		True	False	False
+,	,	PUNCT	,	punct	Brot		False	True	False
+August	August	PROPN	NNP	npadvmod	death	DATE	True	False	False
+30	30	NUM	CD	nummod	August	DATE	False	False	False
+,	,	PUNCT	,	punct	death		False	True	False
+was	be	AUX	VBD	auxpass	announced		True	False	True
+announced	announce	VERB	VBN	ROOT	announced		True	False	False
+.	.	PUNCT	.	punct	announced		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	announced		False	False	False
+December	December	PROPN	NNP	npadvmod	announced	DATE	True	False	False
+29	29	NUM	CD	nummod	December	DATE	False	False	False
+.	.	PUNCT	.	punct	announced		False	True	False
+"
+"	"
+"	SPACE	_SP	ROOT	"
+"		False	False	False
+Rev.	Rev.	PROPN	NNP	compound	McCook		False	False	False
+"
+"	"
+"	SPACE	_SP	punct	McCook		False	False	False
+Henry	Henry	PROPN	NNP	compound	McCook	PERSON	True	False	False
+C.	C.	PROPN	NNP	compound	McCook	PERSON	False	False	False
+McCook	McCook	PROPN	NNP	dobj	"
+"	PERSON	True	False	False
+,	,	PUNCT	,	punct	McCook		False	True	False
+D.	D.	PROPN	NNP	compound	D.	ORG	False	False	False
+D.	D.	PROPN	NNP	appos	McCook	ORG	False	False	False
+,	,	PUNCT	,	punct	McCook		False	True	False
+Vice	Vice	PROPN	NNP	appos	McCook		True	False	False
+-	-	PROPN	NNP	appos	McCook		False	True	False
+President	President	PROPN	NNP	appos	McCook		True	False	False
+,	,	PUNCT	,	punct	McCook		False	True	False
+in	in	ADP	IN	prep	McCook		True	False	True
+the	the	DET	DT	det	Chair		True	False	True
+Chair	chair	NOUN	NN	pobj	in		True	False	False
+.	.	PUNCT	.	punct	McCook		False	True	False
+"
+"	"
+"	SPACE	_SP	amod	persons		False	False	False
+Forty	forty	NUM	CD	compound	four	CARDINAL	True	False	True
+-	-	PUNCT	HYPH	punct	four	CARDINAL	False	True	False
+four	four	NUM	CD	nummod	persons	CARDINAL	True	False	True
+persons	person	NOUN	NNS	ROOT	persons		True	False	False
+present	present	ADJ	JJ	amod	persons		True	False	False
+.	.	PUNCT	.	punct	persons		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	presented		False	False	False
+The	the	DET	DT	det	papers		True	False	True
+following	following	ADJ	JJ	amod	papers		True	False	False
+papers	paper	NOUN	NNS	nsubjpass	presented		True	False	False
+were	be	AUX	VBD	auxpass	presented		True	False	True
+presented	present	VERB	VBN	ROOT	presented		True	False	False
+for	for	ADP	IN	prep	presented		True	False	True
+publication	publication	NOUN	NN	pobj	for		True	False	False
+:	:	PUNCT	:	punct	presented		False	True	False
+—	—	PUNCT	``	punct	Mounds		False	True	False
+""""	""""	PUNCT	``	punct	Mounds		False	True	False
+Certain	Certain	PROPN	NNP	compound	Mounds	WORK_OF_ART	True	False	False
+Aboriginal	Aboriginal	PROPN	NNP	compound	Mounds	WORK_OF_ART	True	False	False
+Mounds	Mounds	PROPN	NNPS	dep	presented	WORK_OF_ART	True	False	False
+of	of	ADP	IN	prep	Mounds	WORK_OF_ART	True	False	True
+the	the	DET	DT	det	Coast	WORK_OF_ART	True	False	True
+Georgia	Georgia	PROPN	NNP	compound	Coast	WORK_OF_ART	True	False	False
+Coast	Coast	PROPN	NNP	pobj	of	WORK_OF_ART	True	False	False
+,	,	PUNCT	''	punct	Mounds		False	True	False
+""""	""""	PUNCT	''	punct	Mounds		False	True	False
+by	by	ADP	IN	prep	Mounds		True	False	True
+Clarence	Clarence	PROPN	NNP	compound	Moore	PERSON	True	False	False
+B.	B.	PROPN	NNP	compound	Moore	PERSON	False	False	False
+Moore	Moore	PROPN	NNP	pobj	by	PERSON	True	False	False
+.	.	PUNCT	.	punct	presented		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	ordered		False	False	False
+(	(	PUNCT	-LRB-	punct	By		False	True	False
+By	by	ADP	IN	advmod	ordered		True	False	True
+title	title	NOUN	NN	pobj	By		True	False	False
+)	)	PUNCT	-RRB-	punct	By		False	True	False
+.	.	PUNCT	-RRB-	punct	By		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	By		False	False	False
+""""	""""	PUNCT	``	punct	Descriptions		False	True	False
+Descriptions	description	NOUN	NNS	pobj	By	WORK_OF_ART	True	False	False
+of	of	ADP	IN	prep	Descriptions	WORK_OF_ART	True	False	True
+New	new	ADJ	JJ	amod	Bulimuli	WORK_OF_ART	True	False	False
+South	south	ADJ	JJ	amod	American	WORK_OF_ART	True	False	False
+American	american	ADJ	JJ	amod	Bulimuli	WORK_OF_ART	True	False	False
+Bulimuli	Bulimuli	PROPN	NNP	pobj	of	TAXA	True	False	False
+,	,	PUNCT	,	punct	Descriptions		False	True	False
+""""	""""	PUNCT	,	punct	Descriptions		False	True	False
+by	by	ADP	IN	prep	Descriptions		True	False	True
+Henry	Henry	PROPN	NNP	compound	Pilsbry	PERSON	True	False	False
+A.	A.	PROPN	NNP	compound	Pilsbry	PERSON	False	False	False
+Pilsbry	Pilsbry	PROPN	NNP	pobj	by	PERSON	True	False	False
+.	.	PUNCT	.	punct	By		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	By		False	False	False
+The	the	DET	DT	det	following		True	False	True
+following	follow	VERB	VBG	nsubjpass	ordered		True	False	False
+was	be	AUX	VBD	auxpass	ordered		True	False	True
+ordered	order	VERB	VBN	ROOT	ordered		True	False	False
+to	to	PART	TO	aux	printed		True	False	True
+be	be	AUX	VB	auxpass	printed		True	False	True
+printed	print	VERB	VBN	xcomp	ordered		True	False	False
+:	:	PUNCT	:	punct	ordered		False	True	False
+—	—	PUNCT	``	punct	ordered		False	True	False
+"
+"	"
+"	SPACE	_SP	punct	ordered		False	False	False
