@@ -5,7 +5,8 @@ subtitle: "A report for the 2021 LEADING program" # only for html output
 author: "Amanda Whitmire, Fellow | Steven Dilliplane, Mentor"
 date: "`r Sys.Date()`"
 output:
-  tufte::tufte_html: default
+  tufte::tufte_html: 
+    tufte_features: ["fonts", "italics"]
   tufte::tufte_handout:
     citation_package: natbib
     latex_engine: xelatex
@@ -33,19 +34,20 @@ knitr::include_graphics("../images/gbif-over-time.jpg")
 ```
 I am interested in how this corpus may be leveraged for historical species occurrence data so that I can contribute toward filling in the sparse occurrence data from this time period. Take a quick look at the data showing all species occurrence records from the Global Biodiversity Information Facility (GBIF)^[https://www.gbif.org/], from 1800 - 2000 (pre-iNaturalist). While the scale obscures the actual number of observations prior to 1950 (it's not zero!), you get the gist of the problem of a lack of "old data."
 
+## How? 
+I don't have it all figured out yet, but expect that this will involve _many_ steps of data processing and cleaning, training a natural language processing model on this corpus (which is a *weird* corpus), exploratory data analysis and visualization, and more. If we can get it to work (and this is a big IF), we will be able to automate identifying relationships like the one shown below.^[from: Nguyen N, Gabud R, Ananiadou S (2019) COPIOUS: A gold standard corpus of named entities towards extracting species occurrence from biodiversity literature. Biodiversity Data Journal 7: e29626. https://doi.org/10.3897/BDJ.7.e29626] This example includes habitat, but we are focused on the relations between date + place + species.
+
+<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/copious_spoc_2019_217808.png" alt="COPIOUS figure" width="500"/>
+
+I started out by making a [detailed outline](https://docs.google.com/spreadsheets/d/1hK18L0VZuvcwatd0jhAtb-khHUu9Ki3fCrNIrwodZpU/edit?usp=sharing) of the process in Google Sheets. This is a process that I picked up from Nicole Coleman, who I am collaborating with on another Collections as Data [project](https://sul-dlss-labs.github.io/spoc/intro.html) to look for species occurrences in a time-series of student papers from Hopkins Marine Station. She came up with the general layout and columns, and I really like it. 
+
+<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-spreadsheet.jpg" alt="Workflow table" width="500"/>
+
+## Workflow Visualization 
+
+<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/leading-workflow-google.jpg" alt="Workflow via Google Drawing">
 
 
-
-
-```{r eval=FALSE}
-file.edit(
-  tufte:::template_resources(
-    'tufte_html', '..', 'skeleton', 'skeleton.Rmd'
-  )
-)
-```
-
-This document is also available in [Chinese](https://rstudio.github.io/tufte/cn/), and its `envisioned` style can be found [here](https://rstudio.github.io/tufte/envisioned/).
 
 ```{r bib, include=FALSE}
 # create a bib file for the R packages used in this document
