@@ -2129,17 +2129,13 @@ document.addEventListener('DOMContentLoaded', function() {
 This corpus is available at the <a href="https://www.biodiversitylibrary.org/bibliography/6885">Biodiversity Heritage Library</a> (BHL).
 </aside>
 <h2 id="why">Why?</h2>
-<p>I am interested in how this corpus may be leveraged for historical species occurrence data so that I can contribute toward filling in the sparse occurrence data from this time period. Take a quick look at the data showing all species occurrence records from the Global Biodiversity Information Facility, <a href="https://www.gbif.org/">GBIF</a>, from 1800 - 2021. While the scale obscures the actual number of observations prior to 1950 (it’s not zero!), you get the gist of the problem of a lack of “old data.”</p>
+<p>I am interested in how this corpus may be leveraged for historical species occurrence data so that I can contribute toward filling in the sparse occurrence data from this time period. Take a quick look at the data showing all species occurrence records from the Global Biodiversity Information Facility, <a href="https://www.gbif.org/">GBIF</a>, from 1800 - 2000. While the scale obscures the actual number of observations prior to 1950 (it’s not zero!), you get the gist of the problem of a lack of “old data.”</p>
 <figure>
-<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gbif-over-time.jpg" alt="GBIF species occurrences 1800-2021" /><figcaption aria-hidden="true">GBIF species occurrences 1800-2021</figcaption>
+<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gbif-over-time.jpg" alt="GBIF species occurrences 1800-2000" /><figcaption aria-hidden="true">GBIF species occurrences 1800-2000</figcaption>
 </figure>
-<aside>
-<p>For inquiring minds who want to see the pre-1950 data. The top of the scale (too small to read) is 2M.</p>
-<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/gbif-pre1950.png" alt="GBIF data pre-1950" width="150"/>
-</aside>
 <h2 id="how">How?</h2>
 <p>I don’t have it all figured out yet, but expect that this will involve <em>many</em> steps of data processing and cleaning, training a natural language processing model on this corpus (which is a <em>weird</em> corpus), exploratory data analysis and visualization, and more. If we can get it to work (and this is a big IF), we will be able to automate identifying realtionships like the one shown below.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This example includes habitat, but we are focused on the relations between date + place + species.</p>
-<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/copious_spoc_2019_217808.png" alt="COPIOUS figure" width="600"/>
+<img src="https://raw.githubusercontent.com/amandawhitmire/blog/main/images/copious_spoc_2019_217808.png" alt="COPIOUS figure" width="500"/>
 <aside>
 <em>Examples of species occurrences automatically extracted by PASMED. A dashed line indicates an incorrect relation.</em>
 </aside>
