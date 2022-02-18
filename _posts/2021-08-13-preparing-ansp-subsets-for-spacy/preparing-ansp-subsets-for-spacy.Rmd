@@ -95,7 +95,7 @@ done
 Now we need to read back in the results from GNfinder and use the taxonomic names it found to create an entity file for each one (in jsonl). Recall that we already created the 'prefix' to the pattern that we need in the entity file. 
 
 ```{r echo=TRUE, eval=FALSE}
-ldf <- list() # creates a list
+# ldf <- list() # creates a list
 listcsv <- dir(pattern = "*gnf.txt") # creates the list of all the csv files in the directory
 outlist <- gsub(".txt", ".jsonl", listcsv ) #change the file extension for the entity files
 for (k in 1:length(listcsv)){
@@ -110,7 +110,7 @@ rm(ldf, listcsv, outlist, dat, k, entout, myfile) # clean up!
 
 ## Conclusion
 
-Now we have the scraped text of 13 subsections of the ANSP corpus, we identified all of the txaxnomic names in each subsection using GNfinder, and we saved those taxa to text files (jsonl) that are formatted for use as spaCy entity sets in the NER pipeline. Now it's time to return to a Jupyter Notebook to run these through! Stay tuned for that ....
+Now we have the scraped text of 13 subsections of the ANSP corpus, we identified all of the taxonomic names in each subsection using GNfinder, and we saved those taxa to text files (jsonl) that are formatted for use as spaCy entity sets in the NER pipeline. Now it's time to return to a Jupyter Notebook to run these through! Stay tuned for that ....
 
 Here are some screen shots that show you what the process resulted in.
 
