@@ -91,6 +91,7 @@ for (i in 2:len){
 rm(newrow, i) # clean up your workspace
 kable(head(dat)) # look at your data
 ```
+
 OH CRIPES - there are duplicate volumes. DANG. We're going to have to de-duplicate the tibble based on ... maybe the `Volume` column? ::shrugs:: This will not be a specific de-dup - like, I don't know how to pick which of the two volumes to keep, so I guess we'll keep whatever the function decides for us. If I had to guess, it'll keep the first instance of each volume.
 
 ```{r echo=TRUE, layout="l-body-outset"}
